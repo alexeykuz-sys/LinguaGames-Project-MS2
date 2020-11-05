@@ -1,44 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linguagame - Memory games</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Linguagame - Memory games</title>
-	<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
-	<link rel="manifest" href="/assets/favicon/site.webmanifest">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-	<link rel="stylesheet" href="/assets/css/style.css">
-</head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/assets/javascript/javascript.js"></script>
+  </body>
+  <!---------------Start of Home section--------------->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-custom">
+    <p class="logo-name">Lingua Games</p>
+    <a class="navbar-brand" href="index.html">
+      <img
+        class="logo-image"
+        src="/assets/images/LinguaGames.png"
+        alt="LinguaGames"
+        loading="lazy"
+      />
+    </a>
 
-<body>
-
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<script src="/assets/javascript/javascript.js"></script>
-</body>
-<!---------------Start of Home section--------------->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-green navbar-custom">   
-            <a class="navbar-brand" href="index.html">
-                <img src="#" width="275" height="84" alt="LinguaGames" loading="lazy">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto float-right text-left pl-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Instructions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">Contact developer</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarResponsive"
+      aria-controls="navbarResponsive"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto float-right text-left pl-3">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Instructions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">Contacts</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!---Card Placement--->
+  <div class="card-wrapper">
+    <div class="card-1">Card-1</div>
+    <div class="card-2">Card-2</div>
+    <div class="card-3">Card-3</div>
+    <div class="card-4">Card-4</div>
+    <div class="card-5">Card-5</div>
+    <div class="card-6">Card-6</div>
+    <div class="card-7">Card-7</div>
+    <div class="card-8">Card-8</div>
+    <div class="card-9">Card-9</div>
+    <div class="card-10">Card-10</div>
+    <div class="card-11">Card-11</div>
+    <div class="card-12">Card-12</div>
+  </div>
 </html>
