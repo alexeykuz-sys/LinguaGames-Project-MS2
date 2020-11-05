@@ -1,165 +1,354 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 body,
 html {
-    overflow-x: hidden;
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-    height: 100%;
-  
-    background-color: rgb(5, 74, 41);
-    
-}
+  overflow-x: hidden;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  height: 100%;
 
+  background-color: rgb(5, 74, 41);
+}
 
 /*---Navigaton-----*/
 
 .navbar {
-    color: rgb(208, 98, 98);
-    background-color:rgb(5, 74, 41);
-    font-weight: 200;
-    font-size: 1rem;
-    letter-spacing: .2rem;
-    padding: 0px;
-    height: 5.25rem;
-    
-    
+  font-weight: 200;
+  font-size: 0.6rem;
+  letter-spacing: 0.2rem;
+  padding: 0px;
+  height: 4rem;
 }
 
 .navbar-custom {
-    background-color:rgb(5, 74, 41);
-    
-}
-
-.navbar-brand img {
-    height: 5rem;
-    padding-left:.7rem;
-    position: absolute;
-    top:15%;
-    right: 50%;
+  background-color: rgb(5, 74, 41);
 }
 
 .logo-name {
-    font-weight: 900;
-    font-size: 2.5rem;
-    margin-left: 1.5rem;
-    display: inline;
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin-left: 2.5rem;
+  display: inline;
+  color: rgb(255, 255, 255);
 }
 
-.navbar-nav li  {
-    padding-right: 1.5rem;
-    padding-bottom: 10px;
-   
-    
+.navbar-nav li {
+  padding-right: 2.5rem;
+  padding-bottom: 10px;
 }
 
 .navbar-custom .navbar-nav .nav-link {
-    color: rgb(208, 98, 98);
-    font-size: 1.5rem;
-    display: inline;
-    
-    
+  color: rgb(244, 255, 255);
+  font-size: 1.5rem;
+  display: inline;
 }
 
-.navbar-custom .navbar-nav .nav-link:hover {
-    color: color: rgb(208, 98, 98);
-    text-transform: uppercase;
+.navbar-custom .navbar-nav .nav-link:hover,
+.logo-name:hover {
+  color: rgb(208, 98, 98);
+  text-transform: uppercase;
 }
 
 .navbar-toggler {
-    right: 15px;
-    margin: 0 auto;
-    position: fixed;
+  right: 15px;
+  margin: 0 auto;
+  position: fixed;
 }
 
-
 .card-wrapper {
-    align-content: center;
-    justify-content: center;
-    display: grid;
-    grid-template-areas: 
+  align-content: center;
+  justify-content: center;
+  display: grid;
+  grid-template-areas:
     "card-1 card-2 card-3 card-4"
     "card-5 card-6 card-7 card-8"
     "card-9 card-10 card-11 card-12";
+  width: 100%;
+  height: 100%;
+  grid-gap: 50px;
+  margin-top: 40px;
+}
+.card-1 {
+  grid-area: card-1;
+  background-image: url("../images/Lingua.png");
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+}
+.card-2 {
+  grid-area: card-2;
+  background-image: url("../images/Lingua.png");
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+}
+.card-3 {
+  grid-area: card-3;
+  background-image: url("../images/Lingua.png");
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+}
+.card-4 {
+  grid-area: card-4;
+  background-image: url("../images/Lingua.png");
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+}
+.card-5 {
+  grid-area: card-5;
+  background-image: url("../images/Lingua.png");
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+}
+.card-6 {
+  grid-area: card-6;
+  background-image: url("../images/Lingua.png");
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+}
+.card-7 {
+  grid-area: card-7;
+  background-image: url("../images/Lingua.png");
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+}
+.card-8 {
+  grid-area: card-8;
+  background-image: url("../images/Lingua.png");
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+}
+.card-9 {
+  grid-area: card-9;
+  background-image: url("../images/Lingua.png");
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+}
+.card-10 {
+  grid-area: card-10;
+  background-image: url("../images/Lingua.png");
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.card-11 {
+  grid-area: card-11;
+  background-image: url("../images/Lingua.png");
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+}
+.card-12 {
+  grid-area: card-12;
+  background-image: url("../images/Lingua.png");
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+}
+@media (max-width: 1024px) {
+  .card-wrapper {
+    align-content: center;
+    justify-content: center;
+    display: grid;
+    grid-template-areas:
+      "card-1 card-2 card-3 card-4"
+      "card-5 card-6 card-7 card-8"
+      "card-9 card-10 card-11 card-12";
     width: 100%;
     height: 100%;
     grid-gap: 30px;
-    margin-top: 20px;
-    
-}
-.card-1{
+    margin-top: 40px;
+  }
+  .card-1 {
     grid-area: card-1;
-     background-color: white;
-     width: 150px;
-     height:150px;
-}
-.card-2{
+  }
+  .card-2 {
     grid-area: card-2;
-     background-color: white;
-     width: 150px;
-     height:150px;
-}
-.card-3{
+  }
+  .card-3 {
     grid-area: card-3;
-     background-color: white;
-     width: 150px;
-     height:150px;
-}
-.card-4{
-   background-color: white;
-     width: 150px;
-     height:150px;
-}
-.card-5{
+  }
+  .card-4 {
+    grid-area: card-4;
+  }
+  .card-5 {
     grid-area: card-5;
-    background-color: white;
-     width: 150px;
-     height:150px;
-}
-.card-6{
+  }
+  .card-6 {
     grid-area: card-6;
-     background-color: white;
-     width: 150px;
-     height:150px;
-}
-.card-7{
+  }
+  .card-7 {
     grid-area: card-7;
-    background-color: white;
-     width: 150px;
-     height:150px;
-}
-.card-8{
+  }
+  .card-8 {
     grid-area: card-8;
-    background-color: white;
-     width: 150px;
-     height:150px;
-}
-.card-9{
+  }
+  .card-9 {
     grid-area: card-9;
-    background-color: white;
-     width: 150px;
-     height:150px;
-}
-.card-10{
+  }
+  .card-10 {
     grid-area: card-10;
-    background-color: white;
-     width: 150px;
-     height:150px;
-}
-.card-11{
+  }
+  .card-11 {
     grid-area: card-11;
-    background-color: white;
-     width: 150px;
-     height:150px;
-}
-.card-12 {
+  }
+  .card-12 {
     grid-area: card-12;
-    background-color: white;
-     width: 150px;
-     height:150px;
+  }
 }
-    
-   
+
+@media (max-width: 768px) {
+  .card-wrapper {
+    align-content: center;
+    justify-content: center;
+    display: grid;
+    grid-template-areas:
+      "card-1 card-2 card-3 "
+      "card-4 card-5 card-6 "
+      "card-7 card-8 card-9"
+      "card-10 card-11 card-12";
+    width: 100%;
+    height: 100%;
+    grid-gap: 30px;
+    margin-top: 40px;
+  }
+  .card-1 {
+    grid-area: card-1;
+  }
+  .card-2 {
+    grid-area: card-2;
+  }
+  .card-3 {
+    grid-area: card-3;
+  }
+  .card-4 {
+    grid-area: card-4;
+  }
+  .card-5 {
+    grid-area: card-5;
+  }
+  .card-6 {
+    grid-area: card-6;
+  }
+  .card-7 {
+    grid-area: card-7;
+  }
+  .card-8 {
+    grid-area: card-8;
+  }
+  .card-9 {
+    grid-area: card-9;
+  }
+  .card-10 {
+    grid-area: card-10;
+  }
+  .card-11 {
+    grid-area: card-11;
+  }
+  .card-12 {
+    grid-area: card-12;
+  }
+}
+
+@media (max-width: 375px) {
+  .card-wrapper {
+    align-content: center;
+    justify-content: center;
+    display: grid;
+    grid-template-areas:
+      "card-1 card-2"
+      "card-3 card-4 "
+      "card-5 card-6 "
+      "card-7 card-8"
+      "card-9 card-10"
+      "card-11 card-12";
+    width: 100%;
+    height: 100%;
+    grid-gap: 10px;
+    margin: 40px 10px;
+
+  }
+  .card-1 {
+    grid-area: card-1;
+    width: 150px;
+    height: 150px;
+  }
+  .card-2 {
+    grid-area: card-2;
+    width: 150px;
+    height: 150px;
+  }
+  .card-3 {
+    grid-area: card-3;
+    width: 150px;
+    height: 150px;
+  }
+  .card-4 {
+    grid-area: card-4;
+    width: 150px;
+    height: 150px;
+  }
+  .card-5 {
+    grid-area: card-5;
+    width: 150px;
+    height:150px;
+  }
+  .card-6 {
+    grid-area: card-6;
+    width: 150px;
+    height: 150px;
+  }
+  .card-7 {
+    grid-area: card-7;
+    width: 150px;
+    height: 150px;
+  }
+  .card-8 {
+    grid-area: card-8;
+    width: 150px;
+    height: 150px;
+  }
+  .card-9 {
+    grid-area: card-9;
+    width: 150px;
+    height: 150px;
+  }
+  .card-10 {
+    grid-area: card-10;
+    width: 150px;
+    height: 150px;
+  }
+  .card-11 {
+    grid-area: card-11;
+    width: 150px;
+    height: 150px;
+  }
+  .card-12 {
+    grid-area: card-12;
+    width: 150px;
+    height: 150px;
+  }
+}
