@@ -9,8 +9,9 @@ html {
   overflow-x: hidden;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   height: 100%;
-
+  width: 100%;
   background-color: rgb(5, 74, 41);
+  display: flex;
 }
 
 /*---Navigaton-----*/
@@ -61,11 +62,12 @@ html {
 /*Language Selector*/
 
 .form-wrapper {
-  grid-column: form;
   width: 140px;
-  display: flex;
-
+  align-self: center;
   justify-content: center;
+  margin-top:10px;
+  margin-left: 100px;
+  
 }
 
 #language {
@@ -75,28 +77,21 @@ html {
 }
 
 .timer {
-  grid-column: timer;
-  display: inline;
-  font-size: 30px;
+  display: inline-flexbox;
+  font-size: 40px;
   font-weight: 600;
-  color: red;
-  align-self: center;
+  background-color: red;
   
 }
 
 .card-wrapper {
-  align-content: center;
-  justify-content: center;
-  display: grid;
-  grid-template-areas:
-    "form form timer . ."
-    "card-1 card-2 card-3 card-4 card-5"
-    "card-6 card-7 card-8 card-9 card-10";
-
   width: 100%;
   height: 100%;
-  grid-gap: 50px;
-  margin-top: 10px;
+  display: flex;
+  flex-flow: row;
+  align-content: flex-start;
+  justify-content: space-evenly;
+ 
 }
 
 .card-1,
@@ -108,220 +103,14 @@ html {
 .card-7,
 .card-8,
 .card-9,
-.card-10 {
+.card-10,
+.card-11,
+.card-12 {
   background-image: url("../images/Lingua.png");
   background-repeat: no-repeat;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 15px;
-}
-
-.card-1 {
-  grid-area: card-1;
-}
-.card-2 {
-  grid-area: card-2;
-}
-.card-3 {
-  grid-area: card-3;
-}
-.card-4 {
-  grid-area: card-4;
-}
-.card-5 {
-  grid-area: card-5;
-}
-.card-6 {
-  grid-area: card-6;
-}
-.card-7 {
-  grid-area: card-7;
-}
-.card-8 {
-  grid-area: card-8;
-}
-.card-9 {
-  grid-area: card-9;
-}
-.card-10 {
-  grid-area: card-10;
-}
-
-@media (max-width: 1024px) {
-  .card-wrapper {
-    align-content: center;
-    justify-content: center;
-    display: grid;
-    grid-template-areas:
-      "form form form form"
-      "card-1 card-2 card-3 card-4"
-      "card-5 card-6 card-7 card-8"
-      "card-9 card-10";
-    width: 100%;
-    height: 100%;
-    grid-gap: 30px;
-    margin-top: 40px;
-  }
-  .form-wrapper {
-    grid-area: form;
-  }
-  .card-1 {
-    grid-area: card-1;
-  }
-  .card-2 {
-    grid-area: card-2;
-  }
-  .card-3 {
-    grid-area: card-3;
-  }
-  .card-4 {
-    grid-area: card-4;
-  }
-  .card-5 {
-    grid-area: card-5;
-  }
-  .card-6 {
-    grid-area: card-6;
-  }
-  .card-7 {
-    grid-area: card-7;
-  }
-  .card-8 {
-    grid-area: card-8;
-  }
-  .card-9 {
-    grid-area: card-9;
-  }
-  .card-10 {
-    grid-area: card-10;
-  }
-}
-
-@media (max-width: 768px) {
-  .card-wrapper {
-    align-content: center;
-    justify-content: center;
-    display: grid;
-    grid-template-areas:
-      "form form form form"
-      "card-1 card-2 card-3 "
-      "card-4 card-5 card-6 "
-      "card-7 card-8 card-9"
-      "card-10 ";
-    width: 100%;
-    height: 100%;
-    grid-gap: 30px;
-    margin-top: 40px;
-  }
-  .form-wrapper {
-    grid-area: form;
-  }
-  .card-1 {
-    grid-area: card-1;
-  }
-  .card-2 {
-    grid-area: card-2;
-  }
-  .card-3 {
-    grid-area: card-3;
-  }
-  .card-4 {
-    grid-area: card-4;
-  }
-  .card-5 {
-    grid-area: card-5;
-  }
-  .card-6 {
-    grid-area: card-6;
-  }
-  .card-7 {
-    grid-area: card-7;
-  }
-  .card-8 {
-    grid-area: card-8;
-  }
-  .card-9 {
-    grid-area: card-9;
-  }
-  .card-10 {
-    grid-area: card-10;
-  }
-  .card-11 {
-    grid-area: card-11;
-  }
-  .card-12 {
-    grid-area: card-12;
-  }
-}
-
-@media (max-width: 375px) {
-  .card-wrapper {
-    align-content: center;
-    justify-content: center;
-    display: grid;
-    grid-template-areas:
-      "form form"
-      "card-1 card-2"
-      "card-3 card-4 "
-      "card-5 card-6 "
-      "card-7 card-8"
-      "card-9 card-10";
-    width: 100%;
-    height: 100%;
-    grid-gap: 10px;
-    margin: 40px 10px;
-  }
-  form-wrapper {
-    grid-area: form;
-  }
-  .card-1 {
-    grid-area: card-1;
-    width: 150px;
-    height: 150px;
-  }
-  .card-2 {
-    grid-area: card-2;
-    width: 150px;
-    height: 150px;
-  }
-  .card-3 {
-    grid-area: card-3;
-    width: 150px;
-    height: 150px;
-  }
-  .card-4 {
-    grid-area: card-4;
-    width: 150px;
-    height: 150px;
-  }
-  .card-5 {
-    grid-area: card-5;
-    width: 150px;
-    height: 150px;
-  }
-  .card-6 {
-    grid-area: card-6;
-    width: 150px;
-    height: 150px;
-  }
-  .card-7 {
-    grid-area: card-7;
-    width: 150px;
-    height: 150px;
-  }
-  .card-8 {
-    grid-area: card-8;
-    width: 150px;
-    height: 150px;
-  }
-  .card-9 {
-    grid-area: card-9;
-    width: 150px;
-    height: 150px;
-  }
-  .card-10 {
-    grid-area: card-10;
-    width: 150px;
-    height: 150px;
-  }
+  margin: 5px;
+  
 }

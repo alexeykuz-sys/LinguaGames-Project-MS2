@@ -22,23 +22,13 @@
       href="/assets/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="/assets/favicon/site.webmanifest" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
 
   <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="/assets/javascript/javascript.js"></script>
-  </body>
+   
   <!---------------Start of Home section--------------->
   <nav class="navbar fixed-top navbar-expand-lg navbar-custom">
     <a class="navbar-brand" href="index.html">
@@ -69,29 +59,51 @@
   </nav>
 
   <!---Card Placement--->
-  <div class="card-wrapper">
-    <!--Language selection button-->
-    <div class="form-wrapper">
-      <form>
-        <label for="language"></label>
-        <select id="language" name="Language Selection:">
-          <option value="spanish">Spanish</option>
-          <option value="french">French</option>
-          <option value="italian">Italian</option>
-        </select>
-      </form>
+  <div class="container no-gutters">
+    <div class="row">
+      <!--Language selection button-->
+
+      <div class="form-wrapper">
+        <form>
+          <label for="language"></label>
+          <select id="language" name="Language Selection:">
+            <option value="spanish">Spanish</option>
+            <option value="french">French</option>
+            <option value="italian">Italian</option>
+          </select>
+        </form>
+      </div>
+      <div class="timer mt-5" id="time"></div>
     </div>
-    <div class="timer" id="time">
+    <div class="row">
+      <div class="card-wrapper col-md-12">
+        <div class="card-1">Card-1</div>
+        <div class="card-2">Card-2</div>
+        <div class="card-3">Card-3</div>
+        <div class="card-4">Card-4</div>
+      </div>
     </div>
-    <div class="card-1">Card-1</div>
-    <div class="card-2">Card-2</div>
-    <div class="card-3">Card-3</div>
-    <div class="card-4">Card-4</div>
-    <div class="card-5">Card-5</div>
-    <div class="card-6">Card-6</div>
-    <div class="card-7">Card-7</div>
-    <div class="card-8">Card-8</div>
-    <div class="card-9">Card-9</div>
-    <div class="card-10">Card-10</div>
+    <div class="row">
+      <div class="card-wrapper col-md-12">
+        <div class="card-5">Card-5</div>
+        <div class="card-6">Card-6</div>
+        <div class="card-7">Card-7</div>
+        <div class="card-8">Card-8</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card-wrapper col-md-12">
+        <div class="card-9">Card-9</div>
+        <div class="card-10">Card-10</div>
+        <div class="card-11">Card-11</div>
+        <div class="card-12">Card-12</div>
+        
+      </div>
+    </div>
   </div>
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="/assets/javascript/javascript.js"></script>
+  </body>
 </html>
