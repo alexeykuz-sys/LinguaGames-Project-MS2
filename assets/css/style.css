@@ -58,129 +58,112 @@ html {
   position: fixed;
 }
 
+/*Language Selector*/
+
+.form-wrapper {
+  grid-column: form;
+  width: 140px;
+  display: flex;
+
+  justify-content: center;
+}
+
+#language {
+  font-size: 1.15rem;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.timer {
+  grid-column: timer;
+  display: inline;
+  font-size: 30px;
+  font-weight: 600;
+  color: red;
+  align-self: center;
+  
+}
+
 .card-wrapper {
   align-content: center;
   justify-content: center;
   display: grid;
   grid-template-areas:
-    "card-1 card-2 card-3 card-4"
-    "card-5 card-6 card-7 card-8"
-    "card-9 card-10 card-11 card-12";
+    "form form timer . ."
+    "card-1 card-2 card-3 card-4 card-5"
+    "card-6 card-7 card-8 card-9 card-10";
+
   width: 100%;
   height: 100%;
   grid-gap: 50px;
-  margin-top: 40px;
+  margin-top: 10px;
 }
-.card-1 {
-  grid-area: card-1;
-  background-image: url("../images/Lingua.png");
-  background-repeat: no-repeat;
-  width: 200px;
-  height: 200px;
-  border-radius: 15px;
-}
-.card-2 {
-  grid-area: card-2;
-  background-image: url("../images/Lingua.png");
-  background-repeat: no-repeat;
-  width: 200px;
-  height: 200px;
-  border-radius: 15px;
-}
-.card-3 {
-  grid-area: card-3;
-  background-image: url("../images/Lingua.png");
-  background-repeat: no-repeat;
-  width: 200px;
-  height: 200px;
-  border-radius: 15px;
-}
-.card-4 {
-  grid-area: card-4;
-  background-image: url("../images/Lingua.png");
-  background-repeat: no-repeat;
-  width: 200px;
-  height: 200px;
-  border-radius: 15px;
-}
-.card-5 {
-  grid-area: card-5;
-  background-image: url("../images/Lingua.png");
-  background-repeat: no-repeat;
-  width: 200px;
-  height: 200px;
-  border-radius: 15px;
-}
-.card-6 {
-  grid-area: card-6;
-  background-image: url("../images/Lingua.png");
-  background-repeat: no-repeat;
-  width: 200px;
-  height: 200px;
-  border-radius: 15px;
-}
-.card-7 {
-  grid-area: card-7;
-  background-image: url("../images/Lingua.png");
-  background-repeat: no-repeat;
-  width: 200px;
-  height: 200px;
-  border-radius: 15px;
-}
-.card-8 {
-  grid-area: card-8;
-  background-image: url("../images/Lingua.png");
-  background-repeat: no-repeat;
-  width: 200px;
-  height: 200px;
-  border-radius: 15px;
-}
-.card-9 {
-  grid-area: card-9;
-  background-image: url("../images/Lingua.png");
-  background-repeat: no-repeat;
-  width: 200px;
-  height: 200px;
-  border-radius: 15px;
-}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5,
+.card-6,
+.card-7,
+.card-8,
+.card-9,
 .card-10 {
-  grid-area: card-10;
   background-image: url("../images/Lingua.png");
   background-repeat: no-repeat;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 15px;
 }
 
-.card-11 {
-  grid-area: card-11;
-  background-image: url("../images/Lingua.png");
-  background-repeat: no-repeat;
-  width: 200px;
-  height: 200px;
-  border-radius: 15px;
+.card-1 {
+  grid-area: card-1;
 }
-.card-12 {
-  grid-area: card-12;
-  background-image: url("../images/Lingua.png");
-  background-repeat: no-repeat;
-  width: 200px;
-  height: 200px;
-  border-radius: 15px;
+.card-2 {
+  grid-area: card-2;
 }
+.card-3 {
+  grid-area: card-3;
+}
+.card-4 {
+  grid-area: card-4;
+}
+.card-5 {
+  grid-area: card-5;
+}
+.card-6 {
+  grid-area: card-6;
+}
+.card-7 {
+  grid-area: card-7;
+}
+.card-8 {
+  grid-area: card-8;
+}
+.card-9 {
+  grid-area: card-9;
+}
+.card-10 {
+  grid-area: card-10;
+}
+
 @media (max-width: 1024px) {
   .card-wrapper {
     align-content: center;
     justify-content: center;
     display: grid;
     grid-template-areas:
+      "form form form form"
       "card-1 card-2 card-3 card-4"
       "card-5 card-6 card-7 card-8"
-      "card-9 card-10 card-11 card-12";
+      "card-9 card-10";
     width: 100%;
     height: 100%;
     grid-gap: 30px;
     margin-top: 40px;
+  }
+  .form-wrapper {
+    grid-area: form;
   }
   .card-1 {
     grid-area: card-1;
@@ -212,12 +195,6 @@ html {
   .card-10 {
     grid-area: card-10;
   }
-  .card-11 {
-    grid-area: card-11;
-  }
-  .card-12 {
-    grid-area: card-12;
-  }
 }
 
 @media (max-width: 768px) {
@@ -226,14 +203,18 @@ html {
     justify-content: center;
     display: grid;
     grid-template-areas:
+      "form form form form"
       "card-1 card-2 card-3 "
       "card-4 card-5 card-6 "
       "card-7 card-8 card-9"
-      "card-10 card-11 card-12";
+      "card-10 ";
     width: 100%;
     height: 100%;
     grid-gap: 30px;
     margin-top: 40px;
+  }
+  .form-wrapper {
+    grid-area: form;
   }
   .card-1 {
     grid-area: card-1;
@@ -279,17 +260,19 @@ html {
     justify-content: center;
     display: grid;
     grid-template-areas:
+      "form form"
       "card-1 card-2"
       "card-3 card-4 "
       "card-5 card-6 "
       "card-7 card-8"
-      "card-9 card-10"
-      "card-11 card-12";
+      "card-9 card-10";
     width: 100%;
     height: 100%;
     grid-gap: 10px;
     margin: 40px 10px;
-
+  }
+  form-wrapper {
+    grid-area: form;
   }
   .card-1 {
     grid-area: card-1;
@@ -314,7 +297,7 @@ html {
   .card-5 {
     grid-area: card-5;
     width: 150px;
-    height:150px;
+    height: 150px;
   }
   .card-6 {
     grid-area: card-6;
@@ -338,16 +321,6 @@ html {
   }
   .card-10 {
     grid-area: card-10;
-    width: 150px;
-    height: 150px;
-  }
-  .card-11 {
-    grid-area: card-11;
-    width: 150px;
-    height: 150px;
-  }
-  .card-12 {
-    grid-area: card-12;
     width: 150px;
     height: 150px;
   }
