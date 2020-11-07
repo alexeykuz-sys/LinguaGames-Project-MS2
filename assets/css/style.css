@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +13,7 @@ html {
   height: 100%;
   width: 100%;
   background-color: rgb(5, 74, 41);
-  display: flex;
+  box-sizing: border-box;
 }
 
 /*---Navigaton-----*/
@@ -21,11 +23,12 @@ html {
   font-size: 0.6rem;
   letter-spacing: 0.2rem;
   padding: 0px;
-  height: 4rem;
+  height: 3.5rem;
 }
 
 .navbar-custom {
   background-color: rgb(5, 74, 41);
+  border: 2px solid firebrick;
 }
 
 .logo-name {
@@ -59,41 +62,125 @@ html {
   position: fixed;
 }
 
-/*Language Selector*/
-
-.form-wrapper {
-  width: 140px;
-  align-self: center;
-  justify-content: center;
-  margin-top:10px;
-  margin-left: 100px;
-  
+.buttons-wrapper {
+  width: 100%;
+  display: flex;
+  justify-items: space-between;
+  align-items: center;
+  margin-top: 60px;
+  border: 2px solid blue;
 }
 
-#language {
-  font-size: 1.15rem;
-  border-radius: 5px;
-  padding: 2px;
+.dropdown {
+  width: 200px;
+  height: 100px;
+  border-radius: 20px;
+  position: relative;
+  background: rgb(5, 74, 41);
+  box-shadow: 10px 10px 60px #138539fa, -10px -10px 60px #138539fa;
+  cursor: pointer;
+  transition: all 500 ms ease-in-out;
+}
+
+.dropdown:active {
+  box-shadow: inset 7px 7px 14px #138539fa, inset -7px -7px 14px #138539fa;
+}
+
+.dropdown input {
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: red;
+}
+
+.dropdown i {
+  position: absolute;
+  color: red;
+  top: 50%;
+  right: 5%;
+  transform: translateX(-50%);
+  transition: all 500 ms ease-in-out;
+}
+
+.dropdown.show i {
+  transform: translateX(-50%) rotate(180deg);
+  transition: all 500 ms ease-in-out;
+}
+
+.options {
+  position: absolute;
+  cursor: pointer;
+  top: 105px;
+  width: 200px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 60px #138539fa, -10px -10px 60px #138539fa;
+  transition: all 500 ms ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.dropdown.show .options {
+  visibility: visible;
+  opacity: 0;
+  transition: all 500 ms ease-in-out;
+}
+
+.options li {
+  position: relative;
+  padding: 15px;
+  list-style-type: none;
+  color: red;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 500 ms ease-in-out;
+}
+.options li:first-child {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.options li:last-child {
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.options li:hover {
+  background: grey;
+}
+
+.form-wrapper:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 
 .timer {
-  display: inline-flexbox;
+  width: 105px;
+  height: 105px;
   font-size: 40px;
   font-weight: 600;
   background-color: red;
-  
-}
-
-.card-wrapper {
-  width: 100%;
-  height: 100%;
   display: flex;
-  flex-flow: row;
-  align-content: flex-start;
-  justify-content: space-evenly;
- 
+  align-items: center;
+  justify-content: center;
 }
 
+.reset {
+  width: 175px;
+  height: 175px;
+}
+
+.cards-wrapper {
+  border: 3px solid peru;
+
+  margin: 10px auto;
+  width: fit-content;
+}
 .card-1,
 .card-2,
 .card-3,
@@ -108,9 +195,11 @@ html {
 .card-12 {
   background-image: url("../images/Lingua.png");
   background-repeat: no-repeat;
-  width: 200px;
-  height: 200px;
+  width: 15opx;
+  height: 150px;
   border-radius: 15px;
-  margin: 5px;
-  
+  margin: 10px;
+}
+
+@media (min-width: 375px) {
 }
