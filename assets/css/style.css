@@ -62,28 +62,31 @@ html {
   position: fixed;
 }
 
-.buttons-wrapper {
+/*.buttons-wrapper {
   width: 100%;
+  height: 100%;
   display: flex;
-  justify-items: space-between;
   align-items: center;
-  margin-top: 60px;
+  justify-content: center;
   border: 2px solid blue;
 }
 
 .dropdown {
   width: 200px;
-  height: 100px;
-  border-radius: 20px;
-  position: relative;
-  background: rgb(5, 74, 41);
-  box-shadow: 10px 10px 60px #138539fa, -10px -10px 60px #138539fa;
+  height: 65px;
+  border-radius: 5px;
+
+  background: #ffffff;
+  box-shadow: inset 7px 7px 14px rgb(194, 193, 193),
+    inset -7px -7px 14px rgb(194, 193, 193);
   cursor: pointer;
   transition: all 500 ms ease-in-out;
+  margin: 0 0 0 15px;
 }
 
 .dropdown:active {
-  box-shadow: inset 7px 7px 14px #138539fa, inset -7px -7px 14px #138539fa;
+  box-shadow: inset 7px 7px 14px rgb(194, 193, 193),
+    inset -7px -7px 14px rgb(194, 193, 193);
 }
 
 .dropdown input {
@@ -96,13 +99,15 @@ html {
   position: absolute;
   top: 50%;
   left: 50%;
-  color: red;
+  color: #f45b69;
+  font-weight: 700;
+  margin-left: 10px;
 }
 
 .dropdown i {
   position: absolute;
-  color: red;
-  top: 50%;
+  color: #f45b69;
+  top: 40%;
   right: 5%;
   transform: translateX(-50%);
   transition: all 500 ms ease-in-out;
@@ -116,28 +121,37 @@ html {
 .options {
   position: absolute;
   cursor: pointer;
-  top: 105px;
+  top: 65px;
   width: 200px;
-  border-radius: 20px;
-  box-shadow: 10px 10px 60px #138539fa, -10px -10px 60px #138539fa;
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: inset 7px 7px 14px rgb(194, 193, 193),
+    inset -7px -7px 14px rgb(194, 193, 193);
   transition: all 500 ms ease-in-out;
   visibility: hidden;
   opacity: 0;
+  font-weight: 700;
+}
+
+.options li img {
+  padding-right: 10px;
 }
 
 .dropdown.show .options {
   visibility: visible;
-  opacity: 0;
+  opacity: 1;
   transition: all 500 ms ease-in-out;
+  z-index: 1;
 }
 
 .options li {
   position: relative;
   padding: 15px;
+  margin-left: 1px;
   list-style-type: none;
-  color: red;
+  color: #f45b69;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 700;
   transition: all 500 ms ease-in-out;
 }
 .options li:first-child {
@@ -150,36 +164,43 @@ html {
   border-bottom-left-radius: 20px;
 }
 .options li:hover {
-  background: grey;
-}
-
-.form-wrapper:hover {
-  background-position: right center; /* change the direction of the change here */
-  color: #fff;
-  text-decoration: none;
+  background: rgb(224, 222, 222);
 }
 
 .timer {
-  width: 105px;
-  height: 105px;
+  width: 170px;
+  height: 65px;
   font-size: 40px;
   font-weight: 600;
-  background-color: red;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  border-radius: 20px;
+
+  background: #ffffff;
+  box-shadow: inset 7px 7px 14px rgb(194, 193, 193),
+    inset -7px -7px 14px rgb(194, 193, 193);
+  cursor: pointer;
+  transition: all 500 ms ease-in-out;
+  margin-left: 15px;
 }
 
 .reset {
   width: 175px;
   height: 175px;
-}
+}*/
 
+.col {
+    width: auto;
+    margin: 0;
+}
 .cards-wrapper {
   border: 3px solid peru;
-
-  margin: 10px auto;
-  width: fit-content;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: auto;
 }
 .card-1,
 .card-2,
@@ -195,11 +216,73 @@ html {
 .card-12 {
   background-image: url("../images/Lingua.png");
   background-repeat: no-repeat;
-  width: 15opx;
-  height: 150px;
+  width: 60px;
+  height: 60px;
   border-radius: 15px;
   margin: 10px;
+  box-shadow: inset 7px 7px 7px rgb(194, 193, 193),
+    inset -7px -7px 7px rgb(194, 193, 193);
+  cursor: pointer;
+  transition: all 500 ms ease-in-out;
 }
 
-@media (min-width: 375px) {
+
+/*.text-footer-custom {
+    padding: 10px;
+    font-size: 1.2em;
+    color:#22181C;
+    margin-top: 40px;
+    position: fixed;
+  bottom: 0;
+}
+
+
+.text-center a {
+    color:#22181C;
+    padding-right: 30px;
+    margin: auto 0;
+    font-size: 1.4em;
+    
+}
+.text-center a:hover {
+    color: rgba(0, 0, 255, 0.678);
+}*/
+
+@media (min-width: 495px) {
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5,
+.card-6,
+.card-7,
+.card-8,
+.card-9,
+.card-10,
+.card-11,
+.card-12 {
+  
+  width: 150px;
+  height: 150px;
+}
+}
+
+
+@media (min-width: 1024px) {
+    .card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5,
+.card-6,
+.card-7,
+.card-8,
+.card-9,
+.card-10,
+.card-11,
+.card-12 {
+  
+  width: 200px;
+  height: 200px;
+}
 }
