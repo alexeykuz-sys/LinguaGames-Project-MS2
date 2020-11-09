@@ -12,7 +12,7 @@ body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   min-height: 100%;
   min-width: 100%;
-  background-color: rgb(5, 74, 41);
+  background-color: rgb(55, 149, 93);
   box-sizing: border-box;
 }
 
@@ -27,8 +27,8 @@ body {
 }
 
 .navbar-custom {
-  background-color: rgb(5, 74, 41);
-  border: 2px solid firebrick;
+  background-image: linear-gradient(to bottom, rgb(5,57,97), rgb(10, 105, 177));
+  
 }
 
 .logo-name {
@@ -61,12 +61,13 @@ body {
   margin: 0 auto;
   position: fixed;
 }
+/*Buttons*/
 
 .buttons-wrapper {
   width: 100%;
   height: 100%;
   display: flex;
-  border: 2px solid blue;
+  /*border: 2px solid blue;*/
   margin: 10px auto;
   flex-flow: row;
   flex-wrap: wrap;
@@ -208,10 +209,10 @@ margin: auto;
     width: fit-content;
     margin: 0 auto;
 }
-
+/*Cards*/
 
 .cards-wrapper {
-  border: 3px solid peru;
+  /*border: 3px solid peru;*/
   max-height: 100vh;
   width: 100%;
   flex-wrap: wrap;
@@ -236,34 +237,40 @@ margin: 0 auto;
 .card-12 {
   background-image: url("../images/Lingua.png");
   background-repeat: no-repeat;
-  width: 105px;
-  height: 105px;
+  width: 140px;
+  height: 95px;
   border-radius: 15px;
-  margin: 15px auto;
+  margin: 10px auto;
   box-shadow: inset 7px 7px 7px rgb(194, 193, 193),
     inset -7px -7px 7px rgb(194, 193, 193);
   cursor: pointer;
   transition: all 500 ms ease-in-out;
+  
 }
 
-.text-footer-custom {
-  padding: 10px;
-  font-size: 1.2em;
+/*Footer*/
+
+.footer-wrapper {
+  background-image: linear-gradient(to top, rgb(5,57,97), rgb(10, 105, 177));
   color: #22181c;
-  margin-top: 40px;
   bottom: 0;
-  position: absolute;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .text-center a {
   color: #22181c;
   padding-right: 30px;
   margin: auto 0;
-  font-size: 1.4em;
+  font-size: 2.4em;
 }
 .text-center a:hover {
   color: rgba(0, 0, 255, 0.678);
 }
+
+/*Media Querries*/
 
 @media (min-width: 576px) {
   .card-1,
@@ -278,34 +285,14 @@ margin: 0 auto;
   .card-10,
   .card-11,
   .card-12 {
-    width: 130px;
-    height: 130px;
+    width: 170px;
+    height: 113px;
   }
-  .cards-wrapper {
-    top: 15%;
-    
-  }
+  
+  
 }
 
-@media (min-width: 768px) {
-  .card-1,
-  .card-2,
-  .card-3,
-  .card-4,
-  .card-5,
-  .card-6,
-  .card-7,
-  .card-8,
-  .card-9,
-  .card-10,
-  .card-11,
-  .card-12 {
-    width: 150px;
-    height: 150px;
-  }
-}
-
-@media (min-width: 992px) {
+@media (min-width: 860px) {
   .card-1,
   .card-2,
   .card-3,
@@ -319,6 +306,25 @@ margin: 0 auto;
   .card-11,
   .card-12 {
     width: 200px;
-    height: 200px;
+    height: 135px;
+    margin: 10px auto;
+  }
+}
+
+/*@media (min-width: 992px) {
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4,
+  .card-5,
+  .card-6,
+  .card-7,
+  .card-8,
+  .card-9,
+  .card-10,
+  .card-11,
+  .card-12 {
+    width: 170px;
+    height: 170px;
   }
 }
