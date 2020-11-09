@@ -65,7 +65,7 @@ body {
 
 .buttons-wrapper {
   width: 100%;
-  height: 100%;
+  height: calc(100% -113px);
   display: flex;
   /*border: 2px solid blue;*/
   margin: 10px auto;
@@ -237,8 +237,8 @@ margin: 0 auto;
 .card-12 {
   background-image: url("../images/Lingua.png");
   background-repeat: no-repeat;
-  width: 140px;
-  height: 95px;
+  width: 89px;
+  height: 80px;
   border-radius: 15px;
   margin: 10px auto;
   box-shadow: inset 7px 7px 7px rgb(194, 193, 193),
@@ -252,7 +252,7 @@ margin: 0 auto;
 
 .footer-wrapper {
   background-image: linear-gradient(to top, rgb(5,57,97), rgb(10, 105, 177));
-  color: #22181c;
+  color: #ffffff;
   bottom: 0;
   width: 100%;
   position: relative;
@@ -261,7 +261,7 @@ margin: 0 auto;
 }
 
 .text-center a {
-  color: #22181c;
+  color: #ffffff;
   padding-right: 30px;
   margin: auto 0;
   font-size: 2.4em;
