@@ -39,34 +39,26 @@
 
   <body>
     <!---------------Start of Home section--------------->
-    <nav class="navbar navbar-default navbar-expand-lg navbar-custom">
+    <nav class="navbar">
       <a class="navbar-brand" href="index.html">
         <p class="logo-name">Lingua Games</p>
       </a>
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarResponsive"
-        aria-controls="navbarResponsive"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-        <span class="navbar-toggler-icon"></span>
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto float-right text-left pl-3">
+      <div class="navlinks" >
+        <ul class="navbar-nav" id="navbarNav">
           <li class="nav-item">
-            <a class="nav-link" href="#home">Instructions</a>
+            <i class="fas fa-info-circle"></i>
+            <a class="nav-link" href="">Instructions</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">Contacts</a>
+            <i class="far fa-envelope"></i>
+            <a class="nav-link" href="#">Contacts</a>
           </li>
         </ul>
       </div>
+      <button class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
     </nav>
 
     <div class="container-fluid">
@@ -105,41 +97,6 @@
             <div id="sound" class="sound-icon"></div>
             <div id="reset" class="reset"></div>
           </div>
-          <!--<ul class="dropdown" id="d">
-            <input type="text" value="Language:" id="v" />
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            <ul class="options" id="o">
-              <li lname="spanish" class="dropdown-item">
-                <img
-                  fname="spanish"
-                  src="assets/images/spain-flag-icon-32.png"
-                  alt="spanish flag"
-                />Spanish
-              </li>
-              <li lname="french" class="dropdown-item">
-                <img
-                  src="assets/images/france-flag-icon-32.png"
-                  alt="french flag"
-                />French
-              </li>
-              <li lname="italian" class="dropdown-item">
-                <img
-                  src="assets/images/italy-flag-icon-32.png"
-                  alt="italy flag"
-                />Italian
-              </li>
-            </ul>
-          </ul>
-        </div>
-
-       <div class="col col-sm-3 col-md-3">
-          <div class="timer" id="time"></div>
-        </div>
-        <div class="col col-sm-3 col-md-3">
-          <div class="reset"></div>
-        </div>
-        <div class="col col-sm-3 col-md-3">
-          <div class="sound-icon"></div>-->
         </div>
       </div>
 
@@ -187,7 +144,7 @@
       </div>
     </div>
     <!--Footer-->
-    <div class="container-fluid">
+    <div class="container-fluid px-0">
       <div class="row">
         <div class="col-12">
           <footer class="footer-wrapper">

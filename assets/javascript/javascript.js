@@ -1,3 +1,5 @@
+/*-------Timer----------*/
+
 function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
     setInterval(function () {
@@ -21,6 +23,7 @@ jQuery(function ($) {
     startTimer(oneMinute, display);
 });
 
+/*-----------Language Button--------*/
 var dropdown = document.getElementById('d');
 var options = document.getElementById('o');
 var input = document.getElementById('v');
@@ -33,3 +36,12 @@ options.addEventListener('click',function(event){
     const value = listItem.attributes.lname.value;
     input.value = value;
 })
+
+/*-----------Hamburger Button--------*/
+
+const hamburger = document.getElementById('hamburger');
+const navUl = document.getElementById('navbarNav');
+
+hamburger.addEventListener('click', () => {
+    navUl.classList.toggle('show');
+});
