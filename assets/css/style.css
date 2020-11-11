@@ -333,7 +333,7 @@ box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
   max-height: 100vh;
   width: 100%;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 20px auto;
   top: 30%;
   position: relative;
   display: flex;
@@ -352,7 +352,7 @@ box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
 .card-10,
 .card-11,
 .card-12 {
-  background-image: url("../images/Lingua.png");
+  background-image: url("../images/linguaGames.png");
   background-repeat: no-repeat;
   width: 85px;
   height: 85px;
@@ -372,21 +372,21 @@ box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
 .footer-wrapper {
   background-image: linear-gradient(to top, rgb(5, 57, 97), rgb(10, 105, 177));
   color: #ffffff;
-  bottom: 0;
-  left:0;
+ bottom: 0;
   width: 100%;
+  height: 100%;
   position: relative;
   display: flex;
   justify-content: space-evenly;
 }
 
-.text-center a {
+.footer-wrapper a {
   color: #ffffff;
   padding-right: 30px;
   margin: auto 0;
   font-size: 2.4em;
 }
-.text-center a:hover {
+.footer-wrapper a:hover {
   color: rgba(0, 0, 255, 0.678);
 }
 
@@ -407,6 +407,8 @@ box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
   .card-12 {
     width: 170px;
     height: 113px;
+    background-image: url("../images/linguaGames-1.png");
+  background-repeat: no-repeat;
   }
 }
 
@@ -426,6 +428,7 @@ box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
     width: 200px;
     height: 135px;
     margin: 10px auto;
-    background-image: url("../images/Lingua.png");
+    background-image: url("../images/linguaGames-2.png");
+  background-repeat: no-repeat;
   }
 }
