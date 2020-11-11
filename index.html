@@ -69,16 +69,41 @@
       </div>
     </nav>
 
-    <div class="container-fluid ">
+    <div class="container-fluid">
       <div class="row buttons-wrapper">
-        <div class="col-md-6 ">
-          <div>
-            <input type="button" class="button settings-icon" id="gear-icon" />
-          </div>
-          <div class="list-options button" id="options">
-            <div id="time" class="timer button"></div>
-            <div id="sound" class="sound-icon button"></div>
-            <div id="reset" class="reset button"></div>
+        <div class="col-md-12">
+          <div class="list-options" id="options">
+            <div>
+              <!--<input type="button"  class="settings-icon" id="gear-icon" />-->
+              <ul class="dropdown" id="d">
+                <input type="text" value="Language:" readonly id="v" />
+                <!--<i class="fa fa-chevron-down" aria-hidden="true"></i>-->
+                <ul class="options" id="o">
+                  <li lname="spanish" class="dropdown-item">
+                    <img
+                      fname="spanish"
+                      src="assets/images/spain-flag-icon-32.png"
+                      alt="spanish flag"
+                    />Spanish
+                  </li>
+                  <li lname="french" class="dropdown-item">
+                    <img
+                      src="assets/images/france-flag-icon-32.png"
+                      alt="french flag"
+                    />French
+                  </li>
+                  <li lname="italian" class="dropdown-item">
+                    <img
+                      src="assets/images/italy-flag-icon-32.png"
+                      alt="italy flag"
+                    />Italian
+                  </li>
+                </ul>
+              </ul>
+            </div>
+            <div id="time" class="timer"></div>
+            <div id="sound" class="sound-icon"></div>
+            <div id="reset" class="reset"></div>
           </div>
           <!--<ul class="dropdown" id="d">
             <input type="text" value="Language:" id="v" />

@@ -27,13 +27,16 @@ body {
 }
 
 .navbar-custom {
-  background-image: linear-gradient(to bottom, rgb(5,57,97), rgb(10, 105, 177));
-  
+  background-image: linear-gradient(
+    to bottom,
+    rgb(5, 57, 97),
+    rgb(10, 105, 177)
+  );
 }
 
 .logo-name {
   font-weight: 900;
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin-left: 1.95rem;
   display: inline;
   color: rgb(255, 255, 255);
@@ -42,7 +45,6 @@ body {
 .navbar-nav li {
   padding-right: 2.5rem;
   padding-bottom: 10px;
-  
 }
 
 .navbar-custom .navbar-nav .nav-link {
@@ -61,75 +63,65 @@ body {
   right: 15px;
   margin: 0 auto;
   position: fixed;
-  
 }
 .navbar-toggler .navbar-toggler-icon {
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-flow: column;
-    
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-flow: column;
 }
 
 /*Gear Buttons*/
 
-.buttons-wrapper .settings-icon {
-    
-    display: inline-block;
-    float: left;
-    margin-left: 27px;
-    margin-top: 10px;
-}
-
+/*.buttons-wrapper .settings-icon {
+  display: inline-block;
+  float: left;
+  margin-left: 27px;
+  margin-top: 10px;
+}*/
 
 .settings-icon {
-width: 60px;
+  width: 60px;
   height: 60px;
-  border-radius: 50%;       
+  border-radius: 50%;
   background-color: white;
-box-shadow: 
--2px -2px 10px rgba(255, 255, 255, 0.5),
-5px 5px 10px rgba(48, 47, 47, 0.5);
-border: 2px solid #c9c9c9;
-outline: none;
+  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5);
+  border: 2px solid rgb(55, 149, 93);
+  outline: none;
 
-background-image: url("../images/icons8-settings-32.png");
-background-repeat: no-repeat;
-background-size: 40px;
-background-position: center;
-cursor: pointer;
-position: absolute;
-margin-left: 120px;
+  background-image: url("../images/icons8-settings-32.png");
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: center;
+  cursor: pointer;
+  position: absolute;
+  margin-left: 120px;
 }
 
 .settings-icon:active {
-    box-shadow: 
--2px -2px 10px rgba(255, 255, 255, 0.5),
-5px 5px 10px rgba(48, 47, 47, 0.5),
-inset -1px -1px 10px rgba(255, 255, 255, 0.5),
-inset 1px 1px 10px rgba(48, 47, 47, 0.37);
-background-image: url("../images/icons8-settings-32.png");
-background-repeat: no-repeat;
-background-size: 30px;
-background-position: center;
-
+  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5),
+    inset -1px -1px 10px rgba(255, 255, 255, 0.5),
+    inset 1px 1px 10px rgba(48, 47, 47, 0.37);
+  background-image: url("../images/icons8-settings-32.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
 }
 
-
-.list-options{
+.list-options {
   display: flex;
-  justify-self: center;
-  cursor: pointer;
- margin-top: 10px;
-  flex-flow: row;
-  width: 345px;
-  height:62px;
-  margin-left: 48px;
-  border-radius: 35px;
-  
-  transition: all 500 ms ease-in-out;
-  visibility: visible;
-  opacity: 1;
-  font-weight: 700;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 10px;
+    flex-flow: row;
+    width: 100%;
+    height: 62px;
+    border-radius: 35px;
+    visibility: visible;
+    opacity: 1;
+    font-weight: 700;
 }
 
 /*----Timer Icon---*/
@@ -142,116 +134,109 @@ background-position: center;
   align-items: center;
   justify-content: center;
   border-radius: 20px;
-margin: auto 0px auto 62px;
-  background: #ffffff;
-  box-shadow: inset 7px 7px 14px rgb(194, 193, 193),
-    inset -7px -7px 14px rgb(194, 193, 193);
+  background-color: white;
+box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5);
+  border: 2px solid rgb(55, 149, 93);
+  outline: none;
   cursor: pointer;
   transition: all 500 ms ease-in-out;
 }
-
 
 /*----Reset Icon---*/
 
 .reset {
   width: 50px;
   height: 50px;
-  border-radius: 50%; 
-  margin: auto 0;
+  border-radius: 50%;
+  
   background-color: white;
-box-shadow: 
--2px -2px 10px rgba(255, 255, 255, 0.5),
-5px 5px 10px rgba(48, 47, 47, 0.5);
-border: 2px solid #c9c9c9;
-outline: none;
-display: flex;
-align-items: center;
-justify-content: center;
-background-image: url("../images/icons8-reset-48.png");
-background-repeat: no-repeat;
-background-size: 40px;
-background-position: center;
+  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5);
+  border: 2px solid rgb(55, 149, 93);
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/icons8-reset-48.png");
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: center;
 }
 
 .reset:active {
-    box-shadow: 
--2px -2px 10px rgba(255, 255, 255, 0.5),
-5px 5px 10px rgba(48, 47, 47, 0.5),
-inset -1px -1px 10px rgba(255, 255, 255, 0.5),
-inset 1px 1px 10px rgba(48, 47, 47, 0.37);
-background-image: url("../images/icons8-reset-48-red.png");
-background-repeat: no-repeat;
-background-size: 30px;
-background-position: center;
+  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5),
+    inset -1px -1px 10px rgba(255, 255, 255, 0.5),
+    inset 1px 1px 10px rgba(48, 47, 47, 0.37);
+  background-image: url("../images/icons8-reset-48-red.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
 }
-
 
 /*----Sound Icon---*/
 
-
 .sound-icon {
- width: 50px;
+  width: 50px;
   height: 50px;
-  border-radius: 50%; 
-  margin: auto 19px;
-  
+  border-radius: 50%;
   background-color: white;
-box-shadow: 
--2px -2px 10px rgba(255, 255, 255, 0.5),
-5px 5px 10px rgba(48, 47, 47, 0.5);
-border: 2px solid #c9c9c9;
-outline: none;
-display: flex;
-align-items: center;
-justify-content: center;
-background-image: url("../images/icons8-sound-50.png");
-background-repeat: no-repeat;
-background-size: 40px;
-background-position: center;   
+  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5);
+  border: 2px solid rgb(55, 149, 93);
+  outline: none;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/icons8-sound-50.png");
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: center;
 }
-
 
 .sound-icon:active {
-    width: 50px;
+  width: 50px;
   height: 50px;
-  
-    box-shadow: 
--2px -2px 10px rgba(255, 255, 255, 0.5),
-5px 5px 10px rgba(48, 47, 47, 0.5),
-inset -1px -1px 10px rgba(255, 255, 255, 0.5),
-inset 1px 1px 10px rgba(48, 47, 47, 0.37);
-background-image: url("../images/icons8-mute-50.png");
-background-repeat: no-repeat;
-background-size: 45px;
-background-position: center;
 
+  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5),
+    inset -1px -1px 10px rgba(255, 255, 255, 0.5),
+    inset 1px 1px 10px rgba(48, 47, 47, 0.37);
+  background-image: url("../images/icons8-mute-50.png");
+  background-repeat: no-repeat;
+  background-size: 45px;
+  background-position: center;
 }
-
-
 
 .col {
   width: auto;
   margin: 0;
 }
 
-
+/*Language button*/
 
 .dropdown {
-  width: 120px;
+  width: 85px;
   height: 45px;
-  border-radius: 5px;
-  background: #ffffff;
-  box-shadow: inset 7px 7px 14px rgb(194, 193, 193),
-    inset -7px -7px 14px rgb(194, 193, 193);
+  font-size: 25px;
+  font-weight: 500;
+  border-radius: 13px;
+  background-color: white;
+  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5);
+  border: 2px solid rgb(55, 149, 93);
+    outline: none;
   cursor: pointer;
-  position: absolute;
-  top:20px;
-  left:40px;
+  margin-bottom: 0;
 }
 
 .dropdown:active {
-  box-shadow: inset 7px 7px 14px rgb(194, 193, 193),
-    inset -7px -7px 14px rgb(194, 193, 193);
+    box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5);
+  border: 2px solid rgb(55, 149, 93);
+  
 }
 
 .dropdown input {
@@ -261,13 +246,14 @@ background-position: center;
   background: none;
   outline: none;
   cursor: pointer;
-  position: relative;
+  position: absolute;
   top: 50%;
-  left: 85%;
-  color: #f45b69;
-  font-size: 1rem;
+  left: 95%;
+  color: black;
+  font-size: .8rem;
   font-weight: 700;
   text-transform: capitalize;
+  width: fit-content;
 }
 
 .dropdown i {
@@ -277,6 +263,7 @@ background-position: center;
   right: 5%;
   transform: translateX(-50%);
   transition: all 500 ms ease-in-out;
+  font-size: 1rem;
 }
 
 .dropdown.show i {
@@ -287,27 +274,32 @@ background-position: center;
 .options {
   position: absolute;
   cursor: pointer;
-  top: 43px;
-  width: 120px;
-  border-radius: 5px;
+  top: 28px;
+    left: -1px;
+    width: 87px;
+    height: 108px;
+    z-index: 1;
+  border-radius: 10px;
   background: #ffffff;
-  box-shadow: inset 7px 7px 14px rgb(194, 193, 193),
-    inset -7px -7px 14px rgb(194, 193, 193);
+  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5);
+  border: 2px solid rgb(55, 149, 93);
   transition: all 500 ms ease-in-out;
   visibility: hidden;
   opacity: 0;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .options li img {
-  padding-right: 10px;
+  padding: 2px;
+  width: 24px;
 }
 
 .dropdown.show .options {
   visibility: visible;
   opacity: 1;
   transition: all 500 ms ease-in-out;
-  z-index: 1;
+  
 }
 
 .options li {
@@ -315,14 +307,15 @@ background-position: center;
   padding: 5px;
   margin-left: 0.5px;
   list-style-type: none;
-  color: #f45b69;
-  font-size: 1rem;
+  color: black;
+  font-size: .8rem;
   font-weight: 700;
   transition: all 500 ms ease-in-out;
 }
 .options li:first-child {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+  margin-top:12px;
 }
 
 .options li:last-child {
@@ -340,7 +333,7 @@ background-position: center;
   max-height: 100vh;
   width: 100%;
   flex-wrap: wrap;
-    margin: 0 auto;
+  margin: 0 auto;
   top: 30%;
   position: relative;
   display: flex;
@@ -365,19 +358,22 @@ background-position: center;
   height: 85px;
   border-radius: 15px;
   margin: 10px auto;
-  box-shadow: inset 5px 5px 5px rgb(226, 224, 224),
-     inset -5px -5px 5px rgb(226, 226, 226);
+  
+  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5);
+  border: 2px solid rgb(55, 149, 93);
+  outline: none;
   cursor: pointer;
   transition: all 500 ms ease-in-out;
-  
 }
 
 /*Footer*/
 
 .footer-wrapper {
-  background-image: linear-gradient(to top, rgb(5,57,97), rgb(10, 105, 177));
+  background-image: linear-gradient(to top, rgb(5, 57, 97), rgb(10, 105, 177));
   color: #ffffff;
   bottom: 0;
+  left:0;
   width: 100%;
   position: relative;
   display: flex;
@@ -412,8 +408,6 @@ background-position: center;
     width: 170px;
     height: 113px;
   }
-  
-  
 }
 
 @media (min-width: 860px) {
