@@ -42,6 +42,7 @@ body {
   align-self: srart;
   margin: auto 40px;
   color: rgb(255, 255, 255);
+    
 }
 
 i.fas {
@@ -68,14 +69,6 @@ i.fas {
 }
 /*menu icons*/
 
-/*.navlinks {
-  display: flex; 
-  width: 100%;
-  justify-content: space-between;
-}*/
-
-
-
 #navbarNav{
   color: white;
   background: transparent;
@@ -90,12 +83,6 @@ i.fas {
     display: flex;
      justify-content: space-between;
 }
-
-/*.navbar-nav .nav-item:hover,
-.logo-name:hover {
-  color: rgb(208, 98, 98);
-  text-transform: uppercase;
-}*/
 
 .info-icon {
   width: 35px;
@@ -156,6 +143,39 @@ margin-right: 20px;
 .navlinks .contact-icon {
     margin-left:10px; 
     float: right;
+}
+
+
+/*Modal Text*/
+
+.modal-text{
+    display: none;
+}
+.modal-text.show {
+    position: fixed;
+    min-width: 100%;
+    min-height: fit-content;
+    top:50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 300px;
+    height:20px;
+    z-index: 4;
+    box-shadow: 4px 4px 20px black;
+}
+
+.info-text {
+
+color: black;
+margin: 5px;
+font-size: 1.2rem;
+padding:10px;
+position: relative;
+backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.65);  
 }
 /*Gear Buttons*/
 
@@ -502,6 +522,7 @@ margin-right: 20px;
 .info-icon {
     margin-right: 30px;
 }
+
 }
 
 @media (min-width: 810px) {
@@ -563,4 +584,24 @@ div#contact-icon {
 .logo-name{
     margin:auto 70px;
 }
+
+.modal-text{
+    display: none;
+}
+.modal-text.show {
+    position: fixed;
+    min-width: 100%;
+    min-height: fit-content;
+    top:50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 300px;
+    height:20px;
+    z-index: 4;
+    box-shadow: 4px 4px 20px black;
+}
+
 }

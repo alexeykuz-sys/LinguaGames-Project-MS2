@@ -44,12 +44,11 @@
         <p class="logo-name">Lingua Games</p>
       </a>
 
-      <div class="navlinks" >
+      <div class="navlinks">
         <ul class="navbar-nav" id="navbarNav">
           <li class="nav-item">
-           <div id="info-icon" class="info-icon"></div>
-            <a class="nav-link" href="">Instructions</a>
-            
+            <div id="info-icon" class="info-icon"></div>
+            <a class="nav-link" id="info-text" href="">Instructions</a>
           </li>
           <li class="nav-item">
             <div id="contact-icon" class="contact-icon"></div>
@@ -61,6 +60,26 @@
         <i class="fas fa-bars"></i>
       </button>
     </nav>
+    <div class="container">
+      <div class="row">
+        <div class="modal-text text-center" id="modal-text">
+          <p class="info-text">
+            Start the game by flipping a card. Then try to find another card
+            that has the same image as the first. If you can't find a pair, the
+            flipped cards will be flipped back with the face down. Try to
+            remember these images as it becomes easier to find pairs the longer
+            you play.
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
 
     <div class="container-fluid">
       <div class="row buttons-wrapper">
