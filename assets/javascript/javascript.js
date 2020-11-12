@@ -45,3 +45,10 @@ const navUl = document.getElementById('navbarNav');
 hamburger.addEventListener('click', () => {
     navUl.classList.toggle('show');
 });
+
+/*-----------Instruction Button--------*/
+
+const info = document.getElementById('info-icon');
+info.addEventListener('click',()=>{
+    info-icon.classList.show("p");
+});
