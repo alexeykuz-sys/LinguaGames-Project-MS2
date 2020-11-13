@@ -160,7 +160,6 @@ margin-right: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
     width: 300px;
     height:20px;
     z-index: 4;
@@ -168,14 +167,13 @@ margin-right: 20px;
 }
 
 .info-text {
-
 color: black;
 margin: 5px;
 font-size: 1.2rem;
 padding:10px;
 position: relative;
 backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.65);  
+background-color: rgba(255, 255, 255, 0.65);  
 }
 /*Gear Buttons*/
 
@@ -597,7 +595,6 @@ div#contact-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    
     width: 300px;
     height:20px;
     z-index: 4;

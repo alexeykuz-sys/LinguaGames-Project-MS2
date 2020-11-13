@@ -48,13 +48,17 @@ hamburger.addEventListener('click', () => {
 
 /*-----------Instruction Button--------*/
 
-const text = document.getElementById('info-text');
+const textInfo = document.getElementById('info-text');
 const info = document.getElementById('info-icon');
 const modal = document.getElementById('modal-text');
-    info.addEventListener('click',()=>{
-    modal.classList.toggle("show");
-});
-text.addEventListener('click',()=>{
-    modal.classList.toggle("show");
-});
+const closeBtn = document.getElementById('close-button')
+function modalHandler(){
+    if (modal.classList.display = 'none'){
+        modal.classList.toggle("show");
+       
+    };
+}
 
+info.addEventListener('click',modalHandler);
+textInfo.addEventListener('click', modalHandler);
+closeBtn.addEventListener('click', modalHandler);
