@@ -53,12 +53,42 @@ const info = document.getElementById('info-icon');
 const modal = document.getElementById('modal-text');
 const closeBtn = document.getElementById('close-button')
 function modalHandler(){
-    if (modal.classList.display = 'none'){
+    if (modal.classList.display = 'none') {
         modal.classList.toggle("show");
-       
     };
 }
 
 info.addEventListener('click',modalHandler);
 textInfo.addEventListener('click', modalHandler);
 closeBtn.addEventListener('click', modalHandler);
+
+/*-----------Contact Button--------*/
+
+
+const contactBtn = document.getElementById('contact-icon');
+const form = document.getElementById('form');
+const contactTxt = document.getElementById('contact-text');
+function contactHandler(){
+    if (form.classList.display = 'none') {
+        form.classList.toggle("show");
+    };
+}
+contactBtn.addEventListener('click',contactHandler);
+contactTxt.addEventListener('click',contactHandler);
+
+/*-----------Sound Button--------*/
+
+const soundBtn = document.getElementById('sound');
+
+function soundHandler(){
+    if (soundBtn.classList.contains('sound-icon')) {
+        soundBtn.classList.add(`sound-icon-red`);
+        soundBtn.classList.remove(`sound-icon`);
+        
+    } else {
+        soundBtn.classList.add(`sound-icon`); 
+        soundBtn.classList.remove(`sound-icon-red`);
+         
+    };
+}
+soundBtn.addEventListener('click',soundHandler);

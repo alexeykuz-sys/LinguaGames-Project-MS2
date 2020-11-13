@@ -222,6 +222,54 @@ background-color: rgba(255, 255, 255, 0.65);
   font-weight: 700;
 }
 
+/*----Contact form Icon---*/
+
+.form {
+    display: none;
+}
+
+.form.show {
+  width: 400px;
+    height: 500px;
+    display: flex;
+    background-color: red;
+    position: absolute;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 3;
+    top: 150px;
+    left: 125px;
+}
+.contact-form {
+       margin-left: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/*-----Contact form---------*/
+
+input[type=text], input[type=email], select, textarea {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #22181C;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+input[type=button] {
+  background-color: #B71419;
+;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=button]:hover {
+  background-color: #B71419;
+}
+
 /*----Timer Icon---*/
 .timer {
   width: 85px;
@@ -294,10 +342,10 @@ background-color: rgba(255, 255, 255, 0.65);
   background-position: center;
 }
 
-.sound-icon:active {
+.sound-icon-red {
   width: 50px;
   height: 50px;
-
+display: flex;
   box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
     5px 5px 10px rgba(48, 47, 47, 0.5),
     inset -1px -1px 10px rgba(255, 255, 255, 0.5),
@@ -583,6 +631,8 @@ div#contact-icon {
     margin:auto 70px;
 }
 
+/*----Modal Window---*/
+
 .modal-text{
     display: none;
 }
@@ -592,13 +642,38 @@ div#contact-icon {
     min-height: fit-content;
     top:50%;
     margin: 0 auto;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
-    width: 300px;
+    width: 30px;
     height:20px;
-    z-index: 4;
-    box-shadow: 4px 4px 20px black;
+    z-index: 1;
+    
+}
+/*-------Contact form menu----*/
+
+.form {
+    display: none;
+    
+}
+.form.show {
+  width: 400px;
+    height: 500px;
+    display: flex;
+    background-color: red;
+    position: absolute;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1;
+    top: 136px;
+    left: 350px;
+   
+}
+.contact-form {
+       margin-left: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    
 }
 
 }
