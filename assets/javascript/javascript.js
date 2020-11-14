@@ -65,16 +65,16 @@ closeBtn.addEventListener('click', modalHandler);
 /*-----------Contact Button--------*/
 
 
-/*const contactBtn = document.getElementById('contact-icon');*/
+const contactBtn = document.getElementById('contact-icon')
 const form = document.getElementById('form');
 const contactTxt = document.getElementById('contact-text');
 function contactHandler(){
     if (form.classList.display = 'none') {
         form.classList.toggle("show");
-
+        
     };
 }
-/*contactBtn.addEventListener('click',contactHandler);*/
+contactBtn.addEventListener('click',contactHandler);
 contactTxt.addEventListener('click',contactHandler);
 
 /*-----------Sound Button--------*/
@@ -102,3 +102,12 @@ function flipCard() {
   this.classList.toggle("flip");
 }
 cards.forEach((card) => card.addEventListener("click", flipCard));
+
+/*-----------Sound Effect--------*/
+function playAudio(url) {
+    if(soundBtn.classList.contains(`sound-icon-red`)){
+        new Audio(url).muted;
+    } else {
+  new Audio(url).play();
+};
+}

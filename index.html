@@ -1,62 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linguagame - Memory games</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Linguagame - Memory games</title>
-	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
-	<link rel="manifest" href="assets/favicon/site.webmanifest" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-		integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
-	<link rel="stylesheet" href="assets/css/style.css" />
-</head>
+  <body>
+    <!---------------Start of Home section--------------->
+    <nav class="navbar">
+      <a class="navbar-brand" href="index.html">
+        <p class="logo-name">Lingua Games</p>
+      </a>
 
-<body>
-	<!---------------Start of Home section--------------->
-	<nav class="navbar">
-		<a class="navbar-brand" href="index.html">
-			<p class="logo-name">Lingua Games</p>
-		</a>
-
-		<div class="navlinks">
-			<ul class="navbar-nav" id="navbarNav">
-				<li class="nav-item">
-					<div id="info-icon" class="info-icon"></div>
-					<div class="nav-link" id="info-text">Instructions</div>
-				</li>
-				<li class="nav-item">
-					<div id="contact-icon" class="contact-icon"></div>
-					<div class="nav-link" id="contact-text">Contacts</div>
-				</li>
-			</ul>
-		</div>
-		<button class="hamburger" id="hamburger">
+      <div class="navlinks">
+        <ul class="navbar-nav" id="navbarNav">
+          <li class="nav-item">
+            <div id="info-icon" class="info-icon" onclick="playAudio('assets/sounds/mouse-click.wav')"></div>
+            <div class="nav-link" id="info-text" onclick="playAudio('assets/sounds/mouse-click.wav')">Instructions</div>
+          </li>
+          <li class="nav-item">
+            <div id="contact-icon" class="contact-icon" onclick="playAudio('assets/sounds/mouse-click.wav')"></div>
+            <div class="nav-link" id="contact-text" onclick="playAudio('assets/sounds/mouse-click.wav')">Contacts</div>
+          </li>
+        </ul>
+      </div>
+      <button class="hamburger" id="hamburger" onclick="playAudio('assets/sounds/mouse-click.wav')">
         <i class="fas fa-bars"></i>
       </button>
-	</nav>
-	<div class="container">
-		<div class="row">
-			<div class="modal-text text-center" id="modal-text">
-				<p class="info-text">
-					Start the game by flipping a card. Then try to find another card
-					that has the same image as the first. If you can't find a pair, the
-					flipped cards will be flipped back with the face down. Try to
-					remember these images as it becomes easier to find pairs the longer
-					you play.
-					<button type="button" class="btn btn-secondary" id="close-button">
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="modal-text text-center" id="modal-text">
+          <p class="info-text">
+            Start the game by flipping a card. Then try to find another card
+            that has the same image as the first. If you can't find a pair, the
+            flipped cards will be flipped back with the face down. Try to
+            remember these images as it becomes easier to find pairs the longer
+            you play.
+            <button type="button" class="btn btn-secondary" id="close-button" onclick="playAudio('assets/sounds/mouse-click.wav')">
               Close
             </button>
-				</p>
-			</div>
-			<div class="form" id="form">
-				<form class="contact-form" action="#">
-					<label for="fname">First name:</label>
-					<input
+          </p>
+        </div>
+        <div class="form" id="form">
+          <form class="contact-form" action="#">
+            <label for="fname">First name:</label>
+            <input
               type="text"
               id="fname"
               name="fname"
@@ -64,171 +85,179 @@
               required
             />
 
-					<br />
-					<label for="email">Email:</label><br />
-					<input
+            <br />
+            <label for="email">Email:</label><br />
+            <input
               type="email"
               id="email"
               name="email"
               placeholder="Your email..."
               required
             /><br />
-					<label for="text">Text</label><br />
-					<textarea
+            <label for="text">Text</label><br />
+            <textarea
               id="text"
               name="text"
               placeholder="Write to me.."
               required
               style="height: 140px"
             ></textarea>
-					<input type="button" value="Submit" />
+            <input type="button" value="Submit" onclick="playAudio('assets/sounds/mouse-click.wav')"/>
           </form>
-			</div>
-		</div>
-	</div>
+        </div>
+      </div>
+    </div>
 
-	<div class="container-fluid">
-		<div class="row buttons-wrapper">
-			<div class="col-md-12">
-				<div class="list-options" id="options">
-					<div>
-						<!--<input type="button"  class="settings-icon" id="gear-icon" />-->
-						<ul class="dropdown" id="d">
-							<input type="text" value="Language:" readonly id="v" />
-							<!--<i class="fa fa-chevron-down" aria-hidden="true"></i>-->
-							<ul class="options" id="o">
-								<li lname="spanish" class="dropdown-item">
-									<img
+    <div class="container-fluid">
+      <div class="row buttons-wrapper">
+        <div class="col-md-12">
+          <div class="list-options" id="options">
+            <div>
+              <ul class="dropdown" id="d">
+                <input type="text" value="Language:" readonly id="v" />
+
+                <ul class="options" id="o">
+                  <li lname="spanish" class="dropdown-item">
+                    <img
                       fname="spanish"
                       src="assets/images/spain-flag-icon-32.png"
                       alt="spanish flag"
                     />Spanish
                   </li>
-								<li lname="french" class="dropdown-item">
-									<img
+                  <li lname="french" class="dropdown-item">
+                    <img
                       src="assets/images/france-flag-icon-32.png"
                       alt="french flag"
                     />French
                   </li>
-								<li lname="italian" class="dropdown-item">
-									<img
+                  <li lname="italian" class="dropdown-item">
+                    <img
                       src="assets/images/italy-flag-icon-32.png"
                       alt="italy flag"
                     />Italian
                   </li>
-							</ul>
-						</ul>
-					</div>
-					<div id="time" class="timer"></div>
-					<div id="sound" class="sound-icon"></div>
-					<div id="reset" class="reset"></div>
-				</div>
-			</div>
-		</div>
+                </ul>
+              </ul>
+            </div>
+            <div id="time" class="timer"></div>
+            <div id="sound" class="sound-icon" onclick="playAudio('assets/sounds/table-lamp-flip-switch-off.wav')"></div>
+            <div id="reset" class="reset" onclick="playAudio('assets/sounds/mouse-click.wav')"></div>
+          </div>
+        </div>
+      </div>
 
-		<!---Card Placement--->
+      <!---Card Placement--->
 
-		<div class="row cards-wrapper">
-			<div class="col col-xs-4 col-sm-4 col-md-3">
-				<div class="cards-inner">
-					<div class="card-1 card-face">Card-1</div>
-					<div class="card-1-back card-back">Text goes here</div>
-				</div>
-			</div>
-			<div class="col col-xs-4 col-sm-4 col-md-3">
-				<div class="cards-inner">
-					<div class="card-2 card-face">Card-2</div>
-					<div class="card-2-back card-back">Text goes here</div>
-				</div>
-			</div>
-			<div class="col col-xs-4 col-sm-4 col-md-3">
-				<div class="cards-inner">
-					<div class="card-3 card-face">Card-3</div>
-					<div class="card-3-back card-back">Text goes here</div>
-				</div>
-			</div>
-			<div class="col col-xs-3 col-sm-4 col-md-3">
-				<div class="cards-inner">
-					<div class="card-4 card-face">Card-4</div>
-					<div class="card-4-back card-back">Text goes here</div>
-				</div>
-			</div>
+      <div class="row cards-wrapper">
+        <div class="col col-xs-4 col-sm-4 col-md-3">
+          <div class="cards-inner" onclick="playAudio('assets/sounds/quiet-page-turn.wav')" >
+            <div class="card-1 card-face">Card-1</div>
+            <div class="card-1-back card-back">Text goes here</div>
+          </div>
+        </div>
+        <div class="col col-xs-4 col-sm-4 col-md-3">
+          <div class="cards-inner" onclick="playAudio('assets/sounds/quiet-page-turn.wav')">
+            <div class="card-2 card-face">Card-2</div>
+            <div class="card-2-back card-back">Text goes here</div>
+          </div>
+        </div>
+        <div class="col col-xs-4 col-sm-4 col-md-3">
+          <div class="cards-inner" onclick="playAudio('assets/sounds/quiet-page-turn.wav')">
+            <div class="card-3 card-face">Card-3</div>
+            <div class="card-3-back card-back">Text goes here</div>
+          </div>
+        </div>
+        <div class="col col-xs-3 col-sm-4 col-md-3">
+          <div class="cards-inner" onclick="playAudio('assets/sounds/quiet-page-turn.wav')">
+            <div class="card-4 card-face">Card-4</div>
+            <div class="card-4-back card-back">Text goes here</div>
+          </div>
+        </div>
 
-			<div class="col col-xs-3 col-sm-4 col-md-3">
-				<div class="cards-inner">
-					<div class="card-5 card-face">Card-5</div>
-					<div class="card-5-back card-back">Text goes here</div>
-				</div>
-			</div>
-			<div class="col col-xs-3 col-sm-4 col-md-3">
-				<div class="cards-inner">
-					<div class="card-6 card-face">Card-6</div>
-					<div class="card-6-back card-back">Text goes here</div>
-				</div>
-			</div>
-			<div class="col col-xs-3 col-sm-4 col-md-3">
-				<div class="cards-inner">
-					<div class="card-7 card-face">Card-7</div>
-					<div class="card-7-back card-back">Text goes here</div>
-				</div>
-			</div>
-			<div class="col col-xs-3 col-sm-4 col-md-3">
-				<div class="cards-inner">
-					<div class="card-8 card-face">Card-8</div>
-					<div class="card-8-back card-back">Text goes here</div>
-				</div>
-			</div>
+        <div class="col col-xs-3 col-sm-4 col-md-3">
+          <div class="cards-inner" onclick="playAudio('assets/sounds/quiet-page-turn.wav')">
+            <div class="card-5 card-face">Card-5</div>
+            <div class="card-5-back card-back">Text goes here</div>
+          </div>
+        </div>
+        <div class="col col-xs-3 col-sm-4 col-md-3">
+          <div class="cards-inner" onclick="playAudio('assets/sounds/quiet-page-turn.wav')">
+            <div class="card-6 card-face">Card-6</div>
+            <div class="card-6-back card-back">Text goes here</div>
+          </div>
+        </div>
+        <div class="col col-xs-3 col-sm-4 col-md-3">
+          <div class="cards-inner" onclick="playAudio('assets/sounds/quiet-page-turn.wav')">
+            <div class="card-7 card-face">Card-7</div>
+            <div class="card-7-back card-back">Text goes here</div>
+          </div>
+        </div>
+        <div class="col col-xs-3 col-sm-4 col-md-3">
+          <div class="cards-inner" onclick="playAudio('assets/sounds/quiet-page-turn.wav')">
+            <div class="card-8 card-face">Card-8</div>
+            <div class="card-8-back card-back">Text goes here</div>
+          </div>
+        </div>
 
-			<div class="col col-xs-3 col-sm-4 col-md-3">
-				<div class="cards-inner">
-					<div class="card-9 card-face">Card-9</div>
-					<div class="card-9-back card-back">Text goes here</div>
-				</div>
-			</div>
-			<div class="col col-xs-3 col-sm-4 col-md-3">
-				<div class="cards-inner">
-					<div class="card-10 card-face">Card-10</div>
-					<div class="card-10-back card-back">Text goes here</div>
-				</div>
-			</div>
-			<div class="col col-xs-3 col-sm-4 col-md-3">
-				<div class="cards-inner">
-					<div class="card-11 card-face">Card-11</div>
-					<div class="card-11-back card-back">Text goes here</div>
-				</div>
-			</div>
-			<div class="col col-xs-3 col-sm-4 col-md-3">
-				<div class="cards-inner">
-					<div class="card-12 card-face">Card-12</div>
-					<div class="card-12-back card-back">Text goes here</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--Footer-->
-	<div class="container-fluid px-0">
-		<div class="row">
-			<div class="col-12">
-				<footer class="footer-wrapper">
-					<a href="https://www.facebook.com/icmodels.uk"
-						target="_blank"><i class="fab fa-facebook-square"></i></a>
-					<a href="https://www.instagram.com/icmodels.uk/"
-						target="_blank"><i class="fab fa-instagram-square"></i></a>
-					<a href="https://twitter.com/?lang=en-gb" target="_blank"><i class="fab fa-twitter-square"></i></a>
-				</footer>
-			</div>
-		</div>
-	</div>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-	</script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-	</script>
-	<script src="assets/javascript/javascript.js"></script>
-</body>
-
+        <div class="col col-xs-3 col-sm-4 col-md-3">
+          <div class="cards-inner" onclick="playAudio('assets/sounds/quiet-page-turn.wav')">
+            <div class="card-9 card-face">Card-9</div>
+            <div class="card-9-back card-back">Text goes here</div>
+          </div>
+        </div>
+        <div class="col col-xs-3 col-sm-4 col-md-3">
+          <div class="cards-inner" onclick="playAudio('assets/sounds/quiet-page-turn.wav')">
+            <div class="card-10 card-face">Card-10</div>
+            <div class="card-10-back card-back">Text goes here</div>
+          </div>
+        </div>
+        <div class="col col-xs-3 col-sm-4 col-md-3">
+          <div class="cards-inner" onclick="playAudio('assets/sounds/quiet-page-turn.wav')">
+            <div class="card-11 card-face">Card-11</div>
+            <div class="card-11-back card-back">Text goes here</div>
+          </div>
+        </div>
+        <div class="col col-xs-3 col-sm-4 col-md-3">
+          <div class="cards-inner" onclick="playAudio('assets/sounds/quiet-page-turn.wav')">
+            <div class="card-12 card-face">Card-12</div>
+            <div class="card-12-back card-back">Text goes here</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
+    <div class="container-fluid px-0">
+      <div class="row">
+        <div class="col-12">
+          <footer class="footer-wrapper">
+            <a href="https://www.facebook.com/icmodels.uk" target="_blank"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+            <a href="https://www.instagram.com/icmodels.uk/" target="_blank"
+              ><i class="fab fa-instagram-square"></i
+            ></a>
+            <a href="https://twitter.com/?lang=en-gb" target="_blank"
+              ><i class="fab fa-twitter-square"></i
+            ></a>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/javascript/javascript.js"></script>
+  </body>
 </html>
