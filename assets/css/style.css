@@ -15,6 +15,7 @@ body {
   min-width: 100%;
   background-color: rgb(55, 149, 93);
   box-sizing: border-box;
+
 }
 
 /*---Navigaton-----*/
@@ -56,7 +57,7 @@ i.fas {
 }
 
 /*menu list*/
-.navbar-nav a.nav-link {
+.navbar-nav .nav-link {
   display: none;
   flex-flow: row;
   font-size: 1.2rem;
@@ -236,9 +237,12 @@ background-color: rgba(255, 255, 255, 0.65);
     position: absolute;
     justify-content: space-evenly;
     align-items: center;
-    z-index: 3;
+    z-index: 1;
     top: 150px;
     left: 125px;
+    
+  backdrop-filter: blur(8px);
+
 }
 .contact-form {
        margin-left: 30px;
@@ -346,13 +350,11 @@ input[type=button]:hover {
   width: 50px;
   height: 50px;
 display: flex;
-  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
-    5px 5px 10px rgba(48, 47, 47, 0.5),
-    inset -1px -1px 10px rgba(255, 255, 255, 0.5),
-    inset 1px 1px 10px rgba(48, 47, 47, 0.37);
+
+  border: 2px solid rgb(55, 149, 93);
   background-image: url("../images/icons8-mute-50.png");
   background-repeat: no-repeat;
-  background-size: 45px;
+  background-size: 40px;
   background-position: center;
 }
 
@@ -473,44 +475,77 @@ display: flex;
 /*Cards*/
 
 .cards-wrapper {
-  /*border: 3px solid peru;*/
   max-height: 100vh;
   width: 100%;
   flex-wrap: wrap;
   margin: 20px auto;
   top: 30%;
-  position: relative;
   display: flex;
   align-content: center;
   justify-content: center;
+  
 }
-.card-1,
-.card-2,
-.card-3,
-.card-4,
-.card-5,
-.card-6,
-.card-7,
-.card-8,
-.card-9,
-.card-10,
-.card-11,
-.card-12 {
-  background-image: url("../images/linguaGames.png");
-  background-repeat: no-repeat;
-  width: 85px;
+
+.cards-inner {
+  -webkit-transition: transform 0.6s;
+  transform-style: preserve-3d;
+   width: 85px;
   height: 85px;
   border-radius: 15px;
   margin: 10px auto;
-
   box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
     5px 5px 10px rgba(48, 47, 47, 0.5);
   border: 2px solid rgb(55, 149, 93);
   outline: none;
   cursor: pointer;
-  transition: all 500 ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/linguaGames.png");
+  background-repeat: no-repeat;
 }
 
+.cards-inner.flip {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+.cards-inner:hover {
+    animation: shake 0.5s;
+}
+.card-face {
+ 
+  width: 100%;
+  height: 100%;
+  transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+  
+}
+
+.card-back {
+    display: flex;
+    width: 100%;
+  height: 100%;
+background-color: white;
+flex-direction: column;
+border-radius: 15px;
+}
+
+.card-face,
+.card-back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  position: absolute;
+  text-align: center;
+  height: 100%;
+  top:0;
+
+}
 /*Footer*/
 
 .footer-wrapper {
@@ -537,23 +572,49 @@ display: flex;
 /*Media Querries*/
 
 @media (min-width: 576px) {
-  .card-1,
-  .card-2,
-  .card-3,
-  .card-4,
-  .card-5,
-  .card-6,
-  .card-7,
-  .card-8,
-  .card-9,
-  .card-10,
-  .card-11,
-  .card-12 {
-    width: 170px;
+
+.cards-inner {
+  -webkit-transition: transform 0.6s;
+  transform-style: preserve-3d;
+  margin: 10px auto;
+  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5);
+  border: 2px solid rgb(55, 149, 93);
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+ width: 170px;
     height: 113px;
     background-image: url("../images/linguaGames-1.png");
     background-repeat: no-repeat;
-  }
+}
+
+.cards-inner.flip {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+.card-face {
+ border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+  
+}
+
+.card-back {
+    display: flex;
+    width: 170px;
+    height: 113px;
+background-color: white;
+flex-direction: column;
+border-radius: 15px;
+}
+
+
+
   .list-options {
     display: flex;
     justify-content: space-around;
@@ -572,24 +633,50 @@ display: flex;
 }
 
 @media (min-width: 810px) {
-  .card-1,
-  .card-2,
-  .card-3,
-  .card-4,
-  .card-5,
-  .card-6,
-  .card-7,
-  .card-8,
-  .card-9,
-  .card-10,
-  .card-11,
-  .card-12 {
-    width: 200px;
+  
+  
+.cards-inner {
+  -webkit-transition: transform 0.6s;
+  transform-style: preserve-3d;
+  margin: 10px auto;
+  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5);
+  border: 2px solid rgb(55, 149, 93);
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+ width: 200px;
     height: 135px;
     margin: 10px auto;
     background-image: url("../images/linguaGames-2.png");
     background-repeat: no-repeat;
-  }
+}
+
+.cards-inner.flip {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+.card-face {
+ border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  
+}
+
+.card-back {
+    display: flex;
+   width: 200px;
+    height: 135px;
+background-color: white;
+flex-direction: column;
+border-radius: 15px;
+}
+
+  
   .list-options {
     display: flex;
     justify-content: space-around;
@@ -601,7 +688,7 @@ display: flex;
   .hamburger {
       display: none;
   }
-  .navbar-nav a.nav-link {
+  .navbar-nav .nav-link {
   display: flex;
   flex-flow: row;
   font-size: 1.2rem;
@@ -610,7 +697,7 @@ display: flex;
   
 }
 
-.navbar-nav a.nav-link:hover {
+.navbar-nav .nav-link:hover {
   color: rgb(208, 98, 98);
   text-transform: uppercase;
 }
@@ -621,21 +708,21 @@ display: flex;
 
 .navlinks .nav-link{
     margin-right: 30px;
-}
+    }
 
 div#info-icon,
 div#contact-icon {
     display: none;
-}
+    }
 .logo-name{
     margin:auto 70px;
-}
+    }
 
 /*----Modal Window---*/
 
 .modal-text{
     display: none;
-}
+    }
 .modal-text.show {
     position: fixed;
     min-width: 100%;
@@ -649,15 +736,15 @@ div#contact-icon {
     height:20px;
     z-index: 1;
     
-}
+    }
 /*-------Contact form menu----*/
 
 .form {
     display: none;
     
-}
+    }
 .form.show {
-  width: 400px;
+   width: 400px;
     height: 500px;
     display: flex;
     background-color: red;
@@ -666,14 +753,15 @@ div#contact-icon {
     align-items: center;
     z-index: 1;
     top: 136px;
-    left: 350px;
-   
-}
+    left: 350px;   
+    }
+
+
 .contact-form {
-       margin-left: 30px;
+    margin-left: 30px;
     margin-bottom: 30px;
     position: relative;
     
-}
+    }
 
 }
