@@ -30,13 +30,12 @@ var input = document.getElementById('v');
 
 dropdown.addEventListener('click', function(){
     this.classList.toggle('show');
-})
+});
 options.addEventListener('click',function(event){
     const listItem = event.target;
     const value = listItem.attributes.lname.value;
     input.value = value;
-})
-
+});
 /*-----------Hamburger Button--------*/
 
 const hamburger = document.getElementById('hamburger');
@@ -51,11 +50,11 @@ hamburger.addEventListener('click', () => {
 const textInfo = document.getElementById('info-text');
 const info = document.getElementById('info-icon');
 const modal = document.getElementById('modal-text');
-const closeBtn = document.getElementById('close-button')
+const closeBtn = document.getElementById('close-button');
 function modalHandler(){
-    if (modal.classList.display = 'none') {
+    if (modal.classList.display === 'none') {
         modal.classList.toggle("show");
-    };
+    }
 }
 
 info.addEventListener('click',modalHandler);
@@ -91,17 +90,9 @@ function soundHandler(){
         soundBtn.classList.add(`sound-icon`); 
         soundBtn.classList.remove(`sound-icon-red`);
          
-    };
+    }
 }
 soundBtn.addEventListener('click',soundHandler);
-
-/*-----------Flip Cards Effect--------*/
-const cards = document.querySelectorAll(".cards-inner");
-
-function flipCard() {
-  this.classList.toggle("flip");
-}
-cards.forEach((card) => card.addEventListener("click", flipCard));
 
 /*-----------Sound Effect--------*/
 function playAudio(url) {
@@ -111,3 +102,73 @@ function playAudio(url) {
   new Audio(url).play();
 };
 }
+soundBtn.addEventListener('click',playAudio);
+
+
+/*-----------Flip Cards Effect--------*/
+const cards = document.querySelectorAll(".cards-inner");
+let hasFlippedCard = false;
+let firstCard, secondCard;
+let lockBoard =false;
+
+function flipCard() {
+if(lockBoard) return;
+if(this===firstCard) return;
+  this.classList.toggle("flip");
+  
+if (!hasFlippedCard){
+    hasFlippedCard = true;
+    firstCard = this;
+    return;
+} else {
+    
+    secondCard = this;
+checkMatch()
+};
+
+}
+
+function checkMatch(){
+if(firstCard.dataset.language === secondCard.dataset.language){
+    disabledCards()
+} else {
+    unflippedCards()
+};
+}
+
+function disabledCards() {
+    firstCard.removeEventListener('click', flipCard);
+    secondCard.removeEventListener('click', flipCard);
+    resetBoard()
+}
+
+function unflippedCards(){
+    lockBoard = true;
+    setTimeout(()=>{
+        firstCard.classList.remove('flip');
+        secondCard.classList.remove('flip');
+        resetBoard()
+    },1500);
+    
+}
+function resetBoard() {
+  [hasFlippedCard, lockBoard] = [false, false];
+  [firstCard, secondCard] = [null, null];
+}
+
+(function shuffle() {
+  cards.forEach(card => {
+    let randomPos = Math.floor(Math.random() * 12);
+    card.style.order = randomPos;
+    console.log(card)
+  });
+})();
+
+cards.forEach((card) => card.addEventListener("click", flipCard));
+
+
+
+
+/*-----------Google Translate--------*/
+
+
