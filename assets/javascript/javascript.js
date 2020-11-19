@@ -1,3 +1,17 @@
+class AudioControler {
+    constructor(){
+        this.clickSound = new Audio('../sounds/mouse-click.wav');
+        this.cardSound = new Audio('../sounds/quiet-page-turn.wav');
+        console.log(this)
+    }
+    clickSound(){
+        this.clickSound.play();
+    }
+    cardTurn(){
+        this.cardSound.play();
+    }
+}
+
 /*-------Timer----------*/
 
 function startTimer(duration, display) {
@@ -37,28 +51,28 @@ options.addEventListener('click',function(event){
     input.value = value;
 });
 /*-----------Hamburger Button--------*/
-
 const hamburger = document.getElementById('hamburger');
 const navUl = document.getElementById('navbarNav');
-
 hamburger.addEventListener('click', () => {
     navUl.classList.toggle('show');
+    
 });
 
 /*-----------Instruction Button--------*/
 
-const textInfo = document.getElementById('info-text');
-const info = document.getElementById('info-icon');
+const infoText = document.getElementById('info-text');
+const infoIcon = document.getElementById('info-icon');
 const modal = document.getElementById('modal-text');
 const closeBtn = document.getElementById('close-button');
 function modalHandler(){
-    if (modal.classList.display === 'none') {
+    if (modal.classList.display = 'none') {
         modal.classList.toggle("show");
+       
     }
 }
 
-info.addEventListener('click',modalHandler);
-textInfo.addEventListener('click', modalHandler);
+infoIcon.addEventListener('click',modalHandler);
+infoText.addEventListener('click', modalHandler);
 closeBtn.addEventListener('click', modalHandler);
 
 /*-----------Contact Button--------*/
@@ -100,21 +114,25 @@ function playAudio(url) {
         new Audio(url).muted;
     } else {
   new Audio(url).play();
+  
 };
 }
 soundBtn.addEventListener('click',playAudio);
 
 
 /*-----------Flip Cards Effect--------*/
+
 const cards = document.querySelectorAll(".cards-inner");
 let hasFlippedCard = false;
 let firstCard, secondCard;
 let lockBoard =false;
+const resetBtn = document.getElementById('reset');
 
 function flipCard() {
 if(lockBoard) return;
 if(this===firstCard) return;
-  this.classList.toggle("flip");
+  this.classList.add("flip");
+  
   
 if (!hasFlippedCard){
     hasFlippedCard = true;
@@ -129,11 +147,10 @@ checkMatch()
 }
 
 function checkMatch(){
-if(firstCard.dataset.language === secondCard.dataset.language){
-    disabledCards()
-} else {
-    unflippedCards()
-};
+let isMatched = firstCard.dataset.language === secondCard.dataset.language;
+   
+   isMatched ?  disabledCards() : unflippedCards()
+
 }
 
 function disabledCards() {
@@ -160,13 +177,12 @@ function resetBoard() {
   cards.forEach(card => {
     let randomPos = Math.floor(Math.random() * 12);
     card.style.order = randomPos;
-    console.log(card)
   });
 })();
 
+
 cards.forEach((card) => card.addEventListener("click", flipCard));
-
-
+resetBtn.addEventListener('click', resetBoard)
 
 
 /*-----------Google Translate--------*/
