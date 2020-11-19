@@ -1,22 +1,114 @@
-class AudioControler {
-    constructor(){
-        this.clickSound = new Audio('../sounds/mouse-click.wav');
-        this.cardSound = new Audio('../sounds/quiet-page-turn.wav');
-        console.log(this)
-    }
-    clickSound(){
-        this.clickSound.play();
-    }
-    cardTurn(){
-        this.cardSound.play();
-    }
+/*-----------Constants--------*/
+const clickSound = new Audio("assets/sounds/mouse-click.wav");
+const cardSound = new Audio("assets/sounds/quiet-page-turn.wav");
+const soundSound = new Audio("assets/sounds/table-lamp-flip-switch-off.wav")
+const failSound = new Audio("assets/sounds/game-fail.wav")
+const cards = document.querySelectorAll(".cards-inner");
+const resetBtn = document.getElementById('reset')
+/*-----------Sound Effect--------*/
+function playClickbtn(){
+    if(soundBtn.classList.contains(`sound-icon-red`)){
+        clickSound.pause();
+        clickSound.currentTime=0;
+    } else {
+        clickSound.play();
+  
+    };
 }
+
+function playCardSound(){
+    if(soundBtn.classList.contains(`sound-icon-red`)){
+        cardSound.pause();
+        cardSound.currentTime=0;
+    } else {
+        cardSound.play();
+  
+    };
+}
+function playSoundSound(){
+    if(soundBtn.classList.contains(`sound-icon-red`)){
+        soundSound.pause();
+        soundSound.currentTime=0;
+    } else {
+        soundSound.play();
+  
+    };
+}
+
+function playFailSound(){
+    if(soundBtn.classList.contains(`sound-icon-red`)){
+        failSound.pause();
+        failSound.currentTime=0;
+    } else {
+        failSound.play();
+  
+    };
+}
+
+/*-------Shuffle Cards(Fisher-Yates (aka Knuth) Shuffle)----------*/
+
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  while (currentIndex !== 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+  return array;
+}
+
+const deck = document.querySelector(".cards-wrapper");
+function startGame(){
+   var shuffledCards = shuffle(cards);
+   for (var i= 0; i < shuffledCards.length; i++){
+      [].forEach.call(shuffledCards, function(item){
+         deck.appendChild(item);
+      });
+   }
+}
+/*shuffles cards when page is refreshed / loads*/
+
+document.body.onload = startGame();
+
+
+/* function to start a new play */
+function startGame(){
+ 
+    // empty the openCards array
+    openedCards = [];
+
+    // shuffle deck
+    shuffle(cards);
+    // remove all exisiting classes from each card
+    for (var i = 0; i < cards.length; i++){
+        deck.innerHTML = "";
+        [].forEach.call(cards, function(item) {
+            deck.appendChild(item);
+        });
+        cards[i].classList.remove("show", "open", "match", "disabled");
+    }
+    
+    //reset timer
+    second = 0;
+    minute = 0; 
+    
+    var timer = document.querySelector(".time");
+    
+    clearInterval(interval);
+}
+
 
 /*-------Timer----------*/
 
+var second = 0, minute = 0;
+var timer = document.querySelector(".time");
+var interval;
 function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
-    setInterval(function () {
+    interval=setInterval(function () {
         minutes = parseInt(timer / 60, 10);
         seconds = parseInt(timer % 60, 10);
 
@@ -55,7 +147,7 @@ const hamburger = document.getElementById('hamburger');
 const navUl = document.getElementById('navbarNav');
 hamburger.addEventListener('click', () => {
     navUl.classList.toggle('show');
-    
+    playClickbtn()
 });
 
 /*-----------Instruction Button--------*/
@@ -67,8 +159,10 @@ const closeBtn = document.getElementById('close-button');
 function modalHandler(){
     if (modal.classList.display = 'none') {
         modal.classList.toggle("show");
+       playClickbtn()
        
     }
+    
 }
 
 infoIcon.addEventListener('click',modalHandler);
@@ -84,8 +178,9 @@ const contactTxt = document.getElementById('contact-text');
 function contactHandler(){
     if (form.classList.display = 'none') {
         form.classList.toggle("show");
-        
+        playClickbtn();
     };
+    
 }
 contactBtn.addEventListener('click',contactHandler);
 contactTxt.addEventListener('click',contactHandler);
@@ -98,42 +193,41 @@ function soundHandler(){
     if (soundBtn.classList.contains('sound-icon')) {
         soundBtn.classList.add(`sound-icon-red`);
         soundBtn.classList.remove(`sound-icon`);
-        
-        
+        playSoundSound();
     } else {
         soundBtn.classList.add(`sound-icon`); 
         soundBtn.classList.remove(`sound-icon-red`);
-         
+        playSoundSound();
+        
     }
 }
 soundBtn.addEventListener('click',soundHandler);
 
-/*-----------Sound Effect--------*/
-function playAudio(url) {
-    if(soundBtn.classList.contains(`sound-icon-red`)){
-        new Audio(url).muted;
-    } else {
-  new Audio(url).play();
-  
-};
+/*-----------Reset Button--------*/
+
+function resetHandler(){
+    let reloadPage;
+    reloadPage = startGame();
+    
 }
-soundBtn.addEventListener('click',playAudio);
+
+resetBtn.addEventListener('click',resetHandler);
 
 
 /*-----------Flip Cards Effect--------*/
 
-const cards = document.querySelectorAll(".cards-inner");
+
 let hasFlippedCard = false;
 let firstCard, secondCard;
 let lockBoard =false;
-const resetBtn = document.getElementById('reset');
+
 
 function flipCard() {
 if(lockBoard) return;
 if(this===firstCard) return;
   this.classList.add("flip");
-  
-  
+  playCardSound();
+
 if (!hasFlippedCard){
     hasFlippedCard = true;
     firstCard = this;
@@ -165,6 +259,7 @@ function unflippedCards(){
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
         resetBoard()
+        playFailSound()
     },1500);
     
 }
