@@ -44,6 +44,63 @@ function playFailSound(){
   
     };
 }
+/*----------------Google Translator-------*/
+
+/*const nlp_url = "https://nlp-translation.p.rapidapi.com/v1/translate"
+
+async function getTranslation(){ 
+    const response = await fetch(nlp_url, {
+	"method": "POST",
+	"headers": {
+		"content-type": "application/x-www-form-urlencoded",
+		"x-rapidapi-key": "e019a7a6e9mshc800b72ecf1a5e1p1f3597jsn00fad202704a",
+		"x-rapidapi-host": "nlp-translation.p.rapidapi.com"
+	},
+	"body": {
+		"from": "en",
+		"text": "Hello World",
+		"to": "es"
+	}
+    })
+
+  const data = await response.json()
+    var card_12 = document.getElementById('card_12')
+
+    card_12.append(JSON.stringify(data.translated_text))
+    console.log(response)
+    .catch(err => {
+	console.error(err);
+    });
+}
+getTranslation();*/
+
+
+
+const langTo = document.getElementById('es');
+const txtToTranslate = document.getElementById('card_1').textContent;
+
+const nlp_url = "https://nlp-translation.p.rapidapi.com/v1/translate?to=es&text="+txtToTranslate+"&from=en";
+async function getTranslation(){ 
+    const response = await fetch(nlp_url, {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-key": "e019a7a6e9mshc800b72ecf1a5e1p1f3597jsn00fad202704a",
+		"x-rapidapi-host": "nlp-translation.p.rapidapi.com"
+    },
+    
+    })
+    
+  const data = await response.json()
+var card_12 = document.getElementById('card_12')
+
+card_12.append(JSON.stringify(data.translated_text))
+
+  .catch(err => {
+    console.error(err);
+  })
+}
+
+getTranslation();
 
 /*-------Shuffle Cards(Fisher-Yates (aka Knuth) Shuffle)----------*/
 
@@ -207,7 +264,7 @@ soundBtn.addEventListener('click',soundHandler);
 
 function resetHandler(){
     let reloadPage;
-    reloadPage = startGame();
+    this.reloadPage = startGame();
     
 }
 

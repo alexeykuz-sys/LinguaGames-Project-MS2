@@ -108,7 +108,7 @@
       </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container">
       <div class="row buttons-wrapper">
         <div class="col-md-12">
           <div class="list-options" id="options">
@@ -117,7 +117,7 @@
                 <input type="text" value="Language:" readonly id="v" />
 
                 <ul class="options" id="o">
-                  <li lname="spanish" class="dropdown-item">
+                  <li lname="spanish" id="es" class="dropdown-item">
                     <img
                       fname="spanish"
                       src="assets/images/spain-flag-icon-32.png"
@@ -149,78 +149,78 @@
       <!---Card Placement--->
 
       <div class="row cards-wrapper">
-        <div class="col col-xs-4 col-sm-4 col-md-3">
+        <div class="col col-xs-4 col-sm-4 col-md-4">
           <div class="cards-inner" data-language="english-1" >
             <div class="card-1 card-face">Card-1</div>
-            <div class="card-1-back card-back">house</div>
+            <div class="card-1-back card-back" id="card_1">house</div>
           </div>
         </div>
-        <div class="col col-xs-4 col-sm-4 col-md-3">
+        <div class="col col-xs-4 col-sm-4 col-md-4">
           <div class="cards-inner" data-language="english-2">
             <div class="card-2 card-face">Card-2</div>
-            <div class="card-2-back card-back">boy</div>
+            <div class="card-2-back card-back" id="word">boy</div>
           </div>
         </div>
-        <div class="col col-xs-4 col-sm-4 col-md-3">
+        <div class="col col-xs-4 col-sm-4 col-md-4">
           <div class="cards-inner" data-language="english-3">
             <div class="card-3 card-face">Card-3</div>
             <div class="card-3-back card-back">girl</div>
           </div>
         </div>
-        <div class="col col-xs-3 col-sm-4 col-md-3">
+        <div class="col col-xs-3 col-sm-4 col-md-4">
           <div class="cards-inner" data-language="english-4">
             <div class="card-4 card-face">Card-4</div>
             <div class="card-4-back card-back">pen</div>
           </div>
         </div>
 
-        <div class="col col-xs-3 col-sm-4 col-md-3">
+        <div class="col col-xs-3 col-sm-4 col-md-4">
           <div class="cards-inner" data-language="english-5">
             <div class="card-5 card-face">Card-5</div>
             <div class="card-5-back card-back">pencil</div>
           </div>
         </div>
-        <div class="col col-xs-3 col-sm-4 col-md-3">
+        <div class="col col-xs-3 col-sm-4 col-md-4">
           <div class="cards-inner"   data-language="english-6">
             <div class="card-6 card-face">Card-6</div>
             <div class="card-6-back card-back">book</div>
           </div>
         </div>
-        <div class="col col-xs-3 col-sm-4 col-md-3">
+        <div class="col col-xs-3 col-sm-4 col-md-4">
           <div class="cards-inner"   data-language="english-6">
             <div class="card-7 card-face">Card-7</div>
             <div class="card-7-back card-back">libro</div>
           </div>
         </div>
-        <div class="col col-xs-3 col-sm-4 col-md-3">
+        <div class="col col-xs-3 col-sm-4 col-md-4">
           <div class="cards-inner"   data-language="english-4">
             <div class="card-8 card-face">Card-8</div>
             <div class="card-8-back card-back">el lapiz</div>
           </div>
         </div>
 
-        <div class="col col-xs-3 col-sm-4 col-md-3">
+        <div class="col col-xs-3 col-sm-4 col-md-4">
           <div class="cards-inner"   data-language="english-5">
             <div class="card-9 card-face">Card-9</div>
             <div class="card-9-back card-back">la pluma</div>
           </div>
         </div>
-        <div class="col col-xs-3 col-sm-4 col-md-3">
+        <div class="col col-xs-3 col-sm-4 col-md-4">
           <div class="cards-inner"   data-language="english-2">
             <div class="card-10 card-face">Card-10</div>
             <div class="card-10-back card-back">chico</div>
           </div>
         </div>
-        <div class="col col-xs-3 col-sm-4 col-md-3">
+        <div class="col col-xs-3 col-sm-4 col-md-4">
           <div class="cards-inner" data-language="english-3">
-            <div class="card-11 card-face">nina</div>
+            <div class="card-11 card-face">Card-11</div>
             <div class="card-11-back card-back">nina</div>
           </div>
         </div>
-        <div class="col col-xs-3 col-sm-4 col-md-3">
-          <div class="cards-inner" data-language="english-1">
+        <div class="col col-xs-3 col-sm-4 col-md-4">
+          <div class="cards-inner"  data-language="english-1">
             <div class="card-12 card-face">Card-12</div>
-            <div class="card-12-back card-back">casa</div>
+            <div class="card-12-back card-back" id="card_12"></div>
           </div>
         </div>
       </div>
@@ -259,6 +259,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="assets/javascript/javascript.js"></script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi?key=AIzaSyC31fv7wyNHZmJ1fPdoZB-b3aKQqWlOeak"></script>
+    
   </body>
 </html>

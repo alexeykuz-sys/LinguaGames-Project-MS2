@@ -647,10 +647,12 @@ border-radius: 15px;
   outline: none;
   cursor: pointer;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
- width: 200px;
+    width: 230px;
     height: 135px;
-    
+    background-color: white;
     background-image: url("../images/linguaGames-2.png");
     background-repeat: no-repeat;
 }
@@ -671,7 +673,7 @@ border-radius: 15px;
 
 .card-back {
     display: flex;
-   width: 200px;
+   width: 230px;
     height: 135px;
 background-color: white;
 flex-direction: column;
