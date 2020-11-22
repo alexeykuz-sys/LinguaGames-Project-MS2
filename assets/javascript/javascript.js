@@ -44,42 +44,20 @@ function playFailSound(){
   
     };
 }
-/*----------------Google Translator-------*/
-
-/*const nlp_url = "https://nlp-translation.p.rapidapi.com/v1/translate"
-
-async function getTranslation(){ 
-    const response = await fetch(nlp_url, {
-	"method": "POST",
-	"headers": {
-		"content-type": "application/x-www-form-urlencoded",
-		"x-rapidapi-key": "e019a7a6e9mshc800b72ecf1a5e1p1f3597jsn00fad202704a",
-		"x-rapidapi-host": "nlp-translation.p.rapidapi.com"
-	},
-	"body": {
-		"from": "en",
-		"text": "Hello World",
-		"to": "es"
-	}
-    })
-
-  const data = await response.json()
-    var card_12 = document.getElementById('card_12')
-
-    card_12.append(JSON.stringify(data.translated_text))
-    console.log(response)
-    .catch(err => {
-	console.error(err);
-    });
-}
-getTranslation();*/
+/*-----------Language Button--------*/
 
 
 
-const langTo = document.getElementById('es');
+/*----------------Translator-------*/
+
+const langOptions = document.getElementById('langSelect')
+var langTo;
 const txtToTranslate = document.getElementById('card_1').textContent;
 
-const nlp_url = "https://nlp-translation.p.rapidapi.com/v1/translate?to=es&text="+txtToTranslate+"&from=en";
+function getLanguage(){
+langTo = langOptions.value
+
+const nlp_url = "https://nlp-translation.p.rapidapi.com/v1/translate?to=" + langTo + "&text="+txtToTranslate+"&from=en";
 async function getTranslation(){ 
     const response = await fetch(nlp_url, {
 	"method": "GET",
@@ -93,14 +71,17 @@ async function getTranslation(){
   const data = await response.json()
 var card_12 = document.getElementById('card_12')
 
-card_12.append(JSON.stringify(data.translated_text))
-
+card_12.append(data.translated_text.es)
+console.log(card_12)
   .catch(err => {
     console.error(err);
   })
 }
-
 getTranslation();
+/*});*/
+
+}
+langOptions.addEventListener('click', getLanguage)
 
 /*-------Shuffle Cards(Fisher-Yates (aka Knuth) Shuffle)----------*/
 
@@ -186,19 +167,7 @@ jQuery(function ($) {
     startTimer(oneMinute, display);
 });
 
-/*-----------Language Button--------*/
-var dropdown = document.getElementById('d');
-var options = document.getElementById('o');
-var input = document.getElementById('v');
 
-dropdown.addEventListener('click', function(){
-    this.classList.toggle('show');
-});
-options.addEventListener('click',function(event){
-    const listItem = event.target;
-    const value = listItem.attributes.lname.value;
-    input.value = value;
-});
 /*-----------Hamburger Button--------*/
 const hamburger = document.getElementById('hamburger');
 const navUl = document.getElementById('navbarNav');
