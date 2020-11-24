@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
 * {
-  
   padding: 0;
   border: 0;
 }
 
-html{
-    height:100%;
+html {
+  height: 100%;
 }
 
 body {
@@ -17,7 +16,6 @@ body {
   width: 100wh;
   background-color: rgb(55, 149, 93);
   box-sizing: border-box;
-
 }
 
 /*---Navigaton-----*/
@@ -45,7 +43,6 @@ body {
   align-self: srart;
   margin: auto 40px;
   color: rgb(255, 255, 255);
-    
 }
 
 i.fas {
@@ -72,19 +69,19 @@ i.fas {
 }
 /*menu icons*/
 
-#navbarNav{
+#navbarNav {
   color: white;
   background: transparent;
   font-size: 1.6rem;
-  
+
   display: none;
   flex-flow: row;
   width: 100%;
 }
 
 #navbarNav.show {
-    display: flex;
-     justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .info-icon {
@@ -106,14 +103,12 @@ i.fas {
   background-position: center;
 }
 
-
 .info-icon:active {
   box-shadow: -1px -1px 19px rgba(255, 255, 255, 0.5),
     5px 5px 10px rgba(48, 47, 47, 0.5),
-    inset  -3px -3px 10px rgba(255, 255, 255, 0.5),
+    inset -3px -3px 10px rgba(255, 255, 255, 0.5),
     inset 2px 3px 7px rgba(153, 152, 152, 0.025);
 }
-
 
 .contact-icon {
   width: 35px;
@@ -124,7 +119,7 @@ i.fas {
     5px 5px 10px rgba(48, 47, 47, 0.5);
   border: 2px solid rgba(48, 47, 47, 0.5);
   outline: none;
-margin-right: 20px;
+  margin-right: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,49 +129,45 @@ margin-right: 20px;
   background-position: center;
 }
 
-
 .contact-icon:active {
   box-shadow: -1px -1px 19px rgba(255, 255, 255, 0.5),
     5px 5px 10px rgba(48, 47, 47, 0.5),
-    inset  -3px -3px 10px rgba(255, 255, 255, 0.5),
+    inset -3px -3px 10px rgba(255, 255, 255, 0.5),
     inset 2px 3px 7px rgba(153, 152, 152, 0.025);
 }
 
 .navlinks .info-icon,
 .navlinks .contact-icon {
-    margin-left:10px; 
-    float: right;
+  margin-left: 10px;
+  float: right;
 }
-
 
 /*Modal Text*/
 
-.modal-text{
-    display: none;
+.modal-text {
+  display: none;
 }
 .modal-text.show {
-    position: absolute;
-    min-width: 50%;
-    min-height: fit-content;
-    top:145px;
-    left: 140px;
-    margin: 0 auto;
-    display: flex;
-    max-width: 300px;
-    
-    z-index: 99;
-    box-shadow: 4px 4px 20px black;
-    backdrop-filter: blur(10px);
-background-color: rgba(255, 255, 255, 0.65);  
+  position: absolute;
+  min-width: 50%;
+  min-height: fit-content;
+  top: 145px;
+  left: 140px;
+  margin: 0 auto;
+  display: flex;
+  max-width: 300px;
+
+  z-index: 99;
+  box-shadow: 4px 4px 20px black;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.65);
 }
 
 .info-text {
-color: black;
-margin: 5px;
-font-size: 1.2rem;
-padding:10px;
-
-
+  color: black;
+  margin: 5px;
+  font-size: 1.2rem;
+  padding: 10px;
 }
 /*Gear Buttons*/
 
@@ -210,59 +201,57 @@ padding:10px;
   background-position: center;
 }
 
-
 /*----Contact form Icon---*/
 
 .form {
-    display: none;
+  display: none;
 }
 
 .form.show {
   width: 400px;
-    height: 500px;
-    display: flex;
-    background-color: red;
-    position: absolute;
-    justify-content: space-evenly;
-    align-items: center;
-    z-index: 1;
-    top: 150px;
-    left: 125px;
-    
-  backdrop-filter: blur(8px);
+  height: 500px;
+  display: flex;
+  background-color: red;
+  position: absolute;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 1;
+  top: 150px;
+  left: 125px;
 
+  backdrop-filter: blur(8px);
 }
 .contact-form {
-       margin-left: 30px;
-    margin-bottom: 30px;
-    position: relative;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  position: relative;
 }
 
 /*-----Contact form---------*/
 
-input[type=text], input[type=email], select, textarea {
+input[type="text"],
+input[type="email"],
+select,
+textarea {
   width: 90%;
   padding: 10px;
-  border: 1px solid #22181C;
+  border: 1px solid #22181c;
   margin-top: 10px;
   margin-bottom: 10px;
   resize: vertical;
 }
 
-input[type=button] {
-  background-color: #B71419;
-;
+input[type="button"] {
+  background-color: #b71419;
   color: white;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
 }
 
-input[type=button]:hover {
-  background-color: #B71419;
+input[type="button"]:hover {
+  background-color: #b71419;
 }
-
-
 
 .list-options {
   display: flex;
@@ -351,7 +340,7 @@ input[type=button]:hover {
 .sound-icon-red {
   width: 50px;
   height: 50px;
-display: flex;
+  display: flex;
 
   border: 2px solid rgb(55, 149, 93);
   background-image: url("../images/icons8-mute-50.png");
@@ -382,12 +371,11 @@ display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.1rem;
-  
 }
 
-.dropdown:active{
-    transform: scale(0.97);
-  transition: transform .2s;
+.dropdown:active {
+  transform: scale(0.97);
+  transition: transform 0.2s;
 }
 
 /*.dropdown:active {
@@ -494,13 +482,13 @@ display: flex;
   display: flex;
   align-content: center;
   justify-content: center;
-  perspective: 6000px
+  perspective: 1000px;
 }
 
 .cards-inner {
   transition: transform 1s;
   transform-style: preserve-3d;
-   width: 85px;
+  width: 85px;
   height: 85px;
   border-radius: 15px;
   margin: 10px auto;
@@ -514,45 +502,42 @@ display: flex;
   background-image: url("../images/linguaGames.png");
   background-repeat: no-repeat;
   position: relative;
+  transform: rotateY(180deg);
 }
 
 .cards-inner.flip {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
-  
 }
 .cards-inner:active {
-    transform: scale(0.97);
-  transition: transform .2s;
+  transform: scale(0.97);
+  transition: transform 0.2s;
 }
 
 .card-face {
- 
-  width: 100%;
-  height: 100%;
-  position: absolute;
- 
+  z-index: 2;
 }
 
 .card-back {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    font-weight: 600;
-    width: 100%;
-  height: 100%;
-background-color: white;
-flex-direction: column;
-border-radius: 15px;
-position: absolute;
-transform: rotateY(180deg); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: white;
+  flex-direction: column;
+  border-radius: 15px;
 }
 
 .card-face,
 .card-back {
-    backface-visibility: hidden;
-  
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
 }
 
 /*Footer*/
@@ -581,113 +566,102 @@ transform: rotateY(180deg);
 /*Media Querries*/
 
 @media (min-width: 576px) {
-
-.cards-inner {
-  -webkit-transition: transform 0.6s;
-  transform-style: preserve-3d;
-  margin: 10px auto;
-  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
-    5px 5px 10px rgba(48, 47, 47, 0.5);
-  border: 2px solid rgb(55, 149, 93);
-  outline: none;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
- width: 170px;
+  .cards-inner {
+    -webkit-transition: transform 0.6s;
+    transform-style: preserve-3d;
+    margin: 10px auto;
+    box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+      5px 5px 10px rgba(48, 47, 47, 0.5);
+    border: 2px solid rgb(55, 149, 93);
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 170px;
     height: 113px;
     background-image: url("../images/linguaGames-1.png");
     background-repeat: no-repeat;
-}
+  }
 
-.cards-inner.flip {
-  transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
-}
+  .cards-inner.flip {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+  }
 
-.card-face {
- border-radius: 15px;
-  width: 100%;
-  height: 100%;
-  transform: rotateX(0deg);
-  -webkit-transform: rotateX(0deg);
-  
-}
+  .card-face {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+  }
 
-.card-back {
+  .card-back {
     display: flex;
     width: 170px;
     height: 113px;
-background-color: white;
-flex-direction: column;
-border-radius: 15px;
-}
-
-
+    background-color: white;
+    flex-direction: column;
+    border-radius: 15px;
+  }
 
   .list-options {
     display: flex;
     justify-content: space-around;
   }
 
-.navlinks {
+  .navlinks {
     display: flex;
     position: absolute;
     margin-right: 30px;
     right: 50px;
-}
-.info-icon {
+  }
+  .info-icon {
     margin-right: 30px;
-}
-
+  }
 }
 
 @media (min-width: 810px) {
-  
-  
-.cards-inner {
-  -webkit-transition: transform 2s;
-  transform-style: preserve-3d;
-  margin: 10px auto;
-  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
-    5px 5px 10px rgba(48, 47, 47, 0.5);
-  border: 2px solid rgb(55, 149, 93);
-  outline: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  .cards-inner {
+    -webkit-transition: transform 2s;
+    transform-style: preserve-3d;
+    margin: 10px auto;
+    box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+      5px 5px 10px rgba(48, 47, 47, 0.5);
+    border: 2px solid rgb(55, 149, 93);
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 230px;
     height: 135px;
     background-color: white;
     background-image: url("../images/linguaGames-2.png");
     background-repeat: no-repeat;
-}
+  }
 
-.cards-inner.flip {
-  transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
-}
+  .cards-inner.flip {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+  }
 
-.card-face {
- border-radius: 15px;
-  width: 100%;
-  height: 100%;
-  /*transform: rotateX(0deg);
+  .card-face {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    /*transform: rotateX(0deg);
   -webkit-transform: rotateX(0deg);*/
-  
-}
+  }
 
-.card-back {
+  .card-back {
     display: flex;
-   width: 230px;
+    width: 230px;
     height: 135px;
-background-color: white;
-flex-direction: column;
-border-radius: 15px;
-}
+    background-color: white;
+    flex-direction: column;
+    border-radius: 15px;
+  }
 
-  
   .list-options {
     display: flex;
     justify-content: space-around;
@@ -697,73 +671,69 @@ border-radius: 15px;
     width: 100px;
   }
   .hamburger {
-      display: none;
+    display: none;
   }
   .navbar-nav .nav-link {
-  display: flex;
-  flex-flow: row;
-  font-size: 1.2rem;
-  color: white;
-  width: 100%;
-  
-}
-
-.navbar-nav .nav-link:hover {
-  color: rgb(208, 98, 98);
-  text-transform: uppercase;
-}
-
-#navbarNav {
     display: flex;
-}
+    flex-flow: row;
+    font-size: 1.2rem;
+    color: white;
+    width: 100%;
+  }
 
-.navlinks .nav-link{
+  .navbar-nav .nav-link:hover {
+    color: rgb(208, 98, 98);
+    text-transform: uppercase;
+  }
+
+  #navbarNav {
+    display: flex;
+  }
+
+  .navlinks .nav-link {
     margin-right: 30px;
-    }
+  }
 
-div#info-icon,
-div#contact-icon {
+  div#info-icon,
+  div#contact-icon {
     display: none;
-    }
-.logo-name{
-    margin:auto 70px;
-    }
+  }
+  .logo-name {
+    margin: auto 70px;
+  }
 
-/*----Modal Window---*/
+  /*----Modal Window---*/
 
-.modal-text{
+  .modal-text {
     display: none;
-    }
-.modal-text.show {
+  }
+  .modal-text.show {
     position: absolute;
     min-width: 50%;
     min-height: fit-content;
-    top:282px;
+    top: 282px;
     left: 282px;
     margin: 0 auto;
     display: flex;
     max-width: 300px;
     z-index: 99;
     box-shadow: 4px 4px 20px black;
-    background-color: rgba(255, 255, 255, 0.65);  
-}
+    background-color: rgba(255, 255, 255, 0.65);
+  }
 
-.info-text {
-color: black;
-margin: 5px;
-font-size: 1.2rem;
-padding:10px;
+  .info-text {
+    color: black;
+    margin: 5px;
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+  /*-------Contact form menu----*/
 
-
-}
-/*-------Contact form menu----*/
-
-.form {
+  .form {
     display: none;
-    
-    }
-.form.show {
-   width: 400px;
+  }
+  .form.show {
+    width: 400px;
     height: 500px;
     display: flex;
     background-color: red;
@@ -772,15 +742,12 @@ padding:10px;
     align-items: center;
     z-index: 1;
     top: 136px;
-    left: 350px;   
-    }
+    left: 350px;
+  }
 
-
-.contact-form {
+  .contact-form {
     margin-left: 30px;
     margin-bottom: 30px;
     position: relative;
-    
-    }
-
+  }
 }

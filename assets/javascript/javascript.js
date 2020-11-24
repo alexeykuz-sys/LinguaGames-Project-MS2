@@ -42,34 +42,53 @@ function playFailSound() {
 }
 
 /*-----------Language Button-----Translator-------*/
-var txtToTranslate = document.getElementById("card_1").textContent;
 
-let engWords = ["boy","girl", "house", "pen", "pencil","sun"];
-let engCards = ["card_1", "card_2", "card_3", "card-4", "card-5", "card-6"]
-for (let i=0; i<engWords.length; i++){    
-txtToTranslate = engWords[i]
-document.getElementById('card_1').innerHTML = txtToTranslate
-console.log(engWords[i], txtToTranslate)
+document.body.onload = translateFrom()
+/*document.body.onload = getLanguage()*/
+
+
+
+function translateFrom(){
+    var engCards = ["boy", "girl", "house","pen", "pencil", "sun"];
+    txtToTranslate =document.querySelectorAll("div.english");
+    for(let i=0; i<txtToTranslate.length; i++){
+        txtToTranslate[i].innerHTML = engCards[i];
+    }
 }
 
 
-
-
 const langOptions = document.getElementById("langSelect");
-var langTo;
-console.log(txtToTranslate)
+    for (let i=0; i< langOptions.length; i++){
+    let langTo = langOptions[i].value
+    console.log(langOptions[i].value)
+    };
+
+langOptions.addEventListener("click", getLanguage);
+
 
 function getLanguage() {
-  langTo = langOptions.value;
+    langTo=langOptions.value;
+    
+    
+    console.log('langTo', langTo)
 
-  const nlp_url =
-    "https://nlp-translation.p.rapidapi.com/v1/translate?to=" +
-    langTo +
-    "&text=" +
-    txtToTranslate +
+    cardsToTranslate = [];
+    for (var i=0;i<txtToTranslate.length; i++){
+        console.log(txtToTranslate[i].textContent)
+        cardsToTranslate[i]=txtToTranslate[i].textContent;
+    }
+    console.log('cardsToTranslate', cardsToTranslate)
+    cardsToTranslate.forEach(cardToTranslate=>{
+        const nlp_url =
+    "https://nlp-translation.p.rapidapi.com/v1/translate?to="+langTo+"&text=" +
+    cardToTranslate +
     "&from=en";
-  async function getTranslation() {
-    const response = await fetch(nlp_url, {
+    getTranslation(nlp_url)
+    })
+
+    async function getTranslation(url) {
+        console.log(url)
+    const response = await fetch(url, {
       method: "GET",
       headers: {
         "x-rapidapi-key": "e019a7a6e9mshc800b72ecf1a5e1p1f3597jsn00fad202704a",
@@ -77,17 +96,43 @@ function getLanguage() {
       },
     });
 
-    const data = await response.json();
-    var card_12 = document.getElementById("card_12");
+    const data = await response.json()
+    console.log('data', data) 
+    for(i=0;i<data.length;i++){
+      
+var translatedCards = [];
+dataArray[i]=data[i];
 
-    card_12.append(data.translated_text.es);
-    console.log(card_12).catch((err) => {
-      console.error(err);
-    });
-  }
+    if(langTo === 'it'){
+        translatedCards.append(dataArray.translated_text.it)
+        console.log(langTo)
+    }else if(langTo === 'fr'){
+        translatedCards.append(dataArray.translated_text.fr)
+    } else {
+        translatedCards.append(dataArray.translated_text.es);
+    }
+    }
+    console.log(translatedCards)
+
+
+    function translateTo(){
+    
+    translatedText=document.querySelectorAll("div.txtTo")
+    translatedText.forEach((div, i) => div.innerHTML = translatedCards[i])
+}
+    
+
+    
+    }
+
+    /*.catch(err => {
+	console.error(err);
+    });*/
+    
+
   getTranslation();
 }
-langOptions.addEventListener("click", getLanguage);
+
 
 /*-------Shuffle Cards(Fisher-Yates (aka Knuth) Shuffle)----------*/
 
@@ -132,7 +177,7 @@ function startGame() {
     [].forEach.call(cards, function (item) {
       deck.appendChild(item);
     });
-    cards[i].classList.remove("show", "open", "match", "disabled");
+    cards[i].classList.remove("disabled");
   }
 
   //reset timer
