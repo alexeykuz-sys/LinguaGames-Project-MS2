@@ -53,6 +53,7 @@ function translateFrom(){
     txtToTranslate =document.querySelectorAll("div.english");
     for(let i=0; i<txtToTranslate.length; i++){
         txtToTranslate[i].innerHTML = engCards[i];
+    
     }
 }
 
@@ -73,64 +74,61 @@ function getLanguage() {
     console.log('langTo', langTo)
 
     cardsToTranslate = [];
-    for (var i=0;i<txtToTranslate.length; i++){
+    for (let i=0;i<txtToTranslate.length; i++){
         console.log(txtToTranslate[i].textContent)
         cardsToTranslate[i]=txtToTranslate[i].textContent;
     }
     console.log('cardsToTranslate', cardsToTranslate)
+   
     cardsToTranslate.forEach(cardToTranslate=>{
-        const nlp_url =
+        const translate_url = "https://just-translated.p.rapidapi.com/?text="+cardsToTranslate+"&lang_from=en&lang_to="+langTo;
+        
+
+        /*const nlp_url =
     "https://nlp-translation.p.rapidapi.com/v1/translate?to="+langTo+"&text=" +
     cardToTranslate +
-    "&from=en";
-    getTranslation(nlp_url)
+    "&from=en";*/
+    getTranslation(translate_url)
     })
 
     async function getTranslation(url) {
         console.log(url)
-    const response = await fetch(url, {
-      method: "GET",
-      headers: {
-        "x-rapidapi-key": "e019a7a6e9mshc800b72ecf1a5e1p1f3597jsn00fad202704a",
-        "x-rapidapi-host": "nlp-translation.p.rapidapi.com",
-      },
-    });
-
-    const data = await response.json()
-    console.log('data', data) 
-    for(i=0;i<data.length;i++){
-      
-var translatedCards = [];
-dataArray[i]=data[i];
-
-    if(langTo === 'it'){
-        translatedCards.append(dataArray.translated_text.it)
-        console.log(langTo)
-    }else if(langTo === 'fr'){
-        translatedCards.append(dataArray.translated_text.fr)
-    } else {
-        translatedCards.append(dataArray.translated_text.es);
-    }
-    }
-    console.log(translatedCards)
-
-
-    function translateTo(){
-    
-    translatedText=document.querySelectorAll("div.txtTo")
-    translatedText.forEach((div, i) => div.innerHTML = translatedCards[i])
-}
-    
-
+        const response = await fetch(url, {
+        method: "GET",
+        headers: {
+            "x-rapidapi-key": "e019a7a6e9mshc800b72ecf1a5e1p1f3597jsn00fad202704a",
+            "x-rapidapi-host": "just-translated.p.rapidapi.com",
+            },
+        })
+        var translatedData
+        const data = await response.json()
+       
+        var translatedData = data.text
+        console.log('data', translatedData)
+        var result = translatedData[0].split(',');
+        console.log('result', result)
+        
+        translatedText=document.querySelectorAll("div.txtTo");
+        console.log('translatedData',translatedData)
+        for(let i=0; i<result.length; i++){
+            console.log('Elem', translatedData);
+            translatedText.forEach(translatedText=>{
+                translatedText.innerHTML = result[i];
+            })
+        console.log(translatedText.innerHTML)
+        };
+        
+        
+        
     
     }
-
-    /*.catch(err => {
+   /* .catch(err => {
 	console.error(err);
     });*/
     
 
   getTranslation();
+  
 }
 
 
@@ -154,7 +152,7 @@ function shuffle(array) {
 const deck = document.querySelector(".cards-wrapper");
 function startGame() {
   var shuffledCards = shuffle(cards);
-  for (var i = 0; i < shuffledCards.length; i++) {
+  for (let i = 0; i < shuffledCards.length; i++) {
     [].forEach.call(shuffledCards, function (item) {
       deck.appendChild(item);
     });
@@ -172,7 +170,7 @@ function startGame() {
   // shuffle deck
   shuffle(cards);
   // remove all exisiting classes from each card
-  for (var i = 0; i < cards.length; i++) {
+  for (let i = 0; i < cards.length; i++) {
     deck.innerHTML = "";
     [].forEach.call(cards, function (item) {
       deck.appendChild(item);
