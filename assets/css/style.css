@@ -650,7 +650,7 @@ input[type="button"]:hover {
 @media (min-width: 992px) {
     .buttons-wrapper{
         min-height: 100%;
-        width: 80%;
+        width: 100%;
         display: flex;
         align-items: center;
     }
@@ -679,8 +679,8 @@ input[type="button"]:hover {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    width: 200px;
-    height: 140px;
+    width: 230px;
+    height: 120px;
     background-color: white;
   }
 

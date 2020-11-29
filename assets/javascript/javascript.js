@@ -85,11 +85,11 @@ const randomEngWords = () => {
     "horse",
     "ice",
   ];
-
+/*----Shuffles the words in array engCards-----*/
   while (engCards.length > 6) {
     engCards.splice(Math.floor(Math.random() * engCards.length), 1);
   }
-
+/*----assigns shuffled words to each card----------------*/
   var txtToTranslate = document.querySelectorAll("div.english");
   for (let i = 0; i < txtToTranslate.length; i++) {
     txtToTranslate[i].innerHTML = engCards[i];
@@ -101,12 +101,13 @@ const randomEngWords = () => {
   }
 
   
-
-  cardsToTranslate.forEach((cardToTranslate) => {
+/*---------------selects language to translate-------------*/
+    cardsToTranslate.forEach((cardToTranslate) => {
     const x = document.getElementById('langSelect');
     x.addEventListener('change', event => {
     const langTo = event.target.value
-    console.log(langTo)
+    
+ /*----------------Translation API-------*/
    
     const translate_url =
       "https://just-translated.p.rapidapi.com/?text=" +
@@ -137,13 +138,10 @@ const randomEngWords = () => {
     var result = translatedData[0].split(",");
 
     translatedText = document.querySelectorAll("div.txtTo");
-    console.log("translatedData", translatedData);
+    
     for (let i = 0; i < result.length; i++) {
-      console.log("Elem", result);
-
       translatedText[i].innerHTML = result[i];
 
-      console.log(result[i]);
     }
   }
   getTranslation().catch((err) => {
@@ -152,127 +150,6 @@ const randomEngWords = () => {
 };
 randomEngWords();
 
-/*function changeLang($i){
-    langTo = $i
-}*/
-
-/*function getLanguage() {
-    
-    let langTo=langOptions.value;
-    console.log(langTo)
-    
-    cardsToTranslate = [];
-    for (let i=0;i<txtToTranslate.length; i++){
-        cardsToTranslate[i]=txtToTranslate[i].textContent;
-    }
-    
-   
-    cardsToTranslate.forEach(cardToTranslate=>{
-        const translate_url = "https://just-translated.p.rapidapi.com/?text="+cardsToTranslate+"&lang_from=en&lang_to="+langTo;
-        
-
-        /*const nlp_url =
-    "https://nlp-translation.p.rapidapi.com/v1/translate?to="+langTo+"&text=" +
-    cardToTranslate +
-    "&from=en";
-    getTranslation(translate_url)
-    })
-
-    async function getTranslation(url) {
-        
-        const response = await fetch(url, {
-        method: "GET",
-        headers: {
-            "x-rapidapi-key": "e019a7a6e9mshc800b72ecf1a5e1p1f3597jsn00fad202704a",
-            "x-rapidapi-host": "just-translated.p.rapidapi.com",
-            },
-        })
-        var translatedData
-        const data = await response.json()
-       
-        var translatedData = data.text
-        
-        var result = translatedData[0].split(',');
-        
-        translatedText=document.querySelectorAll("div.txtTo");
-        console.log('translatedData',translatedData)
-        for(let i=0; i<result.length; i++){
-            console.log('Elem', result);
-        
-            translatedText[i].innerHTML = result[i];
-            
-        console.log(result[i])
-        };
-        
-        
-        
-    
-    }
-   getTranslation()
-    .catch(err => {
-	console.error(err);
-    });
-    
-
-  
-  
-}*/
-
-/*-------Shuffle Cards(Fisher-Yates (aka Knuth) Shuffle)----------*/
-
-function shuffle(array) {
-  var currentIndex = array.length,
-    temporaryValue,
-    randomIndex;
-
-  while (currentIndex !== 0) {
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
-  }
-  return array;
-}
-
-const deck = document.querySelector(".cards-wrapper");
-function startGame() {
-  var shuffledCards = shuffle(cards);
-  for (let i = 0; i < shuffledCards.length; i++) {
-    [].forEach.call(shuffledCards, function (item) {
-      deck.appendChild(item);
-    });
-  }
-}
-
-/*shuffles cards when page is refreshed / loads*/
-
-document.body.onload = startGame();
-
-/* function to start a new play */
-function startGame() {
-  // empty the openCards array
-  openedCards = [];
-
-  // shuffle deck
-  shuffle(cards);
-  // remove all exisiting classes from each card
-  for (let i = 0; i < cards.length; i++) {
-    deck.innerHTML = "";
-    [].forEach.call(cards, function (item) {
-      deck.appendChild(item);
-    });
-    cards[i].classList.remove("disabled");
-  }
-
-  //reset timer
-  second = 0;
-  minute = 0;
-
-  var timer = document.querySelector(".time");
-
-  clearInterval(interval);
-}
 
 /*-------Timer----------*/
 
@@ -361,14 +238,7 @@ function soundHandler() {
 }
 soundBtn.addEventListener("click", soundHandler);
 
-/*-----------Reset Button--------*/
 
-function resetHandler() {
-  let reloadPage;
-  this.reloadPage = startGame();
-}
-
-resetBtn.addEventListener("click", resetHandler);
 
 /*-----------Flip Cards Effect--------*/
 
@@ -389,6 +259,7 @@ function flipCard() {
   } else {
     secondCard = this;
     checkMatch();
+   
   }
 }
 
@@ -426,6 +297,6 @@ function resetBoard() {
 })();
 
 cards.forEach((card) => card.addEventListener("click", flipCard));
-resetBtn.addEventListener("click", resetBoard);
+
 
 /*-----------Google Translate--------*/
