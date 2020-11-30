@@ -38,8 +38,18 @@
   </head>
 
   <body>
+  <!---------------Start of Welcoe section--------------->
+<div class="container welcome" id="welcome">
+<div class="welcome_img"></div>
+<div class="buttons" id="image">
+<button type="button" class="btn btn-primary" id="btnRules">Rules</button>
+<button type="button" class="btn btn-primary" id="btnLanguage">Language</button>
+<button type="button" class="btn btn-primary" id="btnStart" onclick="myFunction()">Start</button>
+</div>
+</div>
+
     <!---------------Start of Home section--------------->
-    <nav class="navbar">
+    <nav class="navbar d-none" id="navbar">
       <a class="navbar-brand" href="index.html">
         <p class="logo-name">Lingua Games</p>
       </a>
@@ -62,7 +72,7 @@
     </nav>
     <div class="container-fluid">
       <div class="row">
-        <div class="modal-text text-center" id="modal-text">
+        <div class="modal_text text-center" id="modal_text">
           <p class="info-text">
             Start the game by flipping a card. Then try to find another card
             that has the same image as the first. If you can't find a pair, the
@@ -108,13 +118,13 @@
       </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid d-none " id="buttonsWrapper">
       <div class="row buttons-wrapper">
         <div class="col-md-12">
           <div class="list-options" id="options">
             <form id="langList">
               <select class="langOptions dropdown py-0" id="langSelect">
-                <option class="lang" value="">Language</option>
+                <option class="lang" value="Language">Language</option>
                 <option class="lang" value="es">Spanish</option>
                 <option class="lang" value="fr">French</option>
                 <option class="lang" value="it">Italian</option>
@@ -128,77 +138,77 @@
       </div>
 
       <!---Card Placement--->
-      <div class="container-fluid">
+      <div class="container-fluid d-none" id="cardsWrapper">
         <div class="row cards-wrapper">
-          <div class="col col-xs-6 col-sm-4 col-md-3">
+          <div class="col col-xs-6 col-sm-4 col-md-4 col-lg-3">
             <div class="cards-inner" data-language="english-1">
               <div class="card-1 card-face">Card-1</div>
               <div class="card-1-back card-back english"></div>
             </div>
           </div>
-          <div class="col col-xs-6 col-sm-4 col-md-3">
+          <div class="col col-xs-6 col-sm-4 col-md-4 col-lg-3">
             <div class="cards-inner" data-language="english-2">
               <div class="card-2 card-face">Card-2</div>
               <div class="card-2-back card-back english"></div>
             </div>
           </div>
-          <div class="col col-xs-6 col-sm-4 col-md-3">
+          <div class="col col-xs-6 col-sm-4 col-md-4 col-lg-3">
             <div class="cards-inner" data-language="english-3">
               <div class="card-3 card-face">Card-3</div>
               <div class="card-3-back card-back english"></div>
             </div>
           </div>
-          <div class="col col-xs-6 col-sm-4 col-md-3">
+          <div class="col col-xs-6 col-sm-4 col-md-4 col-lg-3">
             <div class="cards-inner" data-language="english-4">
               <div class="card-4 card-face">Card-4</div>
               <div class="card-4-back card-back english"></div>
             </div>
           </div>
 
-          <div class="col col-xs-3 col-sm-4 col-md-3">
+          <div class="col col-xs-3 col-sm-4 col-md-4 col-lg-3">
             <div class="cards-inner" data-language="english-5">
               <div class="card-5 card-face">Card-5</div>
               <div class="card-5-back card-back english"></div>
             </div>
           </div>
-          <div class="col col-xs-3 col-sm-4 col-md-3">
+          <div class="col col-xs-3 col-sm-4 col-md-4 col-lg-3">
             <div class="cards-inner" data-language="english-6">
               <div class="card-6 card-face">Card-6</div>
               <div class="card-6-back card-back english"></div>
             </div>
           </div>
-          <div class="col col-xs-3 col-sm-4 col-md-3">
+          <div class="col col-xs-3 col-sm-4 col-md-4 col-lg-3">
             <div class="cards-inner" data-language="english-1">
               <div class="card-7 card-face">Card-7</div>
               <div class="card-7-back card-back txtTo"></div>
             </div>
           </div>
-          <div class="col col-xs-3 col-sm-4 col-md-3">
+          <div class="col col-xs-3 col-sm-4 col-md-4 col-lg-3">
             <div class="cards-inner" data-language="english-2">
               <div class="card-8 card-face">Card-8</div>
               <div class="card-8-back card-back txtTo"></div>
             </div>
           </div>
 
-          <div class="col col-xs-3 col-sm-4 col-md-3">
+          <div class="col col-xs-3 col-sm-4 col-md-4 col-lg-3">
             <div class="cards-inner" data-language="english-3">
               <div class="card-9 card-face">Card-9</div>
               <div class="card-9-back card-back txtTo"></div>
             </div>
           </div>
-          <div class="col col-xs-3 col-sm-4 col-md-3">
+          <div class="col col-xs-3 col-sm-4 col-md-4 col-lg-3">
             <div class="cards-inner" data-language="english-4">
               <div class="card-10 card-face">Card-10</div>
               <div class="card-10-back card-back txtTo"></div>
             </div>
           </div>
-          <div class="col col-xs-3 col-sm-4 col-md-3">
+          <div class="col col-xs-3 col-sm-4 col-md-4 col-lg-3">
             <div class="cards-inner" data-language="english-5">
               <div class="card-11 card-face">Card-11</div>
               <div class="card-11-back card-back txtTo"></div>
             </div>
           </div>
-          <div class="col col-xs-3 col-sm-4 col-md-3">
+          <div class="col col-xs-3 col-sm-4 col-md-4 col-lg-3">
             <div class="cards-inner" data-language="english-6">
               <div class="card-12 card-face">Card-12</div>
               <div class="card-12-back card-back txtTo"></div>
@@ -208,7 +218,7 @@
       </div>
     </div>
     <!--Footer-->
-    <div class="container-fluid px-0">
+    <div class="container-fluid px-0 d-none " id="footerWrapper">
       <div class="row">
         <div class="col-12">
           <footer class="footer-wrapper">

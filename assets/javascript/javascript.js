@@ -41,6 +41,23 @@ function playFailSound() {
   }
 }
 
+/*-----------Welcome page-------*/
+
+function myFunction() {
+  var navbar = document.getElementById("navbar");
+  var welcome = document.getElementById("welcome");
+  var buttonsWrapper = document.getElementById("buttonsWrapper");
+  var cardsWrapper = document.getElementById("cardsWrapper");
+  var footerWrapper = document.getElementById("footerWrapper");
+  buttonsWrapper.classList.remove("d-none")
+  navbar.classList.remove("d-none");
+  cardsWrapper.classList.remove("d-none")
+  footerWrapper.classList.remove("d-none");
+  
+  welcome.classList.add("d-none")
+}
+
+
 /*-----------Language Button-----Translator-------*/
 
 const randomEngWords = () => {
@@ -106,6 +123,9 @@ const randomEngWords = () => {
     const x = document.getElementById('langSelect');
     x.addEventListener('change', event => {
     const langTo = event.target.value
+
+    
+    
     
  /*----------------Translation API-------*/
    
@@ -194,13 +214,14 @@ hamburger.addEventListener("click", () => {
 
 const infoText = document.getElementById("info-text");
 const infoIcon = document.getElementById("info-icon");
-const modal = document.getElementById("modal-text");
+const modal = document.getElementById("modal_text");
 const closeBtn = document.getElementById("close-button");
 function modalHandler() {
   if ((modal.classList.display = "none")) {
     modal.classList.toggle("show");
     playClickbtn();
   }
+  
 }
 
 infoIcon.addEventListener("click", modalHandler);
@@ -287,6 +308,7 @@ function unflippedCards() {
 function resetBoard() {
   [hasFlippedCard, lockBoard] = [false, false];
   [firstCard, secondCard] = [null, null];
+  console.log(firstCard)
 }
 
 (function shuffle() {
@@ -299,4 +321,14 @@ function resetBoard() {
 cards.forEach((card) => card.addEventListener("click", flipCard));
 
 
-/*-----------Google Translate--------*/
+resetBtn.addEventListener('click',resetBtnHandler)
+  console.log(cards);
+function resetBtnHandler(){
+    const cards = document.querySelectorAll(".cards-inner");
+   for(i=0;i<cards.length; i++){
+    cards[i].classList.remove("flip");
+  
+    }
+    langTo.value= language;
+
+}
