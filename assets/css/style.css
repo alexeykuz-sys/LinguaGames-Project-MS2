@@ -24,8 +24,8 @@ body {
 /*---Welcome-----*/
 
 .welcome {
-    width: 300px;
-    background-color: chocolate;
+    width: 250px;
+    
     height: 360px;
     display: flex;
     align-items: flex-start;
@@ -36,23 +36,21 @@ body {
 
 
 .welcome_img{
- background-color: red;
  position: relative;  
  width: 100%;
- height:50%; 
- background-image: url("../images/linguaGames-2.png");
+ height:70%; 
+ background-image: url("../images/linguaGamesWelcome.png");
  background-repeat: no-repeat;
- 
- 
+ border-radius: 20px
 }
 
 .buttons {
     position: relative;
-    height: 50%;
+    height: 30%;
     width: 200px;
     margin: 10px auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-flow: column;
 }
@@ -199,9 +197,9 @@ i.fas {
   position: fixed;
   min-width: 50%;
   min-height: fit-content;
-  top: 260px;
-  left: 150px;
-  margin: 0 auto;
+      top: 337px;
+    left: 45px;
+  
   display: flex;
   max-width: 300px;
   z-index: 99;
@@ -301,21 +299,19 @@ input[type="button"]:hover {
 }
 
 .list-options {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  
   cursor: pointer;
-  margin-top: 40px;
-  flex-flow: row;
-  width: 100%;
-  height: 100px;
-  position: relative;
+  
 }
 
 .buttons-wrapper{
         max-height: 100vh;
-        width: 100%;
-        
+    width: 100%;
+    display: flex;
+    margin: 0;
+    flex-flow: wrap-reverse;
+    align-items: center;
+    justify-content: space-evenly;
     }
 
 /*----Timer Icon---*/
@@ -335,6 +331,8 @@ input[type="button"]:hover {
   outline: none;
   cursor: pointer;
   transition: all 500 ms ease-in-out;
+  margin-top: 10px;
+  margin-left: 40px;
 }
 
 /*----Reset Icon---*/
@@ -343,7 +341,8 @@ input[type="button"]:hover {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-
+    margin-top: 10px;
+    margin-left: 33px;
   background-color: white;
   box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
     5px 5px 10px rgba(48, 47, 47, 0.5);
@@ -380,7 +379,7 @@ input[type="button"]:hover {
     5px 5px 10px rgba(48, 47, 47, 0.5);
   border: 2px solid rgb(55, 149, 93);
   outline: none;
-
+    
   display: flex;
   align-items: center;
   justify-content: center;
@@ -388,6 +387,8 @@ input[type="button"]:hover {
   background-repeat: no-repeat;
   background-size: 40px;
   background-position: center;
+  margin-left: 4px;
+  margin-top: 10px;
 }
 
 .sound-icon-red {
@@ -410,8 +411,10 @@ input[type="button"]:hover {
 /*Language button*/
 
 .dropdown {
-  width: 123px;
+  width: 113px;
   height: 45px;
+  padding-left: 2px;
+  padding-right: 1px;
   font-weight: 700;
   border-radius: 13px;
   background-color: white;
@@ -424,6 +427,7 @@ input[type="button"]:hover {
   align-items: center;
   justify-content: space-between;
   font-size: 1rem;
+  margin-top: 10px;
 }
 
 .dropdown:active {
@@ -532,7 +536,7 @@ input[type="button"]:hover {
   max-height: 1600px;
   width: 100%;
   flex-wrap: wrap;
-  margin: 70px auto;
+  margin: 20px auto;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -542,10 +546,10 @@ input[type="button"]:hover {
 .cards-inner {
   transition: transform 1s;
   transform-style: preserve-3d;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 15px;
-  margin: 15px auto;
+  margin: 10px 2px;
   box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
     5px 5px 10px rgba(48, 47, 47, 0.5);
   border: 2px solid rgb(55, 149, 93);
@@ -620,6 +624,84 @@ input[type="button"]:hover {
 
 /*Media Querries*/
 
+
+@media (min-width: 425px) {
+    .buttons-wrapper{
+        min-height: 100%;
+        width: 100%;
+        margin:20px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+  .cards-wrapper {
+    max-height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 30px auto;
+
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    perspective: 1000px;
+  }
+
+  .cards-inner {
+    -webkit-transition: transform 0.6s;
+    transform-style: preserve-3d;
+    margin: 10px auto;
+    box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+      5px 5px 10px rgba(48, 47, 47, 0.5);
+    border: 2px solid rgb(55, 149, 93);
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 95px;
+    height:95px;
+  }
+
+
+  .card-face {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/linguaGames-1.png");
+    background-repeat: no-repeat;
+  }
+
+  .card-back {
+    display: flex;
+    width: 170px;
+    height: 113px;
+    background-color: white;
+    flex-direction: column;
+    border-radius: 15px;
+  }
+
+  .timer,
+  .sound-icon,
+  .reset {
+    margin-top: 10px;
+    margin-left: 0px;
+}
+
+  .navlinks {
+    display: flex;
+    position: absolute;
+    margin-right: 30px;
+    right: 50px;
+  }
+  .info-icon {
+    margin-right: 30px;
+  }
+  .modal-text.show{
+          top: 337px;
+    left: 61px;
+  }
+}
+
 @media (min-width: 576px) {
     .buttons-wrapper{
         min-height: 100%;
@@ -689,6 +771,8 @@ input[type="button"]:hover {
   .info-icon {
     margin-right: 30px;
   }
+      top: 337px;
+    left: 188px;
 }
 
 @media (min-width: 768px) {
@@ -698,7 +782,7 @@ input[type="button"]:hover {
         margin:20px auto;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
   .cards-wrapper {
@@ -724,9 +808,15 @@ input[type="button"]:hover {
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    width: 230px;
-    height: 120px;
+    width: 220px;
+    height: 115px;
   }
+  .modal-text.show{
+      position: absolute;
+          top: 337px;
+    left: 191px;
+  }
+}
 
 
 
@@ -736,11 +826,13 @@ input[type="button"]:hover {
         width: 100%;
         display: flex;
         align-items: center;
+        margin-top: 30px auto;
+        justify-content: space-around;
     }
   .cards-wrapper {
     max-height: 100%;
     width: 100%;
-    margin:30px auto;
+    margin:40px auto;
     flex-wrap: wrap;
     
     display: flex;
@@ -792,6 +884,7 @@ input[type="button"]:hover {
   .list-options {
     display: flex;
     justify-content: space-around;
+    
   }
 
   /*.dropdown {
@@ -837,17 +930,11 @@ input[type="button"]:hover {
   }
   .modal-text.show {
     position: absolute;
-    min-width: 50%;
-    min-height: fit-content;
-    top: 282px;
-    left: 282px;
-    margin: 0 auto;
-    display: flex;
-    max-width: 300px;
-    z-index: 99;
-    box-shadow: 4px 4px 20px black;
-    background-color: rgba(255, 255, 255, 0.65);
+    top: 337px;
+    left: 227px;
   }
+   
+  
 
   .info-text {
     color: black;
@@ -878,4 +965,8 @@ input[type="button"]:hover {
     margin-bottom: 30px;
     position: relative;
   }
+  .timer{
+      margin-left: -50px;
+  }
 }
+

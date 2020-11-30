@@ -39,12 +39,11 @@
 
   <body>
   <!---------------Start of Welcoe section--------------->
-<div class="container welcome" id="welcome">
-<div class="welcome_img"></div>
-<div class="buttons" id="image">
-<button type="button" class="btn btn-primary" id="btnRules">Rules</button>
-<button type="button" class="btn btn-primary" id="btnLanguage">Language</button>
-<button type="button" class="btn btn-primary" id="btnStart" onclick="myFunction()">Start</button>
+<div class=" welcome" id="welcome">
+<div class="welcome_img" id="image"></div>
+<div class="buttons" id="buttons" >
+<button type="button" class="btn btn-primary" id="btnRules" onclick="rules()">Rules</button>
+<button type="button" class="btn btn-primary" id="btnStart" onclick="startFunction()">Start</button>
 </div>
 </div>
 
@@ -120,7 +119,6 @@
 
     <div class="container-fluid d-none " id="buttonsWrapper">
       <div class="row buttons-wrapper">
-        <div class="col-md-12">
           <div class="list-options" id="options">
             <form id="langList">
               <select class="langOptions dropdown py-0" id="langSelect">
@@ -130,12 +128,13 @@
                 <option class="lang" value="it">Italian</option>
               </select>
             </form>
+          </div>
             <div id="time" class="timer"></div>
             <div id="sound" class="sound-icon"></div>
             <div id="reset" class="reset"></div>
-          </div>
         </div>
-      </div>
+       
+    </div>
 
       <!---Card Placement--->
       <div class="container-fluid d-none" id="cardsWrapper">
@@ -215,7 +214,6 @@
             </div>
           </div>
         </div>
-      </div>
     </div>
     <!--Footer-->
     <div class="container-fluid px-0 d-none " id="footerWrapper">

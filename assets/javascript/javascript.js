@@ -43,7 +43,7 @@ function playFailSound() {
 
 /*-----------Welcome page-------*/
 
-function myFunction() {
+function startFunction() {
   var navbar = document.getElementById("navbar");
   var welcome = document.getElementById("welcome");
   var buttonsWrapper = document.getElementById("buttonsWrapper");
@@ -53,8 +53,12 @@ function myFunction() {
   navbar.classList.remove("d-none");
   cardsWrapper.classList.remove("d-none")
   footerWrapper.classList.remove("d-none");
-  
   welcome.classList.add("d-none")
+}
+
+function rules(){
+    modalHandler()
+
 }
 
 
@@ -221,7 +225,7 @@ function modalHandler() {
     modal.classList.toggle("show");
     playClickbtn();
   }
-  
+  return
 }
 
 infoIcon.addEventListener("click", modalHandler);
@@ -322,7 +326,7 @@ cards.forEach((card) => card.addEventListener("click", flipCard));
 
 
 resetBtn.addEventListener('click',resetBtnHandler)
-  console.log(cards);
+ 
 function resetBtnHandler(){
     const cards = document.querySelectorAll(".cards-inner");
    for(i=0;i<cards.length; i++){
