@@ -43,7 +43,7 @@ function playFailSound() {
 
 /*-----------Welcome page-------*/
 
-function startFunction() {
+function startButton() {
   var navbar = document.getElementById("navbar");
   var welcome = document.getElementById("welcome");
   var buttonsWrapper = document.getElementById("buttonsWrapper");
@@ -56,7 +56,7 @@ function startFunction() {
   welcome.classList.add("d-none")
 }
 
-function rules(){
+function rulesButton(){
     modalHandler()
 
 }
@@ -173,7 +173,6 @@ const randomEngWords = () => {
   });
 };
 randomEngWords();
-
 
 /*-------Timer----------*/
 

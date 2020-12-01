@@ -60,6 +60,16 @@ body {
     margin-top: 15px;
 }
 
+.welcome #float{
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    top:10px;
+    left:10px;
+    color: red;
+    background-color: yellow;
+}
+
 /*---Navigaton-----*/
 
 .navbar {
@@ -256,7 +266,12 @@ i.fas {
   width: 400px;
   height: 500px;
   display: flex;
-  background-color: red;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(5, 57, 97),
+    rgb(10, 105, 177)
+  );
+
   position: absolute;
   justify-content: space-evenly;
   align-items: center;
@@ -267,12 +282,17 @@ i.fas {
   backdrop-filter: blur(8px);
 }
 .contact-form {
+    margin-top: 10px;
   margin-left: 30px;
   margin-bottom: 30px;
   position: relative;
 }
 
 /*-----Contact form---------*/
+label {
+    font-size: 1rem;
+    color: white;
+}
 
 input[type="text"],
 input[type="email"],
@@ -286,20 +306,20 @@ textarea {
   resize: vertical;
 }
 
-input[type="button"] {
-  background-color: #b71419;
+.contact-form>.send {
+ background-color: rgb(55, 149, 93);
   color: white;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
+  width:120px;
+  height: fit-content;
+  font-size: 1.1rem;
+
 }
 
-input[type="button"]:hover {
-  background-color: #b71419;
-}
 
 .list-options {
-  
   cursor: pointer;
   
 }
@@ -309,9 +329,9 @@ input[type="button"]:hover {
     width: 100%;
     display: flex;
     margin: 0;
-    flex-flow: wrap-reverse;
+    flex-flow: nowrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     }
 
 /*----Timer Icon---*/
@@ -331,8 +351,7 @@ input[type="button"]:hover {
   outline: none;
   cursor: pointer;
   transition: all 500 ms ease-in-out;
-  margin-top: 10px;
-  margin-left: 40px;
+  margin: 0 auto;
 }
 
 /*----Reset Icon---*/
@@ -341,8 +360,8 @@ input[type="button"]:hover {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-    margin-top: 10px;
-    margin-left: 33px;
+  margin: 0 auto;  
+   
   background-color: white;
   box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
     5px 5px 10px rgba(48, 47, 47, 0.5);
@@ -379,7 +398,7 @@ input[type="button"]:hover {
     5px 5px 10px rgba(48, 47, 47, 0.5);
   border: 2px solid rgb(55, 149, 93);
   outline: none;
-    
+margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -387,9 +406,7 @@ input[type="button"]:hover {
   background-repeat: no-repeat;
   background-size: 40px;
   background-position: center;
-  margin-left: 4px;
-  margin-top: 10px;
-}
+ }
 
 .sound-icon-red {
   width: 50px;
@@ -632,7 +649,7 @@ input[type="button"]:hover {
         margin:20px auto;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
     }
 
   .cards-wrapper {
@@ -680,12 +697,6 @@ input[type="button"]:hover {
     border-radius: 15px;
   }
 
-  .timer,
-  .sound-icon,
-  .reset {
-    margin-top: 10px;
-    margin-left: 0px;
-}
 
   .navlinks {
     display: flex;
@@ -770,9 +781,10 @@ input[type="button"]:hover {
   }
   .info-icon {
     margin-right: 30px;
-  }
+  
       top: 337px;
     left: 188px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -925,37 +937,20 @@ input[type="button"]:hover {
 
   /*----Modal Window---*/
 
-  .modal-text {
-    display: none;
-  }
+  
   .modal-text.show {
     position: absolute;
     top: 337px;
-    left: 227px;
+    left: 427px;
   }
    
   
-
-  .info-text {
-    color: black;
-    margin: 5px;
-    font-size: 1.2rem;
-    padding: 10px;
-  }
   /*-------Contact form menu----*/
 
-  .form {
-    display: none;
-  }
   .form.show {
     width: 400px;
     height: 500px;
-    display: flex;
-    background-color: red;
-    position: absolute;
-    justify-content: space-evenly;
-    align-items: center;
-    z-index: 1;
+    
     top: 136px;
     left: 350px;
   }
@@ -965,8 +960,6 @@ input[type="button"]:hover {
     margin-bottom: 30px;
     position: relative;
   }
-  .timer{
-      margin-left: -50px;
-  }
+  
 }
 

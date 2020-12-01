@@ -38,12 +38,12 @@
   </head>
 
   <body>
-  <!---------------Start of Welcoe section--------------->
+  <!---------------Start of Welcome section--------------->
 <div class=" welcome" id="welcome">
 <div class="welcome_img" id="image"></div>
 <div class="buttons" id="buttons" >
-<button type="button" class="btn btn-primary" id="btnRules" onclick="rules()">Rules</button>
-<button type="button" class="btn btn-primary" id="btnStart" onclick="startFunction()">Start</button>
+<button type="button" class="btn btn-primary" id="btnRules" onclick="rulesButton()">Rules</button>
+<button type="button" class="btn btn-primary" id="btnStart" onclick="startButton()">Start</button>
 </div>
 </div>
 
@@ -84,7 +84,7 @@
           </p>
         </div>
         <div class="form" id="form">
-          <form class="contact-form" action="#">
+          <form class="contact-form" onsubmit="return sendMail(this);" method="POST">
             <label for="fname">First name:</label>
             <input
               type="text"
@@ -106,12 +106,12 @@
             <label for="text">Text</label><br />
             <textarea
               id="text"
-              name="text"
+              name="message"
               placeholder="Write to me.."
               required
               style="height: 140px"
             ></textarea>
-            <input type="button" value="Submit" />
+            <button type="submit" class= "send btn btn-secondary center-bock" value="Submit" >Send</button>
           </form>
         </div>
       </div>
@@ -119,6 +119,7 @@
 
     <div class="container-fluid d-none " id="buttonsWrapper">
       <div class="row buttons-wrapper">
+      <div class="col-xs-3 col-sm-2 col-md-3">
           <div class="list-options" id="options">
             <form id="langList">
               <select class="langOptions dropdown py-0" id="langSelect">
@@ -129,9 +130,16 @@
               </select>
             </form>
           </div>
+          </div>
+          <div class="col-xs-3 col-sm-2 col-md-3">
             <div id="time" class="timer"></div>
+          </div>
+            <div class="col-xs-3 col-sm-2 col-md-3">
             <div id="sound" class="sound-icon"></div>
+            </div>
+            <div class="col-xs-3 col-sm-2 col-md-3">
             <div id="reset" class="reset"></div>
+            </div>
         </div>
        
     </div>
@@ -249,9 +257,14 @@
       crossorigin="anonymous"
     ></script>
     <script src="assets/javascript/javascript.js"></script>
-    <script
-      type="text/javascript"
-      src="https://www.google.com/jsapi?key=AIzaSyC31fv7wyNHZmJ1fPdoZB-b3aKQqWlOeak"
-    ></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_Dcq8s6TRvJARVMhmcG0ay");
+   })();
+</script>
+<script src="assets/javascript/sendEmail.js"></script>
   </body>
 </html>
