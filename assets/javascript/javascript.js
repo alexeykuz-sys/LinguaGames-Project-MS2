@@ -176,6 +176,9 @@ randomEngWords();
 
 /*-------Timer----------*/
 
+
+
+
 var second = 0,
   minute = 0;
 var timer = document.querySelector(".time");
@@ -197,6 +200,7 @@ function startTimer(duration, display) {
       timer = duration;
     }
   }, 1000);
+  
 }
 
 jQuery(function ($) {
@@ -204,6 +208,12 @@ jQuery(function ($) {
     display = $("#time");
   startTimer(oneMinute, display);
 });
+
+
+
+function stopTimer() {
+    clearInterval(interval);
+}
 
 /*-----------Hamburger Button--------*/
 const hamburger = document.getElementById("hamburger");
