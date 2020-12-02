@@ -1,14 +1,20 @@
-function sendMail(contactForm){
-    emailjs.send("email", "lingugames", {
-        "from_name": "contactForm.name.value",
-        "from_email":"contactForm.emailaddress.value",
-        "message":"contactForm.message.value"
-    })
-    .then(
-        function(response){
-            console.log("success", response);
-        },
-        function(error){
-            console.log("failed", error)
-        })
-}
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'email';
+   const templateID = 'linguagames';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});

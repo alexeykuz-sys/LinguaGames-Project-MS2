@@ -5,6 +5,7 @@ const soundSound = new Audio("assets/sounds/table-lamp-flip-switch-off.wav");
 const failSound = new Audio("assets/sounds/game-fail.wav");
 const cards = document.querySelectorAll(".cards-inner");
 const resetBtn = document.getElementById("reset");
+
 /*-----------Sound Effect--------*/
 function playClickbtn() {
   if (soundBtn.classList.contains(`sound-icon-red`)) {
@@ -54,8 +55,8 @@ function startButton() {
   cardsWrapper.classList.remove("d-none")
   footerWrapper.classList.remove("d-none");
   welcome.classList.add("d-none")
+  
 }
-
 function rulesButton(){
     modalHandler()
 
@@ -64,7 +65,7 @@ function rulesButton(){
 
 /*-----------Language Button-----Translator-------*/
 
-const randomEngWords = () => {
+randomEngWords = () => {
   let engCards = [
     "boy",
     "girl",
@@ -106,11 +107,11 @@ const randomEngWords = () => {
     "horse",
     "ice",
   ];
-/*----Shuffles the words in array engCards-----*/
+    /*----Shuffles the words in array engCards-----*/
   while (engCards.length > 6) {
     engCards.splice(Math.floor(Math.random() * engCards.length), 1);
   }
-/*----assigns shuffled words to each card----------------*/
+    /*----assigns shuffled words to each card----------------*/
   var txtToTranslate = document.querySelectorAll("div.english");
   for (let i = 0; i < txtToTranslate.length; i++) {
     txtToTranslate[i].innerHTML = engCards[i];
@@ -122,12 +123,13 @@ const randomEngWords = () => {
   }
 
   
-/*---------------selects language to translate-------------*/
+    /*---------------selects language to translate-------------*/
     cardsToTranslate.forEach((cardToTranslate) => {
     const x = document.getElementById('langSelect');
     x.addEventListener('change', event => {
     const langTo = event.target.value
-
+    langTo = true;
+    console.log(langTo)
     
     
     
@@ -311,7 +313,7 @@ function unflippedCards() {
 function resetBoard() {
   [hasFlippedCard, lockBoard] = [false, false];
   [firstCard, secondCard] = [null, null];
-  console.log(firstCard)
+  
 }
 
 (function shuffle() {
