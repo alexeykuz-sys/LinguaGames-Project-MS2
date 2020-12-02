@@ -127,9 +127,7 @@ randomEngWords = () => {
     cardsToTranslate.forEach((cardToTranslate) => {
     const x = document.getElementById('langSelect');
     x.addEventListener('change', event => {
-    const langTo = event.target.value
-    langTo = true;
-    console.log(langTo)
+    const langTo = event.target.value;
     
     
     
@@ -271,6 +269,7 @@ soundBtn.addEventListener("click", soundHandler);
 let hasFlippedCard = false;
 let firstCard, secondCard;
 let lockBoard = false;
+let matchCounter = 0;
 
 function flipCard() {
   if (lockBoard) return;
@@ -284,16 +283,34 @@ function flipCard() {
     return;
   } else {
     secondCard = this;
-    checkMatch();
+    checkForMatch();
    
   }
 }
 
-function checkMatch() {
-  let isMatched = firstCard.dataset.language === secondCard.dataset.language;
-
-  isMatched ? disabledCards() : unflippedCards();
+function checkForMatch() {
+ let isMatch = firstCard.dataset.language === secondCard.dataset.language;
+console.log(isMatch)
+if(isMatch){
+    matchCounter+=1;
+   disabledCards();
+     if(matchCounter==(cards.length/2)){
+          window.alert("Congratulations! You Won!");
+      }
+   }
+   else{ unflipCards(); }
 }
+
+/*function checkMatch() {
+  if(firstCard.dataset.language === secondCard.dataset.language){
+    disabledCards();
+       if(matchCounter==(cards.length/2)){
+            window.alert("Congratulations! You Won!");
+        } 
+   } else { unflipCards();
+   }
+     
+}*/
 
 function disabledCards() {
   firstCard.removeEventListener("click", flipCard);
@@ -301,7 +318,7 @@ function disabledCards() {
   resetBoard();
 }
 
-function unflippedCards() {
+function unflipCards() {
   lockBoard = true;
   setTimeout(() => {
     firstCard.classList.remove("flip");
@@ -334,6 +351,6 @@ function resetBtnHandler(){
     cards[i].classList.remove("flip");
   
     }
-    langTo.value= language;
+    
 
 }
