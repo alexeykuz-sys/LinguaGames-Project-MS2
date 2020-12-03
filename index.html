@@ -35,10 +35,9 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    <script type="text/javascript">
+        emailjs.init('user_Dcq8s6TRvJARVMhmcG0ay')
     </script>
-    
   </head>
 
   <body>
@@ -87,34 +86,24 @@
         </div>
         <div class="form" id="form">
           <form class="contact-form">
-            <label for="fname">First name:</label>
-            <input
-              type="text"
-              id="from_name"
-              name="name"
-              placeholder="Your name.."
-              required
-            />
+  <div class="field">
+    <label for="from_name">Name</label>
+    <input type="text" name="from_name" id="from_name">
+  </div>
+  <div class="field">
+    <label for="message">Message</label>
+    <input type="text" name="message" id="message">
+  </div>
+  <div class="field">
+    <label for="from_email">Email</label>
+    <input type="text" name="from_email" id="from_email">
+  </div>
+  <div class="field">
+    <label for="reply_to">reply_to</label>
+    <input type="text" name="reply_to" id="reply_to">
+  </div>
 
-            <br />
-            <label for="email">Email:</label><br />
-            <input
-              type="email"
-              id="from_email"
-              name="from_email"
-              placeholder="Your email..."
-              required
-            /><br />
-            <label for="text">Text</label><br />
-            <textarea
-                type="text"
-              id="message"
-              name="message"
-              placeholder="Write to me.."
-              required
-              style="height: 140px"
-            ></textarea>
-             <input type="submit" id="button" value="Send Email" >
+  <input type="submit" id="button" value="Send Email" >
           </form>
         </div>
       </div>
@@ -226,6 +215,12 @@
           </div>
         </div>
     </div>
+     <div id="win-modal" class="modal-win">
+        <div class="modal-win-content">
+<div class="iframe"><iframe src="https://giphy.com/embed/cOtvwSHKaFK3Ul1VVu" frameborder="0" class="giphy-embed" allowfullscreen></iframe></div><p><a href="https://giphy.com/gifs/memecandy-cOtvwSHKaFK3Ul1VVu">via GIPHY</a></p>
+            <button class="play-again" onclick="location.reload(true);">Play Again!</button>
+        </div>
+    </div>
     <!--Footer-->
     <div class="container-fluid px-0 d-none " id="footerWrapper">
       <div class="row">
@@ -259,16 +254,11 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    
     <script src="assets/javascript/javascript.js"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("user_Dcq8s6TRvJARVMhmcG0ay")
-   })();
-</script>
-<script src="assets/javascript/sendEmail.js"></script>
+    <script src="assets/javascript/sendEmail.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 
+    
   </body>
 </html>

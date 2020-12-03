@@ -25,13 +25,17 @@ body {
 
 .welcome {
     width: 250px;
-    
-    height: 360px;
-    display: flex;
+    height: 350px;
+    max-width: 100%;
+    max-height: 100%;
+    transform: translate(-50%,-50%);
+    top:45%;
+    left:50%;
+    display: block;
     align-items: flex-start;
     justify-content: center;
-    margin: 90px auto;
     flex-flow: column;
+    position: absolute;
 }
 
 
@@ -41,34 +45,43 @@ body {
  height:70%; 
  background-image: url("../images/linguaGamesWelcome.png");
  background-repeat: no-repeat;
- border-radius: 20px
+ border-radius: 20px;
+     box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(43, 41, 41, 0.562),
+    inset -3px -3px 10px rgba(255, 255, 255, 0.5),
+    inset 2px 3px 7px rgba(153, 152, 152, 0.025);
+  border: 1px solid rgba(48, 47, 47, 0.082);
+  outline: none;
 }
 
-.buttons {
-    position: relative;
+#btnRules,
+#btnStart{
+    
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 10px;
+    box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5);
+  border: 1px solid rgba(48, 47, 47, 0.082);
+  outline: none;
+  position: relative;
     height: 30%;
     width: 200px;
-    margin: 10px auto;
+    margin: 30px auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
 }
 
-.btn {
-    width: 100%;
-    margin-top: 15px;
+#btnRules:active,
+#btnStart:active {
+  box-shadow: -1px -1px 19px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5),
+    inset -3px -3px 10px rgba(255, 255, 255, 0.5),
+    inset 2px 3px 7px rgba(153, 152, 152, 0.025);
 }
 
-.welcome #float{
-    position: absolute;
-    width: 120px;
-    height: 50px;
-    top:10px;
-    left:10px;
-    color: red;
-    background-color: yellow;
-}
 
 /*---Navigaton-----*/
 
@@ -195,22 +208,24 @@ i.fas {
   float: right;
 }
 
+
+
 /*Modal Text*/
 
 .modal_text {
   display: none;
-  z-index: 1;
-  overflow: auto;
-
+ 
 }
 .modal_text.show {
-   width: 400px;
-  height: 345px;
-  top: 337px;
-  left: 45px;
+   width: 600px;
+   max-width: 100%;
+   max-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
   position: absolute;
   display: flex;
-  max-width: 300px;
   box-shadow: 4px 4px 20px black;
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.65);
@@ -222,6 +237,58 @@ i.fas {
   font-size: 1rem;
   padding: 10px;
 }
+
+
+
+.modal-win {
+    background-image: linear-gradient(
+    to bottom,
+    rgb(5, 57, 97),
+    rgb(10, 105, 177));
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    width: 261px;
+    max-width: 100%;
+    height: 255px;
+    max-height: 100%;
+    overflow: auto;
+}
+
+.modal-win-content {
+display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    /* padding: 25px; */
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.iframe {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.modal-win .play-again{
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    bottom: 15px;
+  border-radius: 15%;
+  padding: 5px;
+    color: red;
+
+}
+
 /*Gear Buttons*/
 
 .settings-icon {
@@ -261,29 +328,44 @@ i.fas {
 }
 
 .form.show {
-  width: 400px;
-  height: 500px;
-  display: flex;
-  background-image: linear-gradient(
-    to bottom,
-    rgb(5, 57, 97),
-    rgb(10, 105, 177)
-  );
-
-  position: absolute;
-  justify-content: space-evenly;
   align-items: center;
-  z-index: 1;
-  top: 150px;
-  left: 125px;
-
-  backdrop-filter: blur(8px);
+    justify-content: center;
+    width: 335px;
+    max-width: 100%;
+    max-height: 100%;
+    height: 474px;
+    border-radius: 5%;
+    display: flex;
+    background-image: linear-gradient( to bottom, rgb(5, 57, 97), rgb(10, 105, 177) );
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    backdrop-filter: blur(8px);
 }
 .contact-form {
-    margin-top: 10px;
+    margin-top: 25px;
   margin-left: 30px;
   margin-bottom: 30px;
   position: relative;
+}
+#button {
+    padding: 3px;
+    font-size: 1.2rem;
+    margin: 10px auto;
+    border-radius: 7px;
+    background-color: white;
+  box-shadow: -1px -1px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5);
+  border: 2px solid rgba(48, 47, 47, 0.5);
+  outline: none;
+}
+#button:active{
+     box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5),
+    inset -1px -1px 10px rgba(255, 255, 255, 0.5),
+    inset 1px 1px 10px rgba(48, 47, 47, 0.37);
 }
 
 /*-----Contact form---------*/
@@ -304,7 +386,7 @@ textarea {
   resize: vertical;
 }
 
-.contact-form>.send {
+/*.contact-form>.send {
  background-color: rgb(55, 149, 93);
   color: white;
   padding: 12px 20px;
@@ -314,7 +396,7 @@ textarea {
   height: fit-content;
   font-size: 1.1rem;
 
-}
+}*/
 
 
 .list-options {
@@ -431,7 +513,10 @@ margin: 0 auto;
 
 .dropdown {
   width: 113px;
+  max-width: 100%;
   height: 45px;
+  max-height: 100%;
+  
   padding-left: 2px;
   padding-right: 1px;
   font-weight: 700;
@@ -454,100 +539,6 @@ margin: 0 auto;
   transition: transform 0.2s;
   
 }
-
-
-/*.dropdown:active {
-  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
-    5px 5px 10px rgba(48, 47, 47, 0.5);
-  border: 2px solid rgb(55, 149, 93);
-}
-
-.dropdown input {
-  margin: auto;
-  z-index: 1;
-  border: none;
-  background: none;
-  outline: none;
-  cursor: pointer;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: black;
-  font-size: 0.8rem;
-  font-weight: 700;
-  text-transform: capitalize;
-  width: fit-content;
-}
-
-.dropdown i {
-  position: absolute;
-  color: #f45b69;
-  top: 40%;
-  right: 5%;
-  transform: translateX(-50%);
-  transition: all 500 ms ease-in-out;
-  font-size: 1rem;
-}
-
-.dropdown.show i {
-  transform: translateX(-50%) rotate(180deg);
-  transition: all 500 ms ease-in-out;
-}
-
-.options {
-  position: absolute;
-  cursor: pointer;
-  top: 28px;
-  left: -1px;
-  width: 87px;
-  height: 108px;
-  z-index: 1;
-  border-radius: 10px;
-  background: #ffffff;
-  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
-    5px 5px 10px rgba(48, 47, 47, 0.5);
-  border: 2px solid rgb(55, 149, 93);
-  transition: all 500 ms ease-in-out;
-  visibility: hidden;
-  opacity: 0;
-  font-weight: 500;
-}
-
-.options li img {
-  padding: 2px;
-  width: 24px;
-}
-
-.dropdown.show .options {
-  visibility: visible;
-  opacity: 1;
-  transition: all 500 ms ease-in-out;
-}
-
-.options li {
-  position: relative;
-  padding: 5px;
-  margin-left: 0.5px;
-  list-style-type: none;
-  color: black;
-  font-size: 0.8rem;
-  font-weight: 700;
-  transition: all 500 ms ease-in-out;
-}
-.options li:first-child {
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  margin-top: 12px;
-}
-
-.options li:last-child {
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
-.options li:hover {
-  background: rgb(224, 222, 222);
-}*/
 
 /*Cards*/
 
@@ -704,18 +695,9 @@ margin: 0 auto;
   .info-icon {
     margin-right: 30px;
   }
-
-  .form.show {
-    top: 165px;
-    left: 40px;
-  }
-  .modal_text.show{
-    position: absolute;
-    top: 337px;
-    left: 130px;
-    
-  }
+  
 }
+
 
 @media (min-width: 576px) {
     .buttons-wrapper{
@@ -782,16 +764,8 @@ margin: 0 auto;
       top: 337px;
     left: 170px;
   }
-  .form.show {
-    top: 165px;
-    left: 200px;
-  }
   
-   .modal_text.show{
-    position: absolute;
-    top: 165px;
-    left: 100px;
-  }
+  
 }
 
 @media (min-width: 768px) {
@@ -839,21 +813,9 @@ margin: 0 auto;
     display: flex;
     width: 100%;
     height: 100%;
-   
     
   }
 
-
-   .form.show {
-    top: 165px;
-    left: 200px;
-  }
-
-  .modal_text.show{
-    position: absolute;
-    top: 337px;
-    left: 205px;
-  }
 }
 
 
@@ -950,27 +912,7 @@ margin: 0 auto;
     margin: auto 70px;
   }
 
-  /*----Modal Window---*/
 
-  
-  .modal_text.show {
-    top: 337px;
-    left: 460px;
-  }
-   
-  
-  /*-------Contact form menu----*/
-
-  .form.show {
-    top: 190px;
-    left: 400px;
-  }
-
-  .contact-form {
-    margin-left: 30px;
-    margin-bottom: 30px;
-    position: relative;
-  }
   
 }
 

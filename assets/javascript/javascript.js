@@ -176,12 +176,10 @@ randomEngWords();
 
 /*-------Timer----------*/
 
-
-
-
 var second = 0,
   minute = 0;
 var timer = document.querySelector(".time");
+console.log(timer)
 var interval;
 function startTimer(duration, display) {
   var timer = duration,
@@ -190,7 +188,8 @@ function startTimer(duration, display) {
   interval = setInterval(function () {
     minutes = parseInt(timer / 60, 10);
     seconds = parseInt(timer % 60, 10);
-
+console.log(duration,display)
+console.log(timer)
     minutes = minutes < 10 ? "0" + minutes : minutes;
     seconds = seconds < 10 ? "0" + seconds : seconds;
 
@@ -206,14 +205,11 @@ function startTimer(duration, display) {
 jQuery(function ($) {
   var oneMinute = 60 * 1,
     display = $("#time");
+    
   startTimer(oneMinute, display);
+  
 });
 
-
-
-function stopTimer() {
-    clearInterval(interval);
-}
 
 /*-----------Hamburger Button--------*/
 const hamburger = document.getElementById("hamburger");
@@ -298,6 +294,8 @@ function flipCard() {
   }
 }
 
+
+
 function checkForMatch() {
  let isMatch = firstCard.dataset.language === secondCard.dataset.language;
 console.log(isMatch)
@@ -305,27 +303,18 @@ if(isMatch){
     matchCounter+=1;
    disabledCards();
      if(matchCounter==(cards.length/2)){
-          window.alert("Congratulations! You Won!");
+        /*clearInterval(timer.clearTime);*/
+         $('.modal-win').css("display", "block");
       }
    }
    else{ unflipCards(); }
 }
 
-/*function checkMatch() {
-  if(firstCard.dataset.language === secondCard.dataset.language){
-    disabledCards();
-       if(matchCounter==(cards.length/2)){
-            window.alert("Congratulations! You Won!");
-        } 
-   } else { unflipCards();
-   }
-     
-}*/
-
 function disabledCards() {
   firstCard.removeEventListener("click", flipCard);
   secondCard.removeEventListener("click", flipCard);
   resetBoard();
+  
 }
 
 function unflipCards() {
@@ -340,7 +329,7 @@ function unflipCards() {
 function resetBoard() {
   [hasFlippedCard, lockBoard] = [false, false];
   [firstCard, secondCard] = [null, null];
-  
+  console.log(lockBoard,firstCard,secondCard)
 }
 
 (function shuffle() {
@@ -356,11 +345,6 @@ cards.forEach((card) => card.addEventListener("click", flipCard));
 resetBtn.addEventListener('click',resetBtnHandler)
  
 function resetBtnHandler(){
-    const cards = document.querySelectorAll(".cards-inner");
-   for(i=0;i<cards.length; i++){
-    cards[i].classList.remove("flip");
-  
-    }
-    
+    location.reload()
 
 }

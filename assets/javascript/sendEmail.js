@@ -6,7 +6,7 @@ document.getElementById('form')
 
    btn.value = 'Sending...';
 
-   const serviceID = 'email';
+   const serviceID = 'default_service';
    const templateID = 'linguagames';
 
    emailjs.sendForm(serviceID, templateID, this)
