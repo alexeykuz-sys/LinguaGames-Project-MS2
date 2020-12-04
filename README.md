@@ -143,12 +143,7 @@ rgb(10,  105,  177);
 
 **1.8. Features**
 
-View my wireframes here. To be more precise:
-
--   Desktop Wireframe
--   Tablet Wireframe
--   Mobile Wireframe
-
+View my wireframes here.
 
 **1.9. Technologies Used**
 
@@ -190,7 +185,7 @@ JS was tested on [JSHint](https://jshint.com/)
   
 Responsiveness
 
--   **Implementation** Ive used **Bootstrap** and Flexbox throughout the project to ensure **maximum** responsibility. Ive tested with **above tools and results was good except for photos in review section are not adapting properly to various widths.**
+-   **Implementation** I tried CSS Grid but eventually opted to use **Bootstrap** and Flexbox throughout the project to ensure **maximum** responsibility. I've tested with **above tools and results was good except for photos in review section are not adapting properly to various widths.**
 
 Contact form
 
@@ -276,3 +271,6 @@ Code
 **Disclaimer**
 
 The content on this website is for the purpose of this project only.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNjY0NjU4NDI2XX0=
+-->
