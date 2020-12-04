@@ -1,2 +1,2 @@
-![](../assets/images/WIREFRAMES.png)
+![](assets/images/WIREFRAME.png)
 
