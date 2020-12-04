@@ -247,7 +247,8 @@ Media
 
 Code
 i used various youtube and website to get ideas and logic of the game.
-[]
+[Memory Game](https://medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae)
+
 
 **6. Acknowledgements**
 
@@ -260,5 +261,5 @@ i used various youtube and website to get ideas and logic of the game.
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNjE5MjMwN119
+eyJoaXN0b3J5IjpbLTgxMTE5OTIwOF19
 -->
