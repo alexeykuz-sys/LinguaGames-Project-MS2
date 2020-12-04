@@ -5,7 +5,7 @@
 
 **LinguaGames**
 
-  [Lingua Games](assets/images/linguaGamesWelcome.png)
+  ![Alt](assets/images/linguaGamesWelcome.png)
 
 **Contents**
 
@@ -144,6 +144,12 @@ rgb(10,  105,  177);
 **1.8. Features**
 
 View my wireframes here.
+-   One-page website with  **4**  main sections.
+-   Fixed navigation bar - Menu headings pointing to each of the 4 pages.
+-   Home, About, Reserves and Contact pages
+-   Footer with Copyright info and Social Media icons
+-   (Add Country info via API - stretch goal dependent on time) - Stretch goal completed - Country REST API Info presented on About section.
+-   (Review API section - stretch goal)
 
 **1.9. Technologies Used**
 
@@ -260,5 +266,5 @@ I used various YouTube and website to get ideas and logic of the game.
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjcwMjE0OTY4LDExNDE4Njg1MTNdfQ==
+eyJoaXN0b3J5IjpbLTE4MDU4NzA4MCwxMTQxODY4NTEzXX0=
 -->
