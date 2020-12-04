@@ -132,10 +132,11 @@ Icons used where provided by [Font Awesome](https://fontawesome.com/), used in m
 
 Colours
 
-The colours were determined by the pallete of Cooler website:
+The colours were determined by the pallet of Cooler website:
 
 -   For body text and some titles: ???;
--   For navbar:
+-   For navbar and contact modal:
+i used linear gradient of 
 rgb(5,  57,  97),
 and
 rgb(10,  105,  177);
@@ -265,5 +266,6 @@ I used various YouTube and website to get ideas and logic of the game.
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTY3ODEzNzIsMTE0MTg2ODUxM119
+eyJoaXN0b3J5IjpbMjEyMzQ4Nzk0MSwtMTMxNjc4MTM3MiwxMT
+QxODY4NTEzXX0=
 -->
