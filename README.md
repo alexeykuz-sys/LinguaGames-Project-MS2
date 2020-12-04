@@ -185,7 +185,7 @@ JS was tested on [JSHint](https://jshint.com/)
   
 Responsiveness
 
--   **Implementation** I tried CSS Grid but eventually opted to use **Bootstrap** and Flexbox throughout the project to ensure **maximum** responsibility. I've tested with **above tools and results was good except for photos in review section are not adapting properly to various widths.**
+-   **Implementation** I tried CSS Grid but eventually opted to use **Bootstrap** and Flexbox throughout the project to ensure **maximum** responsibility. I've tested with **above tools and results was good except for ????.**
 
 Contact form
 
@@ -236,21 +236,14 @@ To clone this project from GitHub:
 
 git clone …….
 
-  
-
-  
-
-  
-
-  
-
+ 
 **5. Credits**
 
   
 
 Media
 
--   The images used in this project belongs to photographer.
+-   The image for s used in this project belongs to photographer.
 
   
 
@@ -272,5 +265,5 @@ Code
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY0NjU4NDI2XX0=
+eyJoaXN0b3J5IjpbMTIyMDc1Nzg4M119
 -->
