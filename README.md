@@ -246,13 +246,12 @@ Media
 -   The image for a game logo was taken from internet.
 
 Code
-i used various youtube and website to get ideas and logic of the game.
+I used various YouTube and website to get ideas and logic of the game.
 [Memory Game](https://medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae)
 
 
 **6. Acknowledgements**
 
--   Idea of website was real life need to update my personal photography webiste.
 -   My mentor ……. guided me along the way with tips on presentation and resources for writing code.
 
   
@@ -261,5 +260,5 @@ i used various youtube and website to get ideas and logic of the game.
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMTE5OTIwOF19
+eyJoaXN0b3J5IjpbMTE0MTg2ODUxM119
 -->
