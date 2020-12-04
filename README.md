@@ -181,6 +181,7 @@ Features to implement:
 - [Flag icons](https://www.countryflags.com/en/)
 - [Icons8](https://icons8.com/icon/NHEVr1Qkidu0)
 - [Canva](https://canva.com/)
+- [RapidAP]()
   
 
 **2. Testing**
@@ -206,11 +207,6 @@ Contact form
 
  
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
-
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
 
 [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly) -
@@ -220,9 +216,11 @@ For any scenarios that have not been automated, test the user stories manually a
 
 **4. Version Control**
 
-> -   Used Git for version control.
-> -   Branches were created to work on alternative layout and buttons.
-> -   The branches were then merged with the master branch after any conflicts were addressed.
+ -   Used Git for version control.
+ -   Branches were created to work on alternative grid layout.
+ -   The branches were then merged with the master branch after any conflicts were addressed.
+
+
 **4. Project Deployment**
 
 I built website using **gitpod** and **GitHub** to host the repository.
@@ -276,6 +274,6 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2OTQwODk5MiwtMTYwNTE0NzExNiw4NT
+eyJoaXN0b3J5IjpbLTI4NjMyNTc3OSwtMTYwNTE0NzExNiw4NT
 Q1NzcxOTIsLTEzMTY3ODEzNzIsMTE0MTg2ODUxM119
 -->
