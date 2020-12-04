@@ -221,8 +221,6 @@ For any scenarios that have not been automated, test the user stories manually a
 
 **4. Project Deployment**
 
-  
-
 I built website using **gitpod** and **GitHub** to host the repository.
 
 To deploy the website using **GitHub Pages** the following steps have to be made:
@@ -274,6 +272,6 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk4NDc2NzExLC0xNjA1MTQ3MTE2LDg1ND
+eyJoaXN0b3J5IjpbODYxMTI0MjkxLC0xNjA1MTQ3MTE2LDg1ND
 U3NzE5MiwtMTMxNjc4MTM3MiwxMTQxODY4NTEzXX0=
 -->
