@@ -227,7 +227,7 @@ To deploy the website using **GitHub Pages** the following steps have to be made
 
 -   Opened up and log in **GitHub** in the **browser**.
 -   Selected my [repositories](https://github.com/alexeykuz-sys?tab=repositories).
--   Navigated  and open project to ????
+-   Navigated  and open project to [MS2_LinguaGames_Project](https://github.com/alexeykuz-sys/MS2_LinguaGames_Project)
 -   In the top navigation clicked **settings**.
 -   Scrolled down to the **GitHub Pages** area.
 -   Selected **Master Branch** from the **Source** dropdown menu.
@@ -272,6 +272,6 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYxMTI0MjkxLC0xNjA1MTQ3MTE2LDg1ND
-U3NzE5MiwtMTMxNjc4MTM3MiwxMTQxODY4NTEzXX0=
+eyJoaXN0b3J5IjpbMTczNDE1NDEwMywtMTYwNTE0NzExNiw4NT
+Q1NzcxOTIsLTEzMTY3ODEzNzIsMTE0MTg2ODUxM119
 -->
