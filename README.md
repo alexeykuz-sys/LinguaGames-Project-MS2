@@ -258,7 +258,10 @@ The image for a game logo was taken from internet.
 
 I used various YouTube and website to get ideas and logic of the game.
 [Memory Game](https://medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae)
+and
+[How to build memory game](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript)
 
+[Timer](https://css-tricks.com/how-to-create-an-animated-countdown-timer-with-html-css-and-javascript/)
 
 **6. Acknowledgements**
 I would like to thank:
@@ -271,6 +274,6 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDM5OTQzMjUsLTE2MDUxNDcxMTYsOD
-U0NTc3MTkyLC0xMzE2NzgxMzcyLDExNDE4Njg1MTNdfQ==
+eyJoaXN0b3J5IjpbNzk4NDc2NzExLC0xNjA1MTQ3MTE2LDg1ND
+U3NzE5MiwtMTMxNjc4MTM3MiwxMTQxODY4NTEzXX0=
 -->
