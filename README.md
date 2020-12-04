@@ -146,10 +146,14 @@ rgb(10,  105,  177);
 
 View my wireframes here.
 It's one-page website with  a number of modal windows. I used JS to hide windows and information to make sure users are not distracted by excessive information on the page.
--   I placed only fixed navigation bar  with Logo and menu, linking user to the rules of the game and contact modal.
+I placed only fixed navigation bar  with Logo and menu, linking user to the rules of the game and contact modal, and cards to play with.
 
--   Footer with Copyright info and Social Media icons
--   Translation API that translates seamlessly English words into three languages.
+Footer with Copyright info and Social Media icons
+
+Translation API that translates seamlessly behind the scene  English words into three languages.
+
+Features to implement:
+
 
 **1.9. Technologies Used**
 
@@ -266,6 +270,6 @@ I used various YouTube and website to get ideas and logic of the game.
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTI2Mzc4NDYsLTEzMTY3ODEzNzIsMT
-E0MTg2ODUxM119
+eyJoaXN0b3J5IjpbODgzODk1NTI2LC0xMzE2NzgxMzcyLDExND
+E4Njg1MTNdfQ==
 -->
