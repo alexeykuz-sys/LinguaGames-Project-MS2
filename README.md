@@ -252,20 +252,7 @@ git clone …….
 
   > ##### Media
 > 
-> -   Site background image from  [Public Domain Pictures](https://www.publicdomainpictures.net/en/view-image.php?image=129300&picture=seamless-zebra-pattern)
-> -   Intro carousel images from  [Unsplash](https://unsplash.com/)
-> -   About page image from  [Graham Springer Fine Art](http://www.grahamspringer.com/)
-> -   Africa outline image from  [Pintrest](https://www.pinterest.ie/pin/77616793558531466/)
-> -   Combination of above 2 images into final product - self-made on Photoshop
-> -   Reserve placeholder image and footer (edited for needs) taken image from  [PNGFuel](https://www.pngfuel.com/)
-> -   Preload antelope animation .gif from  [Icons8](https://icons8.com/preloaders/en/people_and_animals)
-
-> ##### [](https://github.com/JimLynx/CI-MS2-Safari-Africa#content)Content
-> 
-> -   Tim Nelsons's extensive documentation on LeafletJS Maps from his MS2 project
-> 
-> ##### [](https://github.com/JimLynx/CI-MS2-Safari-Africa#bootstrap-4-cdn-boilerplate)Bootstrap 4 CDN Boilerplate
-> 
+> -  
 > -   I've taken advantage of  _Simen Daehlin's_  template boilerplate from his  [Marketplace](https://marketplace.visualstudio.com/items?itemName=eventyret.bootstrap-4-cdn-snippet)
 > 
 > ##### [](https://github.com/JimLynx/CI-MS2-Safari-Africa#code-snippets)Code Snippets
@@ -299,6 +286,6 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDUxNDcxMTYsODU0NTc3MTkyLC0xMz
-E2NzgxMzcyLDExNDE4Njg1MTNdfQ==
+eyJoaXN0b3J5IjpbLTEwODEzMjQyMDUsLTE2MDUxNDcxMTYsOD
+U0NTc3MTkyLC0xMzE2NzgxMzcyLDExNDE4Njg1MTNdfQ==
 -->
