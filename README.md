@@ -218,7 +218,11 @@ For any scenarios that have not been automated, test the user stories manually a
 **3. Bugs and Debugging**
 
 
+**4. Version Control**
 
+> -   Used Git for version control.
+> -   Branches were created to work on alternative layout and buttons.
+> -   The branches were then merged with the master branch after any conflicts were addressed.
 **4. Project Deployment**
 
 I built website using **gitpod** and **GitHub** to host the repository.
@@ -272,6 +276,6 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ5NDQ4MTU3LC0xNjA1MTQ3MTE2LDg1ND
-U3NzE5MiwtMTMxNjc4MTM3MiwxMTQxODY4NTEzXX0=
+eyJoaXN0b3J5IjpbMTc2OTQwODk5MiwtMTYwNTE0NzExNiw4NT
+Q1NzcxOTIsLTEzMTY3ODEzNzIsMTE0MTg2ODUxM119
 -->
