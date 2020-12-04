@@ -145,8 +145,8 @@ rgb(10,  105,  177);
 **1.8. Features**
 
 View my wireframes here.
--   One-page website with  a number of modal windows
--   Fixed navigation bar  with Logo and menu, linking user to the rules of the game and contact modal.
+It's one-page website with  a number of modal windows. I used JS to hide windows and information to make sure users are not distracted by excessive information on the page.
+-   I placed only fixed navigation bar  with Logo and menu, linking user to the rules of the game and contact modal.
 
 -   Footer with Copyright info and Social Media icons
 -   Translation API that translates seamlessly English words into three languages.
@@ -266,6 +266,6 @@ I used various YouTube and website to get ideas and logic of the game.
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMzQ4Nzk0MSwtMTMxNjc4MTM3MiwxMT
-QxODY4NTEzXX0=
+eyJoaXN0b3J5IjpbLTE4MTI2Mzc4NDYsLTEzMTY3ODEzNzIsMT
+E0MTg2ODUxM119
 -->
