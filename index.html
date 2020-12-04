@@ -35,9 +35,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script type="text/javascript">
-        emailjs.init('user_Dcq8s6TRvJARVMhmcG0ay')
-    </script>
+    
   </head>
 
   <body>
@@ -140,9 +138,9 @@
       <div class="container-fluid d-none" id="cardsWrapper">
         <div class="row cards-wrapper">
           <div class="col col-xs-6 col-sm-4 col-md-4 col-lg-3">
-            <div class="cards-inner" data-language="english-1">
+            <div class="cards-inner" >
               <div class="card-1 card-face">Card-1</div>
-              <div class="card-1-back card-back english"></div>
+              <div class="card-1-back card-back english" data-language="english-1"></div>
             </div>
           </div>
           <div class="col col-xs-6 col-sm-4 col-md-4 col-lg-3">
@@ -177,9 +175,9 @@
             </div>
           </div>
           <div class="col col-xs-3 col-sm-4 col-md-4 col-lg-3">
-            <div class="cards-inner" data-language="english-1">
+            <div class="cards-inner" >
               <div class="card-7 card-face">Card-7</div>
-              <div class="card-7-back card-back txtTo"></div>
+              <div class="card-7-back card-back txtTo" data-language="english-1"></div>
             </div>
           </div>
           <div class="col col-xs-3 col-sm-4 col-md-4 col-lg-3">
@@ -258,7 +256,9 @@
     <script src="assets/javascript/javascript.js"></script>
     <script src="assets/javascript/sendEmail.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-
+    <script type="text/javascript">
+        emailjs.init('user_Dcq8s6TRvJARVMhmcG0ay')
+    </script>
     
   </body>
 </html>

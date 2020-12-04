@@ -5,6 +5,7 @@ const soundSound = new Audio("assets/sounds/table-lamp-flip-switch-off.wav");
 const failSound = new Audio("assets/sounds/game-fail.wav");
 const cards = document.querySelectorAll(".cards-inner");
 const resetBtn = document.getElementById("reset");
+const dummyTranslation = {"code":200,"data":{"translation":"niño, casa, ausencia, droga, comer, ojo","pronunciation":"","pairs":[{"s":"boy,house,absence,drug,eat,eye","t":"niño, casa, ausencia, droga, comer, ojo"}],"source":{"language":{"didYouMean":false,"iso":"en"},"text":{"autoCorrected":false,"value":"boy,house,absence,drug,[east],eye","didYouMean":true}}},"message":""}
 
 /*-----------Sound Effect--------*/
 function playClickbtn() {
@@ -45,11 +46,11 @@ function playFailSound() {
 /*-----------Welcome page-------*/
 
 function startButton() {
-  var navbar = document.getElementById("navbar");
-  var welcome = document.getElementById("welcome");
-  var buttonsWrapper = document.getElementById("buttonsWrapper");
-  var cardsWrapper = document.getElementById("cardsWrapper");
-  var footerWrapper = document.getElementById("footerWrapper");
+  let navbar = document.getElementById("navbar");
+  let welcome = document.getElementById("welcome");
+  let buttonsWrapper = document.getElementById("buttonsWrapper");
+  let cardsWrapper = document.getElementById("cardsWrapper");
+  let footerWrapper = document.getElementById("footerWrapper");
   buttonsWrapper.classList.remove("d-none")
   navbar.classList.remove("d-none");
   cardsWrapper.classList.remove("d-none")
@@ -66,7 +67,8 @@ function rulesButton(){
 /*-----------Language Button-----Translator-------*/
 
 randomEngWords = () => {
-  let engCards = [
+  let engCards = ['boy','house','absence','drug', 'eat','eye']
+  /* [
     "boy",
     "girl",
     "house",
@@ -106,13 +108,13 @@ randomEngWords = () => {
     "head",
     "horse",
     "ice",
-  ];
+  ];*/
     /*----Shuffles the words in array engCards-----*/
-  while (engCards.length > 6) {
+  /*while (engCards.length > 6) {
     engCards.splice(Math.floor(Math.random() * engCards.length), 1);
-  }
+  }*/
     /*----assigns shuffled words to each card----------------*/
-  var txtToTranslate = document.querySelectorAll("div.english");
+  let txtToTranslate = document.querySelectorAll("div.english");
   for (let i = 0; i < txtToTranslate.length; i++) {
     txtToTranslate[i].innerHTML = engCards[i];
   }
@@ -129,60 +131,73 @@ randomEngWords = () => {
     x.addEventListener('change', event => {
     const langTo = event.target.value;
     
-    
-    
  /*----------------Translation API-------*/
    
-    const translate_url =
+    const google_url = "https://google-translate20.p.rapidapi.com/translate?text="+
+      cardsToTranslate +"&tl="+langTo+"&sl=en";
+    /*const translate_url =
       "https://just-translated.p.rapidapi.com/?text=" +
       cardsToTranslate +
       "&lang_from=en&lang_to=" +
-      langTo;
+      langTo;*/
 
     /*const nlp_url =
     "https://nlp-translation.p.rapidapi.com/v1/translate?to="+langTo+"&text=" +
     cardToTranslate +
     "&from=en";*/
-    getTranslation(translate_url);
+    getTranslation(google_url);
   });
   });
-  async function getTranslation(url) {
-    const response = await fetch(url, {
-      method: "GET",
-      headers: {
-        "x-rapidapi-key": "e019a7a6e9mshc800b72ecf1a5e1p1f3597jsn00fad202704a",
-        "x-rapidapi-host": "just-translated.p.rapidapi.com",
-      },
-    });
-    var translatedData;
-    const data = await response.json();
+   async function getTranslation(url) {
+    const translatedData = dummyTranslation.data.translation;
+    let result = translatedData.split(",");
 
-    var translatedData = data.text;
-
-    var result = translatedData[0].split(",");
-
-    translatedText = document.querySelectorAll("div.txtTo");
+       translatedText = document.querySelectorAll("div.txtTo");
     
     for (let i = 0; i < result.length; i++) {
       translatedText[i].innerHTML = result[i];
-
+        
     }
-  }
-  getTranslation().catch((err) => {
-    console.error(err);
-  });
-};
+   }
+//   async function getTranslation(url) {
+//     const response = await fetch(url, {
+//       method: "GET",
+//       headers: {
+//         "x-rapidapi-key": "e019a7a6e9mshc800b72ecf1a5e1p1f3597jsn00fad202704a",
+//         "x-rapidapi-host": "google-translate20.p.rapidapi.com"
+//         /*"x-rapidapi-host": "just-translated.p.rapidapi.com"*/
+//       },
+//     });
+//     let translatedData;
+//     const data = await response.json();
+//     console.log(data);
+//     let translatedData = data.data.translation;
+//     /*let translatedData = data.text; just translated*/
+//     console.log(translatedData)
+//     let result = translatedData.split(",");
+
+//     translatedText = document.querySelectorAll("div.txtTo");
+    
+//     for (let i = 0; i < result.length; i++) {
+//       translatedText[i].innerHTML = result[i];
+//         console.log(translatedText)
+//     }
+//   }
+//   getTranslation().catch((err) => {
+//     console.error(err);
+//   });
+ };
 randomEngWords();
 
 /*-------Timer----------*/
 
-var second = 0,
+/*let second = 0,
   minute = 0;
-var timer = document.querySelector(".time");
+let timer = document.querySelector(".time");
 console.log(timer)
-var interval;
+let interval;
 function startTimer(duration, display) {
-  var timer = duration,
+  let timer = duration,
     minutes,
     seconds;
   interval = setInterval(function () {
@@ -203,12 +218,128 @@ console.log(timer)
 }
 
 jQuery(function ($) {
-  var oneMinute = 60 * 1,
+  let oneMinute = 60 * 1,
     display = $("#time");
     
   startTimer(oneMinute, display);
   
-});
+});*/
+
+
+
+const FULL_DASH_ARRAY = 283;
+const WARNING_THRESHOLD = 10;
+const ALERT_THRESHOLD = 5;
+
+const COLOR_CODES = {
+  info: {
+    color: "green"
+  },
+  warning: {
+    color: "orange",
+    threshold: WARNING_THRESHOLD
+  },
+  alert: {
+    color: "red",
+    threshold: ALERT_THRESHOLD
+  }
+};
+
+const TIME_LIMIT = 60;
+let timePassed = 0;
+let timeLeft = TIME_LIMIT;
+let timerInterval = null;
+let remainingPathColor = COLOR_CODES.info.color;
+
+document.getElementById("time").innerHTML = `
+<div class="base-timer">
+  <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <g class="base-timer__circle">
+      <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45"></circle>
+      <path
+        id="base-timer-path-remaining"
+        stroke-dasharray="283"
+        class="base-timer__path-remaining ${remainingPathColor}"
+        d="
+          M 50, 50
+          m -45, 0
+          a 45,45 0 1,0 90,0
+          a 45,45 0 1,0 -90,0
+        "
+      ></path>
+    </g>
+  </svg>
+  <span id="base-timer-label" class="base-timer__label">${formatTime(
+    timeLeft
+  )}</span>
+</div>
+`;
+
+startTimer();
+
+function onTimesUp() {
+  clearInterval(timerInterval);
+  location.reload()
+}
+
+function startTimer() {
+  timerInterval = setInterval(() => {
+    timePassed = timePassed += 1;
+    timeLeft = TIME_LIMIT - timePassed;
+    document.getElementById("base-timer-label").innerHTML = formatTime(
+      timeLeft
+    );
+    setCircleDasharray();
+    setRemainingPathColor(timeLeft);
+
+    if (timeLeft === 0) {
+      onTimesUp();
+    }
+  }, 1000);
+}
+
+function formatTime(time) {
+  const minutes = Math.floor(time / 60);
+  let seconds = time % 60;
+
+  if (seconds < 10) {
+    seconds = `0${seconds}`;
+  }
+
+  return `${minutes}:${seconds}`;
+}
+
+function setRemainingPathColor(timeLeft) {
+  const { alert, warning, info } = COLOR_CODES;
+  if (timeLeft <= alert.threshold) {
+    document
+      .getElementById("base-timer-path-remaining")
+      .classList.remove(warning.color);
+    document
+      .getElementById("base-timer-path-remaining")
+      .classList.add(alert.color);
+  } else if (timeLeft <= warning.threshold) {
+    document
+      .getElementById("base-timer-path-remaining")
+      .classList.remove(info.color);
+    document
+      .getElementById("base-timer-path-remaining")
+      .classList.add(warning.color);
+  }
+}
+
+function calculateTimeFraction() {
+  const rawTimeFraction = timeLeft / TIME_LIMIT;
+  return rawTimeFraction - (1 / TIME_LIMIT) * (1 - rawTimeFraction);
+}
+
+function setCircleDasharray() {
+  const circleDasharray = `${(
+    calculateTimeFraction() * FULL_DASH_ARRAY
+  ).toFixed(0)} 283`;
+  document
+    .getElementById("base-timer-path-remaining")
+    .setAttribute("stroke-dasharray", circleDasharray);
 
 
 /*-----------Hamburger Button--------*/
@@ -218,7 +349,7 @@ hamburger.addEventListener("click", () => {
   navUl.classList.toggle("show");
   playClickbtn();
 });
-
+}
 /*-----------Instruction Button--------*/
 
 const infoText = document.getElementById("info-text");
@@ -282,6 +413,7 @@ function flipCard() {
   if (this === firstCard) return;
   this.classList.add("flip");
   playCardSound();
+  
 
   if (!hasFlippedCard) {
     hasFlippedCard = true;
@@ -298,13 +430,14 @@ function flipCard() {
 
 function checkForMatch() {
  let isMatch = firstCard.dataset.language === secondCard.dataset.language;
+ console.log(firstCard)
 console.log(isMatch)
 if(isMatch){
     matchCounter+=1;
    disabledCards();
      if(matchCounter==(cards.length/2)){
-        /*clearInterval(timer.clearTime);*/
          $('.modal-win').css("display", "block");
+        
       }
    }
    else{ unflipCards(); }
