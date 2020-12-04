@@ -153,14 +153,15 @@ Footer with Copyright info and Social Media icons
 Translation API that translates seamlessly behind the scene  English words into three languages.
 
 Features to implement:
+- to add bigger choice of languages;
+- to increase number and difficulty of words;
+- to create competition board.
 
 
 **1.9. Technologies Used**
 
   
 **UX/UI design**
-
-  
 
 -   [Figma](https://figma.com/)
 
@@ -270,6 +271,6 @@ I used various YouTube and website to get ideas and logic of the game.
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODgzODk1NTI2LC0xMzE2NzgxMzcyLDExND
+eyJoaXN0b3J5IjpbODU0NTc3MTkyLC0xMzE2NzgxMzcyLDExND
 E4Njg1MTNdfQ==
 -->
