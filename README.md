@@ -5,7 +5,7 @@
 
 **LinguaGames**
 
-  
+  assets/images/linguaGamesWelcome.png
 
 **Contents**
 
@@ -260,5 +260,5 @@ I used various YouTube and website to get ideas and logic of the game.
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0MTg2ODUxM119
+eyJoaXN0b3J5IjpbMTY5MzAyMDU1NCwxMTQxODY4NTEzXX0=
 -->
