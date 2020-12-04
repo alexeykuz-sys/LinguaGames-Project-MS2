@@ -250,27 +250,12 @@ git clone …….
  
 **5. Credits**
 
-  > ##### Media
-> 
-> -  
-> -   I've taken advantage of  _Simen Daehlin's_  template boilerplate from his  [Marketplace](https://marketplace.visualstudio.com/items?itemName=eventyret.bootstrap-4-cdn-snippet)
-> 
-> ##### [](https://github.com/JimLynx/CI-MS2-Safari-Africa#code-snippets)Code Snippets
-> 
-> -   CSS: Main Country and Reserve Button styling adapted from  [Button Generator](https://www.bestcssbuttongenerator.com/#/11*)
-> -   Dropdown buttons adapted from  [Bootstrap](https://getbootstrap.com/docs/4.0/components/dropdowns/)
-> -   Navigation bar adapted from  [Bootstrap](https://getbootstrap.com/docs/4.0/components/navbar/)
-> -   Smooth scrolling (using Jquery) from  [W3SCHOOLS](https://www.w3schools.com/howto/howto_css_smooth_scroll.asp)
-> -   Tim Nelson - Showing only map tiles for Africa (avoid loading world map)
-> -   HTML, CSS & JavaScript: Intro carousel & transition function from  [CSS Tricks](https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/)
-> -   JavaScript: find by location in array of objects  [Stack Overflow](https://stackoverflow.com/a/35398031/13484385*/)
-> -   iframe element 'stop on click' function help from John Traas (CI student) and final solution (due to stopVideo method no longer working on iframes) from  [Stack Overflow](https://stackoverflow.com/a/30358006/14197670)
+   ##### Media
 
-Media
+The image for a game logo was taken from internet.
 
--   The image for a game logo was taken from internet.
+#####  Code
 
-Code
 I used various YouTube and website to get ideas and logic of the game.
 [Memory Game](https://medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae)
 
@@ -286,6 +271,6 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODEzMjQyMDUsLTE2MDUxNDcxMTYsOD
+eyJoaXN0b3J5IjpbLTEwMDM5OTQzMjUsLTE2MDUxNDcxMTYsOD
 U0NTc3MTkyLC0xMzE2NzgxMzcyLDExNDE4Njg1MTNdfQ==
 -->
