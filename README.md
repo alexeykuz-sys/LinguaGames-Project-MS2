@@ -237,7 +237,6 @@ To deploy the website using **GitHub Pages** the following steps have to be made
 
 **You can run the project locally, in which case you have to follow the following steps:**
 
-  
 
 To clone this project from GitHub:
 
@@ -272,6 +271,6 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNDE1NDEwMywtMTYwNTE0NzExNiw4NT
+eyJoaXN0b3J5IjpbMTgwNDE0NDIwMSwtMTYwNTE0NzExNiw4NT
 Q1NzcxOTIsLTEzMTY3ODEzNzIsMTE0MTg2ODUxM119
 -->
