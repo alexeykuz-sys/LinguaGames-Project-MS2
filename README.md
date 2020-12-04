@@ -262,15 +262,16 @@ I used various YouTube and website to get ideas and logic of the game.
 
 
 **6. Acknowledgements**
+I would like to thank:
 
--   My mentor ……. guided me along the way with tips on presentation and resources for writing code.
-
-  
-
+-   My mentor,  Femi for his guidance and advice on this project before submission.
+-   Bim Williams  for his support and guidance.
+-   Slack Community**  for always being on-hand with questions posted and assistance requests.
+-   Everyone that takes part in the Slack calls, specifically from the  **#In-It-Together**  and  **#Study-Group**  channels.
 **Disclaimer**
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU0NTc3MTkyLC0xMzE2NzgxMzcyLDExND
-E4Njg1MTNdfQ==
+eyJoaXN0b3J5IjpbLTIxMjI0MDQ1MDUsODU0NTc3MTkyLC0xMz
+E2NzgxMzcyLDExNDE4Njg1MTNdfQ==
 -->
