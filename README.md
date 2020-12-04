@@ -199,20 +199,11 @@ Responsiveness
 
 -   **Implementation** I tried CSS Grid but eventually opted to use **Bootstrap** and Flexbox throughout the project to ensure **maximum** responsibility. I've tested with **above tools and results was good except for ????.**
 
-Contact form
-
--   **Implementation** 
--   **Results**
--   **Verdict** Form validation works, so test **passed**.
-
- 
-
-
-
 [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly) -
 
 **3. Bugs and Debugging**
 
+????????????
 
 **4. Version Control**
 
@@ -274,6 +265,6 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzIwNjMyMDQsLTE2MDUxNDcxMTYsOD
+eyJoaXN0b3J5IjpbLTE5MDQzNjY3NzEsLTE2MDUxNDcxMTYsOD
 U0NTc3MTkyLC0xMzE2NzgxMzcyLDExNDE4Njg1MTNdfQ==
 -->
