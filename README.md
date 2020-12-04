@@ -5,7 +5,7 @@
 
 **LinguaGames**
 
-  
+  ![Alt](assets/images/linguaGamesWelcome.png)
 
 **Contents**
 
@@ -132,10 +132,11 @@ Icons used where provided by [Font Awesome](https://fontawesome.com/), used in m
 
 Colours
 
-The colours were determined by the pallete of Cooler website:
+The colours were determined by the pallet of Cooler website:
 
 -   For body text and some titles: ???;
--   For navbar:
+-   For navbar and contact modal:
+i used linear gradient of 
 rgb(5,  57,  97),
 and
 rgb(10,  105,  177);
@@ -144,13 +145,23 @@ rgb(10,  105,  177);
 **1.8. Features**
 
 View my wireframes here.
+It's one-page website with  a number of modal windows. I used JS to hide windows and information to make sure users are not distracted by excessive information on the page.
+I placed only fixed navigation bar  with Logo and menu, linking user to the rules of the game and contact modal, and cards to play with.
+
+Footer with Copyright info and Social Media icons
+
+Translation API that translates seamlessly behind the scene  English words into three languages.
+
+Features to implement:
+- to add bigger choice of languages;
+- to increase number and difficulty of words;
+- to create competition board.
+
 
 **1.9. Technologies Used**
 
   
 **UX/UI design**
-
-  
 
 -   [Figma](https://figma.com/)
 
@@ -170,6 +181,7 @@ View my wireframes here.
 - [Flag icons](https://www.countryflags.com/en/)
 - [Icons8](https://icons8.com/icon/NHEVr1Qkidu0)
 - [Canva](https://canva.com/)
+- [RapidApi](https://rapidapi.com)
   
 
 **2. Testing**
@@ -187,30 +199,20 @@ Responsiveness
 
 -   **Implementation** I tried CSS Grid but eventually opted to use **Bootstrap** and Flexbox throughout the project to ensure **maximum** responsibility. I've tested with **above tools and results was good except for ????.**
 
-Contact form
-
--   **Implementation** 
--   **Results**
--   **Verdict** Form validation works, so test **passed**.
-
- 
-
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
-
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
-
 [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly) -
 
 **3. Bugs and Debugging**
 
+????????????
+
+**4. Version Control**
+
+ -   Used Git for version control.
+ -   Branches were created to work on alternative grid layout.
+ -   The branches were then merged with the master branch after any conflicts were addressed.
 
 
 **4. Project Deployment**
-
-  
 
 I built website using **gitpod** and **GitHub** to host the repository.
 
@@ -218,7 +220,7 @@ To deploy the website using **GitHub Pages** the following steps have to be made
 
 -   Opened up and log in **GitHub** in the **browser**.
 -   Selected my [repositories](https://github.com/alexeykuz-sys?tab=repositories).
--   Navigated  and open project to ????
+-   Navigated  and open project to [MS2_LinguaGames_Project](https://github.com/alexeykuz-sys/MS2_LinguaGames_Project)
 -   In the top navigation clicked **settings**.
 -   Scrolled down to the **GitHub Pages** area.
 -   Selected **Master Branch** from the **Source** dropdown menu.
@@ -228,37 +230,41 @@ To deploy the website using **GitHub Pages** the following steps have to be made
 
 **You can run the project locally, in which case you have to follow the following steps:**
 
-  
 
-To clone this project from GitHub:
+##### To clone this project from GitHub:
 
 1. You can paste the repository link directly into any editor you use with the command 'git clone'. For example:
 
-git clone …….
+Type git clone and paste https://github.com/alexeykuz-sys/MS2_LinguaGames_Project.git
+
 
  
 **5. Credits**
 
-  
+   ##### Media
 
-Media
+The image for a game logo was taken from internet.
 
--   The image for a game logo was taken from internet.
+#####  Code
 
-Code
 I used various YouTube and website to get ideas and logic of the game.
 [Memory Game](https://medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae)
+and
+[How to build memory game](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript)
 
+[Timer](https://css-tricks.com/how-to-create-an-animated-countdown-timer-with-html-css-and-javascript/)
 
 **6. Acknowledgements**
+I would like to thank:
 
--   My mentor ……. guided me along the way with tips on presentation and resources for writing code.
-
-  
+-   My mentor,  Femi for his guidance and advice on this project before submission.
+-   Bim Williams  for his support and guidance.
+-   Slack Community  for always being on-line to answer the questions and give moral support
 
 **Disclaimer**
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0MTg2ODUxM119
+eyJoaXN0b3J5IjpbLTE5MDQzNjY3NzEsLTE2MDUxNDcxMTYsOD
+U0NTc3MTkyLC0xMzE2NzgxMzcyLDExNDE4Njg1MTNdfQ==
 -->
