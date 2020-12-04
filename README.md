@@ -146,10 +146,9 @@ rgb(10,  105,  177);
 View my wireframes here.
 -   One-page website with  a number of modal windows
 -   Fixed navigation bar  with Logo and menu, linking user to the rules of the game and contact modal.
--   Home, About, Reserves and Contact pages
+
 -   Footer with Copyright info and Social Media icons
--   (Add Country info via API - stretch goal dependent on time) - Stretch goal completed - Country REST API Info presented on About section.
--   (Review API section - stretch goal)
+-   Translation API that translates seamlessly English words into three languages.
 
 **1.9. Technologies Used**
 
@@ -266,5 +265,5 @@ I used various YouTube and website to get ideas and logic of the game.
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2ODAyOTA0MiwxMTQxODY4NTEzXX0=
+eyJoaXN0b3J5IjpbLTEzMTY3ODEzNzIsMTE0MTg2ODUxM119
 -->
