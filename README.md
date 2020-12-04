@@ -243,16 +243,11 @@ git clone …….
 
 Media
 
--   The image for s used in this project belongs to photographer.
-
-  
+-   The image for a game logo was taken from internet.
 
 Code
-
--   The HTML/CSS used for the Navigation Bar was inspired by Drew Ryan video on Youtube.
--   The Bootstap Jumbotron was used for Service page.
-
-  
+i used various youtube and website to get ideas and logic of the game.
+[]
 
 **6. Acknowledgements**
 
@@ -265,5 +260,5 @@ Code
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyMDc1Nzg4M119
+eyJoaXN0b3J5IjpbLTgxNjE5MjMwN119
 -->
