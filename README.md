@@ -181,7 +181,7 @@ Features to implement:
 - [Flag icons](https://www.countryflags.com/en/)
 - [Icons8](https://icons8.com/icon/NHEVr1Qkidu0)
 - [Canva](https://canva.com/)
-- [RapidAP]()
+- [RapidApi](https://rapidapi.com)
   
 
 **2. Testing**
@@ -274,6 +274,6 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NjMyNTc3OSwtMTYwNTE0NzExNiw4NT
-Q1NzcxOTIsLTEzMTY3ODEzNzIsMTE0MTg2ODUxM119
+eyJoaXN0b3J5IjpbLTE2NzIwNjMyMDQsLTE2MDUxNDcxMTYsOD
+U0NTc3MTkyLC0xMzE2NzgxMzcyLDExNDE4Njg1MTNdfQ==
 -->
