@@ -144,8 +144,8 @@ rgb(10,  105,  177);
 **1.8. Features**
 
 View my wireframes here.
--   One-page website with  **4**  main sections.
--   Fixed navigation bar - Menu headings pointing to each of the 4 pages.
+-   One-page website with  a number of modal windows
+-   Fixed navigation bar  with Logo and menu, linking user to the rules of the game and contact modal.
 -   Home, About, Reserves and Contact pages
 -   Footer with Copyright info and Social Media icons
 -   (Add Country info via API - stretch goal dependent on time) - Stretch goal completed - Country REST API Info presented on About section.
@@ -266,5 +266,5 @@ I used various YouTube and website to get ideas and logic of the game.
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDU4NzA4MCwxMTQxODY4NTEzXX0=
+eyJoaXN0b3J5IjpbMTI2ODAyOTA0MiwxMTQxODY4NTEzXX0=
 -->
