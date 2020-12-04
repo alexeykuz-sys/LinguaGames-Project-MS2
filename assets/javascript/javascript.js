@@ -117,11 +117,13 @@ randomEngWords = () => {
   let txtToTranslate = document.querySelectorAll("div.english");
   for (let i = 0; i < txtToTranslate.length; i++) {
     txtToTranslate[i].innerHTML = engCards[i];
+    
   }
 
   cardsToTranslate = [];
   for (let i = 0; i < txtToTranslate.length; i++) {
     cardsToTranslate[i] = txtToTranslate[i].textContent;
+    
   }
 
   

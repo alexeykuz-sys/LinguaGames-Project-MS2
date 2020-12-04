@@ -3,7 +3,8 @@
 * {
   padding: 0;
   border: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html,
@@ -28,13 +29,22 @@ body {
     height: 350px;
     max-width: 100%;
     max-height: 100%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
     top:45%;
     left:50%;
     display: block;
-    align-items: flex-start;
-    justify-content: center;
-    flex-flow: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
     position: absolute;
 }
 
@@ -45,7 +55,9 @@ body {
  height:70%; 
  background-image: url("../images/linguaGamesWelcome.png");
  background-repeat: no-repeat;
- box-shadow: -2px -2px 20px rgba(255, 255, 255, 0.5),
+ -webkit-box-shadow: -2px -2px 20px rgba(255, 255, 255, 0.5),
+    5px 5px 20px rgba(48, 47, 47, 0.5);
+         box-shadow: -2px -2px 20px rgba(255, 255, 255, 0.5),
     5px 5px 20px rgba(48, 47, 47, 0.5);
   border: 2px solid rgb(55, 149, 93);
   outline: none;
@@ -57,7 +69,9 @@ body {
     font-size: 1.2rem;
     font-weight: 500;
     border-radius: 10px;
-    box-shadow: -2px -2px 20px rgba(255, 255, 255, 0.5),
+    -webkit-box-shadow: -2px -2px 20px rgba(255, 255, 255, 0.5),
+    5px 5px 20px rgba(48, 47, 47, 0.5);
+            box-shadow: -2px -2px 20px rgba(255, 255, 255, 0.5),
     5px 5px 20px rgba(48, 47, 47, 0.5);
   border: 1px solid rgba(48, 47, 47, 0.082);
   outline: none;
@@ -65,15 +79,28 @@ body {
     height: 30%;
     width: 200px;
     margin: 30px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
 }
 
 #btnRules:active,
 #btnStart:active {
-  box-shadow: -1px -1px 19px rgba(255, 255, 255, 0.5),
+  -webkit-box-shadow: -1px -1px 19px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5),
+    inset -3px -3px 10px rgba(255, 255, 255, 0.5),
+    inset 2px 3px 7px rgba(153, 152, 152, 0.025);
+          box-shadow: -1px -1px 19px rgba(255, 255, 255, 0.5),
     5px 5px 10px rgba(48, 47, 47, 0.5),
     inset -3px -3px 10px rgba(255, 255, 255, 0.5),
     inset 2px 3px 7px rgba(153, 152, 152, 0.025);
@@ -83,15 +110,36 @@ body {
 /*---Navigaton-----*/
 
 .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-  flex-flow: row;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   letter-spacing: 0.2rem;
   padding: 0px;
   height: 3.5rem;
   width: 100%;
+  background-image: -webkit-gradient(
+    linear,
+    left top, left bottom,
+    from(rgb(5, 57, 97)),
+    to(rgb(10, 105, 177))
+  );
+  background-image: -o-linear-gradient(
+    top,
+    rgb(5, 57, 97),
+    rgb(10, 105, 177)
+  );
   background-image: linear-gradient(
     to bottom,
     rgb(5, 57, 97),
@@ -102,7 +150,9 @@ body {
 .logo-name {
   font-weight: 900;
   font-size: 1.4rem;
-  align-self: start;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
   margin: auto 40px;
   color: rgb(255, 255, 255);
   padding-left: 5px;
@@ -113,7 +163,9 @@ i.fas {
 }
 
 .hamburger {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin-right: 25px;
   display: block;
 }
@@ -121,7 +173,10 @@ i.fas {
 /*menu list*/
 .navbar-nav .nav-link {
   display: none;
-  flex-flow: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
   font-size: 1.2rem;
   color: white;
 }
@@ -138,13 +193,20 @@ i.fas {
   font-size: 1.6rem;
 
   display: none;
-  flex-flow: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
   width: 100%;
 }
 
 #navbarNav.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .info-icon {
@@ -152,14 +214,24 @@ i.fas {
   height: 35px;
   border-radius: 50%;
   background-color: white;
-  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+  -webkit-box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5);
+          box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
     5px 5px 10px rgba(48, 47, 47, 0.5);
   border: 2px solid rgba(48, 47, 47, 0.5);
   outline: none;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-image: url("../images/icons8-information-24.png");
   background-repeat: no-repeat;
   background-size: 20px;
@@ -167,7 +239,11 @@ i.fas {
 }
 
 .info-icon:active {
-  box-shadow: -1px -1px 19px rgba(255, 255, 255, 0.5),
+  -webkit-box-shadow: -1px -1px 19px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5),
+    inset -3px -3px 10px rgba(255, 255, 255, 0.5),
+    inset 2px 3px 7px rgba(153, 152, 152, 0.025);
+          box-shadow: -1px -1px 19px rgba(255, 255, 255, 0.5),
     5px 5px 10px rgba(48, 47, 47, 0.5),
     inset -3px -3px 10px rgba(255, 255, 255, 0.5),
     inset 2px 3px 7px rgba(153, 152, 152, 0.025);
@@ -178,14 +254,22 @@ i.fas {
   height: 35px;
   border-radius: 50%;
   background-color: white;
-  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+  -webkit-box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5);
+          box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
     5px 5px 10px rgba(48, 47, 47, 0.5);
   border: 2px solid rgba(48, 47, 47, 0.5);
   outline: none;
   margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-image: url("../images/icons8-circled-envelope-50.png");
   background-repeat: no-repeat;
   background-size: 37px;
@@ -193,7 +277,11 @@ i.fas {
 }
 
 .contact-icon:active {
-  box-shadow: -1px -1px 19px rgba(255, 255, 255, 0.5),
+  -webkit-box-shadow: -1px -1px 19px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5),
+    inset -3px -3px 10px rgba(255, 255, 255, 0.5),
+    inset 2px 3px 7px rgba(153, 152, 152, 0.025);
+          box-shadow: -1px -1px 19px rgba(255, 255, 255, 0.5),
     5px 5px 10px rgba(48, 47, 47, 0.5),
     inset -3px -3px 10px rgba(255, 255, 255, 0.5),
     inset 2px 3px 7px rgba(153, 152, 152, 0.025);
@@ -219,11 +307,16 @@ i.fas {
    max-height: 100%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   z-index: 100;
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  box-shadow: 4px 4px 20px black;
+  -webkit-box-shadow: 4px 4px 20px black;
+          box-shadow: 4px 4px 20px black;
   background-color: rgba(255, 255, 255, 0.85);
 }
 
@@ -237,6 +330,15 @@ i.fas {
 
 
 .modal-win {
+    background-image: -webkit-gradient(
+    linear,
+    left top, left bottom,
+    from(rgb(5, 57, 97)),
+    to(rgb(10, 105, 177)));
+    background-image: -o-linear-gradient(
+    top,
+    rgb(5, 57, 97),
+    rgb(10, 105, 177));
     background-image: linear-gradient(
     to bottom,
     rgb(5, 57, 97),
@@ -246,7 +348,9 @@ i.fas {
     z-index: 100;
     left: 50%;
     top:50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     width: 261px;
     max-width: 100%;
     height: 255px;
@@ -255,9 +359,15 @@ i.fas {
 }
 
 .modal-win-content {
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: auto;
     /* padding: 25px; */
     border-radius: 10px;
@@ -275,7 +385,11 @@ display: flex;
 
 .modal-win .play-again{
     background-color: white;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     position: absolute;
     bottom: 15px;
@@ -292,7 +406,9 @@ display: flex;
   height: 60px;
   border-radius: 50%;
   background-color: white;
-  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+  -webkit-box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5);
+          box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
     5px 5px 10px rgba(48, 47, 47, 0.5);
   border: 2px solid rgba(48, 47, 47, 0.5);
   outline: none;
@@ -307,7 +423,11 @@ display: flex;
 }
 
 .settings-icon:active {
-  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+  -webkit-box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5),
+    inset -1px -1px 10px rgba(255, 255, 255, 0.5),
+    inset 1px 1px 10px rgba(48, 47, 47, 0.37);
+          box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
     5px 5px 10px rgba(48, 47, 47, 0.5),
     inset -1px -1px 10px rgba(255, 255, 255, 0.5),
     inset 1px 1px 10px rgba(48, 47, 47, 0.37);
@@ -324,20 +444,30 @@ display: flex;
 }
 
 .form.show {
-  align-items: center;
-    justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 335px;
     max-width: 100%;
     max-height: 100%;
     height: 474px;
     border-radius: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    background-image: -webkit-gradient( linear, left top, left bottom, from(rgb(5, 57, 97)), to(rgb(10, 105, 177)) );
+    background-image: -o-linear-gradient( top, rgb(5, 57, 97), rgb(10, 105, 177) );
     background-image: linear-gradient( to bottom, rgb(5, 57, 97), rgb(10, 105, 177) );
     position: absolute;
     z-index: 100;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
 }
 .contact-form {
     margin-top: 25px;
@@ -351,13 +481,19 @@ display: flex;
     margin: 10px auto;
     border-radius: 7px;
     background-color: white;
-  box-shadow: -1px -1px 10px rgba(255, 255, 255, 0.5),
+  -webkit-box-shadow: -1px -1px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5);
+          box-shadow: -1px -1px 10px rgba(255, 255, 255, 0.5),
     5px 5px 10px rgba(48, 47, 47, 0.5);
   border: 2px solid rgba(48, 47, 47, 0.5);
   outline: none;
 }
 #button:active{
-     box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+     -webkit-box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5),
+    inset -1px -1px 10px rgba(255, 255, 255, 0.5),
+    inset 1px 1px 10px rgba(48, 47, 47, 0.37);
+             box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
     5px 5px 10px rgba(48, 47, 47, 0.5),
     inset -1px -1px 10px rgba(255, 255, 255, 0.5),
     inset 1px 1px 10px rgba(48, 47, 47, 0.37);
@@ -402,34 +538,22 @@ textarea {
 .buttons-wrapper{
         max-height: 100vh;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 10px auto;
-    flex-flow: nowrap;
-    align-items: center;
-    justify-content: center;
+    -ms-flex-flow: nowrap;
+        flex-flow: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     
     }
 
 /*----Timer Icon---*/
-/*.timer {
-  width: 85px;
-  height: 45px;
-  font-size: 25px;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px;
-  background-color: white;
-  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
-    5px 5px 10px rgba(48, 47, 47, 0.5);
-  border: 2px solid rgb(55, 149, 93);
-  outline: none;
-  cursor: pointer;
-  transition: all 500 ms ease-in-out;
-  margin: 0 auto;
-  
-}*/
 
 .base-timer {
   position: relative;
@@ -437,7 +561,9 @@ textarea {
   height: 55px;
 background-color:white;
   border-radius:50%;
-  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+  -webkit-box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5);
+          box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
     5px 5px 10px rgba(48, 47, 47, 0.5);
   
   outline: none;
@@ -445,7 +571,9 @@ background-color:white;
 }
 
 .base-timer__svg {
-  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 .base-timer__circle {
@@ -461,8 +589,14 @@ background-color:white;
 .base-timer__path-remaining {
   stroke-width: 7px;
   stroke-linecap: round;
-  transform: rotate(90deg);
-  transform-origin: center;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: 1s linear all;
+  -o-transition: 1s linear all;
   transition: 1s linear all;
   fill-rule: nonzero;
   stroke: currentColor;
@@ -485,9 +619,15 @@ background-color:white;
   width: 55px;
   height: 55px;
   top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 20px;
   font-size: 18px;
   font-weight: 600;
@@ -503,13 +643,21 @@ background-color:white;
   margin: 0 auto;  
    
   background-color: white;
-  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+  -webkit-box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5);
+          box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
     5px 5px 10px rgba(48, 47, 47, 0.5);
   border: 2px solid rgb(55, 149, 93);
   outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-image: url("../images/icons8-reset-48.png");
   background-repeat: no-repeat;
   background-size: 40px;
@@ -517,7 +665,11 @@ background-color:white;
 }
 
 .reset:active {
-  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+  -webkit-box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5),
+    inset -1px -1px 10px rgba(255, 255, 255, 0.5),
+    inset 1px 1px 10px rgba(48, 47, 47, 0.37);
+          box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
     5px 5px 10px rgba(48, 47, 47, 0.5),
     inset -1px -1px 10px rgba(255, 255, 255, 0.5),
     inset 1px 1px 10px rgba(48, 47, 47, 0.37);
@@ -534,14 +686,22 @@ background-color:white;
   height: 50px;
   border-radius: 50%;
   background-color: white;
-  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+  -webkit-box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5);
+          box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
     5px 5px 10px rgba(48, 47, 47, 0.5);
   border: 2px solid rgb(55, 149, 93);
   outline: none;
 margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-image: url("../images/icons8-sound-50.png");
   background-repeat: no-repeat;
   background-size: 40px;
@@ -552,6 +712,8 @@ margin: 0 auto;
 .sound-icon-red {
   width: 50px;
   height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   border: 2px solid rgb(55, 149, 93);
@@ -581,21 +743,35 @@ margin: 0 auto;
   font-weight: 700;
   border-radius: 13px;
   background-color: white;
-  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+  -webkit-box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5);
+          box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
     5px 5px 10px rgba(48, 47, 47, 0.5);
   border: 2px solid rgb(55, 149, 93);
   outline: none;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 1rem;
   margin-top: 10px;
 }
 
 .dropdown:active {
-  transform: scale(0.97);
+  -webkit-transform: scale(0.97);
+      -ms-transform: scale(0.97);
+          transform: scale(0.97);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  -o-transition: transform 0.2s;
   transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
   
 }
 
@@ -604,22 +780,36 @@ margin: 0 auto;
 .cards-wrapper {
   max-height: 1600px;
   width: 100%;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-content: center;
-  justify-content: center;
-  perspective: 1000px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
 }
 
 .cards-inner {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
   transition: transform 1s;
-  transform-style: preserve-3d;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
   width: 90px;
   height: 90px;
   border-radius: 15px;
   margin: 10px 2px;
-  box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+  -webkit-box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
+    5px 5px 10px rgba(48, 47, 47, 0.5);
+          box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
     5px 5px 10px rgba(48, 47, 47, 0.5);
   border: 2px solid rgb(55, 149, 93);
   outline: none;
@@ -632,27 +822,47 @@ margin: 0 auto;
   -webkit-transform: rotateY(180deg);
 }
 .cards-inner:active {
-  transform: scale(0.97);
+  -webkit-transform: scale(0.97);
+      -ms-transform: scale(0.97);
+          transform: scale(0.97);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  -o-transition: transform 0.2s;
   transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 .card-face {
 
   background-image: url("../images/linguaGames.png");
   background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-radius: 15px;
   
 }
 
 .card-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 1rem;
   font-weight: 600;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-radius: 15px;
     transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
@@ -660,7 +870,8 @@ margin: 0 auto;
 
 .card-face,
 .card-back {
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   position: absolute;
   top: 0;
   left: 0;
@@ -672,14 +883,20 @@ margin: 0 auto;
 /*Footer*/
 
 .footer-wrapper {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(5, 57, 97)), to(rgb(10, 105, 177)));
+  background-image: -o-linear-gradient(bottom, rgb(5, 57, 97), rgb(10, 105, 177));
   background-image: linear-gradient(to top, rgb(5, 57, 97), rgb(10, 105, 177));
   color: #ffffff;
   bottom: 0;
   width: 100%;
   height: 100%;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .footer-wrapper a {
@@ -694,56 +911,55 @@ margin: 0 auto;
 
 /*Media Querries*/
 
-/*@media (min-width: 320px) {
-    .cards-inner {
-      width: 80px;
-      height: 80px;
-    }    
-
-
-  .card-face {
-   
-    width: 100%;
-    height: 100%;
-    background-image: url("../images/linguaGames.png");
-    background-repeat: no-repeat;
-  }
-
-  .card-back {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    
-    }
-}*/
 @media (min-width: 425px) {
     .buttons-wrapper{
         min-height: 100%;
         width: 100%;
         margin:50px auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
   .cards-wrapper {
     max-height: 100%;
     width: 100%;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 80px auto;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    align-content: center;
-    justify-content: space-between;
-    perspective: 1000px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
   }
 
   .cards-inner {
     -webkit-transition: transform 0.6s;
-    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
     margin: 10px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 95px;
     height:95px;
      background-color: white;
@@ -759,6 +975,8 @@ margin: 0 auto;
   }
 
   .card-back {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 100%;
@@ -767,6 +985,8 @@ margin: 0 auto;
 
 
   .navlinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: absolute;
     margin-right: 30px;
@@ -775,7 +995,9 @@ margin: 0 auto;
   .info-icon {
     margin-right: 30px;
   }
-  
+  .col {
+      padding: 3px;
+  }
 }
 
 
@@ -784,29 +1006,50 @@ margin: 0 auto;
         min-height: 100%;
         width: 100%;
         margin:40px auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
   .cards-wrapper {
     max-height: 100%;
     width: 100%;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 30px auto;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    align-content: center;
-    justify-content: space-between;
-    perspective: 1000px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
   }
 
   .cards-inner {
     -webkit-transition: transform 0.6s;
-    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
     margin: 10px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 170px;
     height: 113px;
      background-color: white;
@@ -821,6 +1064,8 @@ margin: 0 auto;
   }
 
   .card-back {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
      width: 100%;
     height: 100%;
@@ -828,11 +1073,16 @@ margin: 0 auto;
   }
 
   .list-options {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 
   .navlinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: absolute;
     margin-right: 30px;
@@ -853,29 +1103,50 @@ margin: 0 auto;
         min-height: 100%;
         width: 100%;
         margin:40px auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: space-evenly;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
     }
 
   .cards-wrapper {
     max-height: 100%;
     width: 100%;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 30px auto;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    align-content: center;
-    justify-content: space-between;
-    perspective: 1000px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
   }
 
   .cards-inner {
     -webkit-transition: transform 0.6s;
-    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
     margin: 10px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 220px;
     height: 115px;
      background-color: white;
@@ -890,6 +1161,8 @@ margin: 0 auto;
   }
 
   .card-back {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 100%;
@@ -904,31 +1177,55 @@ margin: 0 auto;
     .buttons-wrapper{
         min-height: 100%;
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         margin: 40px auto;
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
   .cards-wrapper {
     max-height: 100%;
     width: 100%;
     margin:60px auto;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
     
     display: flex;
-    align-content: center;
-    justify-content: space-evenly;
-    perspective: 1000px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
   }
 
   .cards-inner {
     -webkit-transition: transform 2s;
-    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
     margin: 10px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 230px;
     height: 140px;
     background-color: white;
@@ -943,16 +1240,24 @@ margin: 0 auto;
   }
 
   .card-back {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 100%;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     
   }
 
   .list-options {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     
   }
 
@@ -964,8 +1269,13 @@ margin: 0 auto;
     display: none;
   }
   .navbar-nav .nav-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
     font-size: 1.2rem;
     color: white;
     width: 100%;
@@ -977,6 +1287,8 @@ margin: 0 auto;
   }
 
   #navbarNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
@@ -995,4 +1307,3 @@ margin: 0 auto;
 
   
 }
-
