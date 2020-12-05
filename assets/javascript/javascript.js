@@ -54,7 +54,7 @@ function startButton() {
   buttonsWrapper.classList.remove("d-none")
   navbar.classList.remove("d-none");
   cardsWrapper.classList.remove("d-none")
-  footerWrapper.classList.remove("d-none");
+  /*footerWrapper.classList.remove("d-none");*/
   welcome.classList.add("d-none")
   
 }
