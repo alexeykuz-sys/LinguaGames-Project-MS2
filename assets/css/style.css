@@ -533,6 +533,7 @@ textarea {
 .list-options {
   cursor: pointer;
   
+  
 }
 
 .buttons-wrapper{
@@ -541,7 +542,7 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 10px auto;
+    margin: 40px auto;
     -ms-flex-flow: wrap-reverse;
         flex-flow: wrap-reverse;
     -webkit-box-align: center;
@@ -733,7 +734,7 @@ margin: 5px auto;
 /*Language button*/
 
 .dropdown {
-  width: 113px;
+  width: 115px;
   max-width: 100%;
   height: 45px;
   max-height: 100%;
@@ -760,7 +761,7 @@ margin: 5px auto;
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 1rem;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .dropdown:active {
@@ -782,7 +783,7 @@ margin: 5px auto;
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0px auto;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1103,7 +1104,7 @@ margin: 5px auto;
     .buttons-wrapper{
         min-height: 100%;
         width: 100%;
-        margin:40px auto;
+        margin:20px auto;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1120,7 +1121,7 @@ margin: 5px auto;
     width: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 30px auto;
+    margin: 0 auto;
 
     display: -webkit-box;
 
@@ -1184,14 +1185,14 @@ margin: 5px auto;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        margin: 30px auto;
+        margin: 20px auto;
         -ms-flex-pack: distribute;
             justify-content: space-around;
     }
   .cards-wrapper {
     max-height: 100%;
     width: 100%;
-    margin:30px auto;
+    margin:0 auto;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     
