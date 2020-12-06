@@ -1,17 +1,24 @@
-function sendMail(contactForm){
-    emailjs.send(email, linguagames, {
-        "from_name":contactForm.name.value,
-        "message":contactForm.message.value,
-        "from_email": contactForm.email.value,
-        
-    })
-    console.log(from_email, from_name, message)
-    .then(() => {
-      btn.value = 'Send Email';
-      console.log(btn.value)
-      alert('Sent!');
-    }, (err) => {
-      btn.value = 'Send Email';
-      alert(JSON.stringify(err));
-    });
-}
+const btn = document.getElementById('sendButton');
+
+document.getElementById('form1')
+ .addEventListener('submit', function(event) {
+    event.preventDefault();
+
+   
+
+   const serviceID = 'default_service';
+   const templateID = 'linguagames';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(function () {
+                btn.value = 'Sending...';
+                btn.value = "Sent!";
+                setTimeout(function() {form.classList.remove('show');},2000);
+            },
+    
+    function (error) {
+                alert("Something went wromg...Please send again! Thank you!", error);
+            });
+            document.getElementById('form1').reset();
+    return false;
+});

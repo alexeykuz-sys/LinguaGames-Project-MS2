@@ -83,26 +83,25 @@
           </p>
         </div>
         <div class="form" id="form">
-          <form class="contact-form">
-  <div class="field">
-    <label for="from_name">Name</label>
-    <input type="text" name="from_name" id="from_name">
-  </div>
-  <div class="field">
-    <label for="message">Message</label>
-    <input type="text" name="message" id="message">
-  </div>
-  <div class="field">
-    <label for="from_email">Email</label>
-    <input type="text" name="from_email" id="from_email">
-  </div>
-  <div class="field">
-    <label for="reply_to">reply_to</label>
-    <input type="text" name="reply_to" id="reply_to">
-  </div>
-
-  <input type="submit" id="button" value="Send Email" >
-          </form>
+            <form class="contact-form" id="form1">
+                <div class="field">
+                    <label for="to_name">to_name</label>
+                    <input type="text" name="to_name" id="to_name">
+                </div>
+                <div class="field">
+                    <label for="from_name">from_name</label>
+                    <input type="text" name="from_name" id="from_name">
+                </div>
+                <div class="field">
+                    <label for="message">message</label>
+                    <input type="text" name="message" id="message">
+                </div>
+                <div class="field">
+                    <label for="from_email">from_email</label>
+                    <input type="text" name="from_email" id="from_email">
+                </div>
+                <input type="submit" id="sendButton" value="Send Email" >
+            </form>
         </div>
       </div>
     </div>
@@ -255,11 +254,15 @@
     ></script>
     
     <script src="assets/javascript/javascript.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script src="assets/javascript/sendEmail.js"></script>
-    <script type="text/javascript">
-        emailjs.init('user_Dcq8s6TRvJARVMhmcG0ay')
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
     </script>
+    <script src="assets/javascript/sendEmail.js"></script>
+    <script>type="text/javascript">
+        (function() {
+        emailjs.init("user_Dcq8s6TRvJARVMhmcG0ay");
+    })();
+</script>
     
   </body>
 </html>
