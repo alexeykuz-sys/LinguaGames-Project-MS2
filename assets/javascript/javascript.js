@@ -117,7 +117,7 @@ randomEngWords = () => {
   let txtToTranslate = document.querySelectorAll("div.english");
   for (let i = 0; i < txtToTranslate.length; i++) {
     txtToTranslate[i].innerHTML = engCards[i];
-    
+    console.log(engCards[i])
   }
 
   cardsToTranslate = [];
@@ -193,42 +193,6 @@ randomEngWords();
 
 /*-------Timer----------*/
 
-/*let second = 0,
-  minute = 0;
-let timer = document.querySelector(".time");
-console.log(timer)
-let interval;
-function startTimer(duration, display) {
-  let timer = duration,
-    minutes,
-    seconds;
-  interval = setInterval(function () {
-    minutes = parseInt(timer / 60, 10);
-    seconds = parseInt(timer % 60, 10);
-console.log(duration,display)
-console.log(timer)
-    minutes = minutes < 10 ? "0" + minutes : minutes;
-    seconds = seconds < 10 ? "0" + seconds : seconds;
-
-    display.text(minutes + ":" + seconds);
-
-    if (--timer < 0) {
-      timer = duration;
-    }
-  }, 1000);
-  
-}
-
-jQuery(function ($) {
-  let oneMinute = 60 * 1,
-    display = $("#time");
-    
-  startTimer(oneMinute, display);
-  
-});*/
-
-
-
 const FULL_DASH_ARRAY = 283;
 const WARNING_THRESHOLD = 10;
 const ALERT_THRESHOLD = 5;
@@ -281,7 +245,7 @@ startTimer();
 
 function onTimesUp() {
   clearInterval(timerInterval);
-  location.reload()
+  /*location.reload()*/
 }
 
 function startTimer() {
@@ -410,19 +374,22 @@ let firstCard, secondCard;
 let lockBoard = false;
 let matchCounter = 0;
 
+
 function flipCard() {
   if (lockBoard) return;
   if (this === firstCard) return;
   this.classList.add("flip");
   playCardSound();
-  
+
 
   if (!hasFlippedCard) {
     hasFlippedCard = true;
     firstCard = this;
+    console.log(this)
     return;
   } else {
     secondCard = this;
+    console.log(this)
     checkForMatch();
    
   }
@@ -437,10 +404,12 @@ console.log(isMatch)
 if(isMatch){
     matchCounter+=1;
    disabledCards();
-     if(matchCounter==(cards.length/2)){
+    setTimeout(()=> {if(matchCounter==(cards.length/2)){
          $('.modal-win').css("display", "block");
-        
+         onTimesUp();
+        return;
       }
+    },2000);
    }
    else{ unflipCards(); }
 }
