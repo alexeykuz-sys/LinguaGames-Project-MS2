@@ -5,6 +5,7 @@ const soundSound = new Audio("assets/sounds/table-lamp-flip-switch-off.wav");
 const failSound = new Audio("assets/sounds/game-fail.wav");
 const cards = document.querySelectorAll(".cards-inner");
 const resetBtn = document.getElementById("reset");
+const startBtn = document.getElementById("start");
 const dummyTranslation = { "code": 200, "data": { "translation": "niño, casa, ausencia, droga, comer, ojo", "pronunciation": "", "pairs": [{ "s": "boy,house,absence,drug,eat,eye", "t": "niño, casa, ausencia, droga, comer, ojo" }], "source": { "language": { "didYouMean": false, "iso": "en" }, "text": { "autoCorrected": false, "value": "boy,house,absence,drug,[east],eye", "didYouMean": true } } }, "message": "" }
 
 /*-----------Sound Effect--------*/
@@ -228,7 +229,7 @@ document.getElementById("time").innerHTML = `
 </div>
 `;
 
-startTimer();
+/*startTimer();*/
 
 function onTimesUp() {
     clearInterval(timerInterval);
@@ -297,6 +298,18 @@ function setCircleDasharray() {
 
 
 }
+/*-----------Start Timer--------*/
+
+startBtn.addEventListener('click', () => {
+    startTimer();
+    if ((startBtn.classList.contains = "show")) {
+        startBtn.classList.remove("show");
+        
+        resetBtn.classList.add('show');
+        playClickbtn();
+    }
+});
+
 /*-----------Instruction Button--------*/
 
 const infoText = document.getElementById("info-text");
