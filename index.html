@@ -39,17 +39,9 @@
   </head>
 
   <body>
-  <!---------------Start of Welcome section--------------->
-<div class=" welcome" id="welcome">
-<div class="welcome_img" id="image"></div>
-<div class="buttons" id="buttons" >
-<button type="button" class="btn btn-primary" id="btnRules" onclick="rulesButton()">Rules</button>
-<button type="button" class="btn btn-primary" id="btnStart" onclick="startButton()">Start</button>
-</div>
-</div>
 
     <!---------------Start of Home section--------------->
-    <nav class="navbar d-none" id="navbar">
+    <nav class="navbar" id="navbar">
       <a class="navbar-brand" href="index.html">
         <p class="logo-name">Lingua Games</p>
       </a>
@@ -66,9 +58,6 @@
           </li>
         </ul>
       </div>
-      <button class="hamburger" id="hamburger">
-        <i class="fas fa-bars"></i>
-      </button>
     </nav>
     <div class="container-fluid">
       <div class="row">
@@ -100,42 +89,48 @@
                     <label for="from_email">from_email</label>
                     <input type="text" name="from_email" id="from_email">
                 </div>
+                <div class="formButtons">
                 <input type="submit" id="sendButton" value="Send Email" >
+                <input type="button" id="closeButton" value="Close" >
+                </div>
             </form>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid d-none " id="buttonsWrapper">
+    <div class="container-fluid " id="buttonsWrapper">
       <div class="row buttons-wrapper">
-            <div class="col-12 col-xs-3 col-sm-3 col-md-3">
+            <div class="col-6 col-xs-3 col-sm-3 col-md-3">
                 <div class="list-options d-flex justify-content-center " id="options">
                     <form id="langList">
                     <select class="langOptions dropdown py-0" id="langSelect">
                         <option class="lang" value="Language">Language</option>
-                        <option class="lang" value="es">Spanish</option>
+                        <option class="lang" value="es" selected>Spanish</option>
                         <option class="lang" value="fr">French</option>
                         <option class="lang" value="it">Italian</option>
                     </select>
                     </form>
                 </div>
             </div>
-            <div class="col-4 col-xs-3 col-sm-3 col-md-3">
+            <div class="col-6 col-xs-3 col-sm-3 col-md-3">
+                <div id="start" class="start">
+                <input class="start_text" type="checkbox" name="checkbox" value="Start">
+                </div>
+            </div>
+            <div class="col-6 col-xs-3 col-sm-3 col-md-3">
                 <div id="time" class="timer"></div>
             </div>
            
-            <div class="col-4 col-xs-3 col-sm-3 col-md-3">
+            <div class="col-6 col-xs-3 col-sm-3 col-md-3">
                 <div id="sound" class="sound-icon"></div>
             </div>
-            <div class="col-4 col-xs-3 col-sm-3 col-md-3">
-                <div id="reset" class="reset"></div>
-            </div>
+            
         </div>
        
     </div>
 
       <!---Card Placement--->
-      <div class="container-fluid d-none" id="cardsWrapper">
+      <div class="container-fluid" id="cardsWrapper">
         <div class="row cards-wrapper">
           <div class="col col-xs-6 col-sm-4 col-md-4 col-lg-3">
             <div class="cards-inner" >
@@ -221,7 +216,7 @@
         </div>
     </div>
     <!--Footer-->
-    <div class="container-fluid px-0 d-none " id="footerWrapper">
+    <div class="container-fluid d-none px-0 " id="footerWrapper">
       <div class="row">
         <div class="col-12">
           <footer class="footer-wrapper">
