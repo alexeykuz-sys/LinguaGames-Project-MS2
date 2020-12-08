@@ -203,7 +203,7 @@ Responsiveness
 
 **3. Bugs and Debugging**
 
-????????????
+During testing I found that all iOS users encourtered a display glitch where the front-face cards do not show when the user touches a card to flip. Instead it momentarily displays the image then flips to the inverted back face card.
 
 **4. Version Control**
 
@@ -265,6 +265,7 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDQzNjY3NzEsLTE2MDUxNDcxMTYsOD
-U0NTc3MTkyLC0xMzE2NzgxMzcyLDExNDE4Njg1MTNdfQ==
+eyJoaXN0b3J5IjpbLTE2NDc3NTg0MiwtMTkwNDM2Njc3MSwtMT
+YwNTE0NzExNiw4NTQ1NzcxOTIsLTEzMTY3ODEzNzIsMTE0MTg2
+ODUxM119
 -->
