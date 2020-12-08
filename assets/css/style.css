@@ -591,6 +591,8 @@ margin: 5px auto;
   background-repeat: no-repeat;
   background-size: 40px;
   background-position: center;
+   transform: scale(.95);
+   margin: 0 auto;
 }
 
 .col {
@@ -650,6 +652,7 @@ margin: 5px auto;
 /*----Reset Icon---*/
 .start {
     display: none;
+     
 }
 .start.show {
   width: 115px;
@@ -677,6 +680,7 @@ margin: 5px auto;
   
     font-size:1.2rem;
     font-weight:700;
+  
 
 }
 .reset{
@@ -702,6 +706,7 @@ margin: 5px auto;
   display:flex;
     font-size:1.2rem;
     font-weight:700;
+     transform: scale(0.9);
 
 }
 

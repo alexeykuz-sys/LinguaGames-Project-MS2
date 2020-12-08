@@ -298,17 +298,7 @@ function setCircleDasharray() {
 
 
 }
-/*-----------Start Timer--------*/
 
-startBtn.addEventListener('click', () => {
-    startTimer();
-    if ((startBtn.classList.contains = "show")) {
-        startBtn.classList.remove("show");
-        
-        resetBtn.classList.add('show');
-        playClickbtn();
-    }
-});
 
 /*-----------Instruction Button--------*/
 
@@ -383,16 +373,32 @@ soundBtn.addEventListener("click", soundHandler);
 
 let hasFlippedCard = false;
 let firstCard, secondCard;
-let lockBoard = false;
+let lockBoard =false;
 let matchCounter = 0;
+let gameStart = false;
+
+/*-----------Start Timer--------*/
+
+        startBtn.addEventListener('click', () => {
+            gameStart = true;
+            startTimer();
+            if ((startBtn.classList.contains = "show")) {
+                startBtn.classList.remove("show");
+                resetBtn.classList.add('show');
+                playClickbtn();
+                
+            }
+            
+        });
 
 
 function flipCard() {
-    if (lockBoard) return;
-    if (this === firstCard) return;
-    this.classList.add("flip");
+    if (lockBoard == true || gameStart == false) return;
+    if(this === firstCard) return;
+        this.classList.add("flip");
     playCardSound();
-
+    
+    
 
     if (!hasFlippedCard) {
         hasFlippedCard = true;
@@ -446,7 +452,6 @@ function unflipCards() {
 function resetBoard() {
     [hasFlippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
-    console.log(lockBoard, firstCard, secondCard)
 }
 
 (function shuffle() {
