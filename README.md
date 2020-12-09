@@ -78,10 +78,8 @@ The website targets the individuals interested to learn or improve the knowledge
 
 
 **1.4. User goals:**
-Person interested to learn basics of the new language has to learn earn 300-600 words to be to travel and 1000 words to be able to converse;
-To identify application allowing users to l
-To identify application to users s.
-
+Person interested to learn basics of the new language has to learn  300-600 words to be to travel and 1000 words to be able to converse;
+the users goals is to identify application allowing them to have access to the application teaching them the most common words used in any language.
   
 
   
@@ -266,7 +264,7 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyODExODAyMSwtMTg3NzgzMTA1OSwtOD
+eyJoaXN0b3J5IjpbLTg2NzcwOTIwNiwtMTg3NzgzMTA1OSwtOD
 A1OTQxMjUxLC01MzYwMzU5MTAsLTE2NDc3NTg0MiwtMTkwNDM2
 Njc3MSwtMTYwNTE0NzExNiw4NTQ1NzcxOTIsLTEzMTY3ODEzNz
 IsMTE0MTg2ODUxM119
