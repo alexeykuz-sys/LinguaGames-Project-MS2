@@ -107,7 +107,7 @@ The site owner has the following goals:
 When designing website i took inspiration for colours and fonts from the game Memory. The application is using colours and fonts scientifically proven to help users to learn and stimulate their cognitive functions.
 
 
-Fonts
+**Fonts**
 
 I have used Google Fonts to determine the best fonts suitable for each part of the website, I.e. Logo, Menu and Body information.
 
@@ -115,20 +115,19 @@ I opted to use Open Sans font for my website, which is one of the most popular f
 
 [https://nestify.io/blog/top-10-best-google-fonts/](https://nestify.io/blog/top-10-best-google-fonts/)
 
-Icons
+**Icons**
 
 Icons used where provided by [Font Awesome](https://fontawesome.com/), used in moderation and are self explanatory.
 
-Colours
+**Colours**
 
 The colours were determined by the pallet of Cooler website:
 
--   For body text and some titles: ???;
--   For navbar and contact modal:
-i used linear gradient of 
+-   For navbar and contact modal I used linear gradient of 
 rgb(5,  57,  97),
 and
 rgb(10,  105,  177);
+
 -   For body background: rgb(55,  149,  93).
 
 **1.8. Features**
@@ -262,8 +261,8 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQxNDY3Nzc4LC0xODc3ODMxMDU5LC04MD
-U5NDEyNTEsLTUzNjAzNTkxMCwtMTY0Nzc1ODQyLC0xOTA0MzY2
-NzcxLC0xNjA1MTQ3MTE2LDg1NDU3NzE5MiwtMTMxNjc4MTM3Mi
-wxMTQxODY4NTEzXX0=
+eyJoaXN0b3J5IjpbLTIxMTMyMjI3MTcsLTE4Nzc4MzEwNTksLT
+gwNTk0MTI1MSwtNTM2MDM1OTEwLC0xNjQ3NzU4NDIsLTE5MDQz
+NjY3NzEsLTE2MDUxNDcxMTYsODU0NTc3MTkyLC0xMzE2NzgxMz
+cyLDExNDE4Njg1MTNdfQ==
 -->
