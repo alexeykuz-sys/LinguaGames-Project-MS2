@@ -190,6 +190,13 @@ Features to implement:
 First time testing. I used an online tool, using ami.responsivedesign.is and [Screenfly](https://bluetree.ai/screenfly/) website to test website on various devices.
 
 I’ve tested the CSS with [CSS Validator](http://jigsaw.w3.org/css-validator/) which told me that there were mistake in different browsers attributes, which I removed.
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
 
 The HTML I’ve tested with [HTML Validator](https://validator.w3.org/) which gave me the good **results:**
 
@@ -265,7 +272,7 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDc3NTg0MiwtMTkwNDM2Njc3MSwtMT
-YwNTE0NzExNiw4NTQ1NzcxOTIsLTEzMTY3ODEzNzIsMTE0MTg2
-ODUxM119
+eyJoaXN0b3J5IjpbLTUzNjAzNTkxMCwtMTY0Nzc1ODQyLC0xOT
+A0MzY2NzcxLC0xNjA1MTQ3MTE2LDg1NDU3NzE5MiwtMTMxNjc4
+MTM3MiwxMTQxODY4NTEzXX0=
 -->
