@@ -6,7 +6,8 @@ const failSound = new Audio("assets/sounds/game-fail.wav");
 const cards = document.querySelectorAll(".cards-inner");
 const resetBtn = document.getElementById("reset");
 const startBtn = document.getElementById("start");
-const dummyTranslation = { "code": 200, "data": { "translation": "niño, casa, ausencia, droga, comer, ojo", "pronunciation": "", "pairs": [{ "s": "boy,house,absence,drug,eat,eye", "t": "niño, casa, ausencia, droga, comer, ojo" }], "source": { "language": { "didYouMean": false, "iso": "en" }, "text": { "autoCorrected": false, "value": "boy,house,absence,drug,[east],eye", "didYouMean": true } } }, "message": "" }
+const dummyTranslation = { "code": 200, "data": { "translation": "niño, casa, ausencia, droga, comer, ojo", "pronunciation": "", "pairs": [{ "s": "boy,house,absence,drug,eat,eye", "t": "niño, casa, ausencia, droga, comer, ojo" }], "source": { "language": { "didYouMean": false, "iso": "en" }, "text": { "autoCorrected": false, "value": "boy,house,absence,drug,[east],eye", "didYouMean": true } } }, "message": "" };
+var resultModal;
 
 /*-----------Sound Effect--------*/
 function playClickbtn() {
@@ -97,7 +98,7 @@ randomEngWords = () => {
     let txtToTranslate = document.querySelectorAll("div.english");
     for (let i = 0; i < txtToTranslate.length; i++) {
         txtToTranslate[i].innerHTML = engCards[i];
-        console.log(engCards[i])
+        
     }
 
     cardsToTranslate = [];
@@ -146,7 +147,7 @@ randomEngWords = () => {
 
         for (let i = 0; i < result.length; i++) {
             translatedText[i].innerHTML = result[i];
-
+            
         }
     }
     //   async function getTranslation(url) {
@@ -233,7 +234,6 @@ document.getElementById("time").innerHTML = `
 
 function onTimesUp() {
     clearInterval(timerInterval);
-    /*location.reload()*/
 }
 
 function startTimer() {
@@ -248,6 +248,8 @@ function startTimer() {
 
         if (timeLeft === 0) {
             onTimesUp();
+        $('.modal-lost').css("display", "block");
+
         }
     }, 1000);
 }
@@ -328,7 +330,7 @@ function contactHandler() {
     if ((form.classList.display = "none")) {
         form.classList.toggle("show");
         playClickbtn();
-        return
+        return;
     }
 }
 contactBtn.addEventListener("click", contactHandler);
@@ -390,8 +392,7 @@ let gameStart = false;
             }
             
         });
-
-
+         
 function flipCard() {
     if (lockBoard == true || gameStart == false) return;
     if(this === firstCard) return;
@@ -403,11 +404,9 @@ function flipCard() {
     if (!hasFlippedCard) {
         hasFlippedCard = true;
         firstCard = this;
-        console.log(this)
         return;
     } else {
         secondCard = this;
-        console.log(this)
         checkForMatch();
 
     }
@@ -417,17 +416,15 @@ function flipCard() {
 
 function checkForMatch() {
     let isMatch = firstCard.dataset.language === secondCard.dataset.language;
-    console.log(firstCard)
-    console.log(isMatch)
     if (isMatch) {
         matchCounter += 1;
         disabledCards();
         setTimeout(() => {
             if (matchCounter == (cards.length / 2)) {
                 $('.modal-win').css("display", "block");
-                onTimesUp();
+                onTimesUp()
                 return;
-            }
+                }
         }, 2000);
     }
     else { unflipCards(); }
