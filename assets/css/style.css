@@ -226,9 +226,10 @@ i.fas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-shadow: 4px 4px 20px black;
-          box-shadow: 4px 4px 20px black;
-  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 39px 42px 135px steelblue;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 20px;
+
 }
 
 .info-text {
@@ -380,9 +381,7 @@ display: -webkit-box;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-image: -webkit-gradient( linear, left top, left bottom, from(rgb(5, 57, 97)), to(rgb(10, 105, 177)) );
-    background-image: -o-linear-gradient( top, rgb(5, 57, 97), rgb(10, 105, 177) );
-    background-image: linear-gradient( to bottom, rgb(5, 57, 97), rgb(10, 105, 177) );
+  background-color: rgb(55, 149, 93);
     position: absolute;
     z-index: 100;
     top: 50%;
@@ -390,6 +389,7 @@ display: -webkit-box;
     -webkit-transform: translate(-50%,-50%);
         -ms-transform: translate(-50%,-50%);
             transform: translate(-50%,-50%);
+    box-shadow: 39px 42px 135px steelblue;
 }
 .contact-form {
     margin-top: 25px;

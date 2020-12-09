@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 /*-----------Constants--------*/
 const clickSound = new Audio("assets/sounds/mouse-click.wav");
 const cardSound = new Audio("assets/sounds/quiet-page-turn.wav");
@@ -7,7 +9,7 @@ const cards = document.querySelectorAll(".cards-inner");
 const resetBtn = document.getElementById("reset");
 const startBtn = document.getElementById("start");
 const dummyTranslation = { "code": 200, "data": { "translation": "niño, casa, ausencia, droga, comer, ojo", "pronunciation": "", "pairs": [{ "s": "boy,house,absence,drug,eat,eye", "t": "niño, casa, ausencia, droga, comer, ojo" }], "source": { "language": { "didYouMean": false, "iso": "en" }, "text": { "autoCorrected": false, "value": "boy,house,absence,drug,[east],eye", "didYouMean": true } } }, "message": "" };
-var resultModal;
+
 
 /*-----------Sound Effect--------*/
 function playClickbtn() {
@@ -48,7 +50,7 @@ function playFailSound() {
 /*-----------Language Button-----Translator-------*/
 
 randomEngWords = () => {
-    let engCards = ['boy', 'house', 'absence', 'drug', 'eat', 'eye']
+    let engCards = ['boy', 'house', 'absence', 'drug', 'eat', 'eye'];
     /* [
       "boy",
       "girl",
@@ -109,10 +111,10 @@ randomEngWords = () => {
 
     let google_url;
     const DEFAULT_LOCALE = 'es';
-    const GOOGLE_URL = "https://google-translate20.p.rapidapi.com/translate text="
+    const GOOGLE_URL = "https://google-translate20.p.rapidapi.com/translate text=";
 
     function generateGoogleUrl(locale){
-        return `${GOOGLE_URL}${cardsToTranslate}&tl=${locale}&sl=en`
+        return `${GOOGLE_URL}${cardsToTranslate}&tl=${locale}&sl=en`;
 
 
     }
@@ -313,7 +315,7 @@ function modalHandler() {
         modal.classList.toggle("show");
         playClickbtn();
     }
-    return
+    return;
 }
 
 infoIcon.addEventListener("click", modalHandler);
@@ -336,7 +338,7 @@ function contactHandler() {
 contactBtn.addEventListener("click", contactHandler);
 contactTxt.addEventListener("click", contactHandler);
 
-const closeButton = document.getElementById("closeButton")
+const closeButton = document.getElementById("closeButton");
 closeButton.addEventListener("click", ()=>{
    if ((form.classList.display = "show")) {
         form.classList.remove("show");
@@ -422,7 +424,7 @@ function checkForMatch() {
         setTimeout(() => {
             if (matchCounter == (cards.length / 2)) {
                 $('.modal-win').css("display", "block");
-                onTimesUp()
+                onTimesUp();
                 return;
                 }
         }, 2000);
@@ -461,9 +463,9 @@ function resetBoard() {
 cards.forEach((card) => card.addEventListener("click", flipCard));
 
 
-resetBtn.addEventListener('click', resetBtnHandler)
+resetBtn.addEventListener('click', resetBtnHandler);
 
 function resetBtnHandler() {
-    location.reload()
+    location.reload();
 
 }
