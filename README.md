@@ -63,12 +63,11 @@ Playing memory games can improve other brain functions, such as attention, conce
 
 **Project goal**
 
-The purpose of this project to create website to enable consumers to have fun interactive experience in learning of the new words. The progress will be measured by virtual badges, stars and list of words learn during the session.
-
+The purpose of this project to create website to enable consumers to have fun interactive experience in learning of the new words. 
 The website has to be easy to navigate with clear purpose of the buttons and screen space. The game has to project the clear and safe framework for clients and to make the experience casual rather than requirement.
  
 
-**1.2. UX requirements**
+**UX requirements**
 
 The website targets the individuals interested to learn or improve the knowledge of the foreign languages in the casual way, through the game experience.
 
@@ -265,8 +264,8 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Nzc4MzEwNTksLTgwNTk0MTI1MSwtNT
-M2MDM1OTEwLC0xNjQ3NzU4NDIsLTE5MDQzNjY3NzEsLTE2MDUx
-NDcxMTYsODU0NTc3MTkyLC0xMzE2NzgxMzcyLDExNDE4Njg1MT
-NdfQ==
+eyJoaXN0b3J5IjpbOTUzMTUwNTY1LC0xODc3ODMxMDU5LC04MD
+U5NDEyNTEsLTUzNjAzNTkxMCwtMTY0Nzc1ODQyLC0xOTA0MzY2
+NzcxLC0xNjA1MTQ3MTE2LDg1NDU3NzE5MiwtMTMxNjc4MTM3Mi
+wxMTQxODY4NTEzXX0=
 -->
