@@ -55,7 +55,7 @@
 
   
 
-**1.1 Project Goals**
+**Project Goals**
 
   
 
@@ -271,7 +271,8 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNTk0MTI1MSwtNTM2MDM1OTEwLC0xNj
-Q3NzU4NDIsLTE5MDQzNjY3NzEsLTE2MDUxNDcxMTYsODU0NTc3
-MTkyLC0xMzE2NzgxMzcyLDExNDE4Njg1MTNdfQ==
+eyJoaXN0b3J5IjpbMTk5NjAwMjUzNywtODA1OTQxMjUxLC01Mz
+YwMzU5MTAsLTE2NDc3NTg0MiwtMTkwNDM2Njc3MSwtMTYwNTE0
+NzExNiw4NTQ1NzcxOTIsLTEzMTY3ODEzNzIsMTE0MTg2ODUxM1
+19
 -->
