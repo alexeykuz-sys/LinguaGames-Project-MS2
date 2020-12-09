@@ -235,10 +235,10 @@ Type git clone and paste https://github.com/alexeykuz-sys/MS2_LinguaGames_Projec
  
 **5. Credits**
 
-** Media
+** Media**
 
 The image for a game logo was taken from internet.
-#####  Code
+ **Code**
 
 I used various YouTube and website to get ideas and logic of the game.
 [Memory Game](https://medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae)
@@ -258,8 +258,8 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNzk0NTU1LC0xODc3ODMxMDU5LC04MD
-U5NDEyNTEsLTUzNjAzNTkxMCwtMTY0Nzc1ODQyLC0xOTA0MzY2
-NzcxLC0xNjA1MTQ3MTE2LDg1NDU3NzE5MiwtMTMxNjc4MTM3Mi
-wxMTQxODY4NTEzXX0=
+eyJoaXN0b3J5IjpbLTE5NjY3OTk2MjQsLTE4Nzc4MzEwNTksLT
+gwNTk0MTI1MSwtNTM2MDM1OTEwLC0xNjQ3NzU4NDIsLTE5MDQz
+NjY3NzEsLTE2MDUxNDcxMTYsODU0NTc3MTkyLC0xMzE2NzgxMz
+cyLDExNDE4Njg1MTNdfQ==
 -->
