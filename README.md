@@ -23,16 +23,15 @@
 	7.1.Fonts
 	7.2.Icons
 	7.3.Colours
-8. Features & Future Releases
-8. Technology used
-9.  1.7.6.
+	7.4. Features & Future Releases
+	7.5. Technology used
 
-10.  Testing
+8.  Testing
 
-11.  2.1.HTML and CSS check using WC3
-12.  2.2.Peer Code Review
-13.  2.3.User stories
-14.  2.4.User testing
+9.  HTML and CSS check using WC3
+10. Peer Code Review
+11. User stories
+12. User testing
 
 15.  Bugs and De-bugging
 
@@ -272,7 +271,7 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg5NjI2ODQ5LC01MzYwMzU5MTAsLTE2ND
-c3NTg0MiwtMTkwNDM2Njc3MSwtMTYwNTE0NzExNiw4NTQ1Nzcx
-OTIsLTEzMTY3ODEzNzIsMTE0MTg2ODUxM119
+eyJoaXN0b3J5IjpbLTE0NzE5MTU3MywtNTM2MDM1OTEwLC0xNj
+Q3NzU4NDIsLTE5MDQzNjY3NzEsLTE2MDUxNDcxMTYsODU0NTc3
+MTkyLC0xMzE2NzgxMzcyLDExNDE4Njg1MTNdfQ==
 -->
