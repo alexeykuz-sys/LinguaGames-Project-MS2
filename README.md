@@ -192,7 +192,7 @@ JS was tested on [JSHint](https://jshint.com/)
   
 **Responsiveness**
 
- I tried CSS Grid but eventually opted to use **Bootstrap** and Flexbox throughout the project to ensure **maximum** responsibility. I've tested with **above tools and results was good except for ????.**
+ I tried CSS Grid but eventually opted to use **Bootstrap** and Flexbox throughout the project to ensure **maximum** responsiveness.
 
 [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly) -
 
@@ -226,8 +226,7 @@ To deploy the website using **GitHub Pages** the following steps have to be made
 **You can run the project locally, in which case you have to follow the following steps:**
 
 
-##### To clone this project from GitHub:
-
+**To clone this project from GitHub:**
 1. You can paste the repository link directly into any editor you use with the command 'git clone'. For example:
 
 Type git clone and paste https://github.com/alexeykuz-sys/MS2_LinguaGames_Project.git
@@ -236,10 +235,9 @@ Type git clone and paste https://github.com/alexeykuz-sys/MS2_LinguaGames_Projec
  
 **5. Credits**
 
-   ##### Media
+** Media
 
 The image for a game logo was taken from internet.
-
 #####  Code
 
 I used various YouTube and website to get ideas and logic of the game.
@@ -260,8 +258,8 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NDgwOTE0NywtMTg3NzgzMTA1OSwtOD
-A1OTQxMjUxLC01MzYwMzU5MTAsLTE2NDc3NTg0MiwtMTkwNDM2
-Njc3MSwtMTYwNTE0NzExNiw4NTQ1NzcxOTIsLTEzMTY3ODEzNz
-IsMTE0MTg2ODUxM119
+eyJoaXN0b3J5IjpbMTEyNzk0NTU1LC0xODc3ODMxMDU5LC04MD
+U5NDEyNTEsLTUzNjAzNTkxMCwtMTY0Nzc1ODQyLC0xOTA0MzY2
+NzcxLC0xNjA1MTQ3MTE2LDg1NDU3NzE5MiwtMTMxNjc4MTM3Mi
+wxMTQxODY4NTEzXX0=
 -->
