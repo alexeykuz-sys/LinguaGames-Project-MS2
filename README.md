@@ -69,7 +69,8 @@ The website has to be easy to navigate with clear purpose of the buttons and scr
 
 **UX requirements**
 
-The website targets the individuals interested to learn or improve the knowledge of the foreign languages in the casual way, through the game experience. Present level of development offers only fail/win notification. Please see future implementations plan for more details of future
+The website targets the individuals interested to learn or improve the knowledge of the foreign languages in the casual way, through the game experience. Present level of development offers only fail/win notification. Please see future implementations plan for more details of  users progress measurement.
+
 
 **1.3. Users:**
 
@@ -77,9 +78,9 @@ The website targets the individuals interested to learn or improve the knowledge
 
 
 **1.4. User goals:**
-
-1.  To identify application allowing users to learn 300-600 words to be to travel and 1000 words to be able to converse;
-2.  To identify application to users s.
+Person interested to learn basics of the new language has to learn earn 300-600 words to be to travel and 1000 words to be able to converse;
+To identify application allowing users to l
+To identify application to users s.
 
   
 
@@ -265,8 +266,8 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDk1OTIwMTEsLTE4Nzc4MzEwNTksLT
-gwNTk0MTI1MSwtNTM2MDM1OTEwLC0xNjQ3NzU4NDIsLTE5MDQz
-NjY3NzEsLTE2MDUxNDcxMTYsODU0NTc3MTkyLC0xMzE2NzgxMz
-cyLDExNDE4Njg1MTNdfQ==
+eyJoaXN0b3J5IjpbMTkyODExODAyMSwtMTg3NzgzMTA1OSwtOD
+A1OTQxMjUxLC01MzYwMzU5MTAsLTE2NDc3NTg0MiwtMTkwNDM2
+Njc3MSwtMTYwNTE0NzExNiw4NTQ1NzcxOTIsLTEzMTY3ODEzNz
+IsMTE0MTg2ODUxM119
 -->
