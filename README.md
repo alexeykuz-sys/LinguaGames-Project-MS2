@@ -33,17 +33,17 @@
 11. User stories
 12. User testing
 
-15.  Bugs and De-bugging
+13.  Bugs and De-bugging
 
-16.  3.1.Known Issues
+	  13.1.Known Issues
 
-17.  Project Deployment
+14.  Project Deployment
 
-18.  4.1.Deployment
-19.  4.2.Creating a Local Version
+15.  Deployment
+16.  Creating a Local Version
 
-20.  References
-21.  Acknowledgements
+17.  References
+18.  Acknowledgements
 
   
 
@@ -271,7 +271,7 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzE5MTU3MywtNTM2MDM1OTEwLC0xNj
+eyJoaXN0b3J5IjpbLTgwNTk0MTI1MSwtNTM2MDM1OTEwLC0xNj
 Q3NzU4NDIsLTE5MDQzNjY3NzEsLTE2MDUxNDcxMTYsODU0NTc3
 MTkyLC0xMzE2NzgxMzcyLDExNDE4Njg1MTNdfQ==
 -->
