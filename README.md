@@ -88,6 +88,7 @@ The site owner has the following goals:
 -   To provide users with interactive and easy navigation learning process.
 -   To encourage users to learn more 
 - To provide platform with colors and fonts stimulating users experience.
+- To give user
 
   
 
@@ -261,7 +262,7 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwODI4Mzc5NiwtMTg3NzgzMTA1OSwtOD
+eyJoaXN0b3J5IjpbLTY4Njk1NjczMCwtMTg3NzgzMTA1OSwtOD
 A1OTQxMjUxLC01MzYwMzU5MTAsLTE2NDc3NTg0MiwtMTkwNDM2
 Njc3MSwtMTYwNTE0NzExNiw4NTQ1NzcxOTIsLTEzMTY3ODEzNz
 IsMTE0MTg2ODUxM119
