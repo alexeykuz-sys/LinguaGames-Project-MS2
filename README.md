@@ -139,10 +139,10 @@ I placed only fixed navigation bar  with Logo and menu, linking user to the rule
 Translation API that translates seamlessly behind the scene  English words into three languages. More languages can be implemented at any time
 
 Features to implement:
-- TO add bigger choice of languages;
-- to increase number and difficulty of words;
-- to create competition board.
-- The progress will be measured by virtual badges, stars and list of words learn during the session.
+- To add bigger choice of languages;
+- To increase number and difficulty of words;
+- To create competition board.
+- To create virtual badges, stars and list of words learn during the session to measure the learning process.
 - To add links to social media to enable users to share their achievements.
 
 
@@ -190,9 +190,9 @@ The HTML I’ve tested with [HTML Validator](https://validator.w3.org/) which ga
 
 JS was tested on [JSHint](https://jshint.com/)
   
-Responsiveness
+**Responsiveness**
 
--   **Implementation** I tried CSS Grid but eventually opted to use **Bootstrap** and Flexbox throughout the project to ensure **maximum** responsibility. I've tested with **above tools and results was good except for ????.**
+ I tried CSS Grid but eventually opted to use **Bootstrap** and Flexbox throughout the project to ensure **maximum** responsibility. I've tested with **above tools and results was good except for ????.**
 
 [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly) -
 
@@ -260,8 +260,8 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjMzODE2ODAsLTE4Nzc4MzEwNTksLT
-gwNTk0MTI1MSwtNTM2MDM1OTEwLC0xNjQ3NzU4NDIsLTE5MDQz
-NjY3NzEsLTE2MDUxNDcxMTYsODU0NTc3MTkyLC0xMzE2NzgxMz
-cyLDExNDE4Njg1MTNdfQ==
+eyJoaXN0b3J5IjpbLTk2NDgwOTE0NywtMTg3NzgzMTA1OSwtOD
+A1OTQxMjUxLC01MzYwMzU5MTAsLTE2NDc3NTg0MiwtMTkwNDM2
+Njc3MSwtMTYwNTE0NzExNiw4NTQ1NzcxOTIsLTEzMTY3ODEzNz
+IsMTE0MTg2ODUxM119
 -->
