@@ -136,15 +136,14 @@ View my wireframes here.
 It's one-page website with  a number of modal windows. I used JS to hide windows and information to make sure users are not distracted by excessive information on the page.
 I placed only fixed navigation bar  with Logo and menu, linking user to the rules of the game and contact modal, and cards to play with.
 
-Footer with Copyright info and Social Media icons
-
-Translation API that translates seamlessly behind the scene  English words into three languages.
+Translation API that translates seamlessly behind the scene  English words into three languages. More languages can be implemented at any time
 
 Features to implement:
-- to add bigger choice of languages;
+- TO add bigger choice of languages;
 - to increase number and difficulty of words;
 - to create competition board.
 - The progress will be measured by virtual badges, stars and list of words learn during the session.
+- To add links to social media to enable users to share their achievements.
 
 
 **1.9. Technologies Used**
@@ -261,7 +260,7 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTMyMjI3MTcsLTE4Nzc4MzEwNTksLT
+eyJoaXN0b3J5IjpbLTIwNjMzODE2ODAsLTE4Nzc4MzEwNTksLT
 gwNTk0MTI1MSwtNTM2MDM1OTEwLC0xNjQ3NzU4NDIsLTE5MDQz
 NjY3NzEsLTE2MDUxNDcxMTYsODU0NTc3MTkyLC0xMzE2NzgxMz
 cyLDExNDE4Njg1MTNdfQ==
