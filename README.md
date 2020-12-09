@@ -53,15 +53,9 @@
 
 1.  **UX Development**
 
+Language based memory game will help users to learn a new language in the relaxed, entertaining way.
   
-
-**Project Goals**
-
-  
-
-Language based memory game will help users to learn a new language in the relaxed entertaining way.
-  
-As a developer and user, I have never enjoyed playing games that do not have a purpose. Therefore, I have decided to create the game that will help users to practice a new language.
+As user, I have never enjoyed playing games that do not have a purpose. Therefore, as a developer, I have decided to create the game that will help users to practice a new language.
 
 The primary goal of the website is to make learning fun and inspire users to return to the game, as they progress.
 
@@ -271,7 +265,7 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5NjAwMjUzNywtODA1OTQxMjUxLC01Mz
+eyJoaXN0b3J5IjpbMTEzNDYyNzQ2MywtODA1OTQxMjUxLC01Mz
 YwMzU5MTAsLTE2NDc3NTg0MiwtMTkwNDM2Njc3MSwtMTYwNTE0
 NzExNiw4NTQ1NzcxOTIsLTEzMTY3ODEzNzIsMTE0MTg2ODUxM1
 19
