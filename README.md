@@ -13,38 +13,38 @@
 
 1.  UX Development
 
-1.  1.1.Project Goals
-2.  1.2. UX Requirements
-3.  1.3.Users
-4.  1.4.User Goals
-6.  1.5. User Stories
-7.  1.7.Design Choices
+2.  Project Goals
+3.  UX Requirements
+4.  Users
+5.  User Goals
+6.  User Stories
+7.  Design Choices
 
-1.  1.7.1.Fonts
-2.  1.7.2.Icons
-3.  1.7.3.Colours
-4.  1.8. Features & Future Releases
-5.  1.9 Technology used
-6.  1.7.6.
+	7.1.Fonts
+	7.2.Icons
+	7.3.Colours
+8. Features & Future Releases
+8. Technology used
+9.  1.7.6.
 
-3.  Testing
+10.  Testing
 
-1.  2.1.HTML and CSS check using WC3
-2.  2.2.Peer Code Review
-3.  2.3.User stories
-4.  2.4.User testing
+11.  2.1.HTML and CSS check using WC3
+12.  2.2.Peer Code Review
+13.  2.3.User stories
+14.  2.4.User testing
 
-5.  Bugs and De-bugging
+15.  Bugs and De-bugging
 
-1.  3.1.Known Issues
+16.  3.1.Known Issues
 
-7.  Project Deployment
+17.  Project Deployment
 
-1.  4.1.Deployment
-2.  4.2.Creating a Local Version
+18.  4.1.Deployment
+19.  4.2.Creating a Local Version
 
-9.  References
-10.  Acknowledgements
+20.  References
+21.  Acknowledgements
 
   
 
@@ -272,7 +272,7 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNjAzNTkxMCwtMTY0Nzc1ODQyLC0xOT
-A0MzY2NzcxLC0xNjA1MTQ3MTE2LDg1NDU3NzE5MiwtMTMxNjc4
-MTM3MiwxMTQxODY4NTEzXX0=
+eyJoaXN0b3J5IjpbOTg5NjI2ODQ5LC01MzYwMzU5MTAsLTE2ND
+c3NTg0MiwtMTkwNDM2Njc3MSwtMTYwNTE0NzExNiw4NTQ1Nzcx
+OTIsLTEzMTY3ODEzNzIsMTE0MTg2ODUxM119
 -->
