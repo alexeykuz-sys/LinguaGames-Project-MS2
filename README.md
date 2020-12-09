@@ -87,16 +87,16 @@ The site owner has the following goals:
 
 -   To provide users with interactive and easy navigation learning process.
 -   To encourage users to learn more 
-- To provide platform with colors and fonts stimulating users experience.
-- To give user
+-   To provide platform with colors and fonts stimulating users experience.
+- To give users control over the game, by choosing of the language, initiating and resetting the game and timer.
 
-  
+
 
 **1.6. User Stories**
 
   
 
-1.  Visitor to the website, I want to easily navigate through the game
+1.  As a visitor to the website, I want to easily navigate through the game
 2.  As a visitor I want to have a clear rules, how to play.
 6.  As a Visitor want an easy way to contact developer.
 8.  As a returning visitor to the website, i would like to have a choice of languages to learn or improve
@@ -262,8 +262,8 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4Njk1NjczMCwtMTg3NzgzMTA1OSwtOD
-A1OTQxMjUxLC01MzYwMzU5MTAsLTE2NDc3NTg0MiwtMTkwNDM2
-Njc3MSwtMTYwNTE0NzExNiw4NTQ1NzcxOTIsLTEzMTY3ODEzNz
-IsMTE0MTg2ODUxM119
+eyJoaXN0b3J5IjpbLTE2NzA4Mzg5NzQsLTE4Nzc4MzEwNTksLT
+gwNTk0MTI1MSwtNTM2MDM1OTEwLC0xNjQ3NzU4NDIsLTE5MDQz
+NjY3NzEsLTE2MDUxNDcxMTYsODU0NTc3MTkyLC0xMzE2NzgxMz
+cyLDExNDE4Njg1MTNdfQ==
 -->
