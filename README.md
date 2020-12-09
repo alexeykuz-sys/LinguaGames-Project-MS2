@@ -55,7 +55,7 @@
 
 Language based memory game will help users to learn a new language in the relaxed, entertaining way.
   
-As user, I have never enjoyed playing games that do not have a purpose. Therefore, as a developer, I have decided to create the game that will help users to practice a new language.
+As user, I have never enjoyed playing games that do not have a purpose. Therefore, as a developer, I have decided to create the game that will help purpose and will make users interested to play a game and to learn a new language.
 
 The primary goal of the website is to make learning fun and inspire users to return to the game, as they progress.
 
@@ -265,8 +265,8 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzNDYyNzQ2MywtODA1OTQxMjUxLC01Mz
-YwMzU5MTAsLTE2NDc3NTg0MiwtMTkwNDM2Njc3MSwtMTYwNTE0
-NzExNiw4NTQ1NzcxOTIsLTEzMTY3ODEzNzIsMTE0MTg2ODUxM1
-19
+eyJoaXN0b3J5IjpbLTE4Nzc4MzEwNTksLTgwNTk0MTI1MSwtNT
+M2MDM1OTEwLC0xNjQ3NzU4NDIsLTE5MDQzNjY3NzEsLTE2MDUx
+NDcxMTYsODU0NTc3MTkyLC0xMzE2NzgxMzcyLDExNDE4Njg1MT
+NdfQ==
 -->
