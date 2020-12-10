@@ -186,7 +186,7 @@ I’ve tested the CSS with [CSS Validator](http://jigsaw.w3.org/css-validator/) 
     </a>
 </p>
 
-The HTML I’ve tested with [HTML Validator](https://validator.w3.org/) which gave me the good **results:**
+The HTML I’ve tested with [HTML Validator](https://validator.w3.org/) which gave me the good **results:** passed
 
 JS was tested on [JSHint](https://jshint.com/)
   
@@ -258,8 +258,9 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTc3NDYxNDUsLTE5NjY3OTk2MjQsLT
-E4Nzc4MzEwNTksLTgwNTk0MTI1MSwtNTM2MDM1OTEwLC0xNjQ3
-NzU4NDIsLTE5MDQzNjY3NzEsLTE2MDUxNDcxMTYsODU0NTc3MT
-kyLC0xMzE2NzgxMzcyLDExNDE4Njg1MTNdfQ==
+eyJoaXN0b3J5IjpbLTE5NjA0NzExNzMsLTE5MTc3NDYxNDUsLT
+E5NjY3OTk2MjQsLTE4Nzc4MzEwNTksLTgwNTk0MTI1MSwtNTM2
+MDM1OTEwLC0xNjQ3NzU4NDIsLTE5MDQzNjY3NzEsLTE2MDUxND
+cxMTYsODU0NTc3MTkyLC0xMzE2NzgxMzcyLDExNDE4Njg1MTNd
+fQ==
 -->
