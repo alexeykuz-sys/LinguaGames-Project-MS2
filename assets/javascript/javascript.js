@@ -8,8 +8,6 @@ const failSound = new Audio("assets/sounds/game-fail.wav");
 const cards = document.querySelectorAll(".cards-inner");
 const resetBtn = document.getElementById("reset");
 const startBtn = document.getElementById("start");
-/*const dummyTranslation = { "code": 200, "data": { "translation": "niño, casa, ausencia, droga, comer, ojo", "pronunciation": "", "pairs": [{ "s": "boy,house,absence,drug,eat,eye", "t": "niño, casa, ausencia, droga, comer, ojo" }], "source": { "language": { "didYouMean": false, "iso": "en" }, "text": { "autoCorrected": false, "value": "boy,house,absence,drug,[east],eye", "didYouMean": true } } }, "message": "" };*/
-
 
 /*-----------Sound Effect--------*/
 function playClickbtn() {
@@ -50,64 +48,64 @@ function playFailSound() {
 /*-----------Language Button-----Translator-------*/
 
 randomEngWords = () => {
-    let engCards = /*['boy', 'house', 'absence', 'drug', 'eat', 'eye'];*/
-     [
-      "boy",
-      "girl",
-      "house",
-      "pen",
-      "pencil",
-      "sun",
-      "absence",
-      "access",
-      "beach",
-      "basket",
-      "black",
-      "bottle",
-      "bus",
-      "camera",
-      "card",
-      "chicken",
-      "clean",
-      "common",
-      "device",
-      "dish",
-      "dog",
-      "drug",
-      "easy",
-      "eat",
-      "emotion",
-      "energy",
-      "error",
-      "eye",
-      "family",
-      "flat",
-      "flower",
-      "friend",
-      "game",
-      "goal",
-      "garden",
-      "happy",
-      "head",
-      "horse",
-      "ice",
-    ];
+    let engCards = 
+        [
+            "boy",
+            "girl",
+            "house",
+            "pen",
+            "pencil",
+            "sun",
+            "absence",
+            "access",
+            "beach",
+            "basket",
+            "black",
+            "bottle",
+            "bus",
+            "camera",
+            "card",
+            "chicken",
+            "clean",
+            "common",
+            "device",
+            "dish",
+            "dog",
+            "drug",
+            "easy",
+            "eat",
+            "emotion",
+            "energy",
+            "error",
+            "eye",
+            "family",
+            "flat",
+            "flower",
+            "friend",
+            "game",
+            "goal",
+            "garden",
+            "happy",
+            "head",
+            "horse",
+            "ice",
+        ];
     /*----Shuffles the words in array engCards-----*/
-    
+
     while (engCards.length > 6) {
-      engCards.splice(Math.floor(Math.random() * engCards.length), 1);
+        engCards.splice(Math.floor(Math.random() * engCards.length), 1);
     }
     /*----assigns shuffled words to each card----------------*/
     let txtToTranslate = document.querySelectorAll("div.english");
     for (let i = 0; i < txtToTranslate.length; i++) {
         txtToTranslate[i].innerHTML = engCards[i];
-        
+
     }
 
     cardsToTranslate = [];
     for (let i = 0; i < txtToTranslate.length; i++) {
         cardsToTranslate[i] = txtToTranslate[i].textContent;
-        console.log(cardsToTranslate[i])
+        
     }
 
     /*let google_url;
@@ -120,32 +118,32 @@ randomEngWords = () => {
 
     }*/
     /*---------------selects language to translate-------------*/
-    
+    /*let langTo;*/
     cardsToTranslate.forEach((cardToTranslate) => {
-        let langTo = 'es'
-        const x = document.getElementById('langSelect');
-        x.addEventListener('change', event => {
+        const langTo = document.getElementById('langSelect');
+        langTo.addEventListener('change', event => {
             langTo = event.target.value;
             console.log(langTo)
-            /*----------------Translation API-------*/
-            const google_url = "https://google-translate20.p.rapidapi.com/translate?text="+ cardsToTranslate +"&tl="+langTo+"&sl=en";
-            
-            /*const translate_url =
-              "https://just-translated.p.rapidapi.com/?text=" +
-              cardsToTranslate +
-              "&lang_from=en&lang_to=" +
-              langTo;*/
 
-            /*const nlp_url =
-            "https://nlp-translation.p.rapidapi.com/v1/translate?to="+langTo+"&text=" +
-            cardToTranslate +
-            "&from=en";*/
-            getTranslation(google_url);
+    
+
+        /*----------------Translation API-------*/
+        const google_url = "https://google-translate20.p.rapidapi.com/translate?text=" + cardsToTranslate + "&tl=" + langTo + "&sl=en";
+        getTranslation(google_url);
         });
-       
     });
-    /*async function getTranslation(url) {
-        const translatedData = dummyTranslation.data.translation;
+    async function getTranslation(url) {
+        const response = await fetch(url, {
+            method: "GET",
+            headers: {
+                "x-rapidapi-key": "e019a7a6e9mshc800b72ecf1a5e1p1f3597jsn00fad202704a",
+                "x-rapidapi-host": "google-translate20.p.rapidapi.com"
+            },
+        });
+        let translatedData;
+        const data = await response.json();
+        
+        translatedData = data.data.translation;
         let result = translatedData.split(",");
 
         translatedText = document.querySelectorAll("div.txtTo");
@@ -154,34 +152,10 @@ randomEngWords = () => {
             translatedText[i].innerHTML = result[i];
             
         }
-    }*/
-       async function getTranslation(url) {
-         const response = await fetch(url, {
-           method: "GET",
-           headers: {
-             "x-rapidapi-key": "e019a7a6e9mshc800b72ecf1a5e1p1f3597jsn00fad202704a",
-             "x-rapidapi-host": "google-translate20.p.rapidapi.com"
-             /*"x-rapidapi-host": "just-translated.p.rapidapi.com"*/
-           },
-         });
-         let translatedData;
-         const data = await response.json();
-         console.log(data);
-         translatedData = data.data.translation;
-         /*let translatedData = data.text; just translated*/
-         console.log(translatedData)
-         let result = translatedData.split(",");
-
-         translatedText = document.querySelectorAll("div.txtTo");
-
-         for (let i = 0; i < result.length; i++) {
-           translatedText[i].innerHTML = result[i];
-             console.log(translatedText)
-         }
-       }
-       getTranslation().catch((err) => {
-         console.error(err);
-       });
+    }
+    getTranslation().catch((err) => {
+        console.error(err);
+    });
 };
 randomEngWords();
 
@@ -235,8 +209,6 @@ document.getElementById("time").innerHTML = `
 </div>
 `;
 
-/*startTimer();*/
-
 function onTimesUp() {
     clearInterval(timerInterval);
 }
@@ -253,7 +225,7 @@ function startTimer() {
 
         if (timeLeft === 0) {
             onTimesUp();
-        $('.modal-lost').css("display", "block");
+            $('.modal-lost').css("display", "block");
 
         }
     }, 1000);
@@ -342,19 +314,19 @@ contactBtn.addEventListener("click", contactHandler);
 contactTxt.addEventListener("click", contactHandler);
 
 const closeButton = document.getElementById("closeButton");
-closeButton.addEventListener("click", ()=>{
-   if ((form.classList.display = "show")) {
+closeButton.addEventListener("click", () => {
+    if ((form.classList.display = "show")) {
         form.classList.remove("show");
-         form.classList.add("none");
+        form.classList.add("none");
         playClickbtn();
-   }
+    }
 });
 
-window.onclick = function(event) {
-  if (event.target == form) {
-    form.classList.remove("show");
-    form.classList.add("none");
-  }
+window.onclick = function (event) {
+    if (event.target == form) {
+        form.classList.remove("show");
+        form.classList.add("none");
+    }
 };
 
 /*-----------Sound Button--------*/
@@ -380,30 +352,30 @@ soundBtn.addEventListener("click", soundHandler);
 
 let hasFlippedCard = false;
 let firstCard, secondCard;
-let lockBoard =false;
+let lockBoard = false;
 let matchCounter = 0;
 let gameStart = false;
 
 /*-----------Start Timer--------*/
 
-        startBtn.addEventListener('click', () => {
-            gameStart = true;
-            startTimer();
-            if ((startBtn.classList.contains = "show")) {
-                startBtn.classList.remove("show");
-                resetBtn.classList.add('show');
-                playClickbtn();
-            }
-            
-        });
-         
+startBtn.addEventListener('click', () => {
+    gameStart = true;
+    startTimer();
+    if ((startBtn.classList.contains = "show")) {
+        startBtn.classList.remove("show");
+        resetBtn.classList.add('show');
+        playClickbtn();
+    }
+
+});
+
 function flipCard() {
     if (lockBoard == true || gameStart == false) return;
-    if(this === firstCard) return;
-        this.classList.add("flip");
+    if (this === firstCard) return;
+    this.classList.add("flip");
     playCardSound();
-    
-    
+
+
 
     if (!hasFlippedCard) {
         hasFlippedCard = true;
@@ -428,7 +400,7 @@ function checkForMatch() {
                 $('.modal-win').css("display", "block");
                 onTimesUp();
                 return;
-                }
+            }
         }, 2000);
     }
     else { unflipCards(); }

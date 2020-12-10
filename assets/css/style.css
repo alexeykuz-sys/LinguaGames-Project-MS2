@@ -102,7 +102,6 @@ i.fas {
   color: white;
   background: transparent;
   font-size: 1.6rem;
-
   display:flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -237,6 +236,10 @@ i.fas {
   margin: 5px;
   font-size: 1rem;
   padding: 10px;
+  text-align:justify;
+}
+#close-button {
+    align-item:center;
 }
 
 .modal-lost{
