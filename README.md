@@ -204,7 +204,8 @@ https://search.google.com/test/mobile-friendly?id=o_8w7MX19q9LWdko_LifTg)
 
 **3. Bugs and Debugging**
 
-During testing I found that all iOS users encourtered a display glitch where the front-face cards do not show when the user touches a card to flip. Instead it momentarily displays the image then flips to the inverted back face card.
+During testing I found that all iOS users encountered a display glitch where the front-face cards do not show when the user touches a card to flip. Instead it momentarily displays the image then flips to the inverted back face card.
+no such problem was found on Galaxy devices.
 
 **4. Version Control**
 
@@ -264,9 +265,9 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzcwMjQzNjYsLTE5NjA0NzExNzMsLT
-E5MTc3NDYxNDUsLTE5NjY3OTk2MjQsLTE4Nzc4MzEwNTksLTgw
-NTk0MTI1MSwtNTM2MDM1OTEwLC0xNjQ3NzU4NDIsLTE5MDQzNj
-Y3NzEsLTE2MDUxNDcxMTYsODU0NTc3MTkyLC0xMzE2NzgxMzcy
-LDExNDE4Njg1MTNdfQ==
+eyJoaXN0b3J5IjpbMjEyMTUxNzMwMCwtMTk2MDQ3MTE3MywtMT
+kxNzc0NjE0NSwtMTk2Njc5OTYyNCwtMTg3NzgzMTA1OSwtODA1
+OTQxMjUxLC01MzYwMzU5MTAsLTE2NDc3NTg0MiwtMTkwNDM2Nj
+c3MSwtMTYwNTE0NzExNiw4NTQ1NzcxOTIsLTEzMTY3ODEzNzIs
+MTE0MTg2ODUxM119
 -->
