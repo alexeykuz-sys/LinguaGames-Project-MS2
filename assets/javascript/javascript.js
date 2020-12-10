@@ -8,7 +8,7 @@ const failSound = new Audio("assets/sounds/game-fail.wav");
 const cards = document.querySelectorAll(".cards-inner");
 const resetBtn = document.getElementById("reset");
 const startBtn = document.getElementById("start");
-const dummyTranslation = { "code": 200, "data": { "translation": "niño, casa, ausencia, droga, comer, ojo", "pronunciation": "", "pairs": [{ "s": "boy,house,absence,drug,eat,eye", "t": "niño, casa, ausencia, droga, comer, ojo" }], "source": { "language": { "didYouMean": false, "iso": "en" }, "text": { "autoCorrected": false, "value": "boy,house,absence,drug,[east],eye", "didYouMean": true } } }, "message": "" };
+/*const dummyTranslation = { "code": 200, "data": { "translation": "niño, casa, ausencia, droga, comer, ojo", "pronunciation": "", "pairs": [{ "s": "boy,house,absence,drug,eat,eye", "t": "niño, casa, ausencia, droga, comer, ojo" }], "source": { "language": { "didYouMean": false, "iso": "en" }, "text": { "autoCorrected": false, "value": "boy,house,absence,drug,[east],eye", "didYouMean": true } } }, "message": "" };*/
 
 
 /*-----------Sound Effect--------*/
@@ -50,8 +50,8 @@ function playFailSound() {
 /*-----------Language Button-----Translator-------*/
 
 randomEngWords = () => {
-    let engCards = ['boy', 'house', 'absence', 'drug', 'eat', 'eye'];
-    /* [
+    let engCards = /*['boy', 'house', 'absence', 'drug', 'eat', 'eye'];*/
+     [
       "boy",
       "girl",
       "house",
@@ -91,11 +91,12 @@ randomEngWords = () => {
       "head",
       "horse",
       "ice",
-    ];*/
+    ];
     /*----Shuffles the words in array engCards-----*/
-    /*while (engCards.length > 6) {
+    
+    while (engCards.length > 6) {
       engCards.splice(Math.floor(Math.random() * engCards.length), 1);
-    }*/
+    }
     /*----assigns shuffled words to each card----------------*/
     let txtToTranslate = document.querySelectorAll("div.english");
     for (let i = 0; i < txtToTranslate.length; i++) {
@@ -106,10 +107,10 @@ randomEngWords = () => {
     cardsToTranslate = [];
     for (let i = 0; i < txtToTranslate.length; i++) {
         cardsToTranslate[i] = txtToTranslate[i].textContent;
-
+        console.log(cardsToTranslate[i])
     }
 
-    let google_url;
+    /*let google_url;
     const DEFAULT_LOCALE = 'es';
     const GOOGLE_URL = "https://google-translate20.p.rapidapi.com/translate text=";
 
@@ -117,15 +118,17 @@ randomEngWords = () => {
         return `${GOOGLE_URL}${cardsToTranslate}&tl=${locale}&sl=en`;
 
 
-    }
+    }*/
     /*---------------selects language to translate-------------*/
+    
     cardsToTranslate.forEach((cardToTranslate) => {
+        let langTo = 'es'
         const x = document.getElementById('langSelect');
         x.addEventListener('change', event => {
-            const langTo = event.target.value;
-
+            langTo = event.target.value;
+            console.log(langTo)
             /*----------------Translation API-------*/
-
+            const google_url = "https://google-translate20.p.rapidapi.com/translate?text="+ cardsToTranslate +"&tl="+langTo+"&sl=en";
             
             /*const translate_url =
               "https://just-translated.p.rapidapi.com/?text=" +
@@ -137,11 +140,11 @@ randomEngWords = () => {
             "https://nlp-translation.p.rapidapi.com/v1/translate?to="+langTo+"&text=" +
             cardToTranslate +
             "&from=en";*/
-            getTranslation(generateGoogleUrl(langTo));
+            getTranslation(google_url);
         });
-        getTranslation(generateGoogleUrl(DEFAULT_LOCALE));
+       
     });
-    async function getTranslation(url) {
+    /*async function getTranslation(url) {
         const translatedData = dummyTranslation.data.translation;
         let result = translatedData.split(",");
 
@@ -151,34 +154,34 @@ randomEngWords = () => {
             translatedText[i].innerHTML = result[i];
             
         }
-    }
-    //   async function getTranslation(url) {
-    //     const response = await fetch(url, {
-    //       method: "GET",
-    //       headers: {
-    //         "x-rapidapi-key": "e019a7a6e9mshc800b72ecf1a5e1p1f3597jsn00fad202704a",
-    //         "x-rapidapi-host": "google-translate20.p.rapidapi.com"
-    //         /*"x-rapidapi-host": "just-translated.p.rapidapi.com"*/
-    //       },
-    //     });
-    //     let translatedData;
-    //     const data = await response.json();
-    //     console.log(data);
-    //     let translatedData = data.data.translation;
-    //     /*let translatedData = data.text; just translated*/
-    //     console.log(translatedData)
-    //     let result = translatedData.split(",");
+    }*/
+       async function getTranslation(url) {
+         const response = await fetch(url, {
+           method: "GET",
+           headers: {
+             "x-rapidapi-key": "e019a7a6e9mshc800b72ecf1a5e1p1f3597jsn00fad202704a",
+             "x-rapidapi-host": "google-translate20.p.rapidapi.com"
+             /*"x-rapidapi-host": "just-translated.p.rapidapi.com"*/
+           },
+         });
+         let translatedData;
+         const data = await response.json();
+         console.log(data);
+         translatedData = data.data.translation;
+         /*let translatedData = data.text; just translated*/
+         console.log(translatedData)
+         let result = translatedData.split(",");
 
-    //     translatedText = document.querySelectorAll("div.txtTo");
+         translatedText = document.querySelectorAll("div.txtTo");
 
-    //     for (let i = 0; i < result.length; i++) {
-    //       translatedText[i].innerHTML = result[i];
-    //         console.log(translatedText)
-    //     }
-    //   }
-    //   getTranslation().catch((err) => {
-    //     console.error(err);
-    //   });
+         for (let i = 0; i < result.length; i++) {
+           translatedText[i].innerHTML = result[i];
+             console.log(translatedText)
+         }
+       }
+       getTranslation().catch((err) => {
+         console.error(err);
+       });
 };
 randomEngWords();
 
@@ -202,7 +205,7 @@ const COLOR_CODES = {
     }
 };
 
-const TIME_LIMIT = 60;
+const TIME_LIMIT = 120;
 let timePassed = 0;
 let timeLeft = TIME_LIMIT;
 let timerInterval = null;
@@ -210,7 +213,7 @@ let remainingPathColor = COLOR_CODES.info.color;
 
 document.getElementById("time").innerHTML = `
 <div class="base-timer">
-  <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http:www.w3.org/2000/svg">
     <g class="base-timer__circle">
       <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45"></circle>
       <path
@@ -314,8 +317,8 @@ function modalHandler() {
     if ((modal.classList.display = "none")) {
         modal.classList.toggle("show");
         playClickbtn();
+        return;
     }
-    return;
 }
 
 infoIcon.addEventListener("click", modalHandler);
@@ -390,7 +393,6 @@ let gameStart = false;
                 startBtn.classList.remove("show");
                 resetBtn.classList.add('show');
                 playClickbtn();
-                
             }
             
         });

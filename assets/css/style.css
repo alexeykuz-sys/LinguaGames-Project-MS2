@@ -322,43 +322,6 @@ display: -webkit-box;
 }
 
 
-/*Gear Buttons*/
-
-.settings-icon {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: white;
-  -webkit-box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
-    5px 5px 10px rgba(48, 47, 47, 0.5);
-          box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
-    5px 5px 10px rgba(48, 47, 47, 0.5);
-  border: 2px solid rgba(48, 47, 47, 0.5);
-  outline: none;
-
-  background-image: url("../images/icons8-settings-32.png");
-  background-repeat: no-repeat;
-  background-size: 40px;
-  background-position: center;
-  cursor: pointer;
-  position: absolute;
-  margin-left: 120px;
-}
-
-.settings-icon:active {
-  -webkit-box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
-    5px 5px 10px rgba(48, 47, 47, 0.5),
-    inset -1px -1px 10px rgba(255, 255, 255, 0.5),
-    inset 1px 1px 10px rgba(48, 47, 47, 0.37);
-          box-shadow: -2px -2px 10px rgba(255, 255, 255, 0.5),
-    5px 5px 10px rgba(48, 47, 47, 0.5),
-    inset -1px -1px 10px rgba(255, 255, 255, 0.5),
-    inset 1px 1px 10px rgba(48, 47, 47, 0.37);
-  background-image: url("../images/icons8-settings-32.png");
-  background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: center;
-}
 
 /*----Contact form Icon---*/
 
@@ -825,38 +788,10 @@ margin: 5px auto;
   
 }
 
-/*Footer*/
-
-.footer-wrapper {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(5, 57, 97)), to(rgb(10, 105, 177)));
-  background-image: -o-linear-gradient(bottom, rgb(5, 57, 97), rgb(10, 105, 177));
-  background-image: linear-gradient(to top, rgb(5, 57, 97), rgb(10, 105, 177));
-  color: #ffffff;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.footer-wrapper a {
-  color: #ffffff;
-  padding-right: 30px;
-  margin: auto 0;
-  font-size: 2.4em;
-}
-.footer-wrapper a:hover {
-  color: rgba(0, 0, 255, 0.678);
-}
 
 /*Media Querries*/
 
-@media (min-width: 425px) {
+@media (min-width: 426px) {
     .buttons-wrapper{
         min-height: 100%;
         width: 100%;
@@ -864,7 +799,7 @@ margin: 5px auto;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        flex-flow: nowrap;
+        flex-flow: wrap;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
@@ -878,7 +813,7 @@ margin: 5px auto;
     width: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 80px auto;
+    margin: 60px auto;
 
     display: -webkit-box;
 
@@ -906,8 +841,8 @@ margin: 5px auto;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 95px;
-    height:95px;
+    width: 103px;
+    height:103px;
      background-color: white;
   }
 
@@ -1048,7 +983,7 @@ margin: 5px auto;
     .buttons-wrapper{
         min-height: 100%;
         width: 100%;
-        margin:20px auto;
+        margin:40px auto;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1065,7 +1000,7 @@ margin: 5px auto;
     width: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 0 auto;
+    margin: 80px auto;
 
     display: -webkit-box;
 
@@ -1129,14 +1064,14 @@ margin: 5px auto;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        margin: 20px auto;
+        margin: 40px auto;
         -ms-flex-pack: distribute;
             justify-content: space-around;
     }
   .cards-wrapper {
     max-height: 100%;
     width: 100%;
-    margin:0 auto;
+    margin:10px auto;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     
