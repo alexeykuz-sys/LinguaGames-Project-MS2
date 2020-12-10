@@ -196,6 +196,12 @@ JS was tested on [JSHint](https://jshint.com/)
 
 [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly) -
 
+
+[The verdict is the page is mobile friendly.](
+https://search.google.com/test/mobile-friendly?id=o_8w7MX19q9LWdko_LifTg)
+
+
+
 **3. Bugs and Debugging**
 
 During testing I found that all iOS users encourtered a display glitch where the front-face cards do not show when the user touches a card to flip. Instead it momentarily displays the image then flips to the inverted back face card.
@@ -258,9 +264,9 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjA0NzExNzMsLTE5MTc3NDYxNDUsLT
-E5NjY3OTk2MjQsLTE4Nzc4MzEwNTksLTgwNTk0MTI1MSwtNTM2
-MDM1OTEwLC0xNjQ3NzU4NDIsLTE5MDQzNjY3NzEsLTE2MDUxND
-cxMTYsODU0NTc3MTkyLC0xMzE2NzgxMzcyLDExNDE4Njg1MTNd
-fQ==
+eyJoaXN0b3J5IjpbLTIwMzcwMjQzNjYsLTE5NjA0NzExNzMsLT
+E5MTc3NDYxNDUsLTE5NjY3OTk2MjQsLTE4Nzc4MzEwNTksLTgw
+NTk0MTI1MSwtNTM2MDM1OTEwLC0xNjQ3NzU4NDIsLTE5MDQzNj
+Y3NzEsLTE2MDUxNDcxMTYsODU0NTc3MTkyLC0xMzE2NzgxMzcy
+LDExNDE4Njg1MTNdfQ==
 -->
