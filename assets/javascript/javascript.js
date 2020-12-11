@@ -118,19 +118,27 @@ randomEngWords = () => {
 
     }*/
     /*---------------selects language to translate-------------*/
-    /*let langTo;*/
-    cardsToTranslate.forEach((cardToTranslate) => {
-        const langTo = document.getElementById('langSelect');
-        langTo.addEventListener('change', event => {
-            langTo = event.target.value;
-            console.log(langTo)
-
+    
     
 
+    cardsToTranslate.forEach((cardToTranslate) => {
+       const x = document.getElementById('langSelect')
+        /*window.onload = function () {
+        langTo = x.value;
+        console.log(langTo)*/
+    
+
+        
+        x.addEventListener('change', event => {
+            langTo = event.target.value;
+            console.log(langTo);
+        
         /*----------------Translation API-------*/
         const google_url = "https://google-translate20.p.rapidapi.com/translate?text=" + cardsToTranslate + "&tl=" + langTo + "&sl=en";
         getTranslation(google_url);
+        console.log(langTo)
         });
+    
     });
     async function getTranslation(url) {
         const response = await fetch(url, {
@@ -155,6 +163,7 @@ randomEngWords = () => {
     }
     getTranslation().catch((err) => {
         console.error(err);
+    
     });
 };
 randomEngWords();
