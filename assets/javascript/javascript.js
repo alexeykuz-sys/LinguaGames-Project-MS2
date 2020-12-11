@@ -108,12 +108,12 @@ randomEngWords = () => {
         
     }
 
-    /*let google_url;
+    /*let googleUrl;
     const DEFAULT_LOCALE = 'es';
-    const GOOGLE_URL = "https://google-translate20.p.rapidapi.com/translate text=";
+    const googleUrl = "https://google-translate20.p.rapidapi.com/translate text=";
 
     function generateGoogleUrl(locale){
-        return `${GOOGLE_URL}${cardsToTranslate}&tl=${locale}&sl=en`;
+        return `${googleUrl}${cardsToTranslate}&tl=${locale}&sl=en`;
 
 
     }*/
@@ -133,15 +133,16 @@ randomEngWords = () => {
             langTo = event.target.value;
             console.log(langTo);
         
+
         /*----------------Translation API-------*/
-        const google_url = "https://google-translate20.p.rapidapi.com/translate?text=" + cardsToTranslate + "&tl=" + langTo + "&sl=en";
-        getTranslation(google_url);
+        const googleUrl = "https://google-translate20.p.rapidapi.com/translate?text=" + cardsToTranslate + "&tl=" + langTo + "&sl=en";
+        getTranslation(googleUrl);
         console.log(langTo)
         });
     
     });
-    async function getTranslation(url) {
-        const response = await fetch(url, {
+    async function getTranslation(googleUrl) {
+        const response = await fetch(googleUrl, {
             method: "GET",
             headers: {
                 "x-rapidapi-key": "e019a7a6e9mshc800b72ecf1a5e1p1f3597jsn00fad202704a",
@@ -163,6 +164,7 @@ randomEngWords = () => {
     }
     getTranslation().catch((err) => {
         console.error(err);
+        console.log(err)
     
     });
 };
