@@ -122,22 +122,15 @@ randomEngWords = () => {
     
 
     cardsToTranslate.forEach((cardToTranslate) => {
-       const x = document.getElementById('langSelect')
-        /*window.onload = function () {
-        langTo = x.value;
-        console.log(langTo)*/
-    
-
-        
+         const x = document.getElementById('langSelect')
         x.addEventListener('change', event => {
             langTo = event.target.value;
-            console.log(langTo);
+
         
 
         /*----------------Translation API-------*/
         const googleUrl = "https://google-translate20.p.rapidapi.com/translate?text=" + cardsToTranslate + "&tl=" + langTo + "&sl=en";
         getTranslation(googleUrl);
-        console.log(langTo)
         });
     
     });
@@ -162,9 +155,10 @@ randomEngWords = () => {
             
         }
     }
-    getTranslation().catch((err) => {
+    getTranslation()
+    .catch((err) => {
         console.error(err);
-        console.log(err)
+        
     
     });
 };

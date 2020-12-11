@@ -228,7 +228,7 @@ i.fas {
   box-shadow: 39px 42px 135px steelblue;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 20px;
-
+flex-direction: column;
 }
 
 .info-text {
@@ -239,12 +239,9 @@ i.fas {
   text-align:justify;
 }
 
-.modal-lost{
-    background-image: url("../images/fail_msg.jpg");
-  background-repeat: no-repeat;
-  background-size: 300px;
-    background-position: top;
-    
+.rules-header{
+    margin:5px auto;
+    font-weight: 600;
 }
 
 .modal-win{
@@ -269,8 +266,11 @@ i.fas {
     border-radius: 17px;
 }
 
-.modal-lost {
-    
+.modal-lost{
+    background-image: url("../images/fail_msg.jpg");
+  background-repeat: no-repeat;
+  background-size: 300px;
+background-position: top;
     display: none;
     position: fixed;
     z-index: 100;
