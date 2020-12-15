@@ -208,7 +208,7 @@ https://search.google.com/test/mobile-friendly?id=o_8w7MX19q9LWdko_LifTg)
 
 1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the game.
 
-  1.  Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a Hero Image with Text and a "Learn More" Call to action button.
+2.  Upon entering the site, users are automatically presented with clear webisite 
     2.  The main points are made immediately with the hero image
     3.  The user has two options, click the call to action buttons or scroll down, both of which will lead to the same place, to learn more about the organisation.
 2.  As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
@@ -286,11 +286,11 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MDE5ODY0MywtMTQxMjQsLTI5ODE2Nj
-k2NiwtMjA3NDYyOTk5Myw2NjExNjkxNDIsMTI3OTQzNTMxNywx
-ODA0NDE4MzQ1LC00NDkyMTQ3OCwxMDcwOTIzNzU2LDE4OTcxMD
-czNzAsMjEyMTUxNzMwMCwtMTk2MDQ3MTE3MywtMTkxNzc0NjE0
-NSwtMTk2Njc5OTYyNCwtMTg3NzgzMTA1OSwtODA1OTQxMjUxLC
-01MzYwMzU5MTAsLTE2NDc3NTg0MiwtMTkwNDM2Njc3MSwtMTYw
-NTE0NzExNl19
+eyJoaXN0b3J5IjpbNzQ3ODU2NzQ5LC0xNDEyNCwtMjk4MTY2OT
+Y2LC0yMDc0NjI5OTkzLDY2MTE2OTE0MiwxMjc5NDM1MzE3LDE4
+MDQ0MTgzNDUsLTQ0OTIxNDc4LDEwNzA5MjM3NTYsMTg5NzEwNz
+M3MCwyMTIxNTE3MzAwLC0xOTYwNDcxMTczLC0xOTE3NzQ2MTQ1
+LC0xOTY2Nzk5NjI0LC0xODc3ODMxMDU5LC04MDU5NDEyNTEsLT
+UzNjAzNTkxMCwtMTY0Nzc1ODQyLC0xOTA0MzY2NzcxLC0xNjA1
+MTQ3MTE2XX0=
 -->
