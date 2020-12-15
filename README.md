@@ -89,12 +89,13 @@ the users goals is to identify application allowing them to have access to the a
 **7. User Stories**
 
  **- First Time Visitor Goals:**
-1.  As a first time visitor to the website, I want to easily understand the rules and purpose of the game.
+1.  As a first time visitor to the website, I want to easily understand the main purpose of the game.
 2. As a first time visitor navigate through the game
 3.  As a visitor I want to have a clear rules, how to play.
 4.  As a visitor want an easy way to contact developer.
 5.  As a returning visitor to the website, I would like to have a choice of languages to learn or improve
 
+ **- Returning Visitor Goals:**
 
 **1.7. Design Choices**
 
@@ -259,10 +260,10 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTYzNjkzMzAsMTA3MDkyMzc1NiwxOD
-k3MTA3MzcwLDIxMjE1MTczMDAsLTE5NjA0NzExNzMsLTE5MTc3
-NDYxNDUsLTE5NjY3OTk2MjQsLTE4Nzc4MzEwNTksLTgwNTk0MT
-I1MSwtNTM2MDM1OTEwLC0xNjQ3NzU4NDIsLTE5MDQzNjY3NzEs
-LTE2MDUxNDcxMTYsODU0NTc3MTkyLC0xMzE2NzgxMzcyLDExND
-E4Njg1MTNdfQ==
+eyJoaXN0b3J5IjpbLTQ0OTIxNDc4LDEwNzA5MjM3NTYsMTg5Nz
+EwNzM3MCwyMTIxNTE3MzAwLC0xOTYwNDcxMTczLC0xOTE3NzQ2
+MTQ1LC0xOTY2Nzk5NjI0LC0xODc3ODMxMDU5LC04MDU5NDEyNT
+EsLTUzNjAzNTkxMCwtMTY0Nzc1ODQyLC0xOTA0MzY2NzcxLC0x
+NjA1MTQ3MTE2LDg1NDU3NzE5MiwtMTMxNjc4MTM3MiwxMTQxOD
+Y4NTEzXX0=
 -->
