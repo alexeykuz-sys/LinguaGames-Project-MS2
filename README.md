@@ -7,9 +7,7 @@
 
   ![Alt](assets/images/linguaGamesWelcome.png)
 
-**Contents**
-
-  
+**Contents**  
 
 1.  UX Development
 
@@ -19,12 +17,11 @@
 5.  User Goals
 6.  User Stories
 7.  Design Choices
-
-	7.1.Fonts
-	7.2.Icons
-	7.3.Colours
-	7.4. Features & Future Releases
-	7.5. Technology used
+		- Fonts
+		- Icons
+		- Colours
+7.4. Features & Future Releases
+7.5. Technology used
 
 8.  Testing
 
@@ -265,9 +262,9 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMTUxNzMwMCwtMTk2MDQ3MTE3MywtMT
-kxNzc0NjE0NSwtMTk2Njc5OTYyNCwtMTg3NzgzMTA1OSwtODA1
-OTQxMjUxLC01MzYwMzU5MTAsLTE2NDc3NTg0MiwtMTkwNDM2Nj
-c3MSwtMTYwNTE0NzExNiw4NTQ1NzcxOTIsLTEzMTY3ODEzNzIs
-MTE0MTg2ODUxM119
+eyJoaXN0b3J5IjpbLTk0NzIyOTU1OCwyMTIxNTE3MzAwLC0xOT
+YwNDcxMTczLC0xOTE3NzQ2MTQ1LC0xOTY2Nzk5NjI0LC0xODc3
+ODMxMDU5LC04MDU5NDEyNTEsLTUzNjAzNTkxMCwtMTY0Nzc1OD
+QyLC0xOTA0MzY2NzcxLC0xNjA1MTQ3MTE2LDg1NDU3NzE5Miwt
+MTMxNjc4MTM3MiwxMTQxODY4NTEzXX0=
 -->
