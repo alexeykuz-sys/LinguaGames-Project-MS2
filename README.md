@@ -215,9 +215,11 @@ https://search.google.com/test/mobile-friendly?id=o_8w7MX19q9LWdko_LifTg)
 Rules and contact form presented in modal form and invisible to user, unless called upon by pressing relevant menu item.
 
 **- Returning and Frequent Users:**
- 1. Returning and Frequent Users will find the following functions once implemented in the future:
+Returning and Frequent Users will find the following functions once implemented in the future:
 	- the possibility to follow other users;
-	- the possibility to see  
+	- the possibility to see the achievements of users they follow;
+	- the possibility to share users achievements on social media.
+	 
 **3. Bugs and Debugging**
 
 During testing I found that all iOS users encountered a display glitch where the front-face cards do not show when the user touches a card to flip. Instead it momentarily displays the image then flips to the inverted back face card.
@@ -281,11 +283,11 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTQ5NzA0NTEsLTE4OTcyNDQ5NjYsLT
-E0MTI0LC0yOTgxNjY5NjYsLTIwNzQ2Mjk5OTMsNjYxMTY5MTQy
-LDEyNzk0MzUzMTcsMTgwNDQxODM0NSwtNDQ5MjE0NzgsMTA3MD
-kyMzc1NiwxODk3MTA3MzcwLDIxMjE1MTczMDAsLTE5NjA0NzEx
-NzMsLTE5MTc3NDYxNDUsLTE5NjY3OTk2MjQsLTE4Nzc4MzEwNT
-ksLTgwNTk0MTI1MSwtNTM2MDM1OTEwLC0xNjQ3NzU4NDIsLTE5
-MDQzNjY3NzFdfQ==
+eyJoaXN0b3J5IjpbMTM0NjA5ODQ3MSwtMTg5NzI0NDk2NiwtMT
+QxMjQsLTI5ODE2Njk2NiwtMjA3NDYyOTk5Myw2NjExNjkxNDIs
+MTI3OTQzNTMxNywxODA0NDE4MzQ1LC00NDkyMTQ3OCwxMDcwOT
+IzNzU2LDE4OTcxMDczNzAsMjEyMTUxNzMwMCwtMTk2MDQ3MTE3
+MywtMTkxNzc0NjE0NSwtMTk2Njc5OTYyNCwtMTg3NzgzMTA1OS
+wtODA1OTQxMjUxLC01MzYwMzU5MTAsLTE2NDc3NTg0MiwtMTkw
+NDM2Njc3MV19
 -->
