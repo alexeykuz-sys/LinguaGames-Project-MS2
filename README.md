@@ -96,8 +96,9 @@ the users goals is to identify application allowing them to have access to the a
 5.  As a returning visitor to the website, I would like to have a choice of languages to learn or improve
 
  **- Returning Visitor Goals:**
-	1.  As a Returning Visitor I would like to find more languages available and more difficulty levels.
-	2. As a Returning Visitor I would like to find social community links.
+ 
+1.  As a Returning Visitor I would like to find more languages available and more difficulty levels.
+2. As a Returning Visitor I would like to find social community links.
 
 **- Frequent Visitor Goals:**
 	1.	As a Frequent Visitor i would like to see more challenges and alternative way of learning languages
@@ -107,7 +108,7 @@ the users goals is to identify application allowing them to have access to the a
   
 **8. Design Choices**
 
-When designing website i took inspiration for colours and fonts from the game Memory. The application is using colours and fonts scientifically proven to help users to learn and stimulate their cognitive functions.
+When designing website I took inspiration for colours and fonts from the game Memory. The application is using colours and fonts scientifically proven to help users to learn and stimulate their cognitive functions.
 
 
 **Fonts**
@@ -268,10 +269,10 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNDQxODM0NSwtNDQ5MjE0NzgsMTA3MD
-kyMzc1NiwxODk3MTA3MzcwLDIxMjE1MTczMDAsLTE5NjA0NzEx
-NzMsLTE5MTc3NDYxNDUsLTE5NjY3OTk2MjQsLTE4Nzc4MzEwNT
-ksLTgwNTk0MTI1MSwtNTM2MDM1OTEwLC0xNjQ3NzU4NDIsLTE5
-MDQzNjY3NzEsLTE2MDUxNDcxMTYsODU0NTc3MTkyLC0xMzE2Nz
-gxMzcyLDExNDE4Njg1MTNdfQ==
+eyJoaXN0b3J5IjpbMTI3OTQzNTMxNywxODA0NDE4MzQ1LC00ND
+kyMTQ3OCwxMDcwOTIzNzU2LDE4OTcxMDczNzAsMjEyMTUxNzMw
+MCwtMTk2MDQ3MTE3MywtMTkxNzc0NjE0NSwtMTk2Njc5OTYyNC
+wtMTg3NzgzMTA1OSwtODA1OTQxMjUxLC01MzYwMzU5MTAsLTE2
+NDc3NTg0MiwtMTkwNDM2Njc3MSwtMTYwNTE0NzExNiw4NTQ1Nz
+cxOTIsLTEzMTY3ODEzNzIsMTE0MTg2ODUxM119
 -->
