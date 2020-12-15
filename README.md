@@ -189,10 +189,10 @@ I’ve tested the CSS with [CSS Validator](http://jigsaw.w3.org/css-validator/) 
     </a>
 </p>
 
-The HTML I’ve tested with [HTML Validator](https://validator.w3.org/) which gave me the good **results:** passed
+The HTML I’ve tested with [HTML Validator](https://validator.w3.org/) which gave me the positive results.
 
 JS was tested on [JSHint](https://jshint.com/)
-  
+  and missing semi columns fixed. Also as per Stack Overflow recommendations added at the top of JS folder.
 **Responsiveness**
 
  I tried CSS Grid but eventually opted to use **Bootstrap** and Flexbox throughout the project to ensure **maximum** responsiveness.
@@ -268,11 +268,11 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzQ2Mjk5OTMsNjYxMTY5MTQyLDEyNz
-k0MzUzMTcsMTgwNDQxODM0NSwtNDQ5MjE0NzgsMTA3MDkyMzc1
-NiwxODk3MTA3MzcwLDIxMjE1MTczMDAsLTE5NjA0NzExNzMsLT
-E5MTc3NDYxNDUsLTE5NjY3OTk2MjQsLTE4Nzc4MzEwNTksLTgw
-NTk0MTI1MSwtNTM2MDM1OTEwLC0xNjQ3NzU4NDIsLTE5MDQzNj
-Y3NzEsLTE2MDUxNDcxMTYsODU0NTc3MTkyLC0xMzE2NzgxMzcy
-LDExNDE4Njg1MTNdfQ==
+eyJoaXN0b3J5IjpbLTI5ODE2Njk2NiwtMjA3NDYyOTk5Myw2Nj
+ExNjkxNDIsMTI3OTQzNTMxNywxODA0NDE4MzQ1LC00NDkyMTQ3
+OCwxMDcwOTIzNzU2LDE4OTcxMDczNzAsMjEyMTUxNzMwMCwtMT
+k2MDQ3MTE3MywtMTkxNzc0NjE0NSwtMTk2Njc5OTYyNCwtMTg3
+NzgzMTA1OSwtODA1OTQxMjUxLC01MzYwMzU5MTAsLTE2NDc3NT
+g0MiwtMTkwNDM2Njc3MSwtMTYwNTE0NzExNiw4NTQ1NzcxOTIs
+LTEzMTY3ODEzNzJdfQ==
 -->
