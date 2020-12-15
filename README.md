@@ -121,7 +121,7 @@ I opted to use Open Sans font for my website, which is one of the most popular f
 
 **Icons**
 
-Icons used where provided by [Font Awesome](https://fontawesome.com/), used in moderation and are self explanatory.
+Icons used where provided by [icon8](https://icon8.com/), used in moderation and are self explanatory.
 
 **Colours**
 
@@ -136,7 +136,7 @@ rgb(10,  105,  177);
 
 **1.8. Features**
 
-View my wireframes here.
+View my wireframes [here](wirefram.
 It's one-page website with  a number of modal windows. I used JS to hide windows and information to make sure users are not distracted by excessive information on the page.
 I placed only fixed navigation bar  with Logo and menu, linking user to the rules of the game and contact modal, and cards to play with.
 
@@ -269,10 +269,11 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3OTQzNTMxNywxODA0NDE4MzQ1LC00ND
-kyMTQ3OCwxMDcwOTIzNzU2LDE4OTcxMDczNzAsMjEyMTUxNzMw
-MCwtMTk2MDQ3MTE3MywtMTkxNzc0NjE0NSwtMTk2Njc5OTYyNC
-wtMTg3NzgzMTA1OSwtODA1OTQxMjUxLC01MzYwMzU5MTAsLTE2
-NDc3NTg0MiwtMTkwNDM2Njc3MSwtMTYwNTE0NzExNiw4NTQ1Nz
-cxOTIsLTEzMTY3ODEzNzIsMTE0MTg2ODUxM119
+eyJoaXN0b3J5IjpbLTExMjY3ODc2NDQsMTI3OTQzNTMxNywxOD
+A0NDE4MzQ1LC00NDkyMTQ3OCwxMDcwOTIzNzU2LDE4OTcxMDcz
+NzAsMjEyMTUxNzMwMCwtMTk2MDQ3MTE3MywtMTkxNzc0NjE0NS
+wtMTk2Njc5OTYyNCwtMTg3NzgzMTA1OSwtODA1OTQxMjUxLC01
+MzYwMzU5MTAsLTE2NDc3NTg0MiwtMTkwNDM2Njc3MSwtMTYwNT
+E0NzExNiw4NTQ1NzcxOTIsLTEzMTY3ODEzNzIsMTE0MTg2ODUx
+M119
 -->
