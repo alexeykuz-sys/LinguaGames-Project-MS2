@@ -231,7 +231,7 @@ The game is developed as non commercial exercise and depends on free allowance o
  -   The branches were then merged with the master branch after any conflicts were addressed.
   
 
-**12. Project Deployment**
+**13. Project Deployment**
 
 I built website using **gitpod** and **GitHub** to host the repository.
 
@@ -245,13 +245,11 @@ To deploy the website using **GitHub Pages** the following steps have to be made
 -   Selected **Master Branch** from the **Source** dropdown menu.
 -   Clicked to **confirm** my **selection**.
 
-  
-
 **You can run the project locally, in which case you have to follow the following steps:**
 
 
 **To clone this project from GitHub:**
-1. You can paste the repository link directly into any editor you use with the command 'git clone'. For example:
+. You can paste the repository link directly into any editor you use with the command 'git clone'. For example:
 
 Type git clone and paste https://github.com/alexeykuz-sys/MS2_LinguaGames_Project.git
 
@@ -283,7 +281,7 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NzIxMTYxNCwxODAxNDMzOTU2LC0xOD
+eyJoaXN0b3J5IjpbMjA5ODk5ODA4NiwxODAxNDMzOTU2LC0xOD
 k3MjQ0OTY2LC0xNDEyNCwtMjk4MTY2OTY2LC0yMDc0NjI5OTkz
 LDY2MTE2OTE0MiwxMjc5NDM1MzE3LDE4MDQ0MTgzNDUsLTQ0OT
 IxNDc4LDEwNzA5MjM3NTYsMTg5NzEwNzM3MCwyMTIxNTE3MzAw
