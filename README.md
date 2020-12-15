@@ -34,13 +34,11 @@
 
 	  - Known Issues
 
-12.  Project Deployment
+12.  Version Control
 
-17.  Deployment
-18.  Creating a Local Version
-
-19.  References
-20.  Acknowledgements
+13. Project Deployment
+14.  References
+15.  Acknowledgements
  
 ====
 
@@ -226,6 +224,13 @@ During testing I found that all iOS users encountered a display glitch where the
 no such problem was found on Galaxy devices.
 The game is developed as non commercial exercise and depends on free allowance of API provider, therefore errors might appear in console related to excessive calls to API and once free limit has been exhausted.
 
+**12. Version Control**
+
+ -   Used Git for version control.
+ -   Branches were created to work on alternative grid layout.
+ -   The branches were then merged with the master branch after any conflicts were addressed.
+  
+
 **12. Project Deployment**
 
 I built website using **gitpod** and **GitHub** to host the repository.
@@ -278,7 +283,7 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNDc2MTUyMywxODAxNDMzOTU2LC0xOD
+eyJoaXN0b3J5IjpbMjA2NzIxMTYxNCwxODAxNDMzOTU2LC0xOD
 k3MjQ0OTY2LC0xNDEyNCwtMjk4MTY2OTY2LC0yMDc0NjI5OTkz
 LDY2MTE2OTE0MiwxMjc5NDM1MzE3LDE4MDQ0MTgzNDUsLTQ0OT
 IxNDc4LDEwNzA5MjM3NTYsMTg5NzEwNzM3MCwyMTIxNTE3MzAw
