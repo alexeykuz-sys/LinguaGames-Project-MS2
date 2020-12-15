@@ -119,7 +119,7 @@ I opted to use Open Sans font for my website, which is one of the most popular f
 
 **Icons**
 
-Icons used where provided by [icon8](https://icon8.com/), used in moderation and are self explanatory.
+Icons used where provided by [icons8](https://icons8.com/), used in moderation and are self explanatory.
 
 **Colours**
 
@@ -165,10 +165,10 @@ Features to implement:
 
 -   [Git](https://git-scm.com/)
 -   [Bootstrap](https://getbootstrap.com/)
--   [Icon8](https://icon8.com)
+-   [Icons8](https://icons8.com)
 -   [Google fonts](https://fonts.google.com/)
 -   [Figma](https://figma.com/)
-- [Icons8](https://icons8.com/icon/NHEVr1Qkidu0)
+- [Icons8](https://icons8.com/)
 - [Canva](https://canva.com/)
 - [RapidApi](https://rapidapi.com)
   
