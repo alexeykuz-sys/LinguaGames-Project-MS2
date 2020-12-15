@@ -167,10 +167,9 @@ Features to implement:
 
 -   [Git](https://git-scm.com/)
 -   [Bootstrap](https://getbootstrap.com/)
--   [Icon8](https://fontawesome.com/icons?d=gallery)
+-   [Icon8](https://icon8.com)
 -   [Google fonts](https://fonts.google.com/)
 -   [Figma](https://figma.com/)
-- [Flag icons](https://www.countryflags.com/en/)
 - [Icons8](https://icons8.com/icon/NHEVr1Qkidu0)
 - [Canva](https://canva.com/)
 - [RapidApi](https://rapidapi.com)
@@ -269,11 +268,11 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNzM2OTM0Miw2NjExNjkxNDIsMTI3OT
-QzNTMxNywxODA0NDE4MzQ1LC00NDkyMTQ3OCwxMDcwOTIzNzU2
-LDE4OTcxMDczNzAsMjEyMTUxNzMwMCwtMTk2MDQ3MTE3MywtMT
-kxNzc0NjE0NSwtMTk2Njc5OTYyNCwtMTg3NzgzMTA1OSwtODA1
-OTQxMjUxLC01MzYwMzU5MTAsLTE2NDc3NTg0MiwtMTkwNDM2Nj
-c3MSwtMTYwNTE0NzExNiw4NTQ1NzcxOTIsLTEzMTY3ODEzNzIs
-MTE0MTg2ODUxM119
+eyJoaXN0b3J5IjpbLTIwNzQ2Mjk5OTMsNjYxMTY5MTQyLDEyNz
+k0MzUzMTcsMTgwNDQxODM0NSwtNDQ5MjE0NzgsMTA3MDkyMzc1
+NiwxODk3MTA3MzcwLDIxMjE1MTczMDAsLTE5NjA0NzExNzMsLT
+E5MTc3NDYxNDUsLTE5NjY3OTk2MjQsLTE4Nzc4MzEwNTksLTgw
+NTk0MTI1MSwtNTM2MDM1OTEwLC0xNjQ3NzU4NDIsLTE5MDQzNj
+Y3NzEsLTE2MDUxNDcxMTYsODU0NTc3MTkyLC0xMzE2NzgxMzcy
+LDExNDE4Njg1MTNdfQ==
 -->
