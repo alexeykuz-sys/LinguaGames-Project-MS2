@@ -224,6 +224,7 @@ Returning and Frequent Users will find the following functions once implemented 
 
 During testing I found that all iOS users encountered a display glitch where the front-face cards do not show when the user touches a card to flip. Instead it momentarily displays the image then flips to the inverted back face card.
 no such problem was found on Galaxy devices.
+The game is developed as non commercial exercise and depends on free allowance of API provider, therefore errors might appear in console related to excessive calls to API and on
 
 **4. Version Control**
 
@@ -283,7 +284,7 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0NjA5ODQ3MSwtMTg5NzI0NDk2NiwtMT
+eyJoaXN0b3J5IjpbMTY1OTgyMDIxNiwtMTg5NzI0NDk2NiwtMT
 QxMjQsLTI5ODE2Njk2NiwtMjA3NDYyOTk5Myw2NjExNjkxNDIs
 MTI3OTQzNTMxNywxODA0NDE4MzQ1LC00NDkyMTQ3OCwxMDcwOT
 IzNzU2LDE4OTcxMDczNzAsMjEyMTUxNzMwMCwtMTk2MDQ3MTE3
