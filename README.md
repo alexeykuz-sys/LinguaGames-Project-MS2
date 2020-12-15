@@ -195,12 +195,13 @@ JS was tested on [JSHint](https://jshint.com/)
 **Responsiveness**
 
  I tried CSS Grid but eventually opted to use **Bootstrap** and Flexbox throughout the project to ensure **maximum** responsiveness.
-
+I have also checked if webisite is mobile friendly:
 [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly) -
-
 
 [The verdict is the page is mobile friendly.](
 https://search.google.com/test/mobile-friendly?id=o_8w7MX19q9LWdko_LifTg)
+
+
 
 **10. Testing User Stories from UX Section**
 
@@ -285,11 +286,11 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxNDc0MTIwMywxODAxNDMzOTU2LC0xOD
-k3MjQ0OTY2LC0xNDEyNCwtMjk4MTY2OTY2LC0yMDc0NjI5OTkz
-LDY2MTE2OTE0MiwxMjc5NDM1MzE3LDE4MDQ0MTgzNDUsLTQ0OT
-IxNDc4LDEwNzA5MjM3NTYsMTg5NzEwNzM3MCwyMTIxNTE3MzAw
-LC0xOTYwNDcxMTczLC0xOTE3NzQ2MTQ1LC0xOTY2Nzk5NjI0LC
-0xODc3ODMxMDU5LC04MDU5NDEyNTEsLTUzNjAzNTkxMCwtMTY0
-Nzc1ODQyXX0=
+eyJoaXN0b3J5IjpbMzY2NTA1MjIzLDE3MTQ3NDEyMDMsMTgwMT
+QzMzk1NiwtMTg5NzI0NDk2NiwtMTQxMjQsLTI5ODE2Njk2Niwt
+MjA3NDYyOTk5Myw2NjExNjkxNDIsMTI3OTQzNTMxNywxODA0ND
+E4MzQ1LC00NDkyMTQ3OCwxMDcwOTIzNzU2LDE4OTcxMDczNzAs
+MjEyMTUxNzMwMCwtMTk2MDQ3MTE3MywtMTkxNzc0NjE0NSwtMT
+k2Njc5OTYyNCwtMTg3NzgzMTA1OSwtODA1OTQxMjUxLC01MzYw
+MzU5MTBdfQ==
 -->
