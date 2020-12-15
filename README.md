@@ -88,11 +88,12 @@ the users goals is to identify application allowing them to have access to the a
 
 **7. User Stories**
 
- __ - first time Visitor Goals:__
-1.  As a visitor to the website, I want to easily navigate through the game
-2.  As a visitor I want to have a clear rules, how to play.
-6.  As a visitor want an easy way to contact developer.
-8.  As a returning visitor to the website, I would like to have a choice of languages to learn or improve
+ **- First Time Visitor Goals:**
+1.  As a first time visitor to the website, I want to easily understand the rules and purpose of the game.
+2. As a first time visitor navigate through the game
+3.  As a visitor I want to have a clear rules, how to play.
+4.  As a visitor want an easy way to contact developer.
+5.  As a returning visitor to the website, I would like to have a choice of languages to learn or improve
 
 
 **1.7. Design Choices**
@@ -258,7 +259,7 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjgwOTM1NjgsMTA3MDkyMzc1NiwxOD
+eyJoaXN0b3J5IjpbLTE1OTYzNjkzMzAsMTA3MDkyMzc1NiwxOD
 k3MTA3MzcwLDIxMjE1MTczMDAsLTE5NjA0NzExNzMsLTE5MTc3
 NDYxNDUsLTE5NjY3OTk2MjQsLTE4Nzc4MzEwNTksLTgwNTk0MT
 I1MSwtNTM2MDM1OTEwLC0xNjQ3NzU4NDIsLTE5MDQzNjY3NzEs
