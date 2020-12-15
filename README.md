@@ -27,15 +27,14 @@
 
 9.  Testing
 	- HTML and CSS check using WC3
-12. Peer Code Review
-13. User stories
-14. User testing
+	
+10. User Testing
 
-15.  Bugs and De-bugging
+11.  Bugs and De-bugging
 
 	  - Known Issues
 
-16.  Project Deployment
+12.  Project Deployment
 
 17.  Deployment
 18.  Creating a Local Version
@@ -270,11 +269,11 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjI2NTc0NjAsLTI5ODE2Njk2NiwtMj
-A3NDYyOTk5Myw2NjExNjkxNDIsMTI3OTQzNTMxNywxODA0NDE4
-MzQ1LC00NDkyMTQ3OCwxMDcwOTIzNzU2LDE4OTcxMDczNzAsMj
-EyMTUxNzMwMCwtMTk2MDQ3MTE3MywtMTkxNzc0NjE0NSwtMTk2
-Njc5OTYyNCwtMTg3NzgzMTA1OSwtODA1OTQxMjUxLC01MzYwMz
-U5MTAsLTE2NDc3NTg0MiwtMTkwNDM2Njc3MSwtMTYwNTE0NzEx
-Niw4NTQ1NzcxOTJdfQ==
+eyJoaXN0b3J5IjpbLTE0MTI0LC0yOTgxNjY5NjYsLTIwNzQ2Mj
+k5OTMsNjYxMTY5MTQyLDEyNzk0MzUzMTcsMTgwNDQxODM0NSwt
+NDQ5MjE0NzgsMTA3MDkyMzc1NiwxODk3MTA3MzcwLDIxMjE1MT
+czMDAsLTE5NjA0NzExNzMsLTE5MTc3NDYxNDUsLTE5NjY3OTk2
+MjQsLTE4Nzc4MzEwNTksLTgwNTk0MTI1MSwtNTM2MDM1OTEwLC
+0xNjQ3NzU4NDIsLTE5MDQzNjY3NzEsLTE2MDUxNDcxMTYsODU0
+NTc3MTkyXX0=
 -->
