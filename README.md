@@ -17,11 +17,11 @@
 5.  User Goals
 6.  User Stories
 7.  Design Choices
-		- Fonts
-		- Icons
-		- Colours
-7.4. Features & Future Releases
-7.5. Technology used
+		- Fonts;
+		- Icons;
+		- Colours;
+	 	- Features & Future Releases;
+	 	- Technology used;
 
 8.  Testing
 
@@ -32,7 +32,7 @@
 
 13.  Bugs and De-bugging
 
-	  13.1.Known Issues
+	  - Known Issues
 
 14.  Project Deployment
 
@@ -262,7 +262,7 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0NzIyOTU1OCwyMTIxNTE3MzAwLC0xOT
+eyJoaXN0b3J5IjpbMTk5OTg5Mjg5NCwyMTIxNTE3MzAwLC0xOT
 YwNDcxMTczLC0xOTE3NzQ2MTQ1LC0xOTY2Nzk5NjI0LC0xODc3
 ODMxMDU5LC04MDU5NDEyNTEsLTUzNjAzNTkxMCwtMTY0Nzc1OD
 QyLC0xOTA0MzY2NzcxLC0xNjA1MTQ3MTE2LDg1NDU3NzE5Miwt
