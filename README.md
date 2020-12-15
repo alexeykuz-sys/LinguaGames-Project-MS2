@@ -245,8 +245,13 @@ To deploy the website using **GitHub Pages** the following steps have to be made
 -   Selected **Master Branch** from the **Source** dropdown menu.
 -   Clicked to **confirm** my **selection**.
 
-**You can run the project locally, in which case you have to follow the following steps:**
+**Forking the GitHub Repository**
 
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+
+1.  Log in to GitHub and locate the  [GitHub Repository](https://github.com/)
+2.  At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3.  You should now have a copy of the original repository in your GitHub account.
 
 **To clone this project from GitHub:**
 You can paste the repository link directly into any editor you use with the command 'git clone'. For example:
@@ -254,15 +259,12 @@ You can paste the repository link directly into any editor you use with the comm
 Type git clone and paste https://github.com/alexeykuz-sys/MS2_LinguaGames_Project.git
 
 
-
- 
 **14. Credits**
 
 ** Media**
 
 The image for a game logo was taken from internet.
  **Code**
-
 I used various YouTube and website to get ideas and logic of the game.
 [Memory Game](https://medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae)
 and
@@ -281,7 +283,7 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxODgwMDQ4NiwxODAxNDMzOTU2LC0xOD
+eyJoaXN0b3J5IjpbMTcxNDc0MTIwMywxODAxNDMzOTU2LC0xOD
 k3MjQ0OTY2LC0xNDEyNCwtMjk4MTY2OTY2LC0yMDc0NjI5OTkz
 LDY2MTE2OTE0MiwxMjc5NDM1MzE3LDE4MDQ0MTgzNDUsLTQ0OT
 IxNDc4LDEwNzA5MjM3NTYsMTg5NzEwNzM3MCwyMTIxNTE3MzAw
