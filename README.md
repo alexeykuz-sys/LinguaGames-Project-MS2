@@ -18,30 +18,31 @@
 6.  User Goals
 7.  User Stories
 8.  Design Choices
+
 		- Fonts;
 		- Icons;
 		- Colours;
 	 	- Features & Future Releases;
 	 	- Technology used;
 
-9.  Testing
+10.  Testing
 
-10.  HTML and CSS check using WC3
-11. Peer Code Review
-12. User stories
-13. User testing
+11.  HTML and CSS check using WC3
+12. Peer Code Review
+13. User stories
+14. User testing
 
-14.  Bugs and De-bugging
+15.  Bugs and De-bugging
 
 	  - Known Issues
 
-15.  Project Deployment
+16.  Project Deployment
 
-16.  Deployment
-17.  Creating a Local Version
+17.  Deployment
+18.  Creating a Local Version
 
-18.  References
-19.  Acknowledgements
+19.  References
+20.  Acknowledgements
  
 ====
 
@@ -258,9 +259,9 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODQwMTAwNDksMjEyMTUxNzMwMCwtMT
-k2MDQ3MTE3MywtMTkxNzc0NjE0NSwtMTk2Njc5OTYyNCwtMTg3
-NzgzMTA1OSwtODA1OTQxMjUxLC01MzYwMzU5MTAsLTE2NDc3NT
-g0MiwtMTkwNDM2Njc3MSwtMTYwNTE0NzExNiw4NTQ1NzcxOTIs
-LTEzMTY3ODEzNzIsMTE0MTg2ODUxM119
+eyJoaXN0b3J5IjpbMTg5NzEwNzM3MCwyMTIxNTE3MzAwLC0xOT
+YwNDcxMTczLC0xOTE3NzQ2MTQ1LC0xOTY2Nzk5NjI0LC0xODc3
+ODMxMDU5LC04MDU5NDEyNTEsLTUzNjAzNTkxMCwtMTY0Nzc1OD
+QyLC0xOTA0MzY2NzcxLC0xNjA1MTQ3MTE2LDg1NDU3NzE5Miwt
+MTMxNjc4MTM3MiwxMTQxODY4NTEzXX0=
 -->
