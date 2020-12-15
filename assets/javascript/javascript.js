@@ -130,37 +130,38 @@ randomEngWords = () => {
         
 
         /*----------------Translation API-------*/
-        const windowsUrl = "https://microsoft-azure-translation-v1.p.rapidapi.com/translate?to="+langTo+"&text="+cardsToTranslate+"&from=en";
-        getTranslation(windowsUrl);
+        const justTranslate = "https://just-translated.p.rapidapi.com/?lang_from=en&lang_to="+langTo+"&text="+cardsToTranslate;
+        getTranslation(justTranslate);
+        console.log(justTranslate)
         });
         /*const googleUrl = "https://google-translate20.p.rapidapi.com/translate?text=" + cardsToTranslate + "&tl=" + langTo + "&sl=en";
         getTranslation(googleUrl);
         });*/
     
-    
-    async function getTranslation(windowsUrl) {
-        const response = await fetch(windowsUrl, {
+    });
+    async function getTranslation(justTranslate) {
+        const response = await fetch(justTranslate, {
             method: "GET",
             headers: {
                "content-type": "application/json",
-		        "x-rapidapi-key": "e019a7a6e9mshc800b72ecf1a5e1p1f3597jsn00fad202704a",
-		        "x-rapidapi-host": "microsoft-azure-translation-v1.p.rapidapi.com"
+		       "x-rapidapi-key": "212787cca7mshfc32a9bbd54bd5cp1ab693jsnccb731ff5da7",
+		        "x-rapidapi-host": "just-translated.p.rapidapi.com"
             },
         });
-        let translatedData;
+
+        /*let translatedData;*/
         const data = await response.json();
         console.log(data)
-        translatedData = data.data.translation;
-        let result = translatedData.split(",");
-
+        let translatedData = data.text;
+        let result = translatedData[0].split(",");
+        console.log(result)
         translatedText = document.querySelectorAll("div.txtTo");
 
         for (let i = 0; i < result.length; i++) {
             translatedText[i].innerHTML = result[i];
-            
         };
     };
-    });
+
 };
 randomEngWords();
 
@@ -184,7 +185,7 @@ const COLOR_CODES = {
     }
 };
 
-const TIME_LIMIT = 120;
+const TIME_LIMIT = 60;
 let timePassed = 0;
 let timeLeft = TIME_LIMIT;
 let timerInterval = null;
@@ -371,11 +372,11 @@ startBtn.addEventListener('click', () => {
         resetBtn.classList.add('show');
         playClickbtn();
     }
-
+    
 });
 
 function flipCard() {
-    if (lockBoard == true || gameStart == false) return;
+    if (lockBoard == true || gameStart == false) return
     if (this === firstCard) return;
     this.classList.add("flip");
     playCardSound();
@@ -432,31 +433,12 @@ function resetBoard() {
     [firstCard, secondCard] = [null, null];
 }
 
-function shuffle(array) {
-  var currentIndex = array.length;
-  var temporaryValue, randomIndex;
-
-  while (currentIndex !== 0) {
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
-  }
-  return array;
-};
-
- cards.forEach((card) => {
-        let randomPos = shuffle(cards);
-        card.style.order = randomPos;
-});
-
-/*(function shuffle() {
+(function shuffle() {
     cards.forEach((card) => {
         let randomPos = Math.floor(Math.random() * 12);
         card.style.order = randomPos;
     });
-})();*/
+})();
 
 cards.forEach((card) => card.addEventListener("click", flipCard));
 

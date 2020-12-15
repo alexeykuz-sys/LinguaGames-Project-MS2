@@ -12,12 +12,14 @@ document.getElementById('form1')
    emailjs.sendForm(serviceID, templateID, this)
     .then(function () {
                 btn.value = 'Sending...';
+                
+                btn.style.backgroundColor='green'
                 btn.value = "Sent!";
                 setTimeout(function() {form.classList.remove('show');},2000);
             },
     
     function (error) {
-                alert("Something went wromg...Please send again! Thank you!", error);
+                alert("Something went wrong...Please send again! Thank you!", error);
             });
             document.getElementById('form1').reset();
     return false;
