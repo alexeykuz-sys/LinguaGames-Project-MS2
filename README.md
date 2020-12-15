@@ -249,14 +249,14 @@ To deploy the website using **GitHub Pages** the following steps have to be made
 
 
 **To clone this project from GitHub:**
-. You can paste the repository link directly into any editor you use with the command 'git clone'. For example:
+You can paste the repository link directly into any editor you use with the command 'git clone'. For example:
 
 Type git clone and paste https://github.com/alexeykuz-sys/MS2_LinguaGames_Project.git
 
 
 
  
-**5. Credits**
+**14. Credits**
 
 ** Media**
 
@@ -270,7 +270,7 @@ and
 
 [Timer](https://css-tricks.com/how-to-create-an-animated-countdown-timer-with-html-css-and-javascript/)
 
-**6. Acknowledgements**
+**15. Acknowledgements**
 I would like to thank:
 
 -   My mentor,  Femi for his guidance and advice on this project before submission.
@@ -281,7 +281,7 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5ODk5ODA4NiwxODAxNDMzOTU2LC0xOD
+eyJoaXN0b3J5IjpbMjAxODgwMDQ4NiwxODAxNDMzOTU2LC0xOD
 k3MjQ0OTY2LC0xNDEyNCwtMjk4MTY2OTY2LC0yMDc0NjI5OTkz
 LDY2MTE2OTE0MiwxMjc5NDM1MzE3LDE4MDQ0MTgzNDUsLTQ0OT
 IxNDc4LDEwNzA5MjM3NTYsMTg5NzEwNzM3MCwyMTIxNTE3MzAw
