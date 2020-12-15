@@ -86,7 +86,7 @@ Person interested to learn basics of the new language has to learn  300-600 word
 the users goals is to identify application allowing them to have access to the application teaching them the most common words used in any language. Therefore, i have used the most common words used in English language
  
 
-**1.6. User Stories**
+**7. User Stories**
 
   
 
@@ -259,9 +259,9 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NzEwNzM3MCwyMTIxNTE3MzAwLC0xOT
-YwNDcxMTczLC0xOTE3NzQ2MTQ1LC0xOTY2Nzk5NjI0LC0xODc3
-ODMxMDU5LC04MDU5NDEyNTEsLTUzNjAzNTkxMCwtMTY0Nzc1OD
-QyLC0xOTA0MzY2NzcxLC0xNjA1MTQ3MTE2LDg1NDU3NzE5Miwt
-MTMxNjc4MTM3MiwxMTQxODY4NTEzXX0=
+eyJoaXN0b3J5IjpbMTA3MDkyMzc1NiwxODk3MTA3MzcwLDIxMj
+E1MTczMDAsLTE5NjA0NzExNzMsLTE5MTc3NDYxNDUsLTE5NjY3
+OTk2MjQsLTE4Nzc4MzEwNTksLTgwNTk0MTI1MSwtNTM2MDM1OT
+EwLC0xNjQ3NzU4NDIsLTE5MDQzNjY3NzEsLTE2MDUxNDcxMTYs
+ODU0NTc3MTkyLC0xMzE2NzgxMzcyLDExNDE4Njg1MTNdfQ==
 -->
