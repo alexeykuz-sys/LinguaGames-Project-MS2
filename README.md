@@ -150,7 +150,7 @@ Features to implement:
 - To add links to social media to enable users to share their achievements.
 
 
-**1.9. Technologies Used**
+**Technologies Used**
 
   
 **UX/UI design**
@@ -175,7 +175,7 @@ Features to implement:
 - [RapidApi](https://rapidapi.com)
   
 
-**2. Testing**
+**9. Testing**
 
 
 First time testing. I used an online tool, using ami.responsivedesign.is and [Screenfly](https://bluetree.ai/screenfly/) website to test website on various devices.
@@ -269,11 +269,11 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2OTY3Mjc4NywtMjk4MTY2OTY2LC0yMD
-c0NjI5OTkzLDY2MTE2OTE0MiwxMjc5NDM1MzE3LDE4MDQ0MTgz
-NDUsLTQ0OTIxNDc4LDEwNzA5MjM3NTYsMTg5NzEwNzM3MCwyMT
-IxNTE3MzAwLC0xOTYwNDcxMTczLC0xOTE3NzQ2MTQ1LC0xOTY2
-Nzk5NjI0LC0xODc3ODMxMDU5LC04MDU5NDEyNTEsLTUzNjAzNT
-kxMCwtMTY0Nzc1ODQyLC0xOTA0MzY2NzcxLC0xNjA1MTQ3MTE2
-LDg1NDU3NzE5Ml19
+eyJoaXN0b3J5IjpbLTE3MzQxNTk4MTIsLTI5ODE2Njk2NiwtMj
+A3NDYyOTk5Myw2NjExNjkxNDIsMTI3OTQzNTMxNywxODA0NDE4
+MzQ1LC00NDkyMTQ3OCwxMDcwOTIzNzU2LDE4OTcxMDczNzAsMj
+EyMTUxNzMwMCwtMTk2MDQ3MTE3MywtMTkxNzc0NjE0NSwtMTk2
+Njc5OTYyNCwtMTg3NzgzMTA1OSwtODA1OTQxMjUxLC01MzYwMz
+U5MTAsLTE2NDc3NTg0MiwtMTkwNDM2Njc3MSwtMTYwNTE0NzEx
+Niw4NTQ1NzcxOTJdfQ==
 -->
