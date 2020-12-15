@@ -226,13 +226,6 @@ During testing I found that all iOS users encountered a display glitch where the
 no such problem was found on Galaxy devices.
 The game is developed as non commercial exercise and depends on free allowance of API provider, therefore errors might appear in console related to excessive calls to API and once free limit has been exhausted.
 
-**4. Version Control**
-
- -   Used Git for version control.
- -   Branches were created to work on alternative grid layout.
- -   The branches were then merged with the master branch after any conflicts were addressed.
-
-
 **12. Project Deployment**
 
 I built website using **gitpod** and **GitHub** to host the repository.
@@ -257,6 +250,11 @@ To deploy the website using **GitHub Pages** the following steps have to be made
 
 Type git clone and paste https://github.com/alexeykuz-sys/MS2_LinguaGames_Project.git
 
+**4. Version Control**
+
+ -   Used Git for version control.
+ -   Branches were created to work on alternative grid layout.
+ -   The branches were then merged with the master branch after any conflicts were addressed.
 
  
 **5. Credits**
@@ -284,11 +282,11 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM4MTc2MjEyLC0xODk3MjQ0OTY2LC0xND
-EyNCwtMjk4MTY2OTY2LC0yMDc0NjI5OTkzLDY2MTE2OTE0Miwx
-Mjc5NDM1MzE3LDE4MDQ0MTgzNDUsLTQ0OTIxNDc4LDEwNzA5Mj
-M3NTYsMTg5NzEwNzM3MCwyMTIxNTE3MzAwLC0xOTYwNDcxMTcz
-LC0xOTE3NzQ2MTQ1LC0xOTY2Nzk5NjI0LC0xODc3ODMxMDU5LC
-04MDU5NDEyNTEsLTUzNjAzNTkxMCwtMTY0Nzc1ODQyLC0xOTA0
-MzY2NzcxXX0=
+eyJoaXN0b3J5IjpbMTgwMTQzMzk1NiwtMTg5NzI0NDk2NiwtMT
+QxMjQsLTI5ODE2Njk2NiwtMjA3NDYyOTk5Myw2NjExNjkxNDIs
+MTI3OTQzNTMxNywxODA0NDE4MzQ1LC00NDkyMTQ3OCwxMDcwOT
+IzNzU2LDE4OTcxMDczNzAsMjEyMTUxNzMwMCwtMTk2MDQ3MTE3
+MywtMTkxNzc0NjE0NSwtMTk2Njc5OTYyNCwtMTg3NzgzMTA1OS
+wtODA1OTQxMjUxLC01MzYwMzU5MTAsLTE2NDc3NTg0MiwtMTkw
+NDM2Njc3MV19
 -->
