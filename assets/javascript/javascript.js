@@ -10,6 +10,16 @@ const resetBtn = document.getElementById("reset");
 const startBtn = document.getElementById("start");
 
 /*-----------Sound Effect--------*/
+
+function playSound() {
+    if (soundBtn.classList.contains(`sound-icon-red`)) {
+        clickSound.pause();
+        clickSound.currentTime = 0;
+    } else {
+        clickSound.play();
+    }
+}
+
 function playClickbtn() {
     if (soundBtn.classList.contains(`sound-icon-red`)) {
         clickSound.pause();
@@ -48,7 +58,7 @@ function playFailSound() {
 /*-----------Language Button-----Translator-------*/
 
 randomEngWords = () => {
-    let engCards = 
+    let englishCards = 
         [
             "boy",
             "girl",
@@ -92,13 +102,13 @@ randomEngWords = () => {
         ];
     /*----Shuffles the words in array engCards-----*/
 
-    while (engCards.length > 6) {
-        engCards.splice(Math.floor(Math.random() * engCards.length), 1);
+    while (englishCards.length > 6) {
+        englishCards.splice(Math.floor(Math.random() * englishCards.length), 1);
     }
     /*----assigns shuffled words to each card----------------*/
     let txtToTranslate = document.querySelectorAll("div.english");
     for (let i = 0; i < txtToTranslate.length; i++) {
-        txtToTranslate[i].innerHTML = engCards[i];
+        txtToTranslate[i].innerHTML = englishCards[i];
 
     }
 
@@ -108,15 +118,6 @@ randomEngWords = () => {
         
     }
 
-    /*let googleUrl;
-    const DEFAULT_LOCALE = 'es';
-    const googleUrl = "https://google-translate20.p.rapidapi.com/translate text=";
-
-    function generateGoogleUrl(locale){
-        return `${googleUrl}${cardsToTranslate}&tl=${locale}&sl=en`;
-
-
-    }*/
     /*---------------selects language to translate-------------*/
     
     
@@ -129,22 +130,26 @@ randomEngWords = () => {
         
 
         /*----------------Translation API-------*/
-        const googleUrl = "https://google-translate20.p.rapidapi.com/translate?text=" + cardsToTranslate + "&tl=" + langTo + "&sl=en";
-        getTranslation(googleUrl);
+        const windowsUrl = "https://microsoft-azure-translation-v1.p.rapidapi.com/translate?to="+langTo+"&text="+cardsToTranslate+"&from=en";
+        getTranslation(windowsUrl);
         });
+        /*const googleUrl = "https://google-translate20.p.rapidapi.com/translate?text=" + cardsToTranslate + "&tl=" + langTo + "&sl=en";
+        getTranslation(googleUrl);
+        });*/
     
-    });
-    async function getTranslation(googleUrl) {
-        const response = await fetch(googleUrl, {
+    
+    async function getTranslation(windowsUrl) {
+        const response = await fetch(windowsUrl, {
             method: "GET",
             headers: {
-                "x-rapidapi-key": "e019a7a6e9mshc800b72ecf1a5e1p1f3597jsn00fad202704a",
-                "x-rapidapi-host": "google-translate20.p.rapidapi.com"
+               "content-type": "application/json",
+		        "x-rapidapi-key": "e019a7a6e9mshc800b72ecf1a5e1p1f3597jsn00fad202704a",
+		        "x-rapidapi-host": "microsoft-azure-translation-v1.p.rapidapi.com"
             },
         });
         let translatedData;
         const data = await response.json();
-        
+        console.log(data)
         translatedData = data.data.translation;
         let result = translatedData.split(",");
 
@@ -153,13 +158,8 @@ randomEngWords = () => {
         for (let i = 0; i < result.length; i++) {
             translatedText[i].innerHTML = result[i];
             
-        }
-    }
-    getTranslation()
-    .catch((err) => {
-        console.error(err);
-        
-    
+        };
+    };
     });
 };
 randomEngWords();
@@ -432,12 +432,31 @@ function resetBoard() {
     [firstCard, secondCard] = [null, null];
 }
 
-(function shuffle() {
+function shuffle(array) {
+  var currentIndex = array.length;
+  var temporaryValue, randomIndex;
+
+  while (currentIndex !== 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+  return array;
+};
+
+ cards.forEach((card) => {
+        let randomPos = shuffle(cards);
+        card.style.order = randomPos;
+});
+
+/*(function shuffle() {
     cards.forEach((card) => {
         let randomPos = Math.floor(Math.random() * 12);
         card.style.order = randomPos;
     });
-})();
+})();*/
 
 cards.forEach((card) => card.addEventListener("click", flipCard));
 
