@@ -13,34 +13,35 @@
 
 2.  Project Goals
 3.  UX Requirements
-4.  Users
-5.  User Goals
-6.  User Stories
-7.  Design Choices
+4. Developer's goal
+5.  Users
+6.  User Goals
+7.  User Stories
+8.  Design Choices
 		- Fonts;
 		- Icons;
 		- Colours;
 	 	- Features & Future Releases;
 	 	- Technology used;
 
-8.  Testing
+9.  Testing
 
-9.  HTML and CSS check using WC3
-10. Peer Code Review
-11. User stories
-12. User testing
+10.  HTML and CSS check using WC3
+11. Peer Code Review
+12. User stories
+13. User testing
 
-13.  Bugs and De-bugging
+14.  Bugs and De-bugging
 
 	  - Known Issues
 
-14.  Project Deployment
+15.  Project Deployment
 
-15.  Deployment
-16.  Creating a Local Version
+16.  Deployment
+17.  Creating a Local Version
 
-17.  References
-18.  Acknowledgements
+18.  References
+19.  Acknowledgements
  
 ====
 
@@ -64,17 +65,7 @@ The website has to be easy to navigate with clear purpose of the buttons and scr
 
 The website targets the individuals interested to learn or improve the knowledge of the foreign languages in the casual way, through the game experience. Present level of development offers only fail/win notification. Please see future implementations plan for more details of  users progress measurement.
 
-
-**4. Users:**
-
- Individuals interested to learn a new language with no age limitation.
-
-
-**5. User goals:**
-Person interested to learn basics of the new language has to learn  300-600 words to be to travel and 1000 words to be able to converse;
-the users goals is to identify application allowing them to have access to the application teaching them the most common words used in any language. Therefore, i have used the most common words used in English language
-  
-**6. Developer's Goals**
+**4. Developer's Goals**
 
 The site owner has the following goals:
 
@@ -84,6 +75,15 @@ The site owner has the following goals:
 - To give users control over the game, by choosing of the language, initiating and resetting the game and timer.
 
 
+**5. Users:**
+
+ Individuals interested to learn a new language with no age limitation.
+
+
+**6. User goals:**
+Person interested to learn basics of the new language has to learn  300-600 words to be to travel and 1000 words to be able to converse;
+the users goals is to identify application allowing them to have access to the application teaching them the most common words used in any language. Therefore, i have used the most common words used in English language
+ 
 
 **1.6. User Stories**
 
@@ -258,7 +258,7 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjUxNzIyNzgsMjEyMTUxNzMwMCwtMT
+eyJoaXN0b3J5IjpbLTE5ODQwMTAwNDksMjEyMTUxNzMwMCwtMT
 k2MDQ3MTE3MywtMTkxNzc0NjE0NSwtMTk2Njc5OTYyNCwtMTg3
 NzgzMTA1OSwtODA1OTQxMjUxLC01MzYwMzU5MTAsLTE2NDc3NT
 g0MiwtMTkwNDM2Njc3MSwtMTYwNTE0NzExNiw4NTQ1NzcxOTIs
