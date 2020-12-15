@@ -214,7 +214,9 @@ https://search.google.com/test/mobile-friendly?id=o_8w7MX19q9LWdko_LifTg)
     - Navigation bar - it simple bar that consist of the game logo and menu offering user to read rules of the game and to contact developer. The menu changes from text on desktops to icons on mobile devices.
 Rules and contact form presented in modal form and invisible to user, unless called upon by pressing relevant menu item.
 
-
+**- Returning and Frequent Users:**
+1. Returning and Frequent Users will find the following functions once implemented in the future:
+4
 **3. Bugs and Debugging**
 
 During testing I found that all iOS users encountered a display glitch where the front-face cards do not show when the user touches a card to flip. Instead it momentarily displays the image then flips to the inverted back face card.
@@ -278,11 +280,11 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTcyNDQ5NjYsLTE0MTI0LC0yOTgxNj
-Y5NjYsLTIwNzQ2Mjk5OTMsNjYxMTY5MTQyLDEyNzk0MzUzMTcs
-MTgwNDQxODM0NSwtNDQ5MjE0NzgsMTA3MDkyMzc1NiwxODk3MT
-A3MzcwLDIxMjE1MTczMDAsLTE5NjA0NzExNzMsLTE5MTc3NDYx
-NDUsLTE5NjY3OTk2MjQsLTE4Nzc4MzEwNTksLTgwNTk0MTI1MS
-wtNTM2MDM1OTEwLC0xNjQ3NzU4NDIsLTE5MDQzNjY3NzEsLTE2
-MDUxNDcxMTZdfQ==
+eyJoaXN0b3J5IjpbLTYzNzYxOTQ2LC0xODk3MjQ0OTY2LC0xND
+EyNCwtMjk4MTY2OTY2LC0yMDc0NjI5OTkzLDY2MTE2OTE0Miwx
+Mjc5NDM1MzE3LDE4MDQ0MTgzNDUsLTQ0OTIxNDc4LDEwNzA5Mj
+M3NTYsMTg5NzEwNzM3MCwyMTIxNTE3MzAwLC0xOTYwNDcxMTcz
+LC0xOTE3NzQ2MTQ1LC0xOTY2Nzk5NjI0LC0xODc3ODMxMDU5LC
+04MDU5NDEyNTEsLTUzNjAzNTkxMCwtMTY0Nzc1ODQyLC0xOTA0
+MzY2NzcxXX0=
 -->
