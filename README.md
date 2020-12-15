@@ -6,6 +6,8 @@
 **LinguaGames**
 
   ![Alt](assets/images/linguaGamesWelcome.png)
+  
+  [LinguaGames](https://alexeykuz-sys.github.io/MS2_LinguaGames_Project/)
 
 **Contents**  
 
