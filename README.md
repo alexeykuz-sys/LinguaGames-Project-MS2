@@ -102,10 +102,10 @@ the users goals is to identify application allowing them to have access to the a
 **- Frequent Visitor Goals:**
 	1.	As a Frequent Visitor i would like to see more challenges and alternative way of learning languages
 	2.	As a Frequent Visitor I would like to see better way to interact with the game.
-	3.	As a Frequent Visitor I would l
+	3.	As a Frequent Visitor I would like to see competing board and possibility to compete with other players and friends.
 	
   
-**1.7. Design Choices**
+**8. Design Choices**
 
 When designing website i took inspiration for colours and fonts from the game Memory. The application is using colours and fonts scientifically proven to help users to learn and stimulate their cognitive functions.
 
@@ -268,7 +268,7 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxOTUxOTU3NCwtNDQ5MjE0NzgsMTA3MD
+eyJoaXN0b3J5IjpbMTgwNDQxODM0NSwtNDQ5MjE0NzgsMTA3MD
 kyMzc1NiwxODk3MTA3MzcwLDIxMjE1MTczMDAsLTE5NjA0NzEx
 NzMsLTE5MTc3NDYxNDUsLTE5NjY3OTk2MjQsLTE4Nzc4MzEwNT
 ksLTgwNTk0MTI1MSwtNTM2MDM1OTEwLC0xNjQ3NzU4NDIsLTE5
