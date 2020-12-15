@@ -54,13 +54,13 @@ The primary goal of the website is to make learning fun and inspire users to ret
 
 Playing memory games can improve other brain functions, such as attention, concentration, and focus. Memory games give space to critical thinking and that helps children nurture their attention to detail. Memory games can improve visual recognition.
 
-**Project goal**
+2. **2.Project goal**
 
 The purpose of this project to create website to enable consumers to have fun interactive experience in learning of the new words. 
-The website has to be easy to navigate with clear purpose of the buttons and screen space. The game has to project the clear and safe framework for clients and to make the experience casual rather than requirement.
+The website has to be easy to navigate with clear purpose of the buttons and screen space. The game has to provide the clear and safe framework for clients and to make the experience casual rather than requirement.
  
 
-**UX requirements**
+**3. UX requirements**
 
 The website targets the individuals interested to learn or improve the knowledge of the foreign languages in the casual way, through the game experience. Present level of development offers only fail/win notification. Please see future implementations plan for more details of  users progress measurement.
 
@@ -258,9 +258,9 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTU1NzEyNTMsMjEyMTUxNzMwMCwtMT
-k2MDQ3MTE3MywtMTkxNzc0NjE0NSwtMTk2Njc5OTYyNCwtMTg3
-NzgzMTA1OSwtODA1OTQxMjUxLC01MzYwMzU5MTAsLTE2NDc3NT
-g0MiwtMTkwNDM2Njc3MSwtMTYwNTE0NzExNiw4NTQ1NzcxOTIs
-LTEzMTY3ODEzNzIsMTE0MTg2ODUxM119
+eyJoaXN0b3J5IjpbOTA3Mzg3NDU4LDIxMjE1MTczMDAsLTE5Nj
+A0NzExNzMsLTE5MTc3NDYxNDUsLTE5NjY3OTk2MjQsLTE4Nzc4
+MzEwNTksLTgwNTk0MTI1MSwtNTM2MDM1OTEwLC0xNjQ3NzU4ND
+IsLTE5MDQzNjY3NzEsLTE2MDUxNDcxMTYsODU0NTc3MTkyLC0x
+MzE2NzgxMzcyLDExNDE4Njg1MTNdfQ==
 -->
