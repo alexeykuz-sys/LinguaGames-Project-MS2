@@ -25,9 +25,8 @@
 	 	- Features & Future Releases;
 	 	- Technology used;
 
-10.  Testing
-
-11.  HTML and CSS check using WC3
+9.  Testing
+	- HTML and CSS check using WC3
 12. Peer Code Review
 13. User stories
 14. User testing
@@ -204,6 +203,8 @@ JS was tested on [JSHint](https://jshint.com/)
 [The verdict is the page is mobile friendly.](
 https://search.google.com/test/mobile-friendly?id=o_8w7MX19q9LWdko_LifTg)
 
+**10. Testing User Stories from UX Section**
+
 
 
 **3. Bugs and Debugging**
@@ -269,7 +270,7 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzQxNTk4MTIsLTI5ODE2Njk2NiwtMj
+eyJoaXN0b3J5IjpbLTE5NjI2NTc0NjAsLTI5ODE2Njk2NiwtMj
 A3NDYyOTk5Myw2NjExNjkxNDIsMTI3OTQzNTMxNywxODA0NDE4
 MzQ1LC00NDkyMTQ3OCwxMDcwOTIzNzU2LDE4OTcxMDczNzAsMj
 EyMTUxNzMwMCwtMTk2MDQ3MTE3MywtMTkxNzc0NjE0NSwtMTk2
