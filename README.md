@@ -195,13 +195,18 @@ JS was tested on [JSHint](https://jshint.com/)
 **Responsiveness**
 
  I tried CSS Grid but eventually opted to use **Bootstrap** and Flexbox throughout the project to ensure **maximum** responsiveness.
-I have also checked if webisite is mobile friendly:
+I have also checked if website is mobile friendly:
 [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly) -
 
 [The verdict is the page is mobile friendly.](
 https://search.google.com/test/mobile-friendly?id=o_8w7MX19q9LWdko_LifTg)
 
+**Further Testing**
 
+-   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
+-   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
+-   A large amount of testing was done to ensure that all pages were linking correctly, buttons working and user can send email to developer.
+-   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 **10. Testing User Stories from UX Section**
 
@@ -286,11 +291,11 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY2NTA1MjIzLDE3MTQ3NDEyMDMsMTgwMT
-QzMzk1NiwtMTg5NzI0NDk2NiwtMTQxMjQsLTI5ODE2Njk2Niwt
-MjA3NDYyOTk5Myw2NjExNjkxNDIsMTI3OTQzNTMxNywxODA0ND
-E4MzQ1LC00NDkyMTQ3OCwxMDcwOTIzNzU2LDE4OTcxMDczNzAs
-MjEyMTUxNzMwMCwtMTk2MDQ3MTE3MywtMTkxNzc0NjE0NSwtMT
-k2Njc5OTYyNCwtMTg3NzgzMTA1OSwtODA1OTQxMjUxLC01MzYw
-MzU5MTBdfQ==
+eyJoaXN0b3J5IjpbLTc3ODA1NTU5MSwxNzE0NzQxMjAzLDE4MD
+E0MzM5NTYsLTE4OTcyNDQ5NjYsLTE0MTI0LC0yOTgxNjY5NjYs
+LTIwNzQ2Mjk5OTMsNjYxMTY5MTQyLDEyNzk0MzUzMTcsMTgwND
+QxODM0NSwtNDQ5MjE0NzgsMTA3MDkyMzc1NiwxODk3MTA3Mzcw
+LDIxMjE1MTczMDAsLTE5NjA0NzExNzMsLTE5MTc3NDYxNDUsLT
+E5NjY3OTk2MjQsLTE4Nzc4MzEwNTksLTgwNTk0MTI1MSwtNTM2
+MDM1OTEwXX0=
 -->
