@@ -215,18 +215,6 @@ https://search.google.com/test/mobile-friendly?id=o_8w7MX19q9LWdko_LifTg)
 Rules and contact form presented in modal form and invisible to user, unless called upon by pressing relevant menu item.
 
 
-2.  As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
-    
-    1.  The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link describes what the page they will end up at clearly.
-    2.  At the bottom of the first 3 pages there is a redirection call to action to ensure the user always has somewhere to go and doesn't feel trapped as they get to the bottom of the page.
-    3.  On the Contact Us Page, after a form response is submitted, the page refreshes and the user is brought to the top of the page where the navigation bar is.
-3.  As a First Time Visitor, I want to look for testimonials to understand what their users think of them and see if they are trusted. I also want to locate their social media links to see their following on social media to determine how trusted and known they are.
-    
-    1.  Once the new visitor has read the About Us and What We Do text, they will notice the Why We are Loved So Much section.
-    2.  The user can also scroll to the bottom of any page on the site to locate social media links in the footer.
-    3.  At the bottom of the Contact Us page, the user is told underneath the form, that alternatively they can contact the organisation on social media which highlights the links to them.
-
-
 **3. Bugs and Debugging**
 
 During testing I found that all iOS users encountered a display glitch where the front-face cards do not show when the user touches a card to flip. Instead it momentarily displays the image then flips to the inverted back face card.
@@ -290,11 +278,11 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxODUwNDM0NCwtMTQxMjQsLTI5ODE2Nj
-k2NiwtMjA3NDYyOTk5Myw2NjExNjkxNDIsMTI3OTQzNTMxNywx
-ODA0NDE4MzQ1LC00NDkyMTQ3OCwxMDcwOTIzNzU2LDE4OTcxMD
-czNzAsMjEyMTUxNzMwMCwtMTk2MDQ3MTE3MywtMTkxNzc0NjE0
-NSwtMTk2Njc5OTYyNCwtMTg3NzgzMTA1OSwtODA1OTQxMjUxLC
-01MzYwMzU5MTAsLTE2NDc3NTg0MiwtMTkwNDM2Njc3MSwtMTYw
-NTE0NzExNl19
+eyJoaXN0b3J5IjpbLTE4OTcyNDQ5NjYsLTE0MTI0LC0yOTgxNj
+Y5NjYsLTIwNzQ2Mjk5OTMsNjYxMTY5MTQyLDEyNzk0MzUzMTcs
+MTgwNDQxODM0NSwtNDQ5MjE0NzgsMTA3MDkyMzc1NiwxODk3MT
+A3MzcwLDIxMjE1MTczMDAsLTE5NjA0NzExNzMsLTE5MTc3NDYx
+NDUsLTE5NjY3OTk2MjQsLTE4Nzc4MzEwNTksLTgwNTk0MTI1MS
+wtNTM2MDM1OTEwLC0xNjQ3NzU4NDIsLTE5MDQzNjY3NzEsLTE2
+MDUxNDcxMTZdfQ==
 -->
