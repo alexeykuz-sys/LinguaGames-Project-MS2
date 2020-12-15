@@ -209,8 +209,8 @@ https://search.google.com/test/mobile-friendly?id=o_8w7MX19q9LWdko_LifTg)
 1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the game.
 
 2.  Upon entering the site, users are automatically presented with clear website consisting of the three blocks:
-    - The main area of page presented with 12 cards with a logo of the game.
-    3.  The user has two options, click the call to action buttons or scroll down, both of which will lead to the same place, to learn more about the organisation.
+    - The main area of page presented with 12 cards with a logo of the game. User is not able to click on any of the cards until he press the start button.
+    - Above the cards are four buttons to help user to interact and control the webs
 2.  As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
     
     1.  The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link describes what the page they will end up at clearly.
@@ -286,11 +286,11 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTYzMzYxODcsLTE0MTI0LC0yOTgxNj
-Y5NjYsLTIwNzQ2Mjk5OTMsNjYxMTY5MTQyLDEyNzk0MzUzMTcs
-MTgwNDQxODM0NSwtNDQ5MjE0NzgsMTA3MDkyMzc1NiwxODk3MT
-A3MzcwLDIxMjE1MTczMDAsLTE5NjA0NzExNzMsLTE5MTc3NDYx
-NDUsLTE5NjY3OTk2MjQsLTE4Nzc4MzEwNTksLTgwNTk0MTI1MS
-wtNTM2MDM1OTEwLC0xNjQ3NzU4NDIsLTE5MDQzNjY3NzEsLTE2
-MDUxNDcxMTZdfQ==
+eyJoaXN0b3J5IjpbLTQ4MTQxNTQ5NCwtMTQxMjQsLTI5ODE2Nj
+k2NiwtMjA3NDYyOTk5Myw2NjExNjkxNDIsMTI3OTQzNTMxNywx
+ODA0NDE4MzQ1LC00NDkyMTQ3OCwxMDcwOTIzNzU2LDE4OTcxMD
+czNzAsMjEyMTUxNzMwMCwtMTk2MDQ3MTE3MywtMTkxNzc0NjE0
+NSwtMTk2Njc5OTYyNCwtMTg3NzgzMTA1OSwtODA1OTQxMjUxLC
+01MzYwMzU5MTAsLTE2NDc3NTg0MiwtMTkwNDM2Njc3MSwtMTYw
+NTE0NzExNl19
 -->
