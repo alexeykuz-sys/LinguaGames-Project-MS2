@@ -41,14 +41,10 @@
 
 17.  References
 18.  Acknowledgements
+ 
+====
 
-  
-
-===
-
-  
-
-1.  **UX Development**
+1. **UX Development**
 
 Language based memory game will help users to learn a new language in the relaxed, entertaining way.
   
@@ -262,9 +258,9 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5OTg5Mjg5NCwyMTIxNTE3MzAwLC0xOT
-YwNDcxMTczLC0xOTE3NzQ2MTQ1LC0xOTY2Nzk5NjI0LC0xODc3
-ODMxMDU5LC04MDU5NDEyNTEsLTUzNjAzNTkxMCwtMTY0Nzc1OD
-QyLC0xOTA0MzY2NzcxLC0xNjA1MTQ3MTE2LDg1NDU3NzE5Miwt
-MTMxNjc4MTM3MiwxMTQxODY4NTEzXX0=
+eyJoaXN0b3J5IjpbLTIwNTU1NzEyNTMsMjEyMTUxNzMwMCwtMT
+k2MDQ3MTE3MywtMTkxNzc0NjE0NSwtMTk2Njc5OTYyNCwtMTg3
+NzgzMTA1OSwtODA1OTQxMjUxLC01MzYwMzU5MTAsLTE2NDc3NT
+g0MiwtMTkwNDM2Njc3MSwtMTYwNTE0NzExNiw4NTQ1NzcxOTIs
+LTEzMTY3ODEzNzIsMTE0MTg2ODUxM119
 -->
