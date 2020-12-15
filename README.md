@@ -210,7 +210,7 @@ https://search.google.com/test/mobile-friendly?id=o_8w7MX19q9LWdko_LifTg)
 
 2.  Upon entering the site, users are automatically presented with clear website consisting of the three blocks:
     - The main area of page presented with 12 cards with a logo of the game. User is not able to click on any of the cards until he press the start button.
-    - Above the cards are four buttons to help user to interact and control the webs
+    - Above the cards are four buttons to help user to interact and control the actions and response of the webiste, i.e. language choice dropdown menu, start/reset button, timer and sound on/off button. Start/Reset and Sound on/off buttons have dual functions 
 2.  As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
     
     1.  The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link describes what the page they will end up at clearly.
@@ -286,7 +286,7 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4MTQxNTQ5NCwtMTQxMjQsLTI5ODE2Nj
+eyJoaXN0b3J5IjpbLTE0Mjg2ODkwNywtMTQxMjQsLTI5ODE2Nj
 k2NiwtMjA3NDYyOTk5Myw2NjExNjkxNDIsMTI3OTQzNTMxNywx
 ODA0NDE4MzQ1LC00NDkyMTQ3OCwxMDcwOTIzNzU2LDE4OTcxMD
 czNzAsMjEyMTUxNzMwMCwtMTk2MDQ3MTE3MywtMTkxNzc0NjE0
