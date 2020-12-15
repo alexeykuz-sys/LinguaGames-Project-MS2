@@ -136,7 +136,7 @@ rgb(10,  105,  177);
 
 **1.8. Features**
 
-View my wireframes [here](wirefram.
+View my wireframes [here](wireframes.md).
 It's one-page website with  a number of modal windows. I used JS to hide windows and information to make sure users are not distracted by excessive information on the page.
 I placed only fixed navigation bar  with Logo and menu, linking user to the rules of the game and contact modal, and cards to play with.
 
@@ -269,11 +269,11 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjY3ODc2NDQsMTI3OTQzNTMxNywxOD
-A0NDE4MzQ1LC00NDkyMTQ3OCwxMDcwOTIzNzU2LDE4OTcxMDcz
-NzAsMjEyMTUxNzMwMCwtMTk2MDQ3MTE3MywtMTkxNzc0NjE0NS
-wtMTk2Njc5OTYyNCwtMTg3NzgzMTA1OSwtODA1OTQxMjUxLC01
-MzYwMzU5MTAsLTE2NDc3NTg0MiwtMTkwNDM2Njc3MSwtMTYwNT
-E0NzExNiw4NTQ1NzcxOTIsLTEzMTY3ODEzNzIsMTE0MTg2ODUx
-M119
+eyJoaXN0b3J5IjpbNjYxMTY5MTQyLDEyNzk0MzUzMTcsMTgwND
+QxODM0NSwtNDQ5MjE0NzgsMTA3MDkyMzc1NiwxODk3MTA3Mzcw
+LDIxMjE1MTczMDAsLTE5NjA0NzExNzMsLTE5MTc3NDYxNDUsLT
+E5NjY3OTk2MjQsLTE4Nzc4MzEwNTksLTgwNTk0MTI1MSwtNTM2
+MDM1OTEwLC0xNjQ3NzU4NDIsLTE5MDQzNjY3NzEsLTE2MDUxND
+cxMTYsODU0NTc3MTkyLC0xMzE2NzgxMzcyLDExNDE4Njg1MTNd
+fQ==
 -->
