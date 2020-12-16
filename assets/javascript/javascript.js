@@ -8,6 +8,7 @@ const failSound = new Audio("assets/sounds/game-fail.wav");
 const cards = document.querySelectorAll(".cards-inner");
 const resetBtn = document.getElementById("reset");
 const startBtn = document.getElementById("start");
+let cardsToTranslate = [];
 
 /*-----------Sound Effect--------*/
 
@@ -112,58 +113,14 @@ randomEngWords = () => {
 
     }
 
-    cardsToTranslate = [];
-    for (let i = 0; i < txtToTranslate.length; i++) {
+       for (let i = 0; i < txtToTranslate.length; i++) {
         cardsToTranslate[i] = txtToTranslate[i].textContent;
         
     }
-
-    /*---------------selects language to translate-------------*/
     
-    
-
-    cardsToTranslate.forEach((cardToTranslate) => {
-         const x = document.getElementById('langSelect')
-        x.addEventListener('change', event => {
-            langTo = event.target.value;
-
-        
-
-        /*----------------Translation API-------*/
-        const justTranslate = "https://just-translated.p.rapidapi.com/?lang_from=en&lang_to="+langTo+"&text="+cardsToTranslate;
-        getTranslation(justTranslate);
-        console.log(justTranslate)
-        });
-        /*const googleUrl = "https://google-translate20.p.rapidapi.com/translate?text=" + cardsToTranslate + "&tl=" + langTo + "&sl=en";
-        getTranslation(googleUrl);
-        });*/
-    
-    });
-    async function getTranslation(justTranslate) {
-        const response = await fetch(justTranslate, {
-            method: "GET",
-            headers: {
-               "content-type": "application/json",
-		       "x-rapidapi-key": "212787cca7mshfc32a9bbd54bd5cp1ab693jsnccb731ff5da7",
-		        "x-rapidapi-host": "just-translated.p.rapidapi.com"
-            },
-        });
-
-        /*let translatedData;*/
-        const data = await response.json();
-        console.log(data)
-        let translatedData = data.text;
-        let result = translatedData[0].split(",");
-        console.log(result)
-        translatedText = document.querySelectorAll("div.txtTo");
-
-        for (let i = 0; i < result.length; i++) {
-            translatedText[i].innerHTML = result[i];
-        };
-    };
 
 };
-randomEngWords();
+
 
 /*-------Timer----------*/
 
@@ -449,3 +406,40 @@ function resetBtnHandler() {
     location.reload();
 
 }
+
+
+async function getTranslation(lang) {
+  const justTranslate = "https://just-translated.p.rapidapi.com/?lang_from=en&lang_to="+lang+"&text="+cardsToTranslate;
+  const response = await fetch(justTranslate, {
+      method: "GET",
+      headers: {
+          "content-type": "application/json",
+		       "x-rapidapi-key": "212787cca7mshfc32a9bbd54bd5cp1ab693jsnccb731ff5da7",
+		        "x-rapidapi-host": "just-translated.p.rapidapi.com"
+      },
+  })
+  let data = await response.json();
+  console.log(data)
+  let result = data.text[0].split(",");
+  const translatedText = document.querySelectorAll("div.txtTo");
+  result.forEach((item, i) => {
+     translatedText[i].innerHTML = item;
+  })
+  
+};
+// handle language change listener
+function handleLangChange() {
+  const langSelect = document.getElementById('langSelect');
+  langSelect.addEventListener('change', event => getTranslation(event.target.value));
+}
+// put at bottom of script
+function init() {
+randomEngWords();
+// set spanish as first language 
+// when script first loads
+getTranslation('es');
+// initialse eventListeners
+handleLangChange();
+
+}
+init();

@@ -12,8 +12,6 @@ document.getElementById('form1')
    emailjs.sendForm(serviceID, templateID, this)
     .then(function () {
                 btn.value = 'Sending...';
-                
-                btn.style.backgroundColor='green'
                 btn.value = "Sent!";
                 setTimeout(function() {form.classList.remove('show');},2000);
             },
