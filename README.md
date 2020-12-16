@@ -5,7 +5,9 @@
 
 **LinguaGames**
 
-  ![Alt](assets/images/linguaGamesWelcome.png)
+  ![LinguaGames Logo](assets/images/linguaGamesWelcome.png)
+  
+  [LinguaGames](https://alexeykuz-sys.github.io/MS2_LinguaGames_Project/)
 
 **Contents**  
 
@@ -117,7 +119,7 @@ I opted to use Open Sans font for my website, which is one of the most popular f
 
 **Icons**
 
-Icons used where provided by [icon8](https://icon8.com/), used in moderation and are self explanatory.
+Icons used where provided by [icons8](https://icons8.com/), used in moderation and are self explanatory.
 
 **Colours**
 
@@ -132,7 +134,7 @@ rgb(10,  105,  177);
 
 **Features**
 
-View my wireframes [here](wireframes.md).
+View my wireframes [here](https://github.com/alexeykuz-sys/MS2_LinguaGames_Project/blob/master/WIREFRAMES.md).
 It's one-page website with  a number of modal windows. I used JS to hide windows and information to make sure users are not distracted by excessive information on the page.
 I placed only fixed navigation bar  with Logo and menu, linking user to the rules of the game and contact modal, and cards to play with.
 
@@ -163,10 +165,10 @@ Features to implement:
 
 -   [Git](https://git-scm.com/)
 -   [Bootstrap](https://getbootstrap.com/)
--   [Icon8](https://icon8.com)
+-   [Icons8](https://icons8.com)
 -   [Google fonts](https://fonts.google.com/)
 -   [Figma](https://figma.com/)
-- [Icons8](https://icons8.com/icon/NHEVr1Qkidu0)
+- [Icons8](https://icons8.com/)
 - [Canva](https://canva.com/)
 - [RapidApi](https://rapidapi.com)
   
@@ -193,12 +195,18 @@ JS was tested on [JSHint](https://jshint.com/)
 **Responsiveness**
 
  I tried CSS Grid but eventually opted to use **Bootstrap** and Flexbox throughout the project to ensure **maximum** responsiveness.
-
+I have also checked if website is mobile friendly:
 [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly) -
-
 
 [The verdict is the page is mobile friendly.](
 https://search.google.com/test/mobile-friendly?id=o_8w7MX19q9LWdko_LifTg)
+
+**Further Testing**
+
+-   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
+-   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
+-   A large amount of testing was done to ensure that all pages were linking correctly, buttons working and user can send email to developer.
+-   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 **10. Testing User Stories from UX Section**
 
@@ -283,11 +291,11 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxNDc0MTIwMywxODAxNDMzOTU2LC0xOD
-k3MjQ0OTY2LC0xNDEyNCwtMjk4MTY2OTY2LC0yMDc0NjI5OTkz
-LDY2MTE2OTE0MiwxMjc5NDM1MzE3LDE4MDQ0MTgzNDUsLTQ0OT
-IxNDc4LDEwNzA5MjM3NTYsMTg5NzEwNzM3MCwyMTIxNTE3MzAw
-LC0xOTYwNDcxMTczLC0xOTE3NzQ2MTQ1LC0xOTY2Nzk5NjI0LC
-0xODc3ODMxMDU5LC04MDU5NDEyNTEsLTUzNjAzNTkxMCwtMTY0
-Nzc1ODQyXX0=
+eyJoaXN0b3J5IjpbLTc3ODA1NTU5MSwxNzE0NzQxMjAzLDE4MD
+E0MzM5NTYsLTE4OTcyNDQ5NjYsLTE0MTI0LC0yOTgxNjY5NjYs
+LTIwNzQ2Mjk5OTMsNjYxMTY5MTQyLDEyNzk0MzUzMTcsMTgwND
+QxODM0NSwtNDQ5MjE0NzgsMTA3MDkyMzc1NiwxODk3MTA3Mzcw
+LDIxMjE1MTczMDAsLTE5NjA0NzExNzMsLTE5MTc3NDYxNDUsLT
+E5NjY3OTk2MjQsLTE4Nzc4MzEwNTksLTgwNTk0MTI1MSwtNTM2
+MDM1OTEwXX0=
 -->
