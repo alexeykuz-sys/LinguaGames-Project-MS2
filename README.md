@@ -123,13 +123,16 @@ Icons used where provided by [icons8](https://icons8.com/), used in moderation a
 
 The colours were determined by the pallet of Cooler website:
 
--   For navbar and contact modal I used linear gradient of 
+-   For navbar
+![navbar](assets/colors/navbar.jpeg)
+ I used linear gradient of 
 rgb(5,  57,  97),
+
 and
 rgb(10,  105,  177);
 
 -   For body background: rgb(55,  149,  93).
-
+![Background](assets/colors/background.jpeg)
 # Features and Future Releases
 
 View my wireframes [here](https://github.com/alexeykuz-sys/LinguaGames-Project-MS2/blob/master/WIREFRAMES.md).
