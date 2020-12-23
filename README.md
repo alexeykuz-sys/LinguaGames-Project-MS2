@@ -13,38 +13,35 @@
 
 1. [UX Development](#ux-development)
 
-2.  Project Goals
-3.  UX Requirements
-4.  Developer's goal
-5.  Users
-6.  User Goals
-7.  User Stories
-8.  Design Choices
+2.  [Project Goals](#project-goals)
+3.  [UX Requirements](#ux-requirements)
+4.  [Developer's goal](#developers-goals)
+5.  [Users](#users)
+6.  [User Goals](#user-goals)
+7.  [User Stories](#user-stories)
+8.  [Design Choices](#design-choices)
 
-		- Fonts;
-		- Icons;
-		- Colours;
-	 	- Features & Future Releases;
-	 	- Technology used;
+	- [Fonts](#fonts)
+	- [Icons](#icons)
+	- [Colours](#colours)
+	- [Features and Future Releases](#features-and-future-releases)
+	- [Technologies used](#technologies-used)
 
-9.  Testing
-	- HTML and CSS check using WC3
+9.  [Testing](#testing)
 	
-10. User Testing
+10. [Testing User Stories from UX Section](#testing-user-stories-from-ux-section)
 
-11.  Bugs and De-bugging
+11.  [Bugs and De-bugging](#bugs-and-debugging)
 
-	  - Known Issues
+12.  [Version Control](#version-control)
 
-12.  Version Control
-
-13. Project Deployment
-14.  References
-15.  Acknowledgements
+13. [Project Deployment](#project-deployment)
+14. [Credits](#credits)
+15. [Acknowledgements](#acknowledgements)
  
 ====
 
-1. # UX Development
+# UX Development
 
 Language based memory game will help users to learn a new language in the relaxed, entertaining way.
   
@@ -54,17 +51,17 @@ The primary goal of the website is to make learning fun and inspire users to ret
 
 Playing memory games can improve other brain functions, such as attention, concentration, and focus. Memory games give space to critical thinking and that helps children nurture their attention to detail. Memory games can improve visual recognition.
 
-**2.Project goal**
+# Project goals
 
 The purpose of this project to create website to enable consumers to have fun interactive experience in learning of the new words. 
 The website has to be easy to navigate with clear purpose of the buttons and screen space. The game has to provide the clear and safe framework for clients and to make the experience casual rather than requirement.
  
 
-**3. UX requirements**
+# UX requirements
 
 The website targets the individuals interested to learn or improve the knowledge of the foreign languages in the casual way, through the game experience. Present level of development offers only fail/win notification. Please see future implementations plan for more details of  users progress measurement.
 
-**4. Developer's Goals**
+# Developer's Goals
 
 The site owner has the following goals:
 
@@ -74,17 +71,18 @@ The site owner has the following goals:
 - To give users control over the game, by choosing of the language, initiating and resetting the game and timer.
 
 
-**5. Users:**
+# Users:
 
  Individuals interested to learn a new language with no age limitation.
 
 
-**6. User goals:**
+# User goals:
+
 Person interested to learn basics of the new language has to learn  300-600 words to be to travel and 1000 words to be able to converse;
 the users goals is to identify application allowing them to have access to the application teaching them the most common words used in any language. Therefore, i have used the most common words used in English language
  
 
-**7. User Stories**
+# User Stories
 
  **- First Time Visitor Goals:**
 1.  As a first time visitor to the website, I want to easily understand the main purpose of the game.
@@ -104,24 +102,24 @@ the users goals is to identify application allowing them to have access to the a
 	3.	As a Frequent Visitor I would like to see competing board and possibility to compete with other players and friends.
 	
   
-**8. Design Choices**
+# Design Choices
 
 When designing website I took inspiration for colours and fonts from the game Memory. The application is using colours and fonts scientifically proven to help users to learn and stimulate their cognitive functions.
 
 
-**Fonts**
+# Fonts
 
 I have used Google Fonts to determine the best fonts suitable for each part of the website, I.e. Logo, Menu and Body information.
 
 I opted to use Open Sans font for my website, which is one of the most popular fonts used by major internet companies.
 
-[https://nestify.io/blog/top-10-best-google-fonts/](https://nestify.io/blog/top-10-best-google-fonts/)
+[Top 10 Best Google Fonts](https://nestify.io/blog/top-10-best-google-fonts/)
 
-**Icons**
+# Icons
 
 Icons used where provided by [icons8](https://icons8.com/), used in moderation and are self explanatory.
 
-**Colours**
+# Colours
 
 The colours were determined by the pallet of Cooler website:
 
@@ -132,7 +130,7 @@ rgb(10,  105,  177);
 
 -   For body background: rgb(55,  149,  93).
 
-**Features**
+# Features and Future Releases
 
 View my wireframes [here](https://github.com/alexeykuz-sys/MS2_LinguaGames_Project/blob/master/WIREFRAMES.md).
 It's one-page website with  a number of modal windows. I used JS to hide windows and information to make sure users are not distracted by excessive information on the page.
@@ -148,7 +146,7 @@ Features to implement:
 - To add links to social media to enable users to share their achievements.
 
 
-**Technologies Used**
+# Technologies Used
 
   
 **UX/UI design**
@@ -173,8 +171,7 @@ Features to implement:
 - [RapidApi](https://rapidapi.com)
   
 
-**9. Testing**
-
+# Testing
 
 First time testing. I used an online tool, using ami.responsivedesign.is and [Screenfly](https://bluetree.ai/screenfly/) website to test website on various devices.
 
@@ -208,7 +205,7 @@ https://search.google.com/test/mobile-friendly?id=o_8w7MX19q9LWdko_LifTg)
 -   A large amount of testing was done to ensure that all pages were linking correctly, buttons working and user can send email to developer.
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
-**10. Testing User Stories from UX Section**
+# Testing User Stories from UX Section
 
 **- First time visitor testing:**
 
@@ -226,32 +223,34 @@ Returning and Frequent Users will find the following functions once implemented 
 	- the possibility to see the achievements of users they follow;
 	- the possibility to share users achievements on social media.
 	 
-**11. Bugs and Debugging**
+# Bugs and Debugging
 
 During testing I found that all iOS users encountered a display glitch where the front-face cards do not show when the user touches a card to flip. Instead it momentarily displays the image then flips to the inverted back face card.
 no such problem was found on Galaxy devices.
 The game is developed as non commercial exercise and depends on free allowance of API provider, therefore errors might appear in console related to excessive calls to API and once free limit has been exhausted.
 
-**12. Version Control**
+# Version Control
 
  -   Used Git for version control.
  -   Branches were created to work on alternative grid layout.
  -   The branches were then merged with the master branch after any conflicts were addressed.
   
 
-**13. Project Deployment**
+# Project Deployment
 
 I built website using **gitpod** and **GitHub** to host the repository.
 
 To deploy the website using **GitHub Pages** the following steps have to be made:
 
--   Opened up and log in **GitHub** in the **browser**.
--   Selected my [repositories](https://github.com/alexeykuz-sys?tab=repositories).
--   Navigated  and open project to [MS2_LinguaGames_Project](https://github.com/alexeykuz-sys/MS2_LinguaGames_Project)
--   In the top navigation clicked **settings**.
--   Scrolled down to the **GitHub Pages** area.
--   Selected **Master Branch** from the **Source** dropdown menu.
--   Clicked to **confirm** my **selection**.
+-   Open up and log in **GitHub** in the **browser**.
+-   Select my [repositories](https://github.com/alexeykuz-sys?tab=repositories).
+-   Navigate and open project to [MS2_LinguaGames_Project](https://github.com/alexeykuz-sys/MS2_LinguaGames_Project)
+-   In the top navigation click on **settings** section.
+-   Scroll down to the **GitHub Pages** area.
+-   Select **Master Branch** from the **Source** dropdown menu.
+-   Click to **confirm** your **selection**.
+-   The page will refresh and and a link will appear in **Github Pages** area
+-   Click on the link to deploy the project 
 
 **Forking the GitHub Repository**
 
@@ -267,7 +266,7 @@ You can paste the repository link directly into any editor you use with the comm
 Type git clone and paste https://github.com/alexeykuz-sys/MS2_LinguaGames_Project.git
 
 
-**14. Credits**
+# Credits
 
 ** Media**
 
@@ -280,7 +279,8 @@ and
 
 [Timer](https://css-tricks.com/how-to-create-an-animated-countdown-timer-with-html-css-and-javascript/)
 
-**15. Acknowledgements**
+# Acknowledgements
+
 I would like to thank:
 
 -   My mentor,  Femi for his guidance and advice on this project before submission.
