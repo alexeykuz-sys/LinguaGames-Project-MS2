@@ -132,7 +132,8 @@ and
 rgb(10,  105,  177);
 
 -   For body background: rgb(55,  149,  93).
-![Background](assets/colors/background.jpeg)
+![Background](assets/colors/green.jpeg)
+
 # Features and Future Releases
 
 View my wireframes [here](https://github.com/alexeykuz-sys/LinguaGames-Project-MS2/blob/master/WIREFRAMES.md).
