@@ -132,7 +132,7 @@ rgb(10,  105,  177);
 
 # Features and Future Releases
 
-View my wireframes [here](https://github.com/alexeykuz-sys/LinguaGames-Project-MS2/assets/wireframes).
+View my wireframes [here](https://github.com/alexeykuz-sys/LinguaGames-Project-MS2/blob/master/WIREFRAMES.md).
 It's one-page website with  a number of modal windows. I used JS to hide windows and information to make sure users are not distracted by excessive information on the page.
 I placed only fixed navigation bar  with Logo and menu, linking user to the rules of the game and contact modal, and cards to play with.
 
