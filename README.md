@@ -11,7 +11,7 @@
 
 **Contents**  
 
-1.  UX Development
+1.  [UX Development](#ux development)
 
 2.  Project Goals
 3.  UX Requirements
@@ -44,7 +44,7 @@
  
 ====
 
-**1. UX Development**
+[**1. UX Development**](#ux deve)
 
 Language based memory game will help users to learn a new language in the relaxed, entertaining way.
   
@@ -291,11 +291,11 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3ODA1NTU5MSwxNzE0NzQxMjAzLDE4MD
-E0MzM5NTYsLTE4OTcyNDQ5NjYsLTE0MTI0LC0yOTgxNjY5NjYs
-LTIwNzQ2Mjk5OTMsNjYxMTY5MTQyLDEyNzk0MzUzMTcsMTgwND
-QxODM0NSwtNDQ5MjE0NzgsMTA3MDkyMzc1NiwxODk3MTA3Mzcw
-LDIxMjE1MTczMDAsLTE5NjA0NzExNzMsLTE5MTc3NDYxNDUsLT
-E5NjY3OTk2MjQsLTE4Nzc4MzEwNTksLTgwNTk0MTI1MSwtNTM2
-MDM1OTEwXX0=
+eyJoaXN0b3J5IjpbLTE5MTI2NzU5MTUsLTc3ODA1NTU5MSwxNz
+E0NzQxMjAzLDE4MDE0MzM5NTYsLTE4OTcyNDQ5NjYsLTE0MTI0
+LC0yOTgxNjY5NjYsLTIwNzQ2Mjk5OTMsNjYxMTY5MTQyLDEyNz
+k0MzUzMTcsMTgwNDQxODM0NSwtNDQ5MjE0NzgsMTA3MDkyMzc1
+NiwxODk3MTA3MzcwLDIxMjE1MTczMDAsLTE5NjA0NzExNzMsLT
+E5MTc3NDYxNDUsLTE5NjY3OTk2MjQsLTE4Nzc4MzEwNTksLTgw
+NTk0MTI1MV19
 -->
