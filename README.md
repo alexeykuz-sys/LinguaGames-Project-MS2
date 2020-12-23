@@ -11,7 +11,7 @@
 
 **Contents**  
 
-1. #UX Development
+1. [UX Development](#ux-development)
 
 2.  Project Goals
 3.  UX Requirements
@@ -44,7 +44,7 @@
  
 ====
 
-[1. UX Development](#ux-development)
+1. # UX Development
 
 Language based memory game will help users to learn a new language in the relaxed, entertaining way.
   
