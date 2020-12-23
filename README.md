@@ -15,7 +15,7 @@
 
 2.  Project Goals
 3.  UX Requirements
-4. Developer's goal
+4.  Developer's goal
 5.  Users
 6.  User Goals
 7.  User Stories
