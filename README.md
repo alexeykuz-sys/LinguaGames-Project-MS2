@@ -7,7 +7,7 @@
 
   ![LinguaGames Logo](assets/images/linguaGamesWelcome.png)
   
-  [LinguaGames](https://alexeykuz-sys.github.io/MS2_LinguaGames_Project/)
+  [LinguaGames](https://alexeykuz-sys.github.io/LinguaGames-Project-MS2/)
 
 **Contents**  
 
@@ -244,7 +244,7 @@ To deploy the website using **GitHub Pages** the following steps have to be made
 
 -   Open up and log in **GitHub** in the **browser**.
 -   Select my [repositories](https://github.com/alexeykuz-sys?tab=repositories).
--   Navigate and open project to [MS2_LinguaGames_Project](https://github.com/alexeykuz-sys/LinguaGames-Project-MS2)
+-   Navigate and open project to [LinguaGames-Project-MS2](https://github.com/alexeykuz-sys/LinguaGames-Project-MS2)
 -   In the top navigation click on **settings** section.
 -   Scroll down to the **GitHub Pages** area.
 -   Select **Master Branch** from the **Source** dropdown menu.
@@ -261,9 +261,10 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 3.  You should now have a copy of the original repository in your GitHub account.
 
 **To clone this project from GitHub:**
-You can paste the repository link directly into any editor you use with the command 'git clone'. For example:
+1. At the top of [repository](alexeykuz-sys/LinguaGames-Project-MS2) press on Code button and copy either HTTPS or SSH link
+2. Paste the repository link directly into any editor you use with the command 'git clone'. For example:
 
-Type git clone and paste https://github.com/alexeykuz-sys/LinguaGames-Project-MS2.git
+	Type git clone and paste https://github.com/alexeykuz-sys/LinguaGames-Project-MS2.git
 
 
 # Credits
