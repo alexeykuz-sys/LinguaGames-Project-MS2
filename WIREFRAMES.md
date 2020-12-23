@@ -1,4 +1,4 @@
-![](assets/wireframes/Ipad wireframe.jpeg)
-![](assets/wireframes/Iphone wireframe.jpeg)
-![](assets/wireframes/desktop wireframe.jpeg)
+![](assets/wireframes/Ipad.jpeg)
+![](assets/wireframes/Iphone.jpeg)
+![](assets/wireframes/desktop.jpeg)
 
