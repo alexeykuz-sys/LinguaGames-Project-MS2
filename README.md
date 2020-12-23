@@ -11,7 +11,7 @@
 
 **Contents**  
 
-1.  [UX Development](#UX Development)
+1. #UX Development
 
 2.  Project Goals
 3.  UX Requirements
@@ -291,7 +291,7 @@ I would like to thank:
 
 The content on this website is for the purpose of this project only.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNzU5NjE0MSw0MDIyNDcyNTIsLTc3OD
+eyJoaXN0b3J5IjpbMTM0NjMxMzU0Niw0MDIyNDcyNTIsLTc3OD
 A1NTU5MSwxNzE0NzQxMjAzLDE4MDE0MzM5NTYsLTE4OTcyNDQ5
 NjYsLTE0MTI0LC0yOTgxNjY5NjYsLTIwNzQ2Mjk5OTMsNjYxMT
 Y5MTQyLDEyNzk0MzUzMTcsMTgwNDQxODM0NSwtNDQ5MjE0Nzgs
