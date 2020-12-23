@@ -132,7 +132,7 @@ rgb(10,  105,  177);
 
 # Features and Future Releases
 
-View my wireframes [here](https://github.com/alexeykuz-sys/MS2_LinguaGames_Project/blob/master/WIREFRAMES.md).
+View my wireframes [here](https://github.com/alexeykuz-sys/LinguaGames-Project-MS2/blob/master/WIREFRAMES.md).
 It's one-page website with  a number of modal windows. I used JS to hide windows and information to make sure users are not distracted by excessive information on the page.
 I placed only fixed navigation bar  with Logo and menu, linking user to the rules of the game and contact modal, and cards to play with.
 
@@ -244,7 +244,7 @@ To deploy the website using **GitHub Pages** the following steps have to be made
 
 -   Open up and log in **GitHub** in the **browser**.
 -   Select my [repositories](https://github.com/alexeykuz-sys?tab=repositories).
--   Navigate and open project to [MS2_LinguaGames_Project](https://github.com/alexeykuz-sys/MS2_LinguaGames_Project)
+-   Navigate and open project to [MS2_LinguaGames_Project](https://github.com/alexeykuz-sys/LinguaGames-Project-MS2)
 -   In the top navigation click on **settings** section.
 -   Scroll down to the **GitHub Pages** area.
 -   Select **Master Branch** from the **Source** dropdown menu.
@@ -263,7 +263,7 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 **To clone this project from GitHub:**
 You can paste the repository link directly into any editor you use with the command 'git clone'. For example:
 
-Type git clone and paste https://github.com/alexeykuz-sys/MS2_LinguaGames_Project.git
+Type git clone and paste https://github.com/alexeykuz-sys/LinguaGames-Project-MS2.git
 
 
 # Credits
