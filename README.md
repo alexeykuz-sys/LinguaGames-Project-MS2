@@ -85,21 +85,21 @@ the users goals is to identify application allowing them to have access to the a
 # User Stories
 
  **- First Time Visitor Goals:**
-1.  As a first time visitor to the website, I want to easily understand the main purpose of the game.
-2. As a first time visitor navigate through the game
+1.  As a visitor to the website, I want to easily understand the main purpose of the game.
+2.  As a visitor navigate through the game
 3.  As a visitor I want to have a clear rules, how to play.
 4.  As a visitor want an easy way to contact developer.
 5.  As a returning visitor to the website, I would like to have a choice of languages to learn or improve
 
  **- Returning Visitor Goals:**
  
-1.  As a Returning Visitor I would like to find more languages available and more difficulty levels.
-2. As a Returning Visitor I would like to find social community links.
+1.  Returning Visitor I would like to find more languages available and more difficulty levels.
+2.  Returning Visitor I would like to find social community links.
 
 **- Frequent Visitor Goals:**
-	1.	As a Frequent Visitor i would like to see more challenges and alternative way of learning languages
-	2.	As a Frequent Visitor I would like to see better way to interact with the game.
-	3.	As a Frequent Visitor I would like to see competing board and possibility to compete with other players and friends.
+	1.	Frequent Visitor i would like to see more challenges and alternative way of learning languages
+	2.	Frequent Visitor I would like to see better way to interact with the game.
+	3.	Frequent Visitor I would like to see competing board and possibility to compete with other players and friends.
 	
   
 # Design Choices
@@ -209,7 +209,7 @@ https://search.google.com/test/mobile-friendly?id=o_8w7MX19q9LWdko_LifTg)
 
 **- First time visitor testing:**
 
-1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the game.
+1. As a Visitor, I want to easily understand the main purpose of the site and learn more about the game.
 
 2.  Upon entering the site, users are automatically presented with clear website consisting of the three blocks:
     - The main area of page presented with 12 cards with a logo of the game. User is not able to click on any of the cards until he press the start button.
