@@ -1,6 +1,6 @@
 /*jshint esversion: 6 */
 
-/*-----------Constants--------*/
+// Constants
 const clickSound = new Audio("assets/sounds/mouse-click.wav");
 const cardSound = new Audio("assets/sounds/quiet-page-turn.wav");
 const soundSound = new Audio("assets/sounds/table-lamp-flip-switch-off.wav");
@@ -10,16 +10,7 @@ const resetBtn = document.getElementById("reset");
 const startBtn = document.getElementById("start");
 let cardsToTranslate = [];
 
-/*-----------Sound Effect--------*/
-
-function playSound() {
-    if (soundBtn.classList.contains(`sound-icon-red`)) {
-        clickSound.pause();
-        clickSound.currentTime = 0;
-    } else {
-        clickSound.play();
-    }
-}
+// Sound Effects
 
 function playClickbtn() {
     if (soundBtn.classList.contains(`sound-icon-red`)) {
@@ -56,7 +47,7 @@ function playFailSound() {
     }
 }
 
-/*-----------Language Button-----Translator-------*/
+// Language Button & TRanslator //
 
 randomEngWords = () => {
     let englishCards = 
@@ -101,12 +92,13 @@ randomEngWords = () => {
             "horse",
             "ice",
         ];
-    /*----Shuffles the words in array engCards-----*/
+    // Shuffles the words in array engCards
 
     while (englishCards.length > 6) {
         englishCards.splice(Math.floor(Math.random() * englishCards.length), 1);
     }
-    /*----assigns shuffled words to each card----------------*/
+    // assigns shuffled words to each card
+
     let txtToTranslate = document.querySelectorAll("div.english");
     for (let i = 0; i < txtToTranslate.length; i++) {
         txtToTranslate[i].innerHTML = englishCards[i];
@@ -122,7 +114,7 @@ randomEngWords = () => {
 };
 
 
-/*-------Timer----------*/
+// Timer
 
 const FULL_DASH_ARRAY = 283;
 const WARNING_THRESHOLD = 10;
@@ -242,7 +234,8 @@ function setCircleDasharray() {
 }
 
 
-/*-----------Instruction Button--------*/
+//Instructions Button//
+
 
 const infoText = document.getElementById("info-text");
 const infoIcon = document.getElementById("info-icon");
@@ -251,7 +244,8 @@ const closeBtn = document.getElementById("close-button");
 function modalHandler() {
     if ((modal.classList.display = "none")) {
         modal.classList.toggle("show");
-        playClickbtn();
+       playClickbtn();
+       
         return;
     }
 }
@@ -260,7 +254,7 @@ infoIcon.addEventListener("click", modalHandler);
 infoText.addEventListener("click", modalHandler);
 closeBtn.addEventListener("click", modalHandler);
 
-/*-----------Contact Button--------*/
+//Contact Button//
 
 
 const contactBtn = document.getElementById("contact-icon");
@@ -292,7 +286,7 @@ window.onclick = function (event) {
     }
 };
 
-/*-----------Sound Button--------*/
+//Sound Button
 
 const soundBtn = document.getElementById("sound");
 
@@ -311,7 +305,7 @@ soundBtn.addEventListener("click", soundHandler);
 
 
 
-/*-----------Flip Cards Effect--------*/
+//Flip Cards Effect
 
 let hasFlippedCard = false;
 let firstCard, secondCard;
@@ -319,7 +313,7 @@ let lockBoard = false;
 let matchCounter = 0;
 let gameStart = false;
 
-/*-----------Start Timer--------*/
+//Start Timer
 
 startBtn.addEventListener('click', () => {
     gameStart = true;
@@ -419,7 +413,7 @@ async function getTranslation(lang) {
       },
   })
   let data = await response.json();
-  console.log(data)
+  
   let result = data.text[0].split(",");
   const translatedText = document.querySelectorAll("div.txtTo");
   result.forEach((item, i) => {
@@ -432,13 +426,11 @@ function handleLangChange() {
   const langSelect = document.getElementById('langSelect');
   langSelect.addEventListener('change', event => getTranslation(event.target.value));
 }
-// put at bottom of script
+
 function init() {
 randomEngWords();
-// set spanish as first language 
-// when script first loads
+
 getTranslation('es');
-// initialse eventListeners
 handleLangChange();
 
 }
