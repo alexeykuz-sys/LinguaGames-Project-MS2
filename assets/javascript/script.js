@@ -376,7 +376,7 @@ function unflipCards() {
         firstCard.classList.remove("flip");
         secondCard.classList.remove("flip");
         resetBoard();
-        playFailSound();
+        playfailSound();
     }, 1500);
 }
 function resetBoard() {
