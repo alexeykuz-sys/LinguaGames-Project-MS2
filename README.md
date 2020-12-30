@@ -5,7 +5,9 @@
 
 **LinguaGames**
 
-  ![LinguaGames Logo](assets/images/linguaGamesWelcome.png)
+  ![LinguaGames](assets/images/amiresponsive.png)
+  
+  ![LinguaGames Logo](assets/images/linguaGames230x140.png)
   
   [LinguaGames](https://alexeykuz-sys.github.io/LinguaGames-Project-MS2/)
 
