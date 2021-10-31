@@ -401,9 +401,9 @@ function resetBtnHandler() {
 
 }
 
-
 async function getTranslation(lang) {
-  const justTranslate = "https://just-translated.p.rapidapi.com/?lang_from=en&lang_to="+lang+"&text="+cardsToTranslate;
+    console.log('lang', lang)
+  const justTranslate = "https://just-translated.p.rapidapi.com/?lang="+lang+"&text="+cardsToTranslate;
   const response = await fetch(justTranslate, {
       method: "GET",
       headers: {
@@ -416,15 +416,16 @@ async function getTranslation(lang) {
   
   let result = data.text[0].split(",");
   const translatedText = document.querySelectorAll("div.txtTo");
-  result.forEach((item, i) => {
+  result.forEach((item, i) => { 
      translatedText[i].innerHTML = item;
   })
   
 };
 // handle language change listener
-function handleLangChange() {
+function handleLangChange(event) {
   const langSelect = document.getElementById('langSelect');
-  langSelect.addEventListener('change', event => getTranslation(event.target.value));
+  langSelect.addEventListener('click', event => getTranslation(event.target.value));
+  console.log(langSelect)
 }
 
 function init() {
